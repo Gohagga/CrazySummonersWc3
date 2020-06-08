@@ -3,8 +3,9 @@ import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
 import { SpellGroup, SpellHelper } from "Global/SpellHelper";
-import { OrbCostToString, OrbType } from "Systems/OrbResource/Orb";
+import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
+import { OrbType } from "Systems/OrbResource/OrbType";
 
 export class CorruptedBlood {
     private static _instance: Record<number, CorruptedBlood> = {};
@@ -52,8 +53,6 @@ export class CorruptedBlood {
     static init(spellId: number) {
         this.SpellId = spellId;
         this.OrbCost = [
-            OrbType.Red,
-            OrbType.Red,
             OrbType.Red,
         ];
         SpellEvent.RegisterSpellCast(this.SpellId, () => {

@@ -859,7 +859,7 @@ R
 }
 
 STRING 274
-// Abilities: AP02 (Bless), Name (Name)
+// Abilities: A0S1 (Bless), Name (Name)
 {
 Bless
 }
@@ -949,7 +949,7 @@ STRING 293
 }
 
 STRING 294
-// Abilities: A0S1 (Bless), Name (Name)
+// Abilities: A0SN (Bless), Name (Name)
 {
 Bless
 }
@@ -2205,7 +2205,7 @@ STRING 866
 }
 
 STRING 867
-// Abilities: AP02 (Bless), Hotkey (Hotkey - Normal)
+// Abilities: A003 (Learn Basic Determination Mastery), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -2247,7 +2247,7 @@ Assumes a form of a lynx, increasing base movement speed to 350 and gaining immu
 }
 
 STRING 875
-// Abilities: A003 (Learn Basic Determination Mastery), Hotkey (Hotkey - Normal)
+// Abilities: A00K (Summon Evil Outsider), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -2409,7 +2409,7 @@ Choose Dark Focus Blue
 }
 
 STRING 929
-// Abilities: A00K (Summon Evil Outsider), Hotkey (Hotkey - Normal)
+// Abilities: A00K (Summon Evil Outsider), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -2439,7 +2439,7 @@ STRING 934
 }
 
 STRING 939
-// Abilities: A00K (Summon Evil Outsider), Researchhotkey (Hotkey - Learn)
+// Abilities: A00Q (Choose Dark Focus Blue), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -4594,7 +4594,7 @@ E
 }
 
 STRING 1728
-// Abilities: A00Q (Choose Dark Focus Blue), Hotkey (Hotkey - Normal)
+// Abilities: A00Q (Choose Dark Focus Blue), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -4996,7 +4996,7 @@ DummyFireIndicator
 }
 
 STRING 1909
-// Abilities: A00Q (Choose Dark Focus Blue), Unhotkey (Hotkey - Turn Off)
+// Abilities: AW02 (Crazy Imp), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -5218,7 +5218,7 @@ Summons more powerful melee troops
 }
 
 STRING 1960
-// Abilities: AW02 (Crazy Imp), Hotkey (Hotkey - Normal)
+// Abilities: A0S7 (Crazy Imp), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -5668,7 +5668,7 @@ C
 }
 
 STRING 2072
-// Abilities: A0SN (Bless), Name (Name)
+// Abilities: AP02 (Bless), Name (Name)
 {
 Bless
 }
@@ -7972,7 +7972,7 @@ Warmth
 }
 
 STRING 2755
-// Abilities: A0S7 (Crazy Imp), Hotkey (Hotkey - Normal)
+// Abilities: A0S1 (Bless), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -8464,13 +8464,13 @@ Blasts enemy units with a wave of frost that deals damage to the target, and a b
 }
 
 STRING 2873
-// Abilities: A0S1 (Bless), Hotkey (Hotkey - Normal)
+// Abilities: A01L (Crystalize), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 2874
-// Abilities: A01L (Crystalize), Hotkey (Hotkey - Normal)
+// Abilities: A0SE (Chill Blast), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -10672,7 +10672,7 @@ Summons more powerful melee troops
 }
 
 STRING 3512
-// Abilities: A0SE (Chill Blast), Hotkey (Hotkey - Normal)
+// Abilities: A0SE (Chill Blast), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -10684,7 +10684,7 @@ STRING 3513
 }
 
 STRING 3514
-// Abilities: A0SE (Chill Blast), Researchhotkey (Hotkey - Learn)
+// Abilities: A025 (Summon Task Force), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -12076,7 +12076,7 @@ Summons more powerful melee troops
 }
 
 STRING 3847
-// Abilities: A025 (Summon Task Force), Hotkey (Hotkey - Normal)
+// Abilities: A025 (Summon Task Force), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -13240,7 +13240,7 @@ Summon Ghoul
 }
 
 STRING 4180
-// Abilities: A025 (Summon Task Force), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SN (Bless), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -13252,7 +13252,7 @@ STRING 4181
 }
 
 STRING 4182
-// Abilities: A0SN (Bless), Hotkey (Hotkey - Normal)
+// Abilities: A02O (Summon Ghoul), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -13624,7 +13624,7 @@ Choose |cff8a8affBlue|r |cff808080(W)|r
 }
 
 STRING 4280
-// Abilities: A02O (Summon Ghoul), Hotkey (Hotkey - Normal)
+// Abilities: A02O (Summon Ghoul), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -13684,7 +13684,7 @@ Strengthen your mastery over magical energy. Cooldown and manacost reduce with l
 }
 
 STRING 4290
-// Abilities: A02O (Summon Ghoul), Researchhotkey (Hotkey - Learn)
+// Abilities: A02X (Unholy Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -13696,7 +13696,7 @@ Unholy Magic
 }
 
 STRING 4293
-// Abilities: A02X (Unholy Magic), Hotkey (Hotkey - Normal)
+// Abilities: A031 (Lane Drain Immunity), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -15410,7 +15410,7 @@ S
 }
 
 STRING 4930
-// Abilities: A031 (Lane Drain Immunity), Hotkey (Hotkey - Normal)
+// Abilities: A031 (Lane Drain Immunity), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -16562,7 +16562,7 @@ S
 }
 
 STRING 5264
-// Abilities: A031 (Lane Drain Immunity), Unhotkey (Hotkey - Turn Off)
+// Abilities: ADK4 (Death Volley), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -16667,24 +16667,6 @@ STRING 5281
 // Upgrades: R001 (Priest Adept Training,Priest Master Training), Name (Name)
 {
 Level  7
-}
-
-STRING 5283
-// Upgrades: R001 (Priest Adept Training,Priest Master Training), Name (Name)
-{
-Level 
-}
-
-STRING 5284
-// Upgrades: R001 (Priest Adept Training,Priest Master Training), Name (Name)
-{
-Level 
-}
-
-STRING 5285
-// Upgrades: R001 (Priest Adept Training,Priest Master Training), Name (Name)
-{
-Level 
 }
 
 STRING 5286
@@ -17048,7 +17030,7 @@ X
 }
 
 STRING 5353
-// Abilities: ADK4 (Death Volley), Hotkey (Hotkey - Normal)
+// Abilities: A0T7 (Death Volley), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -17203,24 +17185,6 @@ STRING 5390
 (life bonus)
 }
 
-STRING 5396
-// Abilities: AW06 (Steal Essence), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffff77ffP|r + |cffff3333R|r + |cff0080ffB|r]|n|nDeals scaling damage split evenly among all targeted organic units. Each kill heals caster by 1.|nDamage is equal to|cffff8080 161 + 51 |rper warlock level, up to |cffff8080926 |rat level 15.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW06,Cast2,.>s|r
-}
-
-STRING 5397
-// Abilities: AW06 (Steal Essence), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffff77ffP|r + |cffff3333R|r + |cff0080ffB|r]|n|nDeals scaling damage split evenly among all targeted organic units. Each kill heals caster by 1.|nDamage is equal to |cffff8080225 + 71 |rper warlock level, up to |cffff80801,292 |rat level 35.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW06,Cast3,.>s|r
-}
-
-STRING 5398
-// Abilities: AW06 (Steal Essence), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffff77ffP|r + |cffff3333R|r + |cff0080ffB|r]|n|nDeals scaling damage split evenly among all targeted organic units. Each kill heals caster by 1.|nDamage is equal to |cffff8080290 + 92 |rper warlock level, up to |cffff80801,670 |rat level 45.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW06,Cast4,.>s|r
-}
-
 STRING 5403
 // Items: I00F (White Power), Tip (Tooltip - Basic)
 {
@@ -17243,24 +17207,6 @@ STRING 5412
 // Items: I00F (White Power), Ubertip (Tooltip - Extended)
 {
 For each charge, White Power reduces cooldown by 1 second.|n|n|cffff8080Max 30 stacks.|r
-}
-
-STRING 5413
-// Abilities: A00T (White Power), Ubertip (Tooltip - Normal - Extended)
-{
-Substracts number of seconds equal to white power stacks from active cooldown of White Orbs, from the last to the first.|n|nCooldown |cff8a8aff<A00T,Cool1,.>|r seconds.|cff808080|r
-}
-
-STRING 5414
-// Abilities: A00T (White Power), Ubertip (Tooltip - Normal - Extended)
-{
-Substracts number of seconds equal to white power stacks from active cooldown of White Orbs, from the last to the first.|n|nCooldown |cff8a8aff<A00T,Cool2,.>|r seconds.|cff808080|r
-}
-
-STRING 5415
-// Abilities: A00T (White Power), Ubertip (Tooltip - Normal - Extended)
-{
-Substracts number of seconds equal to white power stacks from active cooldown of White Orbs, from the last to the first.|n|nCooldown |cff8a8aff<A00T,Cool3,.>|r seconds.|cff808080|r
 }
 
 STRING 5421
@@ -17697,78 +17643,6 @@ STRING 5522
 Each charge reduces Purple orb cooldown by 1 second on Dark Power cast.|n|n|cffff8080Use this item to choose alternate color produced by Dark Power.|r
 }
 
-STRING 5523
-// Abilities: AW04 (Ritual of Death), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cffff3333R|r]
-
-Suffer 1 damage to deal magic damage to an enemy unit equal to its max hp.|nHas |cff80ffff<AW04,HeroDur1,%>%|r chance to negate the life cost.
-
-|cffffd9b3Cast time: <AW04,DataA1,.>s|r
-}
-
-STRING 5524
-// Abilities: AW04 (Ritual of Death), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cffff3333R|r]
-
-Suffer 1 damage to deal magic damage to an enemy unit equal to its max hp.|nHas |cff80ffff<AW04,HeroDur2,%>%|r chance to negate the life cost.
-
-|cffffd9b3Cast time: <AW04,DataA2,.>s|r
-}
-
-STRING 5525
-// Abilities: AW04 (Ritual of Death), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cffff3333R|r]
-
-Suffer 1 damage to deal magic damage to an enemy unit equal to its max hp.|nHas |cff80ffff<AW04,HeroDur3,%>%|r chance to negate the life cost.
-
-|cffffd9b3Cast time: <AW04,DataA3,.>s|r
-}
-
-STRING 5526
-// Abilities: AW04 (Ritual of Death), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cffff3333R|r]
-
-Suffer 1 damage to deal magic damage to an enemy unit equal to its max hp.|nHas |cff80ffff<AW04,HeroDur4,%>%|r chance to negate the life cost.
-
-|cffffd9b3Cast time: <AW04,DataA4,.>s|r
-}
-
-STRING 5527
-// Abilities: AP08 (Redemption), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff3333R|r]
-
-Calls for heavenly power to heal all your allies in a single lane by |cffff6c6c25%|r of their max health. Also raises dead allies and enemies with |cffff6c6c20% |rhp and converts them to your side. Doesn't revive if unit has been dead for more than 25 seconds.|n|n|cffffd9b3Cast time: <AP08,DataA1,.>s|r|n|cffff8080ALL CIRCLE 3 SPELLS SHARE COOLDOWN 90s|r
-}
-
-STRING 5528
-// Abilities: AP08 (Redemption), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff3333R|r]
-
-Calls for heavenly power to heal all your allies in a single lane by |cffff6c6c30%|r of their max health. Also raises dead allies and enemies with |cffff6c6c40% |rhp and converts them to your side. Doesn't revive if unit has been dead for more than 25 seconds.|n|n|cffffd9b3Cast time: <AP08,Cast2,.>s|r|n|cffff8080ALL CIRCLE 3 SPELLS SHARE COOLDOWN 90s|r
-}
-
-STRING 5529
-// Abilities: AP08 (Redemption), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff3333R|r]
-
-Calls for heavenly power to heal all your allies in a single lane by |cffff6c6c35%|r of their max health. Also raises dead allies and enemies with |cffff6c6c60% |rhp and converts them to your side. Doesn't revive if unit has been dead for more than 25 seconds.|n|n|cffffd9b3Cast time: <AP08,Cast3,.>s|r|n|cffff8080ALL CIRCLE 3 SPELLS SHARE COOLDOWN 90s|r
-}
-
-STRING 5530
-// Abilities: AP08 (Redemption), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff3333R|r]
-
-Calls for heavenly power to heal all your allies in a single lane by |cffff6c6c40%|r of their max health. Also raises dead allies and enemies with |cffff6c6c80% |rhp and converts them to your side. Doesn't revive if unit has been dead for more than 25 seconds.|n|n|cffffd9b3Cast time: <AP08,Cast4,.>s|r|n|cffff8080ALL CIRCLE 3 SPELLS SHARE COOLDOWN 90s|r
-}
-
 STRING 5539
 // Abilities: AP02 (Bless), Ubertip (Tooltip - Normal - Extended)
 {
@@ -17777,178 +17651,10 @@ Cost [|cffffffff2W|r + |cffff3333R|r]
 Blesses units in range raising their damage by |cffff6c6c<A007,DataA1,%>%|r.|nLasts |cff8a8aff<A007,Dur1>|r seconds|n|n|cffffd9b3Cast time: <AP02,DataA1,.>s|r
 }
 
-STRING 5544
-// Abilities: AP07 (Exorcism), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cffff3333R|r + |cffff77ffP|r]
-
-Channels Divine energies which destroys |cff0080ff<AP07,HeroDur1,.>|r Undead or Demon per tick. Caster loses |cffff8080<AP07,Dur1,.>|r lives if at least 1 enemy is killed each tick.|n|n|cffffd9b3Maximum Channel time: <AP07,DataA1,.>s|r
-}
-
-STRING 5545
-// Abilities: AP07 (Exorcism), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cffff3333R|r + |cffff77ffP|r]
-
-Channels Divine energies which destroys |cff0080ff<AP07,HeroDur2,.>|r Undead or Demon per tick. Caster loses |cffff8080<AP07,Dur2,.>|r lives if at least 2 enemy is killed each tick.|n|n|cffffd9b3Maximum Channel time: <AP07,DataA2,.>s|r
-}
-
-STRING 5546
-// Abilities: AP07 (Exorcism), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cffff3333R|r + |cffff77ffP|r]
-
-Channels Divine energies which destroys |cff0080ff<AP07,HeroDur3,.>|r Undead or Demon per tick. Caster loses |cffff8080<AP07,Dur3,.>|r lives if at least 3 enemy is killed each tick.|n|n|cffffd9b3Maximum Channel time: <AP07,DataA3,.>s|r
-}
-
-STRING 5547
-// Abilities: AP07 (Exorcism), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cffff3333R|r + |cffff77ffP|r]
-
-Channels Divine energies which destroys |cff0080ff<AP07,HeroDur4,.>|r Undead or Demon per tick. Caster loses |cffff8080<AP07,Dur4,.>|r lives if at least 4 enemy is killed each tick.|n|n|cffffd9b3Maximum Channel time: <AP07,DataA4,.>s|r
-}
-
-STRING 5548
-// Abilities: AP09 (Guardian Angel), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff77ffP|r]
-
-Aura increases armor of allies by 999 for |cff8a8aff<AP09,Dur1> seconds|r. When this spell is cast, every affected unit receives |cffff8080reincarnation |reffect.|nShould they get killed, they will revive once.|n|n|cffffd9b3Cast time: <AP09,DataA1,.2>s|r
-}
-
-STRING 5549
-// Abilities: AP09 (Guardian Angel), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff77ffP|r]
-
-Aura increases armor of allies by 999 for |cff8a8aff<AP09,Dur2> seconds|r. When this spell is cast, every affected unit receives |cffff8080reincarnation |reffect.|nShould they get killed, they will revive once.|n|n|cffffd9b3Cast time: <AP09,DataA2,.2>s|r
-}
-
-STRING 5550
-// Abilities: AP09 (Guardian Angel), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff77ffP|r]
-
-Aura increases armor of allies by 999 for |cff8a8aff<AP09,Dur3> seconds|r. When this spell is cast, every affected unit receives |cffff8080reincarnation |reffect.|nShould they get killed, they will revive once.|n|n|cffffd9b3Cast time: <AP09,DataA3,.2>s|r
-}
-
-STRING 5551
-// Abilities: AP09 (Guardian Angel), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff77ffP|r]
-
-Aura increases armor of allies by 999 for |cff8a8aff<AP09,Dur4> seconds|r. When this spell is cast, every affected unit receives |cffff8080reincarnation |reffect.|nShould they get killed, they will revive once.|n|n|cffffd9b3Cast time: <AP09,DataA4,.2>s|r
-}
-
-STRING 5552
-// Abilities: AW05 (Call Succubus), Ubertip (Tooltip - Normal - Extended)
-{
-Summons a ranged attacker with Charm which affects max lvl |cff8a8aff<ACch,DataA1>|r units.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW05,DataA1,.>s|r
-}
-
-STRING 5553
-// Abilities: AW05 (Call Succubus), Ubertip (Tooltip - Normal - Extended)
-{
-Summons a ranged attacker with Charm which affects max lvl |cff8a8aff<ACch,DataA2>|r units.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW05,DataA2,.>s|r
-}
-
-STRING 5554
-// Abilities: AW05 (Call Succubus), Ubertip (Tooltip - Normal - Extended)
-{
-Summons a ranged attacker with Charm which affects max lvl |cff8a8aff<ACch,DataA3>|r units.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW05,DataA3,.>s|r
-}
-
-STRING 5555
-// Abilities: AW05 (Call Succubus), Ubertip (Tooltip - Normal - Extended)
-{
-Summons a ranged attacker with Charm which affects max lvl |cff8a8aff<ACch,DataA4>|r units.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW05,DataA4,.>s|r
-}
-
-STRING 5556
-// Abilities: AW06 (Steal Essence), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [|cffff77ffP|r + |cffff3333R|r + |cff0080ffB|r]
-
-Deals scaling damage split evenly among all targeted organic units. Each kill heals caster by 1.|nDamage is equal to |cffff808097 + 30 |rper warlock level, up to |cffff8080547 |rat level 15.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW06,Cast1,.>s|r
-}
-
-STRING 5557
-// Abilities: AW09 (Paranoia), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cff0080ffB|r]
-
-Instills a deep fear in target enemies, causing them to helplessly run away from danger. Lasts |cff8a8aff<A02M,Dur1>|r seconds.
-
-|cffffd9b3Cast time: <AW09,DataA1,.>s|r
-}
-
-STRING 5558
-// Abilities: AW09 (Paranoia), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cff0080ffB|r]
-
-Instills a deep fear in target enemies, causing them to helplessly run away from danger. Lasts |cff8a8aff<A02M,Dur2>|r seconds.
-
-|cffffd9b3Cast time: <AW09,DataA2,.>s|r
-}
-
-STRING 5559
-// Abilities: AW09 (Paranoia), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cff0080ffB|r]
-
-Instills a deep fear in target enemies, causing them to helplessly run away from danger. Lasts |cff8a8aff<A02M,Dur3>|r seconds.
-
-|cffffd9b3Cast time: <AW09,DataA3,.>s|r
-}
-
-STRING 5560
-// Abilities: AW09 (Paranoia), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cff0080ffB|r]
-
-Instills a deep fear in target enemies, causing them to helplessly run away from danger. Lasts |cff8a8aff<A02M,Dur4>|r seconds.
-
-|cffffd9b3Cast time: <AW09,DataA4,.>s|r
-}
-
 STRING 5561
 // Upgrades: R001 (Priest Adept Training,Priest Master Training), Name (Name)
 {
 Level  11
-}
-
-STRING 5562
-// Abilities: AW07 (Blood Feast), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cffff3333R|r]
-
-Gives allied demons and horrors |cffff8080100 |rbonus max hp and |cffff808037|r damage permanently per tick for up to 5 channel ticks in total. Higher level Blood Feast overwrites the damage bonus of all stacks.|n|n|cffffd9b3Channel: <AW07,DataA1,.>s, 2s tick|r
-}
-
-STRING 5563
-// Abilities: AW07 (Blood Feast), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cffff3333R|r]
-
-Gives allied demons and horrors |cffff8080150 |rbonus max hp and |cffff808040|r damage permanently per tick for up to 5 channel ticks in total. Higher level Blood Feast overwrites the damage bonus of all stacks.|n|n|cffffd9b3Channel: <AW07,DataA2,.>s, 2s tick|r
-}
-
-STRING 5564
-// Abilities: AW07 (Blood Feast), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cffff3333R|r]
-
-Gives allied demons and horrors |cffff8080200 |rbonus max hp and |cffff808043|r damage permanently per tick for up to 5 channel ticks in total. Higher level Blood Feast overwrites the damage bonus of all stacks.|n|n|cffffd9b3Channel: <AW07,DataA3,.>s, 2s tick|r
-}
-
-STRING 5565
-// Abilities: AW07 (Blood Feast), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [2|cffff77ffP|r + |cffff3333R|r]
-
-Gives allied demons and horrors |cffff8080250 |rbonus max hp and |cffff808046|r damage permanently per tick for up to 5 channel ticks in total. Higher level Blood Feast overwrites the damage bonus of all stacks.|n|n|cffffd9b3Channel: <AW07,DataA4,.>s, 2s tick|r
 }
 
 STRING 5566
@@ -17961,172 +17667,6 @@ STRING 5567
 // Units: H00H (Death Knight), Propernames (Proper Names)
 {
 Lord Nightsorrow,Lord Soulrender,Lord Dethstorm,Lord Maldazzar,Lord Darkhallow,Lord Lightstalker,Baron Bloodbane,Baron Felblade,Duke Dreadmoore,Duke Ragereaver,Baron Frostfel,Lord Darkscythe,Duke Wintermaul,Baron Perenolde,Baron Morte
-}
-
-STRING 5568
-// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning]
-
-Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
-}
-
-STRING 5569
-// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning]
-
-Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
-}
-
-STRING 5570
-// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning]
-
-Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
-}
-
-STRING 5571
-// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning]
-
-Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
-}
-
-STRING 5572
-// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning]
-
-Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
-}
-
-STRING 5573
-// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning]
-
-Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
-}
-
-STRING 5574
-// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning]
-
-Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
-}
-
-STRING 5575
-// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning]
-
-Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
-}
-
-STRING 5576
-// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning]
-
-Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
-}
-
-STRING 5577
-// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning]
-
-Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
-}
-
-STRING 5578
-// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning + |cffff3333R|r]
-
-Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
-}
-
-STRING 5579
-// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning + |cffff3333R|r]
-
-Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
-}
-
-STRING 5580
-// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning + |cffff3333R|r]
-
-Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
-}
-
-STRING 5581
-// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning + |cffff3333R|r]
-
-Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
-}
-
-STRING 5582
-// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning + |cffff3333R|r]
-
-Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
-}
-
-STRING 5583
-// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning + |cffff3333R|r]
-
-Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
-}
-
-STRING 5584
-// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning + |cffff3333R|r]
-
-Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
-}
-
-STRING 5585
-// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning + |cffff3333R|r]
-
-Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
-}
-
-STRING 5586
-// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning + |cffff3333R|r]
-
-Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
-}
-
-STRING 5587
-// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
-{
-Cost [1Summoning + |cffff3333R|r]
-
-Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
-}
-
-STRING 5588
-// Abilities: A028 (Red Power), Ubertip (Tooltip - Normal - Extended)
-{
-Substracts number of seconds equal to red power stacks from active cooldown of Red Orbs, from the last to the first.|n|nCooldown |cff8a8aff<A028,Cool1,.>|r seconds.|cff808080|r
 }
 
 STRING 5589
@@ -18178,7 +17718,7 @@ X
 }
 
 STRING 5599
-// Abilities: A0T7 (Death Volley), Hotkey (Hotkey - Normal)
+// Abilities: A03L (Lane Persistance), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -18670,7 +18210,7 @@ Choose |cff8a8affBlue|r |cff808080(W)|r
 }
 
 STRING 5689
-// Abilities: A03L (Lane Persistance), Hotkey (Hotkey - Normal)
+// Abilities: A03L (Lane Persistance), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -18730,7 +18270,7 @@ Strengthen your mastery over magical energy. Cooldown and manacost reduce with l
 }
 
 STRING 5699
-// Abilities: A03L (Lane Persistance), Unhotkey (Hotkey - Turn Off)
+// Abilities: AP02 (Bless), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -19437,5 +18977,2553 @@ STRING 5848
 // Units: h01I (4 Summoning), EditorSuffix (Name - Editor Suffix)
 {
 (Orb Requirement)
+}
+
+STRING 5858
+// Upgrades: R00B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), EditorSuffix (Editor Suffix)
+{
+Bless
+}
+
+STRING 5860
+// Upgrades: R00B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5861
+// Upgrades: R00B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5862
+// Upgrades: R00B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5863
+// Upgrades: R00B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5864
+// Upgrades: R00B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5865
+// Upgrades: R00B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5866
+// Upgrades: R00B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5867
+// Upgrades: R00B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5868
+// Upgrades: R00B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5869
+// Upgrades: R00B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 White, 1 Red
+}
+
+STRING 5870
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Summoning
+}
+
+STRING 5871
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5872
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5873
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5874
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5875
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5876
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5877
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5878
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5879
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5880
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Summoning
+}
+
+STRING 5881
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5882
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5883
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5884
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5885
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5886
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5887
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5888
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5889
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5890
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Summoning
+}
+
+STRING 5891
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5892
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5893
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5894
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5895
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5896
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5897
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5898
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5899
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5900
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Summoning
+}
+
+STRING 5901
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5902
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5903
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5904
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5905
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5906
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5907
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5908
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5909
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5910
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Summoning
+}
+
+STRING 5911
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5912
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5913
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5914
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5915
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5916
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5917
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5918
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5919
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5920
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Summoning
+}
+
+STRING 5921
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5922
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5923
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5924
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5925
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5926
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5927
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5928
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5929
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5930
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Summoning
+}
+
+STRING 5931
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5932
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5933
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5934
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5935
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5936
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5937
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5938
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5939
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5940
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Summoning
+}
+
+STRING 5941
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5942
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5943
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5944
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5945
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5946
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5947
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5948
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5949
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5951
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5952
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5953
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5954
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5955
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5956
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5957
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5958
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5959
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5961
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5962
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5963
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5964
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5965
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5966
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5967
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5968
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5969
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5971
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5972
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5973
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5974
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5975
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5976
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5977
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5978
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5979
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5981
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5982
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5983
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5984
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5985
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5986
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5987
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5988
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5989
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5991
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5992
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5993
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5994
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5995
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5996
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5997
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5998
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 5999
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6001
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6002
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6003
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6004
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6005
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6006
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6007
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6008
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6009
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6011
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6012
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6013
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6014
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6015
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6016
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6017
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6018
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6019
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6021
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6022
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6023
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6024
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6025
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6026
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6027
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6028
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6029
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6031
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6032
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6033
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6034
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6035
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6036
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6037
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6038
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6039
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6041
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6042
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6043
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6044
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6045
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6046
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6047
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6048
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6049
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6051
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6052
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6053
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6054
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6055
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6056
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6057
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6058
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6059
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6061
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6062
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6063
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6064
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6065
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6066
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6067
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6068
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6069
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6071
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6072
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6073
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6074
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6075
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6076
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6077
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6078
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6079
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6081
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6082
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6083
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6084
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6085
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6086
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6087
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6088
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6089
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6091
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6092
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6093
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6094
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6095
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6096
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6097
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6098
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6099
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6101
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6102
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6103
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6104
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6105
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6106
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6107
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6108
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6109
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6111
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6112
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6113
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6114
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6115
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6116
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6117
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6118
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6119
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6121
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6122
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6123
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6124
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6125
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6126
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6127
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6128
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6129
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6131
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6132
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6133
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6134
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6135
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6136
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6137
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6138
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6139
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6141
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6142
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6143
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6144
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6145
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6146
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6147
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6148
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6149
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6151
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6152
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6153
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6154
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6155
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6156
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6157
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6158
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6159
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6161
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6162
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6163
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6164
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6165
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6166
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6167
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6168
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6169
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6171
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6172
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6173
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6174
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6175
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6176
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6177
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6178
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6179
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6181
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6182
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6183
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6184
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6185
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6186
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6187
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6188
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6189
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6191
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6192
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6193
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6194
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6195
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6196
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6197
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6198
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6199
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6200
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Red, 1 Purple, 1 Blue
+}
+
+STRING 6201
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Red, 1 Purple
+}
+
+STRING 6202
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Purple, 1 Blue
+}
+
+STRING 6203
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Red, 2 Blue
+}
+
+STRING 6204
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Red, 1 Blue
+}
+
+STRING 6207
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Red, 1 Summoning
+}
+
+STRING 6208
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Red, 1 Summoning
+}
+
+STRING 6209
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Purple, 1 Blue
+}
+
+STRING 6210
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Purple, 1 Red, 1 Summoning
+}
+
+STRING 6211
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Purple, 1 Red, 1 Blue
+}
+
+STRING 6212
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Purple, 1 Red, 1 Summoning
+}
+
+STRING 6213
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Purple, 1 Red
+}
+
+STRING 6214
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Blue
+}
+
+STRING 6215
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Purple, 1 Summoning
+}
+
+STRING 6216
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Purple, 1 Red
+}
+
+STRING 6217
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 White, 1 Red, 1 Purple
+}
+
+STRING 6219
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 White, 1 Red, 1 Blue
+}
+
+STRING 6220
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Purple, 1 Red
+}
+
+STRING 6221
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 White, 1 Purple
+}
+
+STRING 6222
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 White, 1 Blue
+}
+
+STRING 6223
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+3 White
+}
+
+STRING 6224
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Purple, 2 Red
+}
+
+STRING 6228
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), EditorSuffix (Editor Suffix)
+{
+(M2)
+}
+
+STRING 6229
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 White, 1 Blue, 1 Purple
+}
+
+STRING 6230
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), EditorSuffix (Editor Suffix)
+{
+(M2)
+}
+
+STRING 6231
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), EditorSuffix (Editor Suffix)
+{
+(M2)
+}
+
+STRING 6232
+// Upgrades: R001 (Priest Adept Training,Priest Master Training), Name (Name)
+{
+Level  12
+}
+
+STRING 6233
+// Upgrades: R001 (Priest Adept Training,Priest Master Training), Name (Name)
+{
+Level 13
+}
+
+STRING 6235
+// Upgrades: R001 (Priest Adept Training,Priest Master Training), Name (Name)
+{
+Level 11
+}
+
+STRING 6236
+// Abilities: AP08 (Redemption), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff3333R|r]
+|cffff7878Available from level 11.|r
+
+Calls for heavenly power to heal all your allies in a single lane by |cffff6c6c25%|r of their max health. Also raises dead allies and enemies with |cffff6c6c20% |rhp and converts them to your side. Doesn't revive if unit has been dead for more than 25 seconds.|n|n|cffffd9b3Cast time: <AP08,DataA1,.>s|r
+}
+
+STRING 6237
+// Abilities: AP08 (Redemption), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff3333R|r]
+|cffff7878Available from level 11.|r
+
+Calls for heavenly power to heal all your allies in a single lane by |cffff6c6c30%|r of their max health. Also raises dead allies and enemies with |cffff6c6c40% |rhp and converts them to your side. Doesn't revive if unit has been dead for more than 25 seconds.|n|n|cffffd9b3Cast time: <AP08,Cast2,.>s|r
+}
+
+STRING 6238
+// Abilities: AP08 (Redemption), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff3333R|r]
+|cffff7878Available from level 11.|r
+
+Calls for heavenly power to heal all your allies in a single lane by |cffff6c6c35%|r of their max health. Also raises dead allies and enemies with |cffff6c6c60% |rhp and converts them to your side. Doesn't revive if unit has been dead for more than 25 seconds.|n|n|cffffd9b3Cast time: <AP08,Cast3,.>s|r
+}
+
+STRING 6239
+// Abilities: AP08 (Redemption), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff3333R|r]
+|cffff7878Available from level 11.|r
+
+Calls for heavenly power to heal all your allies in a single lane by |cffff6c6c40%|r of their max health. Also raises dead allies and enemies with |cffff6c6c80% |rhp and converts them to your side. Doesn't revive if unit has been dead for more than 25 seconds.|n|n|cffffd9b3Cast time: <AP08,Cast4,.>s|r
+}
+
+STRING 6240
+// Abilities: AP09 (Guardian Angel), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff77ffP|r]
+|cffff7878Available from level 11.|r
+
+Aura increases armor of allies by 999 for |cff8a8aff<AP09,Dur1> seconds|r. When this spell is cast, every affected unit receives |cffff8080reincarnation |reffect.|nShould they get killed, they will revive once.|n|n|cffffd9b3Cast time: <AP09,DataA1,.2>s|r
+}
+
+STRING 6241
+// Abilities: AP09 (Guardian Angel), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff77ffP|r]
+|cffff7878Available from level 11.|r
+
+Aura increases armor of allies by 999 for |cff8a8aff<AP09,Dur2> seconds|r. When this spell is cast, every affected unit receives |cffff8080reincarnation |reffect.|nShould they get killed, they will revive once.|n|n|cffffd9b3Cast time: <AP09,DataA2,.2>s|r
+}
+
+STRING 6242
+// Abilities: AP09 (Guardian Angel), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff77ffP|r]
+|cffff7878Available from level 11.|r
+
+Aura increases armor of allies by 999 for |cff8a8aff<AP09,Dur3> seconds|r. When this spell is cast, every affected unit receives |cffff8080reincarnation |reffect.|nShould they get killed, they will revive once.|n|n|cffffd9b3Cast time: <AP09,DataA3,.2>s|r
+}
+
+STRING 6243
+// Abilities: AP09 (Guardian Angel), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cff0080ffB|r + |cffff77ffP|r]
+|cffff7878Available from level 11.|r
+
+Aura increases armor of allies by 999 for |cff8a8aff<AP09,Dur4> seconds|r. When this spell is cast, every affected unit receives |cffff8080reincarnation |reffect.|nShould they get killed, they will revive once.|n|n|cffffd9b3Cast time: <AP09,DataA4,.2>s|r
+}
+
+STRING 6244
+// Abilities: AP07 (Exorcism), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cffff3333R|r + |cffff77ffP|r]
+|cffff7878Available from level 11.|r
+
+Channels Divine energies which destroys |cff0080ff<AP07,HeroDur1,.>|r Undead or Demon per tick. Caster loses |cffff8080<AP07,Dur1,.>|r lives if at least 1 enemy is killed each tick.|n|n|cffffd9b3Maximum Channel time: <AP07,DataA1,.>s|r
+}
+
+STRING 6245
+// Abilities: AP07 (Exorcism), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cffff3333R|r + |cffff77ffP|r]
+|cffff7878Available from level 11.|r
+
+Channels Divine energies which destroys |cff0080ff<AP07,HeroDur2,.>|r Undead or Demon per tick. Caster loses |cffff8080<AP07,Dur2,.>|r lives if at least 2 enemy is killed each tick.|n|n|cffffd9b3Maximum Channel time: <AP07,DataA2,.>s|r
+}
+
+STRING 6246
+// Abilities: AP07 (Exorcism), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cffff3333R|r + |cffff77ffP|r]
+|cffff7878Available from level 11.|r
+
+Channels Divine energies which destroys |cff0080ff<AP07,HeroDur3,.>|r Undead or Demon per tick. Caster loses |cffff8080<AP07,Dur3,.>|r lives if at least 3 enemy is killed each tick.|n|n|cffffd9b3Maximum Channel time: <AP07,DataA3,.>s|r
+}
+
+STRING 6247
+// Abilities: AP07 (Exorcism), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffffffff2W|r + |cffff3333R|r + |cffff77ffP|r]
+|cffff7878Available from level 11.|r
+
+Channels Divine energies which destroys |cff0080ff<AP07,HeroDur4,.>|r Undead or Demon per tick. Caster loses |cffff8080<AP07,Dur4,.>|r lives if at least 4 enemy is killed each tick.|n|n|cffffd9b3Maximum Channel time: <AP07,DataA4,.>s|r
+}
+
+STRING 6248
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Purple, 1 Red
+}
+
+STRING 6249
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), EditorSuffix (Editor Suffix)
+{
+(M2)
+}
+
+STRING 6250
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), EditorSuffix (Editor Suffix)
+{
+(M2)
+}
+
+STRING 6251
+// Abilities: AW05 (Call Succubus), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffff77ffP|r + |cffff3333R|r + S]
+|cffff7878Available from level 11.|r
+
+Summons a ranged attacker with Charm which affects max lvl |cff8a8aff<ACch,DataA1>|r units.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW05,DataA1,.>s|r
+}
+
+STRING 6252
+// Abilities: AW05 (Call Succubus), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffff77ffP|r + |cffff3333R|r + S]
+|cffff7878Available from level 11.|r
+
+Summons a ranged attacker with Charm which affects max lvl |cff8a8aff<ACch,DataA2>|r units.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW05,DataA2,.>s|r
+}
+
+STRING 6253
+// Abilities: AW05 (Call Succubus), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffff77ffP|r + |cffff3333R|r + S]
+|cffff7878Available from level 11.|r
+
+Summons a ranged attacker with Charm which affects max lvl |cff8a8aff<ACch,DataA3>|r units.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW05,DataA3,.>s|r
+}
+
+STRING 6254
+// Abilities: AW05 (Call Succubus), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffff77ffP|r + |cffff3333R|r + S]
+|cffff7878Available from level 11.|r
+
+Summons a ranged attacker with Charm which affects max lvl |cff8a8aff<ACch,DataA4>|r units.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW05,DataA4,.>s|r
+}
+
+STRING 6255
+// Abilities: AW09 (Paranoia), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + |cff0080ffB|r]
+|cffff7878Available from level 11.|r
+
+Instills a deep fear in target enemies, causing them to helplessly run away from danger. Lasts |cff8a8aff<A02M,Dur1>|r seconds.
+
+|cffffd9b3Cast time: <AW09,DataA1,.>s|r
+}
+
+STRING 6256
+// Abilities: AW09 (Paranoia), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + |cff0080ffB|r]
+|cffff7878Available from level 11.|r
+
+Instills a deep fear in target enemies, causing them to helplessly run away from danger. Lasts |cff8a8aff<A02M,Dur2>|r seconds.
+
+|cffffd9b3Cast time: <AW09,DataA2,.>s|r
+}
+
+STRING 6257
+// Abilities: AW09 (Paranoia), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + |cff0080ffB|r]
+|cffff7878Available from level 11.|r
+
+Instills a deep fear in target enemies, causing them to helplessly run away from danger. Lasts |cff8a8aff<A02M,Dur3>|r seconds.
+
+|cffffd9b3Cast time: <AW09,DataA3,.>s|r
+}
+
+STRING 6258
+// Abilities: AW09 (Paranoia), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + |cff0080ffB|r]
+|cffff7878Available from level 11.|r
+
+Instills a deep fear in target enemies, causing them to helplessly run away from danger. Lasts |cff8a8aff<A02M,Dur4>|r seconds.
+
+|cffffd9b3Cast time: <AW09,DataA4,.>s|r
+}
+
+STRING 6263
+// Abilities: AW06 (Steal Essence), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + |cffff3333R|r + |cff0080ffB|r]
+
+Deals scaling damage split evenly among all targeted organic units. Each kill heals caster by 1.|nDamage is equal to |cffff808097 + 30 |rper warlock level, up to |cffff8080547 |rat level 15.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW06,Cast1,.>s|r
+}
+
+STRING 6264
+// Abilities: AW06 (Steal Essence), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + |cffff3333R|r + |cff0080ffB|r]
+
+Deals scaling damage split evenly among all targeted organic units. Each kill heals caster by 1.|nDamage is equal to|cffff8080 161 + 51 |rper warlock level, up to |cffff8080926 |rat level 15.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW06,Cast2,.>s|r
+}
+
+STRING 6265
+// Abilities: AW06 (Steal Essence), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + |cffff3333R|r + |cff0080ffB|r]
+
+Deals scaling damage split evenly among all targeted organic units. Each kill heals caster by 1.|nDamage is equal to |cffff8080225 + 71 |rper warlock level, up to |cffff80801,292 |rat level 35.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW06,Cast3,.>s|r
+}
+
+STRING 6266
+// Abilities: AW06 (Steal Essence), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + |cffff3333R|r + |cff0080ffB|r]
+
+Deals scaling damage split evenly among all targeted organic units. Each kill heals caster by 1.|nDamage is equal to |cffff8080290 + 92 |rper warlock level, up to |cffff80801,670 |rat level 45.|cffa0a0a0|n|r|n|cffffd9b3Cast time: <AW06,Cast4,.>s|r
+}
+
+STRING 6267
+// Abilities: AW04 (Ritual of Death), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffff77ffP|r + |cffff3333R|r]
+
+Suffer 1 damage to deal magic damage to an enemy unit equal to its max hp.|nHas |cff80ffff<AW04,HeroDur1,%>%|r chance to negate the life cost.
+
+|cffffd9b3Cast time: <AW04,DataA1,.>s|r
+}
+
+STRING 6268
+// Abilities: AW04 (Ritual of Death), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffff77ffP|r + |cffff3333R|r]
+
+Suffer 1 damage to deal magic damage to an enemy unit equal to its max hp.|nHas |cff80ffff<AW04,HeroDur2,%>%|r chance to negate the life cost.
+
+|cffffd9b3Cast time: <AW04,DataA2,.>s|r
+}
+
+STRING 6269
+// Abilities: AW04 (Ritual of Death), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffff77ffP|r + |cffff3333R|r]
+
+Suffer 1 damage to deal magic damage to an enemy unit equal to its max hp.|nHas |cff80ffff<AW04,HeroDur3,%>%|r chance to negate the life cost.
+
+|cffffd9b3Cast time: <AW04,DataA3,.>s|r
+}
+
+STRING 6270
+// Abilities: AW04 (Ritual of Death), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [|cffff77ffP|r + |cffff3333R|r]
+
+Suffer 1 damage to deal magic damage to an enemy unit equal to its max hp.|nHas |cff80ffff<AW04,HeroDur4,%>%|r chance to negate the life cost.
+
+|cffffd9b3Cast time: <AW04,DataA4,.>s|r
+}
+
+STRING 6275
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), EditorSuffix (Editor Suffix)
+{
+(M2)
+}
+
+STRING 6276
+// Abilities: AW07 (Blood Feast), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + 2|cffff3333R|r]
+|cffff7878Available from level 11.|r
+
+Channel, sacrificing 1 hp each tick and giving allied demons and horrors |cffff8080100 |rbonus max hp and |cffff808037|r damage permanently per tick for up to 5 channel ticks in total. Higher level Blood Feast overwrites the damage bonus of all stacks.|n|n|cffffd9b3Channel: <AW07,DataA1,.>s, 2s tick|r
+}
+
+STRING 6277
+// Abilities: AW07 (Blood Feast), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + 2|cffff3333R|r]
+|cffff7878Available from level 11.|r
+
+Channel, sacrificing 1 hp each tick and giving allied demons and horrors |cffff8080150 |rbonus max hp and |cffff808040|r damage permanently per tick for up to 5 channel ticks in total. Higher level Blood Feast overwrites the damage bonus of all stacks.|n|n|cffffd9b3Channel: <AW07,DataA2,.>s, 2s tick|r
+}
+
+STRING 6278
+// Abilities: AW07 (Blood Feast), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + 2|cffff3333R|r]
+|cffff7878Available from level 11.|r
+
+Channel, sacrificing 1 hp each tick and giving allied demons and horrors |cffff8080200 |rbonus max hp and |cffff808043|r damage permanently per tick for up to 5 channel ticks in total. Higher level Blood Feast overwrites the damage bonus of all stacks.|n|n|cffffd9b3Channel: <AW07,DataA3,.>s, 2s tick|r
+}
+
+STRING 6279
+// Abilities: AW07 (Blood Feast), Ubertip (Tooltip - Normal - Extended)
+{
+Cost [2|cffff77ffP|r + 2|cffff3333R|r]
+|cffff7878Available from level 11.|r
+
+Channel, sacrificing 1 hp each tick and giving allied demons and horrors |cffff8080250 |rbonus max hp and |cffff808046|r damage permanently per tick for up to 5 channel ticks in total. Higher level Blood Feast overwrites the damage bonus of all stacks.|n|n|cffffd9b3Channel: <AW07,DataA4,.>s, 2s tick|r
+}
+
+STRING 6280
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Red
+}
+
+STRING 6281
+// Abilities: A028 (Red Power), Ubertip (Tooltip - Normal - Extended)
+{
+Restores cooldown of Red orbs based on stacks in inventory.
+
+Cooldown |cff8a8aff<A028,Cool1,.>|r seconds.|cff808080|r
+}
+
+STRING 6282
+// Abilities: A00T (White Power), Ubertip (Tooltip - Normal - Extended)
+{
+Reduces cooldown of White Orbs based on stacks in inventory.
+
+Cooldown |cff8a8aff<A00T,Cool1,.>|r seconds.|cff808080|r
+}
+
+STRING 6283
+// Abilities: A00T (White Power), Ubertip (Tooltip - Normal - Extended)
+{
+Reduces cooldown of White Orbs based on stacks in inventory.
+
+Cooldown |cff8a8aff<A00T,Cool2,.>|r seconds.|cff808080|r
+}
+
+STRING 6284
+// Abilities: A00T (White Power), Ubertip (Tooltip - Normal - Extended)
+{
+Reduces cooldown of White Orbs based on stacks in inventory.
+
+Cooldown |cff8a8aff<A00T,Cool3,.>|r seconds.|cff808080|r
+}
+
+STRING 6285
+// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
+}
+
+STRING 6286
+// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
+}
+
+STRING 6287
+// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
+}
+
+STRING 6288
+// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
+}
+
+STRING 6289
+// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
+}
+
+STRING 6290
+// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
+}
+
+STRING 6291
+// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
+}
+
+STRING 6292
+// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
+}
+
+STRING 6293
+// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
+}
+
+STRING 6294
+// Abilities: A02O (Summon Ghoul), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Ghoul in a chosen lane.|n|nGhoul is a weaker spammable unit.
+}
+
+STRING 6295
+// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
+}
+
+STRING 6296
+// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
+}
+
+STRING 6297
+// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
+}
+
+STRING 6298
+// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
+}
+
+STRING 6299
+// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
+}
+
+STRING 6300
+// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
+}
+
+STRING 6301
+// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
+}
+
+STRING 6302
+// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
+}
+
+STRING 6303
+// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
+}
+
+STRING 6304
+// Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
+{
+Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
 }
 

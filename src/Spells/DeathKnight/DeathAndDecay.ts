@@ -4,8 +4,9 @@ import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
 import { SpellGroup } from "Global/SpellHelper";
 import { UnitTypeFlags } from "Global/UnitTypeFlags";
-import { OrbCostToString, OrbType } from "Systems/OrbResource/Orb";
+import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
+import { OrbType } from "Systems/OrbResource/OrbType";
 
 export class DeathAndDecay {
     public static SpellId: number;

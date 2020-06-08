@@ -1,6 +1,6 @@
 import { SpellEvent } from "Global/SpellEvent";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
-import { OrbType } from "Systems/OrbResource/Orb";
+import { OrbType } from "Systems/OrbResource/OrbType";
 import { SpellHelper } from "Global/SpellHelper";
 import { ProgressBar, CastBar } from "Global/ProgressBars";
 import { Interruptable } from "Global/Interruptable";

@@ -1,14 +1,9 @@
 import { OrbView } from "./OrbView";
 import { Textures, Upgrades } from "Config";
-
-export enum OrbType {
-    Blue,
-    White,
-    Red,
-    Purple,
-    Summoning,
-    Any
-}
+import { BlueOrbReq, WhiteOrbReq, RedOrbReq, PurpleOrbReq, SummonOrbReq } from "Modules/Globals";
+import { IRequirement } from "Systems/Requirement/IRequirement";
+import { OrbType } from "./OrbType";
+export { OrbType } from './OrbType';
 
 export class Orb {
     public type: OrbType;
@@ -16,7 +11,7 @@ export class Orb {
     public isAvailable = true;
     public enabledTexture = "";
     public disabledTexture = "";
-    public upgradeId = -1;
+    public requirement: IRequirement;
     public tooltip = "";
     public static get Config() {
         return {
@@ -37,12 +32,18 @@ export class Orb {
                 ""
             ],
             upgrade: [
-                Upgrades.BlueOrbs,
-                Upgrades.WhiteOrbs,
-                Upgrades.RedOrbs,
-                Upgrades.PurpleOrbs,
-                Upgrades.SummoningOrbs,
-                Upgrades.AnyOrbs
+                BlueOrbReq,
+                WhiteOrbReq,
+                RedOrbReq,
+                PurpleOrbReq,
+                SummonOrbReq,
+                
+                // Upgrades.BlueOrbs,
+                // Upgrades.WhiteOrbs,
+                // Upgrades.RedOrbs,
+                // Upgrades.PurpleOrbs,
+                // Upgrades.SummoningOrbs,
+                // Upgrades.AnyOrbs
             ],
             tooltip: [
                 "Blue Orb",
@@ -62,7 +63,7 @@ export class Orb {
         let typeId = <number>type;
         this.enabledTexture = Orb.Config.icon[typeId];
         this.disabledTexture = Orb.Config.disabled[typeId];
-        this.upgradeId = Orb.Config.upgrade[typeId];
+        this.requirement = Orb.Config.upgrade[typeId];
         this.tooltip = Orb.Config.tooltip[typeId];
         this.index = index;
 
@@ -97,12 +98,12 @@ export class Orb {
     public Consume(player: player, seconds: number) {
         this.isAvailable = false;
         this.cooldownRemaining = seconds;
-        BlzDecPlayerTechResearched(player, this.upgradeId, 1);
+        this.requirement.Decrease(player);
         TimerStart(this.timer, 0.1, true, () => {
             this.cooldownRemaining -= 0.1;
             if (this.cooldownRemaining <= 0 || this.isAvailable == true) {
                 this.isAvailable = true;
-                AddPlayerTechResearched(player, this.upgradeId, 1);
+                this.requirement.Increase(player);
                 PauseTimer(this.timer);
             }
             this.Update(player);

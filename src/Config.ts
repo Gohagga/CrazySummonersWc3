@@ -1,3 +1,5 @@
+import { RequirementType as Req } from "Systems/Requirement/RequirementTracker";
+
 export function InitConfiguration() {
     
     let models = Object.keys(Models);
@@ -126,13 +128,50 @@ export const Buffs = {
 }
 
 export const Upgrades = {
-    SpellCircle:               FourCC('R001'),
-    BlueOrbs:                  FourCC('R0OB'),
-    WhiteOrbs:                 FourCC('R0OW'),
-    RedOrbs:                   FourCC('R0OR'),
-    PurpleOrbs:                FourCC('R0OP'),
-    SummoningOrbs:             FourCC('R0OS'),
-    AnyOrbs:                   FourCC('R0OA'),
+    SpellCircle:                FourCC('R001'),
+    BlueOrbs:                   FourCC('R0OB'),
+    WhiteOrbs:                  FourCC('R0OW'),
+    RedOrbs:                    FourCC('R0OR'),
+    PurpleOrbs:                 FourCC('R0OP'),
+    SummoningOrbs:              FourCC('R0OS'),
+    AnyOrbs:                    FourCC('R0OA'),
+}
+
+export const RequirementUpgrades: Record<number, Req[]> = {
+    [FourCC('R00B')]: [Req.White, Req.White, Req.Red],
+    [FourCC('R00D')]: [Req.Summoning, Req.Summoning],
+    [FourCC('R016')]: [Req.Summoning],
+    [FourCC('R015')]: [Req.White, Req.White, Req.White],
+    [FourCC('R014')]: [Req.White, Req.White, Req.Blue],
+    [FourCC('R013')]: [Req.White, Req.White, Req.Purple],
+    [FourCC('R012')]: [Req.Purple, Req.Red],
+    [FourCC('R011')]: [Req.White, Req.White, Req.Red, Req.Blue, Req.Mastery, Req.Mastery],
+    [FourCC('R010')]: [Req.White, Req.White, Req.Blue, Req.Purple, Req.Mastery, Req.Mastery],
+    [FourCC('R00Z')]: [Req.White, Req.White, Req.Red, Req.Purple, Req.Mastery, Req.Mastery],
+    [FourCC('R00Y')]: [Req.Purple, Req.Red],
+    [FourCC('R00X')]: [Req.Purple, Req.Summoning],
+    [FourCC('R00W')]: [Req.Blue],
+    [FourCC('R00V')]: [Req.Purple, Req.Red],
+    [FourCC('R00U')]: [Req.Purple, Req.Purple, Req.Red, Req.Summoning],
+    [FourCC('R00T')]: [Req.Purple, Req.Purple, Req.Blue, Req.Red],
+    [FourCC('R018')]: [Req.Purple, Req.Purple, Req.Red, Req.Red, Req.Mastery, Req.Mastery],
+    [FourCC('R00R')]: [Req.Purple, Req.Red, Req.Summoning, Req.Mastery, Req.Mastery],
+    [FourCC('R00Q')]: [Req.Purple, Req.Purple, Req.Blue, Req.Mastery, Req.Mastery],
+    [FourCC('R00P')]: [Req.Red, Req.Summoning],
+    [FourCC('R00O')]: [Req.Red, Req.Red, Req.Summoning],
+    [FourCC('R00N')]: [Req.Purple, Req.Purple, Req.Blue],
+    [FourCC('R00M')]: [Req.Red, Req.Red],
+    [FourCC('R00L')]: [Req.Red, Req.Blue],
+    [FourCC('R00K')]: [Req.Red, Req.Blue, Req.Blue],
+    [FourCC('R00J')]: [Req.Purple, Req.Purple, Req.Red],
+    [FourCC('R00I')]: [Req.Red, Req.Red, Req.Purple],
+    [FourCC('R00H')]: [Req.Red, Req.Red, Req.Blue, Req.Purple],
+    // [FourCC('R00G')]: [Req.Red, Req.White, Req.Red, Req.Purple],
+    // [FourCC('R00F')]: [Req.Red, Req.White, Req.Red, Req.Purple],
+    // [FourCC('R00E')]: [Req.Red, Req.White, Req.Red, Req.Purple],
+    // [FourCC('R017')]: [Req.Red, Req.White, Req.Red, Req.Purple],
+    // [FourCC('R00C')]: [Req.Red, Req.White, Req.Red, Req.Purple],
+    // [FourCC('R00S')]: [Req.Red, Req.White, Req.Red, Req.Purple],
 }
 
 export const ReqUnits = {

@@ -2,7 +2,7 @@ import { SpellEvent } from "Global/SpellEvent";
 import { SpawnPoint } from "Spells/Spawn";
 import { UnitCharge } from "Systems/UnitCharge";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
-import { OrbType } from "Systems/OrbResource/Orb";
+import { OrbType } from "Systems/OrbResource/OrbType";
 import { CastBar } from "Global/ProgressBars";
 import { Interruptable } from "Global/Interruptable";
 import { Models, Units } from "Config";

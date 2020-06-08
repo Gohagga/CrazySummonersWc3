@@ -4,48 +4,78 @@ export class UnitRequirement implements IRequirement {
     
     private unitTypes: number[];
 
-    private instances: {
-        level: number,
-        unit: Record<number, unit[]>
-    }
+    private instances: Record<number, UnitReqInstance> = {};
+    private _subscriptions: ((player: player) => void)[] = [];
 
     constructor(unitTypes: number[]) {
-        this.unitTypes = unitTypes;
-    }
+        this.unitTypes = [];
 
-    Get(unit: unit): number {
-        return this.instances[GetHandleId(unit)];
-    }
-
-    Increase(unit: unit, amount: number = 1): number {
-        
-        const instance = this.instances[GetHandleId(unit)];
-        const targetLvl = instance.level + amount;
-
-        if (targetLvl < instance.level) return 0;
-
-        const owner = GetOwningPlayer(unit);
-        for (let i = instance.level; i < targetLvl; i++) {
-            instance.unit[i] = CreateUnit(owner, this.unitTypes[i], 0, 0, 0);
+        for (let i = 0; i < unitTypes.length; i++) {
+            this.unitTypes[i + 1] = unitTypes[i];
         }
     }
 
-    Decrease(unit: unit, amount: number = 1): number {
+    Subscribe(callback: (player: player) => void): void {
+        this._subscriptions.push(callback);
+    }
+
+    Get(player: player): number {
+        let ret = this.instances[GetPlayerId(player)];
+        if (!ret) return 0
+        return ret.level || 0;
+    }
+
+    Increase(player: player, amount: number = 1): number {
         
-        const instance = this.instances[GetHandleId(unit)];
+        const playerId = GetPlayerId(player);
+        const instance: UnitReqInstance = this.instances[playerId] || {
+            level: 0,
+            unit: []
+        };
+        const targetLvl = instance.level + amount;
+        if (targetLvl < instance.level) return 0;
+        for (let i = instance.level + 1; i <= targetLvl; i++) {
+            // print("Creating unit:", GetObjectName(this.unitTypes[i]));
+            // instance.unit[i] = CreateUnit(player, this.unitTypes[i], 0, 0, 0);
+            instance.level++;
+        }
+        this.instances[playerId] = instance;
+        this.RunSubscriptions(player);
+    }
+
+    Decrease(player: player, amount: number = 1): number {
+        
+        const playerId = GetPlayerId(player);
+        const instance: UnitReqInstance = this.instances[playerId] || {
+            level: 0,
+            unit: []
+        };
         const targetLvl = instance.level - amount;
 
         if (targetLvl > instance.level) return 0;
 
-        const owner = GetOwningPlayer(unit);
         for (let i = instance.level; i > targetLvl; i--) {
-            RemoveUnit(instance.unit[i]);
+            // RemoveUnit(instance.unit[i]);
+            instance.level--;
         }
+        this.instances[playerId] = instance;
+        this.RunSubscriptions(player);
     }
 
-    Set(unit: unit, amount: number): boolean {
+    Set(player: player, amount: number): boolean {
 
-        const id = GetHandleId(unit);
+        const id = GetHandleId(player);
         throw new Error("Method not implemented.");
     }
+
+    RunSubscriptions(player: player) {
+        for (let sub of this._subscriptions) {
+            sub(player);
+        }
+    }
+}
+
+export interface UnitReqInstance {
+    level: number,
+    unit: unit[]
 }

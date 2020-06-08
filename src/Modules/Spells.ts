@@ -37,7 +37,10 @@ import { VampiresBoon } from "Spells/DeathKnight/VampiresBoon";
 import { UnholyCurse } from "Spells/DeathKnight/UnholyCurse";
 import { ArmyOfTheDead } from "Spells/DeathKnight/ArmyOfTheDead";
 import { RedPower } from "Spells/DeathKnight/RedPower";
-import { Spells, Buffs, Models, Auras, Dummies } from "Config";
+import { Spells, Buffs, Models, Auras, Dummies, Upgrades, RequirementUpgrades } from "Config";
+import { UpgradeTracker } from "./Globals";
+import { OrbType } from "Systems/OrbResource/OrbType";
+import { RequirementType } from "Systems/Requirement/RequirementTracker";
 
 
 export function InitializeSpells() {
@@ -133,6 +136,12 @@ export function PreloadSpells() {
     SpellHelper.Preload(Dummies.DeathAndDecay);
 
     SpellHelper.Preload(Auras.VolatileLeechesBites);
-    
+
+    let keys = Object.keys(RequirementUpgrades) as unknown as RequirementType[];
+    for (let k of keys) {
+        let req = RequirementUpgrades[k];
+        UpgradeTracker.Register(k, req);
+    }
+
     SpellHelper.ExecuteSpellPreload();
 }

@@ -1,10 +1,12 @@
 export interface IRequirement {
     
-    Get(unit: unit): number;
+    Get(player: player): number;
 
-    Increase(unit: unit, amount: number): number;
+    Increase(player: player, amount?: number): number;
 
-    Decrease(unit: unit, amount: number): number;
+    Decrease(player: player, amount?: number): number;
 
-    Set(unit: unit, amount: number): boolean;
+    Set(player: player, amount: number): boolean;
+
+    Subscribe(callback: (player: player) => void): void;
 }

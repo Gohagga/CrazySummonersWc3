@@ -1,9 +1,10 @@
 import { HeroProgression } from "Systems/HeroProgression";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
-import { OrbType } from "Systems/OrbResource/Orb";
+import { OrbType } from "Systems/OrbResource/OrbType";
 import { DelayFunction } from "Global/DelayFunction";
 import { WhitePower } from "Spells/Paladin/WhitePower";
 import { Spells, Items, Upgrades } from "Config";
+import { MasteryReq } from "Modules/Globals";
 
 export class PaladinProgression extends HeroProgression {
     
@@ -31,6 +32,7 @@ export class PaladinProgression extends HeroProgression {
         });
         SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
 
+        MasteryReq.Decrease(owner, MasteryReq.Get(owner));
         UnitAddAbility(unit, Spells.SummonMelee);
         UnitAddAbility(unit, Spells.WhitePower);
         let wps = UnitAddItemById(unit, Items.WhitePowerStacks);
@@ -48,6 +50,7 @@ export class PaladinProgression extends HeroProgression {
         SelectHeroSkill(unit, FourCC("A00F"));
 
         HeroProgression.WaitForUnitLevel(this.unit, 7);
+        MasteryReq.Increase(owner);
         SetPlayerTechResearched(GetOwningPlayer(unit), Upgrades.SpellCircle, 1);
 
         HeroProgression.WaitForUnitLevel(this.unit, 9);
@@ -57,6 +60,7 @@ export class PaladinProgression extends HeroProgression {
         bar.AddOrb(OrbType.White);
 
         HeroProgression.WaitForUnitLevel(this.unit, 11);
+        MasteryReq.Increase(owner);
         SetPlayerTechResearched(GetOwningPlayer(unit), Upgrades.SpellCircle, 2);
 
         HeroProgression.WaitForUnitLevel(this.unit, 13);

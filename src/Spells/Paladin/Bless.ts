@@ -1,10 +1,11 @@
 import { SpellEvent } from "Global/SpellEvent";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
-import { OrbType } from "Systems/OrbResource/Orb";
+import { OrbType } from "Systems/OrbResource/OrbType";
 import { SpellHelper, SpellGroup } from "Global/SpellHelper";
 import { ProgressBar, CastBar } from "Global/ProgressBars";
 import { Interruptable } from "Global/Interruptable";
 import { Dummies, Models } from "Config";
+import { UpgradeTracker } from "Modules/Globals";
 
 export class Bless {
     public static SpellId: number;
@@ -12,10 +13,17 @@ export class Bless {
     public static readonly DummyOrder = "innerfire";
     public static readonly Sfx: string = "Radiance Holy.mdl";
     public static CastSfx = Models.CastDetermination;
+    public static OrbCost: OrbType[] = [];
 
     static init(spellId: number) {
         this.SpellId = spellId;
-        
+        this.OrbCost = [
+            OrbType.White,
+            OrbType.White,
+            OrbType.Red
+        ];
+
+        // UpgradeTracker.Register(requirement, this.OrbCost);
         SpellEvent.RegisterSpellCast(this.SpellId, () => {
 
             const caster = GetTriggerUnit();
@@ -35,11 +43,7 @@ export class Bless {
                 cb.Finish();
                 DestroyEffect(data.castSfx);
 
-                if (!ResourceBar.Get(owner).Consume([
-                    OrbType.White,
-                    OrbType.White,
-                    OrbType.Red
-                ])) return;
+                if (!ResourceBar.Get(owner).Consume(this.OrbCost)) return;
 
                 GroupEnumUnitsInRange(SpellGroup, x, y, data.aoe, null);
                 let u = FirstOfGroup(SpellGroup);

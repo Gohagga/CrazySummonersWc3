@@ -2,8 +2,9 @@ import { Auras, Models, Units } from "Config";
 import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
-import { OrbCostToString, OrbType } from "Systems/OrbResource/Orb";
+import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
+import { OrbType } from "Systems/OrbResource/OrbType";
 
 export class VampiresBoon {
     public static SpellId: number;

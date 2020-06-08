@@ -44,9 +44,9 @@ export class Bootstrapper {
         ArcaneTomeShop.init();
 
         TimerStart(CreateTimer(), 0.1, false, () => {
+            InitializeGlobals();
             OrbView.init();
             ResourceBar.init();
-            InitializeGlobals();
             InitializeSpells();
         });
         PreloadSpells();

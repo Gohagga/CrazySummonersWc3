@@ -8,12 +8,6 @@ const TS_VERSION = compiletime(() => require("typescript").version);
 const TSTL_VERSION = compiletime(() => require("typescript-to-lua").version);
 
 function tsMain() {
-  print(`Build: ${BUILD_DATE}`);
-  print(`Typescript: v${TS_VERSION}`);
-  print(`Transpiler: v${TSTL_VERSION}`);
-  print(" ");
-  print("Welcome to TypeScript!");
-
   Bootstrapper.ConfigureServices();
 }
 

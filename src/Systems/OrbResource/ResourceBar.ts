@@ -1,5 +1,6 @@
-import { Orb, OrbType } from "./Orb";
+import { Orb } from "./Orb";
 import { OrbView } from "./OrbView";
+import { OrbType } from "./OrbType";
 
 export class ResourceBar {
     private static _instance: Record<number, ResourceBar> = {};
@@ -24,9 +25,8 @@ export class ResourceBar {
 
         let rb = this._instance[GetPlayerId(player)];
         if (!rb) return;
-        for (let u of Orb.Config.upgrade) {
-            BlzDecPlayerTechResearched(player, u, GetPlayerTechCountSimple(u, player));
-            // print(GetPlayerTechCountSimple(u, player));
+        for (let req of Orb.Config.upgrade) {
+            req.Decrease(player, req.Get(player));
         }
         if (player == GetLocalPlayer()) {
             for (let ov of OrbView.Orbs) {
@@ -60,7 +60,7 @@ export class ResourceBar {
         let index = this.orbs.push(orb);
 
         orb.Update(this.player);
-        AddPlayerTechResearched(this.player, orb.upgradeId, 1);
+        orb.requirement.Increase(this.player);
     }
     
     public get GetPlayer() {

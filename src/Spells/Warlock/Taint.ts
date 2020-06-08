@@ -1,6 +1,6 @@
 import { SpellEvent } from "Global/SpellEvent";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
-import { OrbType } from "Systems/OrbResource/Orb";
+import { OrbType } from "Systems/OrbResource/OrbType";
 import { SpellHelper, SpellGroup } from "Global/SpellHelper";
 import { ProgressBar, CastBar } from "Global/ProgressBars";
 import { Interruptable } from "Global/Interruptable";
@@ -77,7 +77,7 @@ export class Taint {
                 castTime: [ 3.0, 2.5, 2.0, 1.5 ][level - 1],
                 targets: []
             }
-            BlzSetSpecialEffectScale(data.castSfx, 2.2);
+            // BlzSetSpecialEffectScale(data.castSfx, 2.2);
             
             let cb = new CastBar(caster);
             cb.CastSpell(this.SpellId, data.castTime, () => {

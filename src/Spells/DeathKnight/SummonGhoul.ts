@@ -2,8 +2,9 @@ import { SpellEvent } from "Global/SpellEvent";
 import { SpawnPoint } from "Spells/Spawn";
 import { UnitCharge } from "Systems/UnitCharge";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
-import { OrbType, OrbCostToString } from "Systems/OrbResource/Orb";
+import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { SpawnedUnitTypes } from "Config";
+import { OrbType } from "Systems/OrbResource/OrbType";
 
 export class SummonGhoul {
     public static SpellId: number;

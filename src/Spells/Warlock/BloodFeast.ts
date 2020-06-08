@@ -1,6 +1,6 @@
 import { SpellEvent } from "Global/SpellEvent";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
-import { OrbType } from "Systems/OrbResource/Orb";
+import { OrbType } from "Systems/OrbResource/OrbType";
 import { SpellHelper, SpellGroup } from "Global/SpellHelper";
 import { ProgressBar, CastBar } from "Global/ProgressBars";
 import { Interruptable } from "Global/Interruptable";
@@ -125,7 +125,7 @@ export class BloodFeast {
                 tickDuration: 1,
                 timer: CreateTimer()
             }
-            BlzSetSpecialEffectScale(data.castSfx, 2.2);
+            // BlzSetSpecialEffectScale(data.castSfx, 2.2);
 
             let bf = new BloodFeast(caster, data.hpBonus, data.hpBonus, data.attackBonus);
             bf.Run(1);

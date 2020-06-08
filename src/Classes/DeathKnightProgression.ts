@@ -1,6 +1,6 @@
 import { HeroProgression } from "Systems/HeroProgression";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
-import { OrbType } from "Systems/OrbResource/Orb";
+import { OrbType } from "Systems/OrbResource/OrbType";
 import { DelayFunction } from "Global/DelayFunction";
 import { DarkPower } from "Spells/Warlock/DarkPower";
 import { RedPower } from "Spells/DeathKnight/RedPower";

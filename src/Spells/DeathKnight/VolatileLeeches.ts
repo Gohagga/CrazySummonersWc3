@@ -4,9 +4,10 @@ import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
 import { SpellGroup } from "Global/SpellHelper";
 import { SpawnPoint } from "Spells/Spawn";
-import { OrbCostToString, OrbType } from "Systems/OrbResource/Orb";
+import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { UnitCharge } from "Systems/UnitCharge";
+import { OrbType } from "Systems/OrbResource/OrbType";
 
 export class VolatileLeeches {
     public static SpellId: number;

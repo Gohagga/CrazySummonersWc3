@@ -1,5 +1,5 @@
 import { ResourceBar } from "./OrbResource/ResourceBar";
-import { OrbType } from "./OrbResource/Orb";
+import { OrbType } from "./OrbResource/OrbType";
 import { Items } from "Config";
 
 export class ArcaneTomeShop {
