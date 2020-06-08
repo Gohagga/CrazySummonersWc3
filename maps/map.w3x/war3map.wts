@@ -19391,3 +19391,51 @@ STRING 5840
 (Orb Requirement)
 }
 
+STRING 5841
+// Units: h01F (1 Summoning), Name (Name)
+{
+1 Summoning
+}
+
+STRING 5842
+// Units: h01F (1 Summoning), EditorSuffix (Name - Editor Suffix)
+{
+(Orb Requirement)
+}
+
+STRING 5843
+// Units: h01G (2 Summoning), Name (Name)
+{
+2 Summoning
+}
+
+STRING 5844
+// Units: h01G (2 Summoning), EditorSuffix (Name - Editor Suffix)
+{
+(Orb Requirement)
+}
+
+STRING 5845
+// Units: h01H (3 Summoning), Name (Name)
+{
+3 Summoning
+}
+
+STRING 5846
+// Units: h01H (3 Summoning), EditorSuffix (Name - Editor Suffix)
+{
+(Orb Requirement)
+}
+
+STRING 5847
+// Units: h01I (4 Summoning), Name (Name)
+{
+4 Summoning
+}
+
+STRING 5848
+// Units: h01I (4 Summoning), EditorSuffix (Name - Editor Suffix)
+{
+(Orb Requirement)
+}
+

@@ -1,8 +1,17 @@
 import { WardSpell } from "Systems/WardSpell";
 
 import { SpawnPoint } from "Spells/Spawn";
+import { UnitRequirement } from "Systems/Requirement/UnitRequirement";
+import { IRequirement } from "Systems/Requirement/IRequirement";
+import { Units, ReqUnits } from "Config";
 
 export const GROUP = CreateGroup();
+
+export const BlueOrbReq: IRequirement = new UnitRequirement(ReqUnits.BlueOrbs);
+export const PurpleOrbReq: IRequirement = new UnitRequirement(ReqUnits.PurpleOrbs);
+export const WhiteOrbReq: IRequirement = new UnitRequirement(ReqUnits.WhiteOrbs);
+export const SummonOrbReq: IRequirement = new UnitRequirement(ReqUnits.SummoningOrbs);
+export const RedOrbReq: IRequirement = new UnitRequirement(ReqUnits.RedOrbs);
 
 export function InitializeGlobals() {
 

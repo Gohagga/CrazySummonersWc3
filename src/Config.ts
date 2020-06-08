@@ -135,6 +135,15 @@ export const Upgrades = {
     AnyOrbs:                   FourCC('R0OA'),
 }
 
+export const ReqUnits = {
+    // SpellCircle:               [FourCC('h01'), FourCC(''), FourCC(''), FourCC('')],
+    BlueOrbs:                  [FourCC('h00Z'), FourCC('h010'), FourCC('h011'), FourCC('h012')],
+    PurpleOrbs:                [FourCC('h01B'), FourCC('h01C'), FourCC('h01D'), FourCC('h01E')],
+    RedOrbs:                   [FourCC('h016'), FourCC('h014'), FourCC('h015'), FourCC('h013')],
+    WhiteOrbs:                 [FourCC('h017'), FourCC('h018'), FourCC('h019'), FourCC('h01A')],
+    SummoningOrbs:             [FourCC('h01F'), FourCC('h01G'), FourCC('h01H'), FourCC('h01I')],
+}
+
 export const Items = {
     GemBlue:                   FourCC('IB0B'),
     GemRed:                    FourCC('IB0R'),
