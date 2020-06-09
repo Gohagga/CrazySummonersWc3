@@ -6,6 +6,8 @@ import { Spells, Items } from "Config";
 export class DarkPower {
     private static _instance: Record<number, timer> = {};
     public static SpellId: number;
+    public static MaxCharges = 50;
+    public static RefreshTime = 0.8;
 
     public static StartChargeUp(caster: unit, item: item) {
         let id = GetHandleId(caster);
@@ -17,9 +19,9 @@ export class DarkPower {
             PauseTimer(tim);
         }
 
-        TimerStart(tim, 1, true, () => {
+        TimerStart(tim, DarkPower.RefreshTime, true, () => {
             let charges = GetItemCharges(item);
-            if (charges < 30) {
+            if (charges < DarkPower.MaxCharges) {
                 SetItemCharges(item, charges + 1);
             } else {
                 PauseTimer(tim);

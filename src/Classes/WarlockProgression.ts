@@ -61,16 +61,16 @@ export class WarlockProgression extends HeroProgression {
         SetPlayerTechResearched(GetOwningPlayer(unit), Upgrades.SpellCircle, 2);
 
         HeroProgression.WaitForUnitLevel(this.unit, 13);
-        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
-
+        
         HeroProgression.WaitForUnitLevel(this.unit, 15);
-        bar.AddOrb(OrbType.Purple);
+        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
+        // bar.AddOrb(OrbType.Purple);
 
         HeroProgression.WaitForUnitLevel(this.unit, 16);
-        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
+        // SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
 
         HeroProgression.WaitForUnitLevel(this.unit, 19);
-        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
+        // SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
         // UnitAddItemById(unit, ITEMS.PaladinBook2)
         // SetPlayerTechResearched(GetOwningPlayer(unit), UPGRADES.SpellCircle, 2)
 

@@ -43,12 +43,12 @@ export class PaladinProgression extends HeroProgression {
 
         HeroProgression.WaitForUnitLevel(this.unit, 5);
         bar.AddOrb(OrbType.White);
-
+        
         HeroProgression.WaitForUnitLevel(this.unit, 6)
         SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
         UnitAddAbility(unit, Spells.PaladinLearnMastery);
         SelectHeroSkill(unit, FourCC("A00F"));
-
+        
         HeroProgression.WaitForUnitLevel(this.unit, 7);
         MasteryReq.Increase(owner);
         SetPlayerTechResearched(GetOwningPlayer(unit), Upgrades.SpellCircle, 1);
@@ -64,16 +64,16 @@ export class PaladinProgression extends HeroProgression {
         SetPlayerTechResearched(GetOwningPlayer(unit), Upgrades.SpellCircle, 2);
 
         HeroProgression.WaitForUnitLevel(this.unit, 13);
-        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
-
+        
         HeroProgression.WaitForUnitLevel(this.unit, 15);
-        bar.AddOrb(OrbType.White);
+        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
+        // bar.AddOrb(OrbType.White);
 
         HeroProgression.WaitForUnitLevel(this.unit, 16);
-        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
+        // SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
 
         HeroProgression.WaitForUnitLevel(this.unit, 19);
-        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
+        // SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
         // UnitAddItemById(unit, ITEMS.PaladinBook2)
         // SetPlayerTechResearched(GetOwningPlayer(unit), UPGRADES.SpellCircle, 2)
 

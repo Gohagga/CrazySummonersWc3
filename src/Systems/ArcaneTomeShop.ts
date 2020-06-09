@@ -17,16 +17,21 @@ export class ArcaneTomeShop {
                 [Items.GemSummoning]: OrbType.Summoning
             }[GetItemTypeId(GetManipulatedItem())];
 
+            let result = true;
             if (type == OrbType.White) {
-                bar.AddOrb(type);
+                result = bar.AddOrb(type);
             } else if (type == OrbType.Blue) {
-                bar.AddOrb(type);
+                result = bar.AddOrb(type);
             } else if (type == OrbType.Red) {
-                bar.AddOrb(type);
+                result = bar.AddOrb(type);
             } else if (type == OrbType.Purple) {
-                bar.AddOrb(type);
+                result = bar.AddOrb(type);
             } else if (type == OrbType.Summoning) {
-                bar.AddOrb(type);
+                result = bar.AddOrb(type);
+            }
+            if (result == false) {
+                let owner = GetOwningPlayer(GetTriggerUnit());
+                SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
             }
         });
     }

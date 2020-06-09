@@ -45,15 +45,15 @@ export class ResourceBar {
 
     public AddOrb(type: OrbType) {
         let viewId = this.orbs.length;
-        if (viewId > 17) return;
+        if (viewId > 17) return false;
 
         if (type == OrbType.Summoning) {
             viewId = 12 + this.topRowCount;
-            if (viewId > 17) return;
+            if (viewId > 17) return false;
             this.topRowCount++;
         } else {
             viewId = this.orbs.length - this.topRowCount;
-            if (viewId > 11) return;
+            if (viewId > 11) return false;
         }
 
         let orb = new Orb(type, viewId);
@@ -61,6 +61,7 @@ export class ResourceBar {
 
         orb.Update(this.player);
         orb.requirement.Increase(this.player);
+        return true;
     }
     
     public get GetPlayer() {
@@ -109,7 +110,7 @@ export class ResourceBar {
         }
         
         for (let index of usedIndices) {
-            this.orbs[index].Consume(this.player, 20);
+            this.orbs[index].Consume(this.player);
         }
         return true;
     }

@@ -13,6 +13,8 @@ export class Orb {
     public disabledTexture = "";
     public requirement: IRequirement;
     public tooltip = "";
+    public defaultCooldown = 10;
+
     public static get Config() {
         return {
             icon: [
@@ -52,6 +54,13 @@ export class Orb {
                 "Purple Orb",
                 "Summoning Orb",
                 ""
+            ],
+            cooldown: [
+                40,
+                40,
+                40,
+                40,
+                20
             ]
         };
     };
@@ -65,6 +74,7 @@ export class Orb {
         this.disabledTexture = Orb.Config.disabled[typeId];
         this.requirement = Orb.Config.upgrade[typeId];
         this.tooltip = Orb.Config.tooltip[typeId];
+        this.defaultCooldown = Orb.Config.cooldown[typeId];
         this.index = index;
 
         // TODO: SWITCH THIS OUT AND CHECK FOR INDEX SWITCHING
@@ -95,7 +105,7 @@ export class Orb {
         }
     }
 
-    public Consume(player: player, seconds: number) {
+    public Consume(player: player, seconds: number = this.defaultCooldown) {
         this.isAvailable = false;
         this.cooldownRemaining = seconds;
         this.requirement.Decrease(player);

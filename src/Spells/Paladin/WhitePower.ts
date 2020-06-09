@@ -6,6 +6,8 @@ import { Items } from "Config";
 export class WhitePower {
     private static _instance: Record<number, timer> = {};
     public static SpellId: number;
+    public static MaxCharges = 50;
+    public static RefreshTime = 0.8;
 
     public static StartChargeUp(item: item) {
         let id = GetHandleId(item);
@@ -18,9 +20,9 @@ export class WhitePower {
         }
         SetItemCharges(item, 5);
 
-        TimerStart(tim, 1, true, () => {
+        TimerStart(tim, this.RefreshTime, true, () => {
             let charges = GetItemCharges(item);
-            if (charges < 30) {
+            if (charges < WhitePower.MaxCharges) {
                 SetItemCharges(item, charges + 1);
             } else {
                 PauseTimer(tim);
