@@ -12,7 +12,12 @@ export enum RequirementType {
     Red,
     White,
     Summoning,
-    Mastery
+    Mastery,
+
+    
+    DarkArtBlood,
+    DarkArtUnholy,
+    DarkArtNecromancy,
 }
 
 export class RequirementTracker {
@@ -27,6 +32,9 @@ export class RequirementTracker {
         [RequirementType.White]: [],
         [RequirementType.Summoning]: [],
         [RequirementType.Mastery]: [],
+        [RequirementType.DarkArtBlood]: [],
+        [RequirementType.DarkArtUnholy]: [],
+        [RequirementType.DarkArtNecromancy]: [],
     }
 
     constructor(requirements: Record<RequirementType, IRequirement>) {

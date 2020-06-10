@@ -18733,12 +18733,6 @@ STRING 5807
 Red Power
 }
 
-STRING 5808
-// Abilities: A019 (Info), Ubertip (Tooltip - Normal - Extended)
-{
-Every spell has an Orb cost. Extend your Orb pool by buying them at the Tome Shop.
-}
-
 STRING 5809
 // Units: h00Z (1 Blue), Name (Name)
 {
@@ -19226,7 +19220,7 @@ Blue
 }
 
 STRING 5900
-// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 1 Summoning
 }
@@ -19286,7 +19280,7 @@ Blue
 }
 
 STRING 5910
-// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 1 Summoning
 }
@@ -19346,7 +19340,7 @@ Blue
 }
 
 STRING 5920
-// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 1 Summoning
 }
@@ -19405,12 +19399,6 @@ STRING 5929
 Blue
 }
 
-STRING 5930
-// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
-{
-1 Summoning
-}
-
 STRING 5931
 // Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
@@ -19463,12 +19451,6 @@ STRING 5939
 // Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
-}
-
-STRING 5940
-// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
-{
-1 Summoning
 }
 
 STRING 5941
@@ -20876,19 +20858,19 @@ Blue
 }
 
 STRING 6200
-// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 2 Red, 1 Purple, 1 Blue
 }
 
 STRING 6201
-// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 2 Red, 1 Purple
 }
 
 STRING 6202
-// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 2 Purple, 1 Blue
 }
@@ -20915,12 +20897,6 @@ STRING 6208
 // Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 1 Red, 1 Summoning
-}
-
-STRING 6209
-// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
-{
-2 Purple, 1 Blue
 }
 
 STRING 6210
@@ -21525,5 +21501,227 @@ STRING 6304
 // Abilities: A02P (Summon Abomination), Ubertip (Tooltip - Normal - Extended)
 {
 Death Knight summoning skill. Cast on Crystals to summon a Abomination in a chosen lane.|n|nAbomination is a strong and tanky melee unit.
+}
+
+STRING 6305
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Red, 1 Purple, 1 Blue
+}
+
+STRING 6306
+// Abilities: A019 (Info), Ubertip (Tooltip - Normal - Extended)
+{
+Every spell has an Orb cost. Expand your Orb pool by buying them at the Tome Shop.
+}
+
+STRING 6307
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Red, 1 Purple, 1 Blue
+}
+
+STRING 6308
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Red, 1 Purple
+}
+
+STRING 6309
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Already unlocked
+}
+
+STRING 6310
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6311
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6312
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6313
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6314
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6315
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6316
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6317
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6318
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6319
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), EditorSuffix (Editor Suffix)
+{
+(Necromancy)
+}
+
+STRING 6320
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Already unlocked
+}
+
+STRING 6321
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6322
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6323
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6324
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6325
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6326
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6327
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6328
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6329
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6330
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), EditorSuffix (Editor Suffix)
+{
+(Blood)
+}
+
+STRING 6331
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Already unlocked
+}
+
+STRING 6332
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6333
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6334
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6335
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6336
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6337
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6338
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6339
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6340
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6341
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), EditorSuffix (Editor Suffix)
+{
+(Unholy)
 }
 

@@ -14,7 +14,7 @@ export class DeathAndDecay {
     public static readonly DummyOrder = "deathanddecay";
     public static readonly HealSfx: string = "Abilities\\Weapons\\SorceressMissile\\SorceressMissile.mdl";
     public static readonly DamageSfx: string = "Abilities\\Spells\\Undead\\DeathandDecay\\DeathandDecayDamage.mdl";
-    public static CastSfx = Models.CastShadow;
+    public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
 
     private radius: number;
@@ -89,7 +89,7 @@ export class DeathAndDecay {
     static init(spellId: number) {
         this.SpellId = spellId;
         this.OrbCost = [
-            OrbType.Purple,
+            OrbType.Red,
             OrbType.Purple,
             OrbType.Blue,
         ];

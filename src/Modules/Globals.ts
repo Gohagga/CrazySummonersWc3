@@ -15,6 +15,10 @@ export const SummonOrbReq: IRequirement = new UnitRequirement(ReqUnits.Summoning
 export const RedOrbReq: IRequirement = new UnitRequirement(ReqUnits.RedOrbs);
 export const MasteryReq: IRequirement = new UnitRequirement(ReqUnits.RedOrbs);
 
+export const DarkArtBloodReq: IRequirement = new UnitRequirement(ReqUnits.Blank);
+export const DarkArtUnholyReq: IRequirement = new UnitRequirement(ReqUnits.Blank);
+export const DarkArtNecromancyReq: IRequirement = new UnitRequirement(ReqUnits.Blank);
+
 export const UpgradeTracker: RequirementTracker = new RequirementTracker({
     [RequirementType.Purple]: PurpleOrbReq,
     [RequirementType.Blue]: BlueOrbReq,
@@ -22,6 +26,9 @@ export const UpgradeTracker: RequirementTracker = new RequirementTracker({
     [RequirementType.Summoning]: SummonOrbReq,
     [RequirementType.Red]: RedOrbReq,
     [RequirementType.Mastery]: MasteryReq,
+    [RequirementType.DarkArtBlood]: DarkArtBloodReq,
+    [RequirementType.DarkArtUnholy]: DarkArtUnholyReq,
+    [RequirementType.DarkArtNecromancy]: DarkArtNecromancyReq,
 });
 
 export function InitializeGlobals() {

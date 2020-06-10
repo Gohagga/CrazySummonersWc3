@@ -6,6 +6,7 @@ import { SpellGroup, SpellHelper } from "Global/SpellHelper";
 import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
+import { UnitTypeFlags } from "Global/UnitTypeFlags";
 
 export class CorruptedBlood {
     private static _instance: Record<number, CorruptedBlood> = {};
@@ -37,7 +38,7 @@ export class CorruptedBlood {
 
     static Apply(target: unit, owner: player, level: number) {
         let dummyLvl = level;
-        if (GetUnitTypeId(target) == Units.VolatileLeeches) {
+        if (GetUnitTypeId(target) == Units.VolatileLeeches || UnitTypeFlags.IsUnitUndead(target)) {
             dummyLvl = 5;
         }
         SpellHelper.DummyCastTarget(owner, GetUnitX(target), GetUnitY(target), target, CorruptedBlood.DummySpellId, dummyLvl, CorruptedBlood.DummyOrder);
@@ -53,6 +54,7 @@ export class CorruptedBlood {
     static init(spellId: number) {
         this.SpellId = spellId;
         this.OrbCost = [
+            OrbType.Red,
             OrbType.Red,
         ];
         SpellEvent.RegisterSpellCast(this.SpellId, () => {
@@ -72,7 +74,6 @@ export class CorruptedBlood {
                 threshold: 0.9 - 0.1 * level,
                 castTime: 1.5
             }
-            BlzSetSpecialEffectScale(data.castSfx, 2.2);
             
             let cb = new CastBar(caster);
             cb.CastSpell(this.SpellId, data.castTime, () => {

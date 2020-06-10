@@ -13,7 +13,7 @@ export class ArmyOfTheDead {
     public static AuraBuff = Auras.ArmyOfTheDead;
     private static SpawnedType = SpawnedUnitTypes.Undead.slice(0, 10);
     public static readonly Sfx: string = "Abilities\\Spells\\Human\\Resurrect\\ResurrectCaster.mdl";
-    public static CastSfx = Models.CastSacrifice;
+    public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
 
     public static Filter(target: unit) {

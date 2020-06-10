@@ -44,11 +44,10 @@ export class DeathVolley {
                 done: false,
 
                 aoe: 350 + 100 * level,
-                castSfx: AddSpecialEffectTarget(this.CastSfx, caster, "chest"),
+                castSfx: AddSpecialEffectTarget(this.CastSfx, caster, "origin"),
                 targetCount: 2 + level,
                 castTime: 2,
             }
-            BlzSetSpecialEffectScale(data.castSfx, 2.2);
             
             let cb = new CastBar(caster);
             cb.CastSpell(this.SpellId, data.castTime, () => {

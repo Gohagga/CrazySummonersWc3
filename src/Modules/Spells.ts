@@ -41,6 +41,7 @@ import { Spells, Buffs, Models, Auras, Dummies, Upgrades, RequirementUpgrades } 
 import { UpgradeTracker } from "./Globals";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { RequirementType } from "Systems/Requirement/RequirementTracker";
+import { DarkArts } from "Spells/DeathKnight/DarkArts";
 
 
 export function InitializeSpells() {
@@ -76,6 +77,7 @@ export function InitializeSpells() {
     Paranoia.init(Spells.Paranoia);
 
     // Death Knight
+    DarkArts.init();
     RedPower.init(Spells.RedPower);
     SummonGhoul.init(Spells.SummonGhoul);
     SummonAbomination.init(Spells.SummonAbomination);

@@ -66,6 +66,9 @@ export const Spells = {
     DarkPower:                 FourCC('A03G'),
     DarkFocusRedChoice:        FourCC('A00P'),
     DarkFocusBlueChoice:       FourCC('A00Q'),
+    DarkArtBlood:               FourCC('A02W'),
+    DarkArtUnholy:              FourCC('A02X'),
+    DarkArtNecromancy:          FourCC('A02Y'),
 }
 
 export const Auras = {
@@ -157,21 +160,37 @@ export const RequirementUpgrades: Record<number, Req[]> = {
     [FourCC('R018')]: [Req.Purple, Req.Purple, Req.Red, Req.Red, Req.Mastery, Req.Mastery],
     [FourCC('R00R')]: [Req.Purple, Req.Red, Req.Summoning, Req.Mastery, Req.Mastery],
     [FourCC('R00Q')]: [Req.Purple, Req.Purple, Req.Blue, Req.Mastery, Req.Mastery],
-    [FourCC('R00P')]: [Req.Red, Req.Summoning],
-    [FourCC('R00O')]: [Req.Red, Req.Red, Req.Summoning],
-    [FourCC('R00N')]: [Req.Purple, Req.Purple, Req.Blue],
-    [FourCC('R00M')]: [Req.Red, Req.Red],
-    [FourCC('R00L')]: [Req.Red, Req.Blue],
-    [FourCC('R00K')]: [Req.Red, Req.Blue, Req.Blue],
+    // Ritual
     [FourCC('R00J')]: [Req.Purple, Req.Purple, Req.Red],
-    [FourCC('R00I')]: [Req.Red, Req.Red, Req.Purple],
-    [FourCC('R00H')]: [Req.Red, Req.Red, Req.Blue, Req.Purple],
-    // [FourCC('R00G')]: [Req.Red, Req.White, Req.Red, Req.Purple],
-    // [FourCC('R00F')]: [Req.Red, Req.White, Req.Red, Req.Purple],
+
+    // Abom
+    [FourCC('R00P')]: [Req.Red, Req.Summoning],
+    // Leech
+    [FourCC('R00O')]: [Req.Red, Req.Red, Req.Summoning,                             Req.DarkArtBlood],
+    // Volley
+    [FourCC('R00H')]: [Req.Red, Req.Red, Req.Blue, Req.Purple,                      Req.DarkArtUnholy],
+    // Embrace
+    [FourCC('R00L')]: [Req.Red, Req.Blue,                                           Req.DarkArtNecromancy],
+    // CorrBlood
+    [FourCC('R00M')]: [Req.Red, Req.Red,                                            Req.DarkArtBlood],
+    // Amz
+    [FourCC('R00K')]: [Req.Red, Req.Blue, Req.Blue,                                 Req.DarkArtUnholy],
+    // Dnd
+    [FourCC('R00N')]: [Req.Red, Req.Purple, Req.Blue,                               Req.DarkArtNecromancy],
+    // Boon
+    [FourCC('R00I')]: [Req.Red, Req.Red, Req.Purple,                                Req.DarkArtBlood],
+    // curse
+    [FourCC('R00F')]: [Req.Red, Req.Red, Req.Purple,                                Req.DarkArtUnholy],
+    // Army
+    [FourCC('R00G')]: [Req.Red, Req.Red, Req.Blue, Req.Purple,                      Req.DarkArtNecromancy],
     // [FourCC('R00E')]: [Req.Red, Req.White, Req.Red, Req.Purple],
     // [FourCC('R017')]: [Req.Red, Req.White, Req.Red, Req.Purple],
     // [FourCC('R00C')]: [Req.Red, Req.White, Req.Red, Req.Purple],
     // [FourCC('R00S')]: [Req.Red, Req.White, Req.Red, Req.Purple],
+
+    [FourCC('R01A')]: [Req.DarkArtBlood],
+    [FourCC('R01B')]: [Req.DarkArtUnholy],
+    [FourCC('R019')]: [Req.DarkArtNecromancy],
 }
 
 export const ReqUnits = {
@@ -181,32 +200,35 @@ export const ReqUnits = {
     RedOrbs:                   [FourCC('h016'), FourCC('h014'), FourCC('h015'), FourCC('h013')],
     WhiteOrbs:                 [FourCC('h017'), FourCC('h018'), FourCC('h019'), FourCC('h01A')],
     SummoningOrbs:             [FourCC('h01F'), FourCC('h01G'), FourCC('h01H'), FourCC('h01I')],
+    Blank:                      [],
 }
 
 export const Items = {
-    GemBlue:                   FourCC('IB0B'),
-    GemRed:                    FourCC('IB0R'),
-    GemWhite:                  FourCC('IB0W'),
-    GemPurple:                 FourCC('IB0P'),
-    GemSummoning:              FourCC('IB0S'),
-    GemVoid:                   FourCC('I00V'),
+    GemBlue:                    FourCC('IB0B'),
+    GemRed:                     FourCC('IB0R'),
+    GemWhite:                   FourCC('IB0W'),
+    GemPurple:                  FourCC('IB0P'),
+    GemSummoning:               FourCC('IB0S'),
+    GemVoid:                    FourCC('I00V'),
 
-    Buy3Gems:                  FourCC('I000'),
-    WhitePowerStacks:          FourCC('I00F'),
-    DarkFocusBase:             FourCC('I0D0'),
-    DarkFocusBlue:             FourCC('I002'),
-    DarkFocusPurpleRed:        FourCC('I0D1'),
-    DarkFocusPurpleBlue:       FourCC('I004'),
-    DarkFocusRed:              FourCC('I001'),
-    RedPowerStacks:            FourCC('I00J'),
+    Buy3Gems:                   FourCC('I000'),
+    WhitePowerStacks:           FourCC('I00F'),
+    DarkFocusBase:              FourCC('I0D0'),
+    DarkFocusBlue:              FourCC('I002'),
+    DarkFocusPurpleRed:         FourCC('I0D1'),
+    DarkFocusPurpleBlue:        FourCC('I004'),
+    DarkFocusRed:               FourCC('I001'),
+    RedPowerStacks:             FourCC('I00J'),
 
-    PaladinBook1:              FourCC('IP01'),
-    PaladinBook2:              FourCC('IP02'),
-    PaladinBook3:              FourCC('IP03'),
+    PaladinBook1:               FourCC('IP01'),
+    PaladinBook2:               FourCC('IP02'),
+    PaladinBook3:               FourCC('IP03'),
 
-    WarlockBook1:              FourCC('IW01'),
-    WarlockBook2:              FourCC('IW02'),
-    WarlockBook3:              FourCC('IW03'),
+    WarlockBook1:               FourCC('IW01'),
+    WarlockBook2:               FourCC('IW02'),
+    WarlockBook3:               FourCC('IW03'),
+
+    DeathKnightDarkArts:        FourCC('I00I'),
 }
 
 export const Units = {
@@ -241,6 +263,10 @@ export const Units = {
     Ghoul8:                    FourCC('u008'),
     Ghoul9:                    FourCC('u009'),
     Ghoul10:                   FourCC('u00A'),
+
+    DarkArtBloodUnlocked:      FourCC('h00U'),
+    DarkArtUnholyUnlocked:     FourCC('h00V'),
+    DarkArtNecromancyUnlocked: FourCC('h00W'),
 
     CacoDemon:                 FourCC('nD0J'),
     EvilEye:                   FourCC('nD0K'),
@@ -306,6 +332,8 @@ export const Units = {
     CrazyImp2:                  FourCC('h00N'),
     CrazyImp3:                  FourCC('h00O'),
     CrazyImp4:                  FourCC('h00P'),
+
+
 }
 
 export const SpawnedUnitTypes = {
@@ -470,7 +498,7 @@ export const Models = {
     CastShadow:               "ShadowCast_02.mdl",
 
     CastUnholy:               "UnholyCastAnim_03.mdx",
-    CastNecromancy:           "UnholyCastAnim_03.mdx",
+    CastNecromancy:           "DarknessRising05.mdx",
 }
 
 path = "ReplaceableTextures\\CommandButtons"

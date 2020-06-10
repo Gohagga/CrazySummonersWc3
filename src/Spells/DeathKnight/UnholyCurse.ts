@@ -36,14 +36,13 @@ export class UnholyCurse {
             let data = {
                 done: false,
 
-                castSfx: AddSpecialEffectTarget(this.CastSfx, caster, "chest"),
+                castSfx: AddSpecialEffectTarget(this.CastSfx, caster, "origin"),
                 // targetSfx: AddSpecialEffectTarget(this.TargetSfx, target, "origin"),
                 damage: [ 1, 2, 2, 3 ][might],
                 duration: [ 120, 100, 80, 60 ][will],
                 castTime: 2,
                 timer: CreateTimer()
             }
-            BlzSetSpecialEffectScale(data.castSfx, 2.2);
 
             // print(data.duration, data.damage);
             

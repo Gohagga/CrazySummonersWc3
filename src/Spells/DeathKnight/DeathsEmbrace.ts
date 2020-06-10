@@ -14,7 +14,7 @@ export class DeathsEmbrace {
     private static SpawnedType = SpawnedUnitTypes.Undead.slice(10);
     public static readonly Sfx: string = "Abilities\\Spells\\Undead\\AnimateDead\\AnimateDeadTarget.mdl";
     public static readonly TargetSfx: string = "Abilities\\Spells\\Other\\HowlOfTerror\\HowlTarget.mdl";
-    public static CastSfx = Models.CastSacrifice;
+    public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
 
     static init(spellId: number) {
@@ -40,7 +40,6 @@ export class DeathsEmbrace {
                 threshold: 0.9 - 0.1 * level,
                 castTime: 1.5
             }
-            BlzSetSpecialEffectScale(data.castSfx, 2.2);
             
             let cb = new CastBar(caster);
             cb.CastSpell(this.SpellId, data.castTime, () => {
