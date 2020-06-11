@@ -36,13 +36,6 @@ gg_unit_e001_0016 = nil
 function InitGlobals()
 end
 
-function CreateAllItems()
-    local itemID
-    BlzCreateItemWithSkin(FourCC("I00I"), -4393.2, -5007.6, FourCC("I00I"))
-    BlzCreateItemWithSkin(FourCC("I00I"), -4300.6, -5147.6, FourCC("I00I"))
-    BlzCreateItemWithSkin(FourCC("I00I"), -4514.2, -5032.3, FourCC("I00I"))
-end
-
 function CreateBuildingsForPlayer0()
     local p = Player(0)
     local u
@@ -71,28 +64,6 @@ function CreateBuildingsForPlayer1()
     local t
     local life
     u = BlzCreateUnitWithSkin(p, FourCC("h00L"), -3264.0, -2240.0, 270.000, FourCC("h00L"))
-end
-
-function CreateUnitsForPlayer1()
-    local p = Player(1)
-    local u
-    local unitID
-    local t
-    local life
-    u = BlzCreateUnitWithSkin(p, FourCC("hF01"), -4803.8, -3618.5, 46.507, FourCC("hF01"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hF01"), -4731.3, -4065.7, 82.356, FourCC("hF01"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hF01"), -4883.8, -3827.6, 236.103, FourCC("hF01"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hF01"), -4678.0, -3834.2, 224.458, FourCC("hF01"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hF01"), -4462.9, -3678.3, 143.013, FourCC("hF01"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hF01"), -4282.3, -3671.3, 231.852, FourCC("hF01"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hF01"), -4477.3, -3969.7, 312.538, FourCC("hF01"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hF01"), -4289.6, -3997.9, 99.506, FourCC("hF01"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hF01"), -3932.8, -3860.5, 347.365, FourCC("hF01"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hF01"), -4065.4, -3870.3, 325.590, FourCC("hF01"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hF01"), -3956.2, -4120.0, 171.568, FourCC("hF01"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u002"), -3291.8, -3723.2, 297.343, FourCC("u002"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u002"), -3125.7, -3982.3, 181.950, FourCC("u002"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u002"), -3300.6, -4010.4, 125.116, FourCC("u002"))
 end
 
 function CreateBuildingsForPlayer5()
@@ -154,7 +125,6 @@ end
 
 function CreatePlayerUnits()
     CreateUnitsForPlayer0()
-    CreateUnitsForPlayer1()
 end
 
 function CreateAllUnits()
@@ -428,7 +398,6 @@ function main()
     SetMapMusic("Music", true, 0)
     CreateRegions()
     CreateCameras()
-    CreateAllItems()
     CreateAllUnits()
     InitBlizzard()
     InitGlobals()
