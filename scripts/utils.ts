@@ -11,6 +11,7 @@ export interface IProjectConfig {
   gameExecutable: string;
   outputFolder: string;
   launchArgs: string[];
+  injectPreviewImage: boolean;
 }
 
 /**

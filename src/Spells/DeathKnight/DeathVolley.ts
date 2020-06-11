@@ -7,6 +7,8 @@ import { UnitTypeFlags } from "Global/UnitTypeFlags";
 import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
+import { Log } from "Bootstrapper";
+import { Point, MapPlayer, Unit } from "w3ts/index";
 
 export class DeathVolley {
     public static SpellId: number;
@@ -34,54 +36,64 @@ export class DeathVolley {
         ];
         SpellEvent.RegisterSpellCast(this.SpellId, () => {
 
-            const caster = GetTriggerUnit();
-            const owner = GetOwningPlayer(caster);
+            const caster = Unit.fromEvent();
+            const owner = caster.owner;
             const x = GetSpellTargetX();
             const y = GetSpellTargetY();
-            let level = GetUnitAbilityLevel(caster, this.SpellId);
+            let level = caster.getAbilityLevel(this.SpellId);
 
             let data = {
                 done: false,
 
                 aoe: 350 + 100 * level,
-                castSfx: AddSpecialEffectTarget(this.CastSfx, caster, "origin"),
+                castSfx: AddSpecialEffectTarget(this.CastSfx, caster.handle, "origin"),
                 targetCount: 2 + level,
                 castTime: 2,
             }
             
-            let cb = new CastBar(caster);
+            let cb = new CastBar(caster.handle);
             cb.CastSpell(this.SpellId, data.castTime, () => {
                 cb.Finish();
                 DestroyEffect(data.castSfx);
 
-                if (!ResourceBar.Get(owner).Consume(this.OrbCost)) return;
+                if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
 
-                GroupEnumUnitsInRange(SpellGroup, x, y, data.aoe, null);
+                Log.info("Death Volley");
 
-                let u = FirstOfGroup(SpellGroup);
-                while (u != null && data.targetCount > 0) {
-                    GroupRemoveUnit(SpellGroup, u);
-                    if (this.Filter(u)) {
-                        let isUndead = UnitTypeFlags.IsUnitUndead(u);
-                        // Exit zone
-                        if (isUndead == false && IsUnitAlly(u, owner) == false) {
-                            SpellHelper.DummyCastTarget(owner, GetUnitX(caster), GetUnitY(caster), u, this.DummySpellId, level, this.DummyOrder);
-                        } else if (isUndead && IsUnitAlly(u, owner) == true && GetWidgetLife(u) < GetUnitState(u, UNIT_STATE_MAX_LIFE)) {
+                const units = SpellHelper.EnumUnitsInRange(new Point(x, y), data.aoe, (target, caster) => {
+                    let isUndead = UnitTypeFlags.IsUnitUndead(target.handle);
+                    return  target.isUnitType(UNIT_TYPE_STRUCTURE) == false && 
+                            target.isUnitType(UNIT_TYPE_HERO) == false &&
+                            target.life > 0.405 && (
+                                isUndead == false && target.isAlly(owner) == false
+                                || isUndead && target.isAlly(owner) && target.life < target.maxLife);
+                });
+                Log.info("Unit count", units.length);
 
-                            if (GetUnitAbilityLevel(u, Buffs.CorruptedBlood) > 0) {
-                                SpellHelper.DummyCastTarget(owner, GetUnitX(caster), GetUnitY(caster), u, this.DummySpellId, 5, this.DummyOrder);
-                            } else {
-                                SpellHelper.DummyCastTarget(owner, GetUnitX(caster), GetUnitY(caster), u, this.DummySpellId, level + 5, this.DummyOrder);
-                            }
+                let choice: { unit: Unit, priority: number }[] = [];
+                for (let u of units) {
+                    choice.push({
+                        unit: u,
+                        priority: GetRandomReal(0, 1)
+                    });
+                }
+                choice.sort((a, b) => a.priority - b.priority);
+                choice = choice.slice(0, data.targetCount);
+                Log.info("Target count", choice.length);
+
+                for (let c of choice) {
+                    if (UnitTypeFlags.IsUnitUndead(c.unit.handle)) {
+                        if (c.unit.getAbilityLevel(Buffs.CorruptedBlood) > 0) {
+                            SpellHelper.DummyCastTarget(owner.handle, caster.x, caster.y, c.unit.handle, this.DummySpellId, 5, this.DummyOrder);
                         } else {
-                            data.targetCount++;
+                            SpellHelper.DummyCastTarget(owner.handle, caster.x, caster.y, c.unit.handle, this.DummySpellId, level + 5, this.DummyOrder);
                         }
-                        data.targetCount--;
+                    } else {
+                        SpellHelper.DummyCastTarget(owner.handle, caster.x, caster.y, c.unit.handle, this.DummySpellId, level, this.DummyOrder);
                     }
-                    u = FirstOfGroup(SpellGroup);
                 }
             });
-            Interruptable.Register(caster, () => {
+            Interruptable.Register(caster.handle, () => {
 
                 if (!data.done) {
                     DestroyEffect(data.castSfx);
