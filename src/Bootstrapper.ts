@@ -18,12 +18,6 @@ import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { InitializeGlobals } from "Modules/Globals";
 import { InitConfiguration } from "Config";
 
-export const Log = {
-    info: (...args) => {
-        DisplayTextToForce(GetForceOfPlayer(Player(0)), args.join(' '));
-    }
-}
-
 export class Bootstrapper {
 
     static ConfigureServices() {

@@ -515,3 +515,9 @@ export const Textures = {
     DisBallWhite:              path + "Disabled\\DISBTNWhiteBall.blp",
     DisBallSummoning:          path + "Disabled\\DISBTNSummoningBall.blp",
 }
+
+export const Log = {
+    info: (...args) => {
+        DisplayTextToForce(GetForceOfPlayer(Player(0)), args.join(' '));
+    }
+}
