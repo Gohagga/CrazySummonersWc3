@@ -171,7 +171,6 @@ export const logger = createLogger({
 export function injectPreviewScreen(output: string, dir: string, verNum: string) {
   // Remove the minimap mmp
   const mmpDir = path.join(__dirname, "..", dir, "war3map.mmp");
-  console.log("Minimap dir:", mmpDir);
   if (fs.existsSync(mmpDir)) {
     fs.unlinkSync(mmpDir);
   }
@@ -187,6 +186,6 @@ export function injectPreviewScreen(output: string, dir: string, verNum: string)
   const ddsDir = path.join(__dirname, "..", dir, "war3mapPreview.dds");
   if (fs.existsSync(ddsDir)) {
     const copyDest = path.join(__dirname, "..", dir, "war3mapMap.dds");
-    fs.renameSync(ddsDir, copyDest);
+    fs.copyFileSync(ddsDir, copyDest);
   }
 }

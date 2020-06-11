@@ -18,6 +18,12 @@ import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { InitializeGlobals } from "Modules/Globals";
 import { InitConfiguration } from "Config";
 
+export const Log = {
+    info: (...args) => {
+        DisplayTextToForce(GetForceOfPlayer(Player(0)), args.join(' '));
+    }
+}
+
 export class Bootstrapper {
 
     static ConfigureServices() {
@@ -42,6 +48,8 @@ export class Bootstrapper {
         Cameras.init();
         Commands.init();
         ArcaneTomeShop.init();
+
+        BlzChangeMinimapTerrainTex("war3mapGenerated.blp");
 
         TimerStart(CreateTimer(), 0.1, false, () => {
             InitializeGlobals();
