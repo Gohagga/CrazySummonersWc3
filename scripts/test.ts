@@ -1,5 +1,5 @@
 import { execFile } from "child_process";
-import { loadJsonFile, logger, compileMap } from "./utils";
+import { loadJsonFile, logger, compileMap, injectPreviewScreen } from "./utils";
 
 function main() {
   const config = loadJsonFile("config.json");
@@ -9,6 +9,8 @@ function main() {
     logger.error(`Failed to compile map.`);
     return;
   }
+
+  injectPreviewScreen("", `maps/${config.mapFolder}`, "");
 
   const cwd = process.cwd();
   const filename = `${cwd}/dist/${config.mapFolder}`;

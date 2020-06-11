@@ -167,3 +167,26 @@ export const logger = createLogger({
     }),
   ]
 });
+
+export function injectPreviewScreen(output: string, dir: string, verNum: string) {
+  // Remove the minimap mmp
+  const mmpDir = path.join(__dirname, "..", dir, "war3map.mmp");
+  console.log("Minimap dir:", mmpDir);
+  if (fs.existsSync(mmpDir)) {
+    fs.unlinkSync(mmpDir);
+  }
+
+  // Duplicate the generated minimap blp
+  const blpDir = path.join(__dirname, "..", dir, "war3mapMap.blp");
+  if (fs.existsSync(blpDir)) {
+    const copyDest = path.join(__dirname, "..", dir, "war3mapGenerated.blp");
+    fs.renameSync(blpDir, copyDest);
+  }
+
+  // Duplicate the generated minimap blp
+  const ddsDir = path.join(__dirname, "..", dir, "war3mapPreview.dds");
+  if (fs.existsSync(ddsDir)) {
+    const copyDest = path.join(__dirname, "..", dir, "war3mapMap.dds");
+    fs.renameSync(ddsDir, copyDest);
+  }
+}

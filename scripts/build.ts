@@ -1,7 +1,7 @@
 import * as fs from "fs-extra";
 import * as path from "path";
 import War3Map from "mdx-m3-viewer/src/parsers/w3x/map";
-import { compileMap, getFilesInDirectory, loadJsonFile, logger, toArrayBuffer, IProjectConfig } from "./utils";
+import { compileMap, getFilesInDirectory, loadJsonFile, logger, toArrayBuffer, IProjectConfig, injectPreviewScreen } from "./utils";
 
 function main() {
   const config: IProjectConfig = loadJsonFile("config.json");
@@ -11,6 +11,8 @@ function main() {
     logger.error(`Failed to compile map.`);
     return;
   }
+
+  injectPreviewScreen("", `maps/${config.mapFolder}`, "");
 
   logger.info(`Creating w3x archive...`);
   if (!fs.existsSync(config.outputFolder)) {
