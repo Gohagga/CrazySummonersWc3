@@ -5,12 +5,12 @@ function main() {
   const config = loadJsonFile("config.json");
   const result = compileMap(config);
 
+  injectPreviewScreen("", `maps/${config.mapFolder}`, "");
   if (!result) {
     logger.error(`Failed to compile map.`);
     return;
   }
 
-  injectPreviewScreen("", `maps/${config.mapFolder}`, "");
 
   const cwd = process.cwd();
   const filename = `${cwd}/dist/${config.mapFolder}`;

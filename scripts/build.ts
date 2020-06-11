@@ -6,7 +6,7 @@ import { compileMap, getFilesInDirectory, loadJsonFile, logger, toArrayBuffer, I
 function main() {
   const config: IProjectConfig = loadJsonFile("config.json");
   
-  injectPreviewScreen("", `maps/${config.mapFolder}`, "");
+  if (config.injectPreviewImage) injectPreviewScreen("", `maps/${config.mapFolder}`, "");
   const result = compileMap(config);
 
   if (!result) {
