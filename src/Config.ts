@@ -251,7 +251,7 @@ export const Units = {
     Abomination7:              FourCC('u00H'),
     Abomination8:              FourCC('u00I'),
     Abomination9:              FourCC('u00J'),
-    Abomination10:             FourCC('u00B'),
+    Abomination10:             FourCC('u00K'),
 
     Ghoul1:                    FourCC('u001'),
     Ghoul2:                    FourCC('u002'),
@@ -518,6 +518,6 @@ export const Textures = {
 
 export const Log = {
     info: (...args) => {
-        DisplayTextToForce(GetForceOfPlayer(Player(0)), args.join(' '));
+        // DisplayTextToForce(GetForceOfPlayer(Player(0)), args.join(' '));
     }
 }
