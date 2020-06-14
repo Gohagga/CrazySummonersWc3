@@ -15,7 +15,7 @@
 
 ### Misc
 - Add Death Knight's Necromancy spells cast animation
-
+- Added Map preview
 
 ## Version 0.53
 
