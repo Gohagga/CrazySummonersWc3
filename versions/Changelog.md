@@ -62,3 +62,21 @@
 ### Misc
 - Update Warlock's cast animation
 - Updated Hero Proper names
+
+## Version 0.53e
+
+### Main Changes
+- Reworked the requirement system, now it works despite bug introduced by 1.32
+- Increased cooldown time of non-Summoning orbs from 20 to 35
+- Increased rate of Red Power, White Power and Dark Power stacks accumulation by 20%, and raised max stack limit from 30 to 50
+- Lowered maximum lumber gained until lvl 19 from 7 to 6.
+- Added a simple AI. Starting a game with a computer slot will have it select a paladin at "-start" command.
+    AI's strategy is solely spawning minions in bulk and maxing out Summoning orbs. (it's super hard to play against)
+
+### Fixes
+- Summon Abomination 10 was spawning a lvl 1 unit
+- Orb cost said in tooltip, its disabling requirement and actual consumption were not the same for some abilities
+- Tooltips (mostly orb costs)
+
+### Misc
+- Add Death Knight's Necromancy spells cast animation

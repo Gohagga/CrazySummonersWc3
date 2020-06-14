@@ -515,7 +515,7 @@ Spawn3Crystals
 
 STRING 129
 {
-Crazy Summoners v.0.53d
+Crazy Summoners v.0.53e
 }
 
 STRING 130
@@ -2607,8 +2607,8 @@ CRAZY SUMMONERS
 
 STRING 1035
 {
-- Summon skills and spells cost Orbs of various colors.
-- Check out your spellbook to decide how to build.
+- Summon skills and spells consume Orb resources.
+- Check out your spellbook (R).
 - Use lumber to expand your Orb pool.
 - If unit reaches enemy crystal, heroes on their team lose 1 hp.
 
