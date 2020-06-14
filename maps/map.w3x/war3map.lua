@@ -31,10 +31,10 @@ gg_unit_h002_0013 = nil
 gg_unit_h001_0014 = nil
 gg_unit_h001_0015 = nil
 gg_unit_e000_0040 = nil
-gg_unit_h001_0006 = nil
-gg_unit_e001_0016 = nil
 gg_unit_h00L_0019 = nil
 gg_unit_h00L_0025 = nil
+gg_unit_h001_0006 = nil
+gg_unit_e001_0016 = nil
 function InitGlobals()
 end
 
@@ -420,9 +420,9 @@ function config()
     DefineStartLocation(2, 5184.0, -5568.0)
     DefineStartLocation(3, 5184.0, -5568.0)
     DefineStartLocation(4, 5184.0, -5568.0)
-    DefineStartLocation(5, -4032.0, -3584.0)
+    DefineStartLocation(5, 6080.0, -6080.0)
     DefineStartLocation(6, 5184.0, -5568.0)
-    DefineStartLocation(7, -4032.0, -3584.0)
+    DefineStartLocation(7, 6080.0, -6080.0)
     InitCustomPlayerSlots()
     InitCustomTeams()
     InitAllyPriorities()
