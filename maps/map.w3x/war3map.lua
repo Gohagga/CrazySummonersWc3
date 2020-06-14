@@ -33,6 +33,8 @@ gg_unit_h001_0015 = nil
 gg_unit_e000_0040 = nil
 gg_unit_h001_0006 = nil
 gg_unit_e001_0016 = nil
+gg_unit_h00L_0019 = nil
+gg_unit_h00L_0025 = nil
 function InitGlobals()
 end
 
@@ -42,7 +44,7 @@ function CreateBuildingsForPlayer0()
     local unitID
     local t
     local life
-    u = BlzCreateUnitWithSkin(p, FourCC("h00L"), -3200.0, -5056.0, 270.000, FourCC("h00L"))
+    gg_unit_h00L_0019 = BlzCreateUnitWithSkin(p, FourCC("h00L"), -3200.0, -5056.0, 270.000, FourCC("h00L"))
 end
 
 function CreateUnitsForPlayer0()
@@ -63,7 +65,7 @@ function CreateBuildingsForPlayer1()
     local unitID
     local t
     local life
-    u = BlzCreateUnitWithSkin(p, FourCC("h00L"), -3264.0, -2240.0, 270.000, FourCC("h00L"))
+    gg_unit_h00L_0025 = BlzCreateUnitWithSkin(p, FourCC("h00L"), -3264.0, -2240.0, 270.000, FourCC("h00L"))
 end
 
 function CreateBuildingsForPlayer5()
@@ -232,6 +234,8 @@ function Trig_After_Start_Copy_Actions()
     SetUnitLifePercentBJ(gg_unit_h002_0011, 100)
     SetUnitLifePercentBJ(gg_unit_h002_0012, 100)
     SetUnitLifePercentBJ(gg_unit_h002_0013, 100)
+    SetUnitLifePercentBJ(gg_unit_h00L_0019, 100)
+    SetUnitLifePercentBJ(gg_unit_h00L_0025, 100)
 end
 
 function InitTrig_After_Start_Copy()

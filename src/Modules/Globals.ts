@@ -3,8 +3,9 @@ import { WardSpell } from "Systems/WardSpell";
 import { SpawnPoint } from "Spells/Spawn";
 import { UnitRequirement } from "Systems/Requirement/UnitRequirement";
 import { IRequirement } from "Systems/Requirement/IRequirement";
-import { Units, ReqUnits } from "Config";
+import { Units, ReqUnits, Log } from "Config";
 import { RequirementTracker, RequirementType } from "Systems/Requirement/RequirementTracker";
+import { Unit } from "w3ts/index";
 
 export const GROUP = CreateGroup();
 
@@ -31,6 +32,9 @@ export const UpgradeTracker: RequirementTracker = new RequirementTracker({
     [RequirementType.DarkArtNecromancy]: DarkArtNecromancyReq,
 });
 
+export const BlueCrystal: Unit[] = [];
+export const RedCrystal: Unit[] = [];
+
 export function InitializeGlobals() {
 
     // const BlueOrbReq: IRequirement = new UnitRequirement(ReqUnits.BlueOrbs);
@@ -38,6 +42,18 @@ export function InitializeGlobals() {
     // const WhiteOrbReq: IRequirement = new UnitRequirement(ReqUnits.WhiteOrbs);
     // const SummonOrbReq: IRequirement = new UnitRequirement(ReqUnits.SummoningOrbs);
     // const RedOrbReq: IRequirement = new UnitRequirement(ReqUnits.RedOrbs);
+
+    BlueCrystal.push(Unit.fromHandle(gg_unit_h002_0009));
+    BlueCrystal.push(Unit.fromHandle(gg_unit_h002_0010));
+    BlueCrystal.push(Unit.fromHandle(gg_unit_h002_0011));
+    BlueCrystal.push(Unit.fromHandle(gg_unit_h002_0012));
+    BlueCrystal.push(Unit.fromHandle(gg_unit_h002_0013));
+
+    RedCrystal.push(Unit.fromHandle(gg_unit_h001_0014));
+    RedCrystal.push(Unit.fromHandle(gg_unit_h001_0008));
+    RedCrystal.push(Unit.fromHandle(gg_unit_h001_0006));
+    RedCrystal.push(Unit.fromHandle(gg_unit_h001_0004));
+    RedCrystal.push(Unit.fromHandle(gg_unit_h001_0015));
 
     WardSpell.RegisterWardTarget(gg_unit_h001_0014, SpawnPoint.FromTarget(gg_unit_h001_0014));
     WardSpell.RegisterWardTarget(gg_unit_h001_0008, SpawnPoint.FromTarget(gg_unit_h001_0008));
