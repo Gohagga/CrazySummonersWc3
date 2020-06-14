@@ -15284,7 +15284,7 @@ X
 }
 
 STRING 4908
-// Abilities: A037 (DummyDeath Coil), Name (Name)
+// Abilities: A03M (DummyDeath Coil), Name (Name)
 {
 DummyDeath Coil
 }
@@ -21723,5 +21723,11 @@ STRING 6341
 // Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), EditorSuffix (Editor Suffix)
 {
 (Unholy)
+}
+
+STRING 6342
+// Abilities: A037 (DummyDeathVolley), Name (Name)
+{
+DummyDeathVolley
 }
 

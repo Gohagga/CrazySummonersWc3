@@ -66,7 +66,6 @@ export class SpellHelper {
         const units: Unit[] = [];
         let u: unit;
         while ((u = FirstOfGroup(SpellGroup)) != null) {
-            print(GetUnitName(u));
             GroupRemoveUnit(SpellGroup, u);
             let U = Unit.fromHandle(u);
             if (!filter || filter(U, source)) {

@@ -1,4 +1,5 @@
 import { GamePlayer } from "./GamePlayer";
+import { HeroSelect } from "./HeroSelect";
 
 export class GameRound {
     private static Timer = CreateTimer();
@@ -13,6 +14,8 @@ export class GameRound {
             EnableTrigger(this.UpdateTrigger);
             this.IsRunning = true;
         }
+
+        HeroSelect.AISelect();
     }
 
     public static End() {

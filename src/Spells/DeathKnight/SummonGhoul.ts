@@ -65,7 +65,7 @@ export class SummonGhoul {
                 }
             });
         });
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 10; i++) {
             let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
         }

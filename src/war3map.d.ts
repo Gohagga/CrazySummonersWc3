@@ -33,3 +33,5 @@ declare var gg_unit_h001_0015: unit;
 declare var gg_unit_e000_0040: unit;
 declare var gg_unit_h001_0006: unit;
 declare var gg_unit_e001_0016: unit;
+declare var gg_unit_h00L_0019: unit;
+declare var gg_unit_h00L_0025: unit;

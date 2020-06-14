@@ -91,6 +91,8 @@ export class DeathVolley {
                         SpellHelper.DummyCastTarget(owner.handle, caster.x, caster.y, c.unit.handle, this.DummySpellId, level, this.DummyOrder);
                     }
                 }
+                caster.issueImmediateOrder("stop");
+                caster.queueAnimation("spell");
             });
             Interruptable.Register(caster.handle, () => {
 

@@ -1,7 +1,10 @@
+import { Unit } from "w3ts/index";
+
 export class GamePlayer {
     public static SpawnPoint: Record<number, location> = {};
     public static Hero: Record<number, unit> = {};
     public static HeroSelect: Record<number, unit> = {};
+    public static Shop: Record<number, Unit> = {};
     public static Team: Record<number, number> = {
         0: 1,
         2: 1,
