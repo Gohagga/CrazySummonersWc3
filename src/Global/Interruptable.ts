@@ -27,6 +27,7 @@ export class Interruptable {
             let order = GetIssuedOrderId();
 
             if (instance.length > 0) {
+                // I think this is learning abilities order ids
                 if ((order+'').substr(0, 6) == "109367") return;
             }
 
