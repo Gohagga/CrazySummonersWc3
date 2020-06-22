@@ -16,6 +16,7 @@ export class Conductivity {
     public static readonly BuffId = Buffs.Conductivity;
     public static readonly Sfx: string = Models.IceBlast;
     public static readonly LightningSfx: string = "CHIM"; // "CLPB";
+    public static readonly DamageSfx: string = "Abilities\\Spells\\Orc\\LightningBolt\\LightningBoltMissile.mdl";
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
@@ -28,6 +29,7 @@ export class Conductivity {
         private caster: Unit,
         private maxTargets: number,
         private data: {
+            interval: number,
             radius: number,
             damage: number,
         }
@@ -36,46 +38,55 @@ export class Conductivity {
         this.timer = new Timer();
     }
 
-    private Start(interval: number, target: Unit) {
+    private Start(target: Unit) {
 
-        this.Execute(target);
+        this.Jump(target);
 
-        // Repeat in steps
-        this.timer.start(interval, true, () => {
-
-            if (this.maxTargets-- < 1) {
-                this.Destroy();
-                return;
-            };
-            const targets = SpellHelper.EnumUnitsInRange(this.originUnit.point, this.data.radius, (t, c) => {
-                let condition = t.isAlive() &&
-                    t.isHero() == false &&
-                    t.isAlly(this.caster.owner) == false &&
-                    t.getAbilityLevel(Conductivity.BuffId) < 1;
-                    
-                return condition;
-            });
-
-            // 1. Find nearby valid target
-            let choices: { unit: Unit, priority: number }[] = [];
-            for (let u of targets) {
-                choices.push({
-                    unit: u,
-                    priority: GetRandomReal(0, 1)
-                });
-            }
-
-            choices.sort((a, b) => a.priority - b.priority);
-            let chosenTarget = choices.pop();
-            if (!chosenTarget) {
-                this.Destroy();
-                return;
-            }
-            this.Execute(chosenTarget.unit);
+        let interval = this.data.interval * GetRandomReal(0.85, 1.15);
+        this.timer.start(interval, false, () => {
+            this.Execute();
         });
     }
 
-    private Execute(nextTarget: Unit) {
+    private Execute() {
+
+        if (this.maxTargets-- < 1) {
+            this.Destroy();
+            return;
+        };
+        const targets = SpellHelper.EnumUnitsInRange(this.originUnit.point, this.data.radius, (t, c) => {
+            let condition = t.isAlive() &&
+                t.isHero() == false &&
+                t.isAlly(this.caster.owner) == false &&
+                t.getAbilityLevel(Conductivity.BuffId) < 1;
+                
+            return condition;
+        });
+
+        // 1. Find nearby valid target
+        let choices: { unit: Unit, priority: number }[] = [];
+        for (let u of targets) {
+            choices.push({
+                unit: u,
+                priority: GetRandomReal(0, 1)
+            });
+        }
+
+        choices.sort((a, b) => a.priority - b.priority);
+        let chosenTarget = choices.pop();
+        if (!chosenTarget) {
+            this.Destroy();
+            return;
+        }
+        this.Jump(chosenTarget.unit);
+
+        let interval = this.data.interval * GetRandomReal(0.5, 1.15);
+        this.timer.start(interval, false, () => {
+            this.Execute();
+        });
+    }
+
+    private Jump(nextTarget: Unit) {
 
         Log.info("Execute", this.maxTargets);
         // 2. Chain to them
@@ -86,6 +97,12 @@ export class Conductivity {
             nextTarget.x, nextTarget.y, nextTarget.getflyHeight());
         // Damage the target unit
         UnitDamageTarget(this.caster.handle, nextTarget.handle, this.data.damage, true, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
+
+        // Create special effect
+        let sfx = new Effect(Conductivity.DamageSfx, nextTarget.x, nextTarget.y);
+        sfx.setHeight(nextTarget.getflyHeight());
+        sfx.destroy();
+
         // Dummy cast a stun ability on the unit
         SpellHelper.DummyCastTarget(this.caster.owner.handle, nextTarget.x, nextTarget.y, nextTarget.handle, Conductivity.DummySpellId, 1, Conductivity.DummyOrder);
 
@@ -118,10 +135,10 @@ export class Conductivity {
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
                 castTime: 1,
                 timer: new Timer(),
-                interval: 0.15,
                 count: math.floor(level * 0.4) + 3,
                 maxTargets: 20,
                 data: {
+                    interval: 0.2,
                     damage: 10 + 5 * level,
                     radius: 350,
                 }
@@ -141,7 +158,7 @@ export class Conductivity {
                 for (let i = 0; i < data.count; i++) {
 
                     let instance = new Conductivity(caster, data.maxTargets, data.data);
-                    instance.Start(data.interval, target);
+                    instance.Start(target);
                 }
                 
                 Log.info("Has been awakened:", data.awakened);
