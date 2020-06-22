@@ -46,6 +46,7 @@ import { SummonSeedling } from "Spells/GroveTender/SummonSeedling";
 import { Fireball } from "Spells/Elementalist/Fireball";
 import { ElementalFocus } from "Spells/Elementalist/ElementalFocus";
 import { IceBlast } from "Spells/Elementalist/IceBlast";
+import { Conductivity } from "Spells/Elementalist/Conductivity";
 
 
 export function InitializeSpells() {
@@ -98,7 +99,7 @@ export function InitializeSpells() {
     // Elementalist
     Fireball.init(Spells.Fireball);
     IceBlast.init(Spells.IceBlast);
-    // Conductivity
+    Conductivity.init(Spells.Conductivity);
     ElementalFocus.init(Spells.ElementalFocusRed, OrbType.Red);
     ElementalFocus.init(Spells.ElementalFocusBlue, OrbType.Blue);
     ElementalFocus.init(Spells.ElementalFocusPurple, OrbType.Purple);
