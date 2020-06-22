@@ -98,6 +98,7 @@ export function InitializeSpells() {
     // Elementalist
     Fireball.init(Spells.Fireball);
     IceBlast.init(Spells.IceBlast);
+    // Conductivity
     ElementalFocus.init(Spells.ElementalFocusRed, OrbType.Red);
     ElementalFocus.init(Spells.ElementalFocusBlue, OrbType.Blue);
     ElementalFocus.init(Spells.ElementalFocusPurple, OrbType.Purple);

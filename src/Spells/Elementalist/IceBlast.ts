@@ -12,6 +12,7 @@ import { SpellHelper } from "Global/SpellHelper";
 export class IceBlast {
     public static SpellId: number;
     public static readonly Sfx: string = Models.IceBlast;
+    public static readonly DamageSfx: string = "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl";
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
@@ -35,7 +36,7 @@ export class IceBlast {
                 done: false,
 
                 awakened: false,
-                damage: 60,
+                damage: 60 + 40 * level,
                 aoe: 200 + 50 * level,
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
                 castTime: 2,
@@ -56,15 +57,15 @@ export class IceBlast {
                 BlzSetSpecialEffectOrientation(sfx, GetRandomReal(0, 3.14), 0, 0);
                 DestroyEffect(sfx);
 
-                let targets = SpellHelper.EnumUnitsInRange(new Point(x, y), data.aoe, (u, c) => 
+                let targets = SpellHelper.EnumUnitsInRange(new Point(x, y), data.aoe, (u) => 
                     u.isAlive() &&
                     u.isHero() == false &&
                     u.isAlly(owner) == false);
 
                 for (let t of targets) {
                     UnitDamageTarget(caster.handle, t.handle, data.damage, true, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
+                    new Effect(this.DamageSfx, t, "origin").destroy();
                 }
-                
 
                 Log.info("Has been awakened:", data.awakened);
             });
