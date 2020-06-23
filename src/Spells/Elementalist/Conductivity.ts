@@ -15,7 +15,7 @@ export class Conductivity {
     public static readonly DummyOrder = "thunderbolt";
     public static readonly BuffId = Buffs.Conductivity;
     public static readonly Sfx: string = Models.IceBlast;
-    public static readonly LightningSfx: string = "CHIM"; // "CLPB";
+    public static readonly LightningSfx: string = "CLSB"; // "CLPB";
     public static readonly DamageSfx: string = "Abilities\\Spells\\Orc\\LightningBolt\\LightningBoltMissile.mdl";
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
@@ -79,6 +79,12 @@ export class Conductivity {
             return;
         }
         this.Jump(chosenTarget.unit);
+        let light = this.light;
+        let tim = new Timer();
+        tim.start(0.3, false, () => {
+            DestroyLightning(light)
+            tim.destroy();
+        });
 
         let interval = this.data.interval * GetRandomReal(0.5, 1.15);
         this.timer.start(interval, false, () => {
@@ -90,11 +96,19 @@ export class Conductivity {
 
         Log.info("Execute", this.maxTargets);
         // 2. Chain to them
-        DestroyLightning(this.light);
+        // DestroyLightning(this.light);
         // Create a lightning effect from current unit to target unit
-        this.light = AddLightningEx(Conductivity.LightningSfx, false, 
+        let light = AddLightningEx(Conductivity.LightningSfx, false, 
             this.originUnit.x, this.originUnit.y, this.originUnit.getflyHeight(),
             nextTarget.x, nextTarget.y, nextTarget.getflyHeight());
+        
+        let tim = new Timer();
+        tim.start(0.6, false, () => {
+            DestroyLightning(light)
+            tim.destroy();
+        });
+        this.light = light;
+
         // Damage the target unit
         UnitDamageTarget(this.caster.handle, nextTarget.handle, this.data.damage, true, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
 
@@ -140,7 +154,7 @@ export class Conductivity {
                 data: {
                     interval: 0.2,
                     damage: 10 + 5 * level,
-                    radius: 350,
+                    radius: 700,
                 }
             }
             Log.info("Conductivity cast");
@@ -150,7 +164,7 @@ export class Conductivity {
                 castBar.Finish();
                 data.castSfx.destroy();
 
-                // if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
+                if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
 
                 Log.info("Effect")
 

@@ -533,6 +533,7 @@ export const Models = {
     Fireball:                   "FireballMedium.mdx",
     CastIceRay:                 "IceRay_03_caster_03.mdl",
     IceBlast:                   "IceBurst_12.mdx",
+    DominationAura:             "DominationAura.mdx",
 }
 
 path = "ReplaceableTextures\\CommandButtons"
