@@ -116,39 +116,39 @@ export class ResourceBar {
         return true;
     }
 
-    // public Check(cost: OrbType[] = []) {
-    //     if (this.bypass) return true;
-    //     let usedTypes: { type: number, available: boolean }[] = [];
-    //     for (let i = 0; i < this.orbs.length; i++) {
-    //         usedTypes[i] = {
-    //             type: this.orbs[i].type,
-    //             available: this.orbs[i].isAvailable
-    //         };
-    //     }
-    //     let usedIndices = [];
-    //     for (let i = 0; i < cost.length; i++) {
-    //         // print("i", i);
-    //         let hasMat = false;
-    //         // print("Checking for "+<OrbType>cost[i], usedTypes.length);
-    //         for (let j = 0; j < usedTypes.length; j++) {
-    //             // print(j, "?")
-    //             let consume = false;
-    //             if (usedTypes[j].available &&
-    //                 cost[i] == usedTypes[j].type) {
-    //                 // print("Found index", j);
-    //                 usedTypes[j].available = false;
-    //                 hasMat = true;
-    //                 usedIndices.push(j+1);
-    //                 break;
-    //             }
-    //         }
-    //         if (hasMat == false) {
-    //             return false;
-    //         }
-    //     }
+    public Check(cost: OrbType[] = []) {
+        if (this.bypass) return true;
+        let usedTypes: { type: number, available: boolean }[] = [];
+        for (let i = 0; i < this.orbs.length; i++) {
+            usedTypes[i] = {
+                type: this.orbs[i].type,
+                available: this.orbs[i].isAvailable
+            };
+        }
+        let usedIndices = [];
+        for (let i = 0; i < cost.length; i++) {
+            // print("i", i);
+            let hasMat = false;
+            // print("Checking for "+<OrbType>cost[i], usedTypes.length);
+            for (let j = 0; j < usedTypes.length; j++) {
+                // print(j, "?")
+                let consume = false;
+                if (usedTypes[j].available &&
+                    cost[i] == usedTypes[j].type) {
+                    // print("Found index", j);
+                    usedTypes[j].available = false;
+                    hasMat = true;
+                    usedIndices.push(j+1);
+                    break;
+                }
+            }
+            if (hasMat == false) {
+                return false;
+            }
+        }
 
-    //     return true;
-    // }
+        return true;
+    }
 
     public CountAvailable(orbType: OrbType) {
         let count = 0;

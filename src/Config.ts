@@ -9,7 +9,7 @@ export function InitConfiguration() {
 }
 
 export const Orders = {
-    AwakenEssence: "elementalfury"
+    AwakenEssence: "elementalfury",
 }
 
 export const Spells = {
@@ -553,6 +553,10 @@ export const Textures = {
 
 export const Log = {
     info: (...args) => {
-        DisplayTextToForce(GetForceOfPlayer(Player(0)), args.join(' '));
+        let strs: string[] = [];
+        for (let a of args) {
+            strs.push(tostring(a));
+        }
+        DisplayTextToForce(GetForceOfPlayer(Player(0)), strs.join(' '));
     }
 }
