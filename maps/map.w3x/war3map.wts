@@ -1069,13 +1069,13 @@ STRING 337
 }
 
 STRING 339
-// Abilities: AE03 (ELE_R Conductivity), Hotkey (Hotkey - Normal)
+// Abilities: A019 (Info), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 340
-// Abilities: AE03 (ELE_R Conductivity), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S2 (Purge), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1123,7 +1123,7 @@ STRING 348
 }
 
 STRING 349
-// Abilities: AE04 (ELE_R Flame Barrage), Hotkey (Hotkey - Normal)
+// Abilities: A0S5 (Justice Hand), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1159,7 +1159,7 @@ Summons more powerful magic troops
 }
 
 STRING 375
-// Abilities: A019 (Info), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S6 (Taint), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1181,7 +1181,7 @@ Guardian Angel
 }
 
 STRING 380
-// Abilities: A0S2 (Purge), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S7 (Crazy Imp), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1217,7 +1217,7 @@ Invigorate
 }
 
 STRING 391
-// Abilities: A0S5 (Justice Hand), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S8 (Contagious Insanity), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1385,7 +1385,7 @@ Determination Mastery
 }
 
 STRING 443
-// Abilities: A0S6 (Taint), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S9 (Collateral Damage), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1451,7 +1451,7 @@ Repentance Mastery
 }
 
 STRING 455
-// Abilities: A0S7 (Crazy Imp), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SA (Call Succubus), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1505,7 +1505,7 @@ Restoration Mastery
 }
 
 STRING 467
-// Abilities: A0S8 (Contagious Insanity), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SB (Steal Essence), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1881,7 +1881,7 @@ Learn White Power %d  (|cffffcc00Q|r)
 }
 
 STRING 704
-// Abilities: A0S9 (Collateral Damage), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S1 (Bless), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -2628,13 +2628,13 @@ Taint
 }
 
 STRING 1044
-// Abilities: A0SA (Call Succubus), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SC (Clear recipe), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 1045
-// Abilities: A0SB (Steal Essence), Researchhotkey (Hotkey - Learn)
+// Abilities: AE0M (Element Mastery), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -2820,13 +2820,13 @@ STRING 1093
 }
 
 STRING 1103
-// Abilities: A0S1 (Bless), Researchhotkey (Hotkey - Learn)
+// Abilities: A01K (Destroy Essence), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 1104
-// Abilities: A0SC (Clear recipe), Hotkey (Hotkey - Normal)
+// Abilities: A01L (Crystalize), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -2850,13 +2850,13 @@ STRING 1120
 }
 
 STRING 1121
-// Abilities: AE06 (ELE_R Living Current), Hotkey (Hotkey - Normal)
+// Abilities: A0SL (Channel Energy), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 1122
-// Abilities: AE06 (ELE_R Living Current), Researchhotkey (Hotkey - Learn)
+// Abilities: A01T (In the Name of Light), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -2874,13 +2874,13 @@ Collateral Damage
 }
 
 STRING 1132
-// Abilities: AE0M (Element Mastery), Researchhotkey (Hotkey - Learn)
+// Abilities: A01T (In the Name of Light), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 1133
-// Abilities: AE05 (ELE_R Dry Ice), Hotkey (Hotkey - Normal)
+// Abilities: A02D (Magic Barrier), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -2934,13 +2934,13 @@ Summons more powerful melee troops
 }
 
 STRING 1155
-// Abilities: AE05 (ELE_R Dry Ice), Researchhotkey (Hotkey - Learn)
+// Abilities: A02J (Consecrate), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 1156
-// Abilities: AE07 (ELE_R Inferno), Hotkey (Hotkey - Normal)
+// Abilities: A02K (Greater Dispel), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -2964,13 +2964,13 @@ STRING 1163
 }
 
 STRING 1164
-// Abilities: AE08 (ELE_R Absolute Null Zone), Hotkey (Hotkey - Normal)
+// Abilities: A02K (Greater Dispel), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 1165
-// Abilities: AE08 (ELE_R Absolute Null Zone), Researchhotkey (Hotkey - Learn)
+// Abilities: A02T (DummyChill Blast), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -3000,13 +3000,13 @@ STRING 1174
 }
 
 STRING 1175
-// Abilities: A01K (Destroy Essence), Researchhotkey (Hotkey - Learn)
+// Abilities: A02T (DummyChill Blast), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 1176
-// Abilities: A01L (Crystalize), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SN (Bless), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -3036,13 +3036,13 @@ Summons more powerful melee troops
 }
 
 STRING 1202
-// Abilities: A0SL (Channel Energy), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SO (Purge), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 1203
-// Abilities: A01T (In the Name of Light), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SQ (Greater Dispel), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -3054,7 +3054,7 @@ Paranoia
 }
 
 STRING 1211
-// Abilities: A01T (In the Name of Light), Hotkey (Hotkey - Normal)
+// Abilities: A0SQ (Greater Dispel), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -4786,13 +4786,13 @@ STRING 1787
 }
 
 STRING 1788
-// Abilities: A02D (Magic Barrier), Hotkey (Hotkey - Normal)
+// Abilities: A0SR (Justice Hand), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 1789
-// Abilities: A02J (Consecrate), Hotkey (Hotkey - Normal)
+// Abilities: A0SS (Blood Feast), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -4864,7 +4864,7 @@ Q
 }
 
 STRING 1843
-// Abilities: A02K (Greater Dispel), Hotkey (Hotkey - Normal)
+// Abilities: A0ST (Dark Portal), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -4984,7 +4984,7 @@ Flame Barrage
 }
 
 STRING 1882
-// Abilities: A02K (Greater Dispel), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SU (Paranoia), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -5044,7 +5044,7 @@ A
 }
 
 STRING 1921
-// Abilities: A02T (DummyChill Blast), Researchhotkey (Hotkey - Learn)
+// Abilities: AA01 (Barrier), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5080,7 +5080,7 @@ E
 }
 
 STRING 1932
-// Abilities: A02T (DummyChill Blast), Hotkey (Hotkey - Normal)
+// Abilities: AA01 (Barrier), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -5224,7 +5224,7 @@ W
 }
 
 STRING 1961
-// Abilities: AE02 (ELE_R Chill Blast), Hotkey (Hotkey - Normal)
+// Abilities: A03C (DummyPurge), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5362,7 +5362,7 @@ S
 }
 
 STRING 1987
-// Abilities: AE02 (ELE_R Chill Blast), Researchhotkey (Hotkey - Learn)
+// Abilities: A03C (DummyPurge), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -5458,7 +5458,7 @@ STRING 2016
 }
 
 STRING 2017
-// Abilities: AE09 (ELE_R Ionic Channel), Hotkey (Hotkey - Normal)
+// Abilities: A03H (Paladin Spells), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5512,13 +5512,13 @@ STRING 2028
 }
 
 STRING 2029
-// Abilities: A0S2 (Purge), Hotkey (Hotkey - Normal)
+// Abilities: AE03 (ELE_R Conductivity), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 2030
-// Abilities: AE09 (ELE_R Ionic Channel), Researchhotkey (Hotkey - Learn)
+// Abilities: A03I (Warlock Spells), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5590,7 +5590,7 @@ D
 }
 
 STRING 2053
-// Abilities: A0SN (Bless), Researchhotkey (Hotkey - Learn)
+// Abilities: A03K (Death Knight Spells), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5626,7 +5626,7 @@ STRING 2062
 }
 
 STRING 2064
-// Abilities: A0SO (Purge), Researchhotkey (Hotkey - Learn)
+// Abilities: A03P (Elementalist Spells), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5769,22 +5769,10 @@ STRING 2094
 Summons more powerful melee troops
 }
 
-STRING 2095
-// Abilities: A0SQ (Greater Dispel), Hotkey (Hotkey - Normal)
-{
-R
-}
-
 STRING 2096
 // Abilities: A019 (Info), Name (Name)
 {
 Info
-}
-
-STRING 2097
-// Abilities: A0SQ (Greater Dispel), Researchhotkey (Hotkey - Learn)
-{
-R
 }
 
 STRING 2098
@@ -5881,12 +5869,6 @@ STRING 2127
 // Abilities: A0SV (Redemption), Tip (Tooltip - Normal)
 {
 |cffffff80Endure|r - Expert
-}
-
-STRING 2128
-// Abilities: A0SR (Justice Hand), Researchhotkey (Hotkey - Learn)
-{
-R
 }
 
 STRING 2129
@@ -6103,18 +6085,6 @@ STRING 2293
 // Abilities: A0SI (Living Current), Name (Name)
 {
 Living Current
-}
-
-STRING 2300
-// Abilities: A0SS (Blood Feast), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 2301
-// Abilities: A0ST (Dark Portal), Researchhotkey (Hotkey - Learn)
-{
-R
 }
 
 STRING 2310
@@ -6681,30 +6651,6 @@ STRING 2436
 Lightning Mastery
 }
 
-STRING 2437
-// Abilities: A0SU (Paranoia), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 2438
-// Abilities: AA01 (Barrier), Hotkey (Hotkey - Normal)
-{
-R
-}
-
-STRING 2439
-// Abilities: AA01 (Barrier), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 2440
-// Abilities: A03C (DummyPurge), Hotkey (Hotkey - Normal)
-{
-R
-}
-
 STRING 2441
 // Abilities: AE01 (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
 {
@@ -6831,18 +6777,6 @@ STRING 2478
 (dryice)
 }
 
-STRING 2485
-// Abilities: A03C (DummyPurge), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 2486
-// Abilities: A03H (Paladin Spells), Hotkey (Hotkey - Normal)
-{
-R
-}
-
 STRING 2495
 // Abilities: A01K (Destroy Essence), Researchtip (Tooltip - Learn)
 {
@@ -6862,49 +6796,43 @@ Dry Ice
 }
 
 STRING 2498
-// Abilities: A0S3 (Invigorate), Hotkey (Hotkey - Normal)
+// Abilities: AE04 (ELE_R Flame Barrage), Hotkey (Hotkey - Normal)
 {
 A
 }
 
-STRING 2499
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 1
-}
-
 STRING 2500
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 2
 }
 
 STRING 2501
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 3
 }
 
 STRING 2502
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 4
 }
 
 STRING 2503
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 5
 }
 
 STRING 2504
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 6
 }
 
 STRING 2505
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 7
 }
@@ -7015,12 +6943,6 @@ STRING 2527
 // Abilities: AE07 (ELE_R Inferno), Tip (Tooltip - Normal)
 {
 |cffffcc00Inferno|r - 3
-}
-
-STRING 2528
-// Abilities: A03I (Warlock Spells), Hotkey (Hotkey - Normal)
-{
-R
 }
 
 STRING 2529
@@ -7171,18 +7093,6 @@ STRING 2564
 // Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
 {
 |cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 3
-}
-
-STRING 2565
-// Abilities: A03K (Death Knight Spells), Hotkey (Hotkey - Normal)
-{
-R
-}
-
-STRING 2566
-// Abilities: A03P (Elementalist Spells), Hotkey (Hotkey - Normal)
-{
-R
 }
 
 STRING 2567
@@ -7384,7 +7294,7 @@ STRING 2614
 }
 
 STRING 2627
-// Abilities: A0S9 (Collateral Damage), Hotkey (Hotkey - Normal)
+// Abilities: AE04 (ELE_R Flame Barrage), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -7462,7 +7372,7 @@ Essence of Lightning
 }
 
 STRING 2658
-// Abilities: A01H (Awaken Essence), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S3 (Invigorate), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -7737,46 +7647,10 @@ STRING 2707
 Release Essence |cff808080(B)|r
 }
 
-STRING 2708
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 2
-}
-
-STRING 2709
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 3
-}
-
 STRING 2710
 // Abilities: A01K (Destroy Essence), Hotkey (Hotkey - Normal)
 {
 B
-}
-
-STRING 2712
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 4
-}
-
-STRING 2714
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 5
-}
-
-STRING 2715
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 6
-}
-
-STRING 2716
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 7
 }
 
 STRING 2720
@@ -8428,13 +8302,13 @@ Starts throwing spheres of flame towards the target point. These do 1 damage to 
 }
 
 STRING 2877
-// Abilities: A01I (Energize), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S9 (Collateral Damage), Hotkey (Hotkey - Normal)
 {
 A
 }
 
 STRING 2878
-// Abilities: A01I (Energize), Hotkey (Hotkey - Normal)
+// Abilities: A01H (Awaken Essence), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -8458,7 +8332,7 @@ Z
 }
 
 STRING 2886
-// Abilities: A0SJ (Inferno), Hotkey (Hotkey - Normal)
+// Abilities: AE07 (ELE_R Inferno), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -8716,13 +8590,13 @@ Purple Power
 }
 
 STRING 2987
-// Abilities: A0S8 (Contagious Insanity), Hotkey (Hotkey - Normal)
+// Abilities: AE03 (ELE_R Conductivity), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 2988
-// Abilities: A0SF (Conductivity), Hotkey (Hotkey - Normal)
+// Abilities: A0S2 (Purge), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -8812,13 +8686,13 @@ The most important thing for an elementalist is to strengthen his spells. After 
 }
 
 STRING 3023
-// Abilities: A0SF (Conductivity), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S8 (Contagious Insanity), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 3024
-// Abilities: A01O (Purple Power), Hotkey (Hotkey - Normal)
+// Abilities: A0SF (Conductivity), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -9202,7 +9076,7 @@ Extreme chill
 }
 
 STRING 3194
-// Abilities: A0SG (Flame Barrage), Hotkey (Hotkey - Normal)
+// Abilities: A01I (Energize), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9268,7 +9142,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3205
-// Abilities: A0SG (Flame Barrage), Researchhotkey (Hotkey - Learn)
+// Abilities: A01I (Energize), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9280,7 +9154,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3207
-// Abilities: A01W (Awaken Passive Fireball), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SG (Flame Barrage), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9346,7 +9220,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3218
-// Abilities: A01W (Awaken Passive Fireball), Hotkey (Hotkey - Normal)
+// Abilities: A0SG (Flame Barrage), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9358,7 +9232,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3220
-// Abilities: A01X (Awaken Passive Chill Blast), Researchhotkey (Hotkey - Learn)
+// Abilities: A01W (Awaken Passive Fireball), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9424,7 +9298,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3231
-// Abilities: A01X (Awaken Passive Chill Blast), Hotkey (Hotkey - Normal)
+// Abilities: A01W (Awaken Passive Fireball), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9436,7 +9310,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3233
-// Abilities: A01Y (Awaken Passive Conductivity), Researchhotkey (Hotkey - Learn)
+// Abilities: A01X (Awaken Passive Chill Blast), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9502,7 +9376,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3244
-// Abilities: A01Y (Awaken Passive Conductivity), Hotkey (Hotkey - Normal)
+// Abilities: A01X (Awaken Passive Chill Blast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9514,7 +9388,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3246
-// Abilities: A01Z (Awaken Passive Flame Barrage), Researchhotkey (Hotkey - Learn)
+// Abilities: A01Y (Awaken Passive Conductivity), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9580,7 +9454,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3257
-// Abilities: A01Z (Awaken Passive Flame Barrage), Hotkey (Hotkey - Normal)
+// Abilities: A01Y (Awaken Passive Conductivity), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9592,7 +9466,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3259
-// Abilities: A020 (Awaken Passive Dry Ice), Researchhotkey (Hotkey - Learn)
+// Abilities: A01Z (Awaken Passive Flame Barrage), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9658,7 +9532,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3270
-// Abilities: A020 (Awaken Passive Dry Ice), Hotkey (Hotkey - Normal)
+// Abilities: A01Z (Awaken Passive Flame Barrage), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9670,7 +9544,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3272
-// Abilities: A021 (Awaken Passive Living Current), Researchhotkey (Hotkey - Learn)
+// Abilities: A020 (Awaken Passive Dry Ice), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9736,7 +9610,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3283
-// Abilities: A021 (Awaken Passive Living Current), Hotkey (Hotkey - Normal)
+// Abilities: A020 (Awaken Passive Dry Ice), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9748,7 +9622,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3285
-// Abilities: A022 (Awaken Passive Inferno), Researchhotkey (Hotkey - Learn)
+// Abilities: A021 (Awaken Passive Living Current), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9814,7 +9688,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3296
-// Abilities: A022 (Awaken Passive Inferno), Hotkey (Hotkey - Normal)
+// Abilities: A021 (Awaken Passive Living Current), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -10468,13 +10342,13 @@ High Inquisitor
 }
 
 STRING 3440
-// Abilities: A023 (Awaken Passive Absolute Null Zone), Researchhotkey (Hotkey - Learn)
+// Abilities: A022 (Awaken Passive Inferno), Researchhotkey (Hotkey - Learn)
 {
 A
 }
 
 STRING 3453
-// Abilities: A023 (Awaken Passive Absolute Null Zone), Hotkey (Hotkey - Normal)
+// Abilities: A022 (Awaken Passive Inferno), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -10792,7 +10666,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 3584
-// Abilities: A0SH (Dry Ice), Hotkey (Hotkey - Normal)
+// Abilities: AE05 (ELE_R Dry Ice), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -10978,19 +10852,19 @@ rhpx
 }
 
 STRING 3616
-// Abilities: A01O (Purple Power), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SF (Conductivity), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 3617
-// Abilities: A029 (Task Force Torturers), Hotkey (Hotkey - Normal)
+// Abilities: A01O (Purple Power), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 3618
-// Abilities: A029 (Task Force Torturers), Unhotkey (Hotkey - Turn Off)
+// Abilities: A01O (Purple Power), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -11002,19 +10876,19 @@ Force type: Torturers |cff808080(E)|r
 }
 
 STRING 3621
-// Abilities: A02E (Task Force Investigators), Hotkey (Hotkey - Normal)
+// Abilities: A029 (Task Force Torturers), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 3622
-// Abilities: A02E (Task Force Investigators), Unhotkey (Hotkey - Turn Off)
+// Abilities: A029 (Task Force Torturers), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
 
 STRING 3623
-// Abilities: A02A (Task Force Inquisitors), Hotkey (Hotkey - Normal)
+// Abilities: A02E (Task Force Investigators), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -11566,7 +11440,7 @@ STRING 3739
 }
 
 STRING 3740
-// Abilities: A0SJ (Inferno), Researchhotkey (Hotkey - Learn)
+// Abilities: AE07 (ELE_R Inferno), Researchhotkey (Hotkey - Learn)
 {
 Z
 }
@@ -11620,7 +11494,7 @@ STRING 3749
 }
 
 STRING 3750
-// Abilities: A0SK (Absolute Null Zone), Hotkey (Hotkey - Normal)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -11836,13 +11710,13 @@ STRING 3805
 }
 
 STRING 3806
-// Abilities: A02C (Task Force Training Learn), Researchhotkey (Hotkey - Learn)
+// Abilities: A023 (Awaken Passive Absolute Null Zone), Researchhotkey (Hotkey - Learn)
 {
 A
 }
 
 STRING 3807
-// Abilities: A02C (Task Force Training Learn), Hotkey (Hotkey - Normal)
+// Abilities: A023 (Awaken Passive Absolute Null Zone), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -12064,7 +11938,7 @@ W|cffff3333R|r - |cffffff80Purge |r|cff808080(E)|r
 }
 
 STRING 3857
-// Abilities: A02A (Task Force Inquisitors), Unhotkey (Hotkey - Turn Off)
+// Abilities: A02E (Task Force Investigators), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -12112,7 +11986,7 @@ STRING 3872
 }
 
 STRING 3873
-// Abilities: AE0M (Element Mastery), Hotkey (Hotkey - Normal)
+// Abilities: AE06 (ELE_R Living Current), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -12460,7 +12334,7 @@ STRING 3960
 }
 
 STRING 3963
-// Abilities: A02R (Death Knight Spellbook), Hotkey (Hotkey - Normal)
+// Abilities: AE09 (ELE_R Ionic Channel), Researchhotkey (Hotkey - Learn)
 {
 C
 }
@@ -12490,7 +12364,7 @@ Call Succubus
 }
 
 STRING 3988
-// Abilities: AW07 (Blood Feast), Hotkey (Hotkey - Normal)
+// Abilities: A0SJ (Inferno), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -12604,7 +12478,7 @@ Summons more powerful melee troops
 }
 
 STRING 4013
-// Abilities: A0SK (Absolute Null Zone), Researchhotkey (Hotkey - Learn)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Researchhotkey (Hotkey - Learn)
 {
 X
 }
@@ -13102,7 +12976,7 @@ STRING 4142
 }
 
 STRING 4143
-// Abilities: A0SP (Magic Barrier), Hotkey (Hotkey - Normal)
+// Abilities: A02C (Task Force Training Learn), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -13168,7 +13042,7 @@ Death Knight
 }
 
 STRING 4156
-// Abilities: A0SI (Living Current), Hotkey (Hotkey - Normal)
+// Abilities: AE06 (ELE_R Living Current), Researchhotkey (Hotkey - Learn)
 {
 D
 }
@@ -13180,7 +13054,7 @@ Summon Ghoul
 }
 
 STRING 4180
-// Abilities: A0SN (Bless), Hotkey (Hotkey - Normal)
+// Abilities: AE02 (ELE_R Chill Blast), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -13192,7 +13066,7 @@ STRING 4181
 }
 
 STRING 4182
-// Abilities: A02O (Summon Ghoul), Hotkey (Hotkey - Normal)
+// Abilities: AE02 (ELE_R Chill Blast), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -13204,7 +13078,7 @@ Summon Abomination
 }
 
 STRING 4206
-// Abilities: A0SO (Purge), Hotkey (Hotkey - Normal)
+// Abilities: A02A (Task Force Inquisitors), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -13216,7 +13090,7 @@ STRING 4207
 }
 
 STRING 4208
-// Abilities: A02P (Summon Abomination), Hotkey (Hotkey - Normal)
+// Abilities: A02A (Task Force Inquisitors), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -13462,7 +13336,7 @@ Creates a barrier that stops spells from affecting a target unit. |nLasts|cff8a8
 }
 
 STRING 4250
-// Abilities: A0SI (Living Current), Researchhotkey (Hotkey - Learn)
+// Abilities: AE0M (Element Mastery), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -13534,13 +13408,13 @@ Death Knight Spellbook
 }
 
 STRING 4274
-// Abilities: A02V (Unlock Dark Arts), Hotkey (Hotkey - Normal)
+// Abilities: A02R (Death Knight Spellbook), Hotkey (Hotkey - Normal)
 {
 C
 }
 
 STRING 4276
-// Abilities: A0SY (Ionic Channel), Researchhotkey (Hotkey - Learn)
+// Abilities: A02V (Unlock Dark Arts), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -13564,7 +13438,7 @@ Choose |cff8a8affBlue|r |cff808080(W)|r
 }
 
 STRING 4280
-// Abilities: A02O (Summon Ghoul), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SN (Bless), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -13624,7 +13498,7 @@ Strengthen your mastery over magical energy. Cooldown and manacost reduce with l
 }
 
 STRING 4290
-// Abilities: A02X (Unholy Magic), Hotkey (Hotkey - Normal)
+// Abilities: A02O (Summon Ghoul), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -13636,7 +13510,7 @@ Unholy Magic
 }
 
 STRING 4293
-// Abilities: A031 (Lane Drain Immunity), Hotkey (Hotkey - Normal)
+// Abilities: A02O (Summon Ghoul), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -13792,7 +13666,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 4329
-// Abilities: A0SH (Dry Ice), Researchhotkey (Hotkey - Learn)
+// Abilities: AE05 (ELE_R Dry Ice), Researchhotkey (Hotkey - Learn)
 {
 S
 }
@@ -13810,7 +13684,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 4332
-// Abilities: A02B ((Task Force Training Learn)), Hotkey (Hotkey - Normal)
+// Abilities: A0SH (Dry Ice), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -13858,7 +13732,7 @@ Advanced Mastery - [|cffffcc00Level 1|r]
 }
 
 STRING 4342
-// Abilities: A02B ((Task Force Training Learn)), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SH (Dry Ice), Researchhotkey (Hotkey - Learn)
 {
 S
 }
@@ -13876,7 +13750,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 4345
-// Abilities: A02Z (Might), Hotkey (Hotkey - Normal)
+// Abilities: A02B ((Task Force Training Learn)), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -14206,7 +14080,7 @@ Mastery - [|cffffcc00Level 3|r]
 }
 
 STRING 4448
-// Abilities: A02Z (Might), Researchhotkey (Hotkey - Learn)
+// Abilities: A02B ((Task Force Training Learn)), Researchhotkey (Hotkey - Learn)
 {
 S
 }
@@ -14218,7 +14092,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 4451
-// Abilities: A02G (LeechBites), Hotkey (Hotkey - Normal)
+// Abilities: A02Z (Might), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -14266,7 +14140,7 @@ Corrupted Blood
 }
 
 STRING 4486
-// Abilities: A0SP (Magic Barrier), Researchhotkey (Hotkey - Learn)
+// Abilities: A02C (Task Force Training Learn), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -14344,7 +14218,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 4499
-// Abilities: AW04 (Ritual of Death), Hotkey (Hotkey - Normal)
+// Abilities: A0SP (Magic Barrier), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -14474,7 +14348,7 @@ Unlock |cff8080ffNecromancy|r (E)
 }
 
 STRING 4593
-// Abilities: A02P (Summon Abomination), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SO (Purge), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -14648,7 +14522,7 @@ STRING 4702
 }
 
 STRING 4703
-// Abilities: ADK2 (Corrupted Blood), Hotkey (Hotkey - Normal)
+// Abilities: A0SP (Magic Barrier), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -14702,7 +14576,7 @@ STRING 4713
 }
 
 STRING 4714
-// Abilities: A0SS (Blood Feast), Hotkey (Hotkey - Normal)
+// Abilities: A0SJ (Inferno), Researchhotkey (Hotkey - Learn)
 {
 Z
 }
@@ -14756,7 +14630,7 @@ STRING 4724
 }
 
 STRING 4725
-// Abilities: A02Y (Necromancy), Hotkey (Hotkey - Normal)
+// Abilities: A02P (Summon Abomination), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -14816,7 +14690,7 @@ STRING 4735
 }
 
 STRING 4736
-// Abilities: A0SL (Channel Energy), Hotkey (Hotkey - Normal)
+// Abilities: A0SI (Living Current), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -15218,7 +15092,7 @@ Wait for the curse to trigger...
 }
 
 STRING 4902
-// Abilities: A0ST (Dark Portal), Hotkey (Hotkey - Normal)
+// Abilities: A0SK (Absolute Null Zone), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -15344,19 +15218,19 @@ While inside this unit is immune to magic and cannot cast spells.
 }
 
 STRING 4929
-// Abilities: A02G (LeechBites), Researchhotkey (Hotkey - Learn)
+// Abilities: A02Z (Might), Researchhotkey (Hotkey - Learn)
 {
 S
 }
 
 STRING 4930
-// Abilities: A031 (Lane Drain Immunity), Unhotkey (Hotkey - Turn Off)
+// Abilities: A02X (Unholy Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 4931
-// Abilities: A02U (DummyLeech Corrupted Blood), Researchhotkey (Hotkey - Learn)
+// Abilities: AW04 (Ritual of Death), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -15428,7 +15302,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 4944
-// Abilities: A02U (DummyLeech Corrupted Blood), Hotkey (Hotkey - Normal)
+// Abilities: ADK2 (Corrupted Blood), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -15680,7 +15554,7 @@ Creates an area where units that enter gain spell immunity and are silenced.|nDu
 }
 
 STRING 5023
-// Abilities: A0T0 (Corrupted Blood), Hotkey (Hotkey - Normal)
+// Abilities: A02U (DummyLeech Corrupted Blood), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -15746,7 +15620,7 @@ This unit is an animated corpse. It will fall apart after a while.
 }
 
 STRING 5034
-// Abilities: A03A (Dk information), Researchhotkey (Hotkey - Learn)
+// Abilities: A02U (DummyLeech Corrupted Blood), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -16472,43 +16346,43 @@ STRING 5258
 }
 
 STRING 5259
-// Abilities: A0SR (Justice Hand), Hotkey (Hotkey - Normal)
+// Abilities: A0SI (Living Current), Researchhotkey (Hotkey - Learn)
 {
 D
 }
 
 STRING 5260
-// Abilities: A0SV (Redemption), Hotkey (Hotkey - Normal)
+// Abilities: AW07 (Blood Feast), Hotkey (Hotkey - Normal)
 {
 Z
 }
 
 STRING 5261
-// Abilities: A02Q (Anti-magic Shell), Hotkey (Hotkey - Normal)
+// Abilities: A0SL (Channel Energy), Hotkey (Hotkey - Normal)
 {
 D
 }
 
 STRING 5262
-// Abilities: A0SW (Guardian Angel), Hotkey (Hotkey - Normal)
+// Abilities: A0SK (Absolute Null Zone), Researchhotkey (Hotkey - Learn)
 {
 X
 }
 
 STRING 5263
-// Abilities: ADK5 (Antimagic Zone), Hotkey (Hotkey - Normal)
+// Abilities: A02G (LeechBites), Hotkey (Hotkey - Normal)
 {
 S
 }
 
 STRING 5264
-// Abilities: ADK4 (Death Volley), Hotkey (Hotkey - Normal)
+// Abilities: A031 (Lane Drain Immunity), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 5265
-// Abilities: A03A (Dk information), Hotkey (Hotkey - Normal)
+// Abilities: A0T0 (Corrupted Blood), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -16532,7 +16406,7 @@ STRING 5268
 }
 
 STRING 5269
-// Abilities: ADK7 (Death's Embrace), Hotkey (Hotkey - Normal)
+// Abilities: A02P (Summon Abomination), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -16952,37 +16826,37 @@ STRING 5348
 }
 
 STRING 5349
-// Abilities: ADK3 (Vampire's Boon), Hotkey (Hotkey - Normal)
+// Abilities: A0SS (Blood Feast), Hotkey (Hotkey - Normal)
 {
 Z
 }
 
 STRING 5350
-// Abilities: A030 (Will), Hotkey (Hotkey - Normal)
+// Abilities: A0SR (Justice Hand), Hotkey (Hotkey - Normal)
 {
 D
 }
 
 STRING 5351
-// Abilities: ADK6 (Unholy Curse), Hotkey (Hotkey - Normal)
+// Abilities: A0ST (Dark Portal), Hotkey (Hotkey - Normal)
 {
 X
 }
 
 STRING 5353
-// Abilities: A0T7 (Death Volley), Hotkey (Hotkey - Normal)
+// Abilities: A031 (Lane Drain Immunity), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
 
 STRING 5354
-// Abilities: A03B (DummyArmy of the Dead Passive), Researchhotkey (Hotkey - Learn)
+// Abilities: A03A (Dk information), Researchhotkey (Hotkey - Learn)
 {
 A
 }
 
 STRING 5355
-// Abilities: A0T2 (Death's Embrace), Hotkey (Hotkey - Normal)
+// Abilities: A02Y (Necromancy), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -17640,37 +17514,37 @@ Spells
 }
 
 STRING 5595
-// Abilities: A0T1 (Vampire's Boon), Hotkey (Hotkey - Normal)
+// Abilities: A0SV (Redemption), Hotkey (Hotkey - Normal)
 {
 Z
 }
 
 STRING 5596
-// Abilities: A030 (Will), Researchhotkey (Hotkey - Learn)
+// Abilities: A02Q (Anti-magic Shell), Hotkey (Hotkey - Normal)
 {
 D
 }
 
 STRING 5597
-// Abilities: A0T5 (Unholy Curse), Hotkey (Hotkey - Normal)
+// Abilities: A0SW (Guardian Angel), Hotkey (Hotkey - Normal)
 {
 X
 }
 
 STRING 5599
-// Abilities: A03L (Lane Persistance), Hotkey (Hotkey - Normal)
+// Abilities: ADK4 (Death Volley), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 5600
-// Abilities: A03B (DummyArmy of the Dead Passive), Hotkey (Hotkey - Normal)
+// Abilities: A03A (Dk information), Hotkey (Hotkey - Normal)
 {
 A
 }
 
 STRING 5601
-// Abilities: AP03 (Purge), Hotkey (Hotkey - Normal)
+// Abilities: ADK7 (Death's Embrace), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -18150,7 +18024,7 @@ Choose |cff8a8affBlue|r |cff808080(W)|r
 }
 
 STRING 5689
-// Abilities: A03L (Lane Persistance), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0T7 (Death Volley), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -18210,7 +18084,7 @@ Strengthen your mastery over magical energy. Cooldown and manacost reduce with l
 }
 
 STRING 5699
-// Abilities: AP02 (Bless), Hotkey (Hotkey - Normal)
+// Abilities: A03L (Lane Persistance), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -18248,13 +18122,13 @@ Corrupt target unit's blood, making it unhealable through spells. If living, it 
 }
 
 STRING 5704
-// Abilities: ADK8 (Death and Decay), Hotkey (Hotkey - Normal)
+// Abilities: A030 (Will), Hotkey (Hotkey - Normal)
 {
 D
 }
 
 STRING 5705
-// Abilities: A0T3 (Death and Decay), Hotkey (Hotkey - Normal)
+// Abilities: A030 (Will), Researchhotkey (Hotkey - Learn)
 {
 D
 }
@@ -21684,7 +21558,7 @@ Larodar,Anubris,Nandieb,Califax,Bandalar,Malorne,Gholbine,Dagda,Nuada,Oghma,Cent
 }
 
 STRING 6349
-// Abilities: A0T6 (Antimagic Zone), Hotkey (Hotkey - Normal)
+// Abilities: A02G (LeechBites), Researchhotkey (Hotkey - Learn)
 {
 S
 }
@@ -21936,7 +21810,7 @@ Summoned seedlings' level and stats are increased.
 }
 
 STRING 6399
-// Abilities: A03O (Summon Seedling), Hotkey (Hotkey - Normal)
+// Abilities: A03L (Lane Persistance), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -21948,7 +21822,7 @@ STRING 6400
 }
 
 STRING 6401
-// Abilities: A03O (Summon Seedling), Researchhotkey (Hotkey - Learn)
+// Abilities: AP02 (Bless), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -22023,5 +21897,137 @@ STRING 6414
 // Units: h01K (TestDummy), Name (Name)
 {
 TestDummy
+}
+
+STRING 6415
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 1
+}
+
+STRING 6416
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 2
+}
+
+STRING 6417
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 3
+}
+
+STRING 6418
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 4
+}
+
+STRING 6419
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 5
+}
+
+STRING 6420
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 6
+}
+
+STRING 6421
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 7
+}
+
+STRING 6422
+// Abilities: A0SY (Ionic Channel), Researchhotkey (Hotkey - Learn)
+{
+C
+}
+
+STRING 6423
+// Abilities: ADK3 (Vampire's Boon), Hotkey (Hotkey - Normal)
+{
+Z
+}
+
+STRING 6424
+// Abilities: ADK8 (Death and Decay), Hotkey (Hotkey - Normal)
+{
+D
+}
+
+STRING 6425
+// Abilities: A0T1 (Vampire's Boon), Hotkey (Hotkey - Normal)
+{
+Z
+}
+
+STRING 6426
+// Abilities: A0T2 (Death's Embrace), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 6427
+// Abilities: A0T3 (Death and Decay), Hotkey (Hotkey - Normal)
+{
+D
+}
+
+STRING 6428
+// Abilities: ADK6 (Unholy Curse), Hotkey (Hotkey - Normal)
+{
+X
+}
+
+STRING 6429
+// Abilities: A0T5 (Unholy Curse), Hotkey (Hotkey - Normal)
+{
+X
+}
+
+STRING 6430
+// Abilities: ADK5 (Antimagic Zone), Hotkey (Hotkey - Normal)
+{
+S
+}
+
+STRING 6431
+// Abilities: A0T6 (Antimagic Zone), Hotkey (Hotkey - Normal)
+{
+S
+}
+
+STRING 6432
+// Abilities: A03B (DummyArmy of the Dead Passive), Researchhotkey (Hotkey - Learn)
+{
+A
+}
+
+STRING 6433
+// Abilities: A03B (DummyArmy of the Dead Passive), Hotkey (Hotkey - Normal)
+{
+A
+}
+
+STRING 6434
+// Abilities: AP03 (Purge), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 6435
+// Abilities: A03O (Summon Seedling), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 6436
+// Abilities: A03O (Summon Seedling), Researchhotkey (Hotkey - Learn)
+{
+W
 }
 

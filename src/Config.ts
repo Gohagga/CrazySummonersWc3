@@ -87,7 +87,7 @@ export const Spells = {
     IceBlast:                   FourCC('AE02'),
     Conductivity:               FourCC('AE03'),
     FlameBarrage:               FourCC('AE04'),
-    BeamOfFrost:                FourCC('AE05'),
+    RayOfCold:                FourCC('AE05'),
     LivingCurrent:              FourCC('AE06'),
     Inferno:                    FourCC('AE07'),
     FrostNova:                  FourCC('AE08'),
