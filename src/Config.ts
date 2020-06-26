@@ -531,7 +531,7 @@ export const Models = {
     OrbOfFire:                  "OrbOfFire.mdx",
     FireExplosion:              "Firaga2.mdx",
     Fireball:                   "FireballMedium.mdx",
-    CastIceRay:                 "IceRay_03_caster_03.mdl",
+    CastIceRay:                 "IceRay_08.mdl",
     IceBlast:                   "IceBurst_12.mdx",
     DominationAura:             "DominationAura.mdx",
 }

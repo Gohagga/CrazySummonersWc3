@@ -14,7 +14,8 @@ export class RayOfCold {
     public static SpellId: number;
     public static readonly Sfx: string = Models.IceBlast;
     public static readonly DamageSfx: string = "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl";
-    public static readonly LightningCode: string = "CHIM";
+    public static readonly OriginSfx: string = Models.CastIceRay;
+    public static readonly LightningCode: string = "COBM";
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
@@ -53,6 +54,9 @@ export class RayOfCold {
         this.center = new Point((dest.x + origin.x) * 0.5, (dest.y + origin.y) * 0.5);
 
         // Create sfx
+        this.sourceSfx = new Effect(RayOfCold.OriginSfx, origin.x, origin.y);
+        this.sourceSfx.scale = 1.15;
+        this.sourceSfx.setYaw(angle);
 
         print("Adjust first");
         this.AdjustPierce();
@@ -137,6 +141,7 @@ export class RayOfCold {
     
             let newAngle = this.angle + da;
             this.angle = newAngle;
+            this.sourceSfx.setYaw(this.angle);
         }
         let x = this.origin.x + this.distance * Cos(this.angle);
         let y = this.origin.y + this.distance * Sin(this.angle);
@@ -145,14 +150,15 @@ export class RayOfCold {
         this.dest.y = y;
     }
 
-    public Redirect(angle: number) {
-
+    public Redirect(x: number, y: number) {
+        this.targetAngle = Atan2(y - this.origin.y, x - this.origin.x);
     }
 
     public Destroy() {
         DestroyLightning(this.lightning);
         this.posTimer.destroy();
         this.effectTimer.destroy();
+        this.sourceSfx.destroy();
     }
 
     static init(spellId: number) {
@@ -169,11 +175,10 @@ export class RayOfCold {
             const y = GetSpellTargetY();
             let level = caster.getAbilityLevel(this.SpellId);
 
-            if (CastBar.GetUnitCurrentSpellId(caster.handle) == this.SpellId &&
-                this._instance[caster.id]
-            ) {
+            if (this._instance[caster.id]) {
+                print("Recast detected");
                 // Recast detected
-                this._instance[caster.id].targetAngle = Atan2(y - caster.y, x - caster.x);
+                this._instance[caster.id].Redirect(x, y);
                 return;
             }
 
@@ -201,14 +206,19 @@ export class RayOfCold {
                 if (!resource.Check(this.OrbCost)) return;
                 
                 // Create a beam that updates itself
-                const ray = new RayOfCold(caster, caster, caster.point, data.distance, data.angleSpeed, Atan2(y - caster.y, x - caster.x), data.damage, data.pierceCount);
+                let origin = Point.fromHandle(PolarProjectionBJ(caster.point.handle, 100, caster.facing));
+
+                const ray = new RayOfCold(caster, caster, origin, data.distance, data.angleSpeed, Atan2(y - origin.y, x - origin.x), data.damage, data.pierceCount);
                 this._instance[caster.id] = ray;
+
                 data.isCast = true;
                 // Begin channeling
                 let channelBar = new CastBar(caster.handle);
+                let isFinished = false;
                 channelBar.CastSpell(this.SpellId, data.channelTime, () => {
                     channelBar.Finish();
                     ray.Destroy();
+                    isFinished = true;
                     delete this._instance[caster.id];
                     resource.Consume(this.OrbCost);
                 });
@@ -216,8 +226,9 @@ export class RayOfCold {
 
                     if (orderId == this.OrderId) {
                         // If spell is recast, redirect the beam
-                        // ray.targetAngle = Atan2()
                         return true;
+                    } else if (isFinished) {
+                        return false;
                     } else {
                         // Otherwise, end it
                         channelBar.Destroy();
@@ -231,11 +242,14 @@ export class RayOfCold {
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (data.isCast) return false;
+                if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
+                    data.awakened = true;
+                }
 
-                data.castSfx.destroy()
+                data.castSfx.destroy();
                 castBar.Destroy();
                 return false;
-            })
+            });
             // let castBar = new CastBar(caster.handle);
             // castBar.CastSpell(this.SpellId, data.castTime, () => {
             //     castBar.Finish();
