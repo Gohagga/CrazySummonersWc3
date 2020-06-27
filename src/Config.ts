@@ -134,6 +134,8 @@ export const Dummies = {
     DeathAndDecay:              FourCC('A034'),
     UnholyCurse:                FourCC('A036'),
     Conductivity:               FourCC('A018'),
+    Chilled:                    FourCC('A03Q'),
+    Frozen:                     FourCC('A017'),
 }
 
 export const Buffs = {
@@ -153,6 +155,8 @@ export const Buffs = {
     UnholyCurse:                FourCC('B013'),
     ArmyOfTheDead:              FourCC('B012'),
     Conductivity:               FourCC('BPSE'),
+    Chilled:                    FourCC('B018'),
+    Frozen:                     FourCC('B017'),
 }
 
 export const Upgrades = {

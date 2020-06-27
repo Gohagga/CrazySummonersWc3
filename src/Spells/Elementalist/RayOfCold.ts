@@ -9,11 +9,13 @@ import { Unit, Effect, Point, Timer } from "w3ts/index";
 import { AwakenEssence } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Order } from "Global/Order";
+import { Chill } from "./Chill";
 
 export class RayOfCold {
     public static SpellId: number;
     public static readonly Sfx: string = Models.IceBlast;
-    public static readonly DamageSfx: string = "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl";
+    public static readonly DamageSfx: string = "Abilities\\Weapons\\LichMissile\\LichMissile.mdl";
+    public static readonly BeamEndSfx: string = "Abilities\\Spells\\Other\\BreathOfFrost\\BreathOfFrostTarget.mdl";
     public static readonly OriginSfx: string = Models.CastIceRay;
     public static readonly LightningCode: string = "COBM";
     public static CastSfx = Models.CastNecromancy;
@@ -25,6 +27,7 @@ export class RayOfCold {
     
     static Width = 30;
     static readonly Period = 0.03;
+    static readonly DamageInterval = 0.2;
 
     private posTimer = new Timer();
     private effectTimer = new Timer();
@@ -72,7 +75,7 @@ export class RayOfCold {
             this.UpdatePosition();
             this.AdjustPierce();
         });
-        this.effectTimer.start(0.2, true, () => this.Effect());
+        this.effectTimer.start(RayOfCold.DamageInterval, true, () => this.Effect());
     }
 
     private AdjustPierce() {
@@ -109,13 +112,13 @@ export class RayOfCold {
         let lastUnit: Unit;
 
         for (let c of choices) {
+            if (Chill.IsFrozen(c.unit)) count++;
             if (count-- == 0) break;
 
             newTargets.push(c.unit);
             lastUnit = c.unit;
         }
         this.distance = DistanceBetweenPoints(this.caster.point.handle, lastUnit.point.handle);
-        print(this.distance);
         this.targets = newTargets;
     }
 
@@ -123,6 +126,8 @@ export class RayOfCold {
         
         for (let t of this.targets) {
             this.caster.damageTarget(t.handle, this.damage, 0, false, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
+            new Effect(RayOfCold.DamageSfx, t, "origin").destroy();
+            Chill.ApplyToMax(t, 1, 8);
         }
     }
 
@@ -143,11 +148,16 @@ export class RayOfCold {
             this.angle = newAngle;
             this.sourceSfx.setYaw(this.angle);
         }
-        let x = this.origin.x + this.distance * Cos(this.angle);
-        let y = this.origin.y + this.distance * Sin(this.angle);
+        let cos = Cos(this.angle);
+        let sin = Sin(this.angle);
+        let x = this.origin.x + this.distance * cos;
+        let y = this.origin.y + this.distance * sin;
         MoveLightningEx(this.lightning, true, this.origin.x, this.origin.y, 60, x, y, 60);
         this.dest.x = x;
         this.dest.y = y;
+        // let end = new Effect(RayOfCold.BeamEndSfx, this.origin.x + (this.distance - 20)*cos, this.origin.y + (this.distance - 20)*sin);
+        // end.setHeight(60);
+        // end.destroy();
     }
 
     public Redirect(x: number, y: number) {
@@ -186,7 +196,7 @@ export class RayOfCold {
                 isCast: false,
 
                 awakened: false,
-                damage: 20 + 5 * level,
+                damage: 1 + 0 * level,
                 aoe: 200 + 50 * level,
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
                 castTime: 2,
@@ -194,7 +204,7 @@ export class RayOfCold {
 
                 distance: 1600,
                 angleSpeed: 20 * bj_DEGTORAD,
-                pierceCount: 1,
+                pierceCount: 2,
             }
             
             let castBar = new CastBar(caster.handle);

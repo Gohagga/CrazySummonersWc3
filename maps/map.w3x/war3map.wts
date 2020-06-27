@@ -22031,3 +22031,69 @@ STRING 6436
 W
 }
 
+STRING 6437
+// Abilities: A03Q (DummyChilled), Name (Name)
+{
+DummyChilled
+}
+
+STRING 6438
+// Abilities: A03Q (DummyChilled), Tip (Tooltip - Normal)
+{
+Chilled
+}
+
+STRING 6439
+// Abilities: A03Q (DummyChilled), Tip (Tooltip - Normal)
+{
+Chilled
+}
+
+STRING 6440
+// Abilities: A03Q (DummyChilled), Tip (Tooltip - Normal)
+{
+Chilled
+}
+
+STRING 6441
+// Abilities: A03Q (DummyChilled), Tip (Tooltip - Normal)
+{
+Chilled
+}
+
+STRING 6442
+// Buffs/Effects: B017 ((frozen)), EditorName (Name (Editor Only))
+{
+(frozen)
+}
+
+STRING 6443
+// Buffs/Effects: B017 ((frozen)), Bufftip (Tooltip)
+{
+Frozen
+}
+
+STRING 6444
+// Buffs/Effects: B017 ((frozen)), Buffubertip (Tooltip - Extended)
+{
+This unit is frozen; it cannot move, attack or cast spells.
+}
+
+STRING 6445
+// Buffs/Effects: B018 ((chilled)), EditorName (Name (Editor Only))
+{
+(chilled)
+}
+
+STRING 6446
+// Buffs/Effects: B018 ((chilled)), Bufftip (Tooltip)
+{
+Chilled
+}
+
+STRING 6447
+// Buffs/Effects: B018 ((chilled)), Buffubertip (Tooltip - Extended)
+{
+Attack speed increased, unleashes occasional bursts of lightning.
+}
+

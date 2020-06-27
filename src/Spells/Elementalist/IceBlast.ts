@@ -8,6 +8,7 @@ import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
 import { AwakenEssence } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
+import { Chill } from "./Chill";
 
 export class IceBlast {
     public static SpellId: number;
@@ -64,6 +65,7 @@ export class IceBlast {
 
                 for (let t of targets) {
                     UnitDamageTarget(caster.handle, t.handle, data.damage, true, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
+                    Chill.Apply(t, 4);
                     new Effect(this.DamageSfx, t, "origin").destroy();
                 }
 
