@@ -138,6 +138,7 @@ export const Dummies = {
     Frozen:                     FourCC('A017'),
     LivingCurrent:              FourCC('A01B'),
     LivingCurrentLightning:     FourCC('A01A'),
+    Inferno:                    FourCC('A03R'),
 }
 
 export const Buffs = {

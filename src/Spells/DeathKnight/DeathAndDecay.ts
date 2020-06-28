@@ -36,7 +36,6 @@ export class DeathAndDecay {
         this.dummyCaster.addAbility(DeathAndDecay.DummySpellId);
         this.dummyCaster.setAbilityLevel(DeathAndDecay.DummySpellId, level);
         this.dummyCaster.issueOrderAt(DeathAndDecay.DummyOrder, center.x, center.y);
-        this.dummyCaster.applyTimedLife(FourCC('B000'), duration);
     }
 
     public Run() {
@@ -104,8 +103,8 @@ export class DeathAndDecay {
 
                 if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
 
-                let amz = new DeathAndDecay(data.damage, data.healing, owner, data.aoe, point, data.duration, level);
-                amz.Run();
+                let instance = new DeathAndDecay(data.damage, data.healing, owner, data.aoe, point, data.duration, level);
+                instance.Run();
             });
             Interruptable.Register(caster.handle, (orderId: number) => {
 

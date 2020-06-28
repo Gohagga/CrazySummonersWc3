@@ -50,6 +50,7 @@ import { Conductivity } from "Spells/Elementalist/Conductivity";
 import { FlameBarrage } from "Spells/Elementalist/FlameBarrage";
 import { RayOfCold } from "Spells/Elementalist/RayOfCold";
 import { LivingCurrent } from "Spells/Elementalist/LivingCurrent";
+import { Inferno } from "Spells/Elementalist/Inferno";
 
 
 export function InitializeSpells() {
@@ -106,6 +107,7 @@ export function InitializeSpells() {
     FlameBarrage.init(Spells.FlameBarrage);
     RayOfCold.init(Spells.RayOfCold);
     LivingCurrent.init(Spells.LivingCurrent);
+    Inferno.init(Spells.Inferno);
     ElementalFocus.init(Spells.ElementalFocusRed, OrbType.Red);
     ElementalFocus.init(Spells.ElementalFocusBlue, OrbType.Blue);
     ElementalFocus.init(Spells.ElementalFocusPurple, OrbType.Purple);

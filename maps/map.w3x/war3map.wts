@@ -22097,3 +22097,15 @@ STRING 6447
 Attack speed increased, unleashes occasional bursts of lightning.
 }
 
+STRING 6448
+// Abilities: A03R (DummyInferno), Name (Name)
+{
+DummyInferno
+}
+
+STRING 6449
+// Buffs/Effects: X001 (Inferno (Effect)), EditorName (Name (Editor Only))
+{
+Inferno (Effect)
+}
+
