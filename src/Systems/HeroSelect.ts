@@ -9,6 +9,8 @@ import { ResourceBar } from "./OrbResource/ResourceBar";
 import { MapPlayer, Unit } from "w3ts/index";
 import { RedCrystal, BlueCrystal } from "Modules/Globals";
 import { PaladinController } from "AI/Paladin/PaladinController";
+import { GroveTenderProgression } from "Classes/GroveTenderProgression";
+import { ElementalistProgression } from "Classes/ElementalistProgression";
 
 export class HeroSelect {
 
@@ -68,6 +70,10 @@ export class HeroSelect {
                 HeroProgression.Register(new WarlockProgression(u));
             } else if (id == Units.DeathKnight) {
                 HeroProgression.Register(new DeathKnightProgression(u));
+            } else if (id == Units.GroveTender) {
+                HeroProgression.Register(new GroveTenderProgression(u));
+            } else if (id == Units.Elementalist) {
+                HeroProgression.Register(new ElementalistProgression(u));
             }
 
             Cameras.SetPlayerTeamCamera(owner);

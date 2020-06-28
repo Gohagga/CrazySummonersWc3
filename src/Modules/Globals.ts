@@ -6,6 +6,7 @@ import { IRequirement } from "Systems/Requirement/IRequirement";
 import { Units, ReqUnits, Log } from "Config";
 import { RequirementTracker, RequirementType } from "Systems/Requirement/RequirementTracker";
 import { Unit } from "w3ts/index";
+import { BalanceData } from "Systems/BalanceData";
 
 export const GROUP = CreateGroup();
 
@@ -31,6 +32,8 @@ export const UpgradeTracker: RequirementTracker = new RequirementTracker({
     [RequirementType.DarkArtUnholy]: DarkArtUnholyReq,
     [RequirementType.DarkArtNecromancy]: DarkArtNecromancyReq,
 });
+
+export const Balance = new BalanceData(10, 25, 25/15, 250, 2500);
 
 export const BlueCrystal: Unit[] = [];
 export const RedCrystal: Unit[] = [];

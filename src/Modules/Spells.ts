@@ -42,6 +42,14 @@ import { UpgradeTracker } from "./Globals";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { RequirementType } from "Systems/Requirement/RequirementTracker";
 import { DarkArts } from "Spells/DeathKnight/DarkArts";
+import { SummonSeedling } from "Spells/GroveTender/SummonSeedling";
+import { Fireball } from "Spells/Elementalist/Fireball";
+import { ElementalFocus } from "Spells/Elementalist/ElementalFocus";
+import { IceBlast } from "Spells/Elementalist/IceBlast";
+import { Conductivity } from "Spells/Elementalist/Conductivity";
+import { FlameBarrage } from "Spells/Elementalist/FlameBarrage";
+import { RayOfCold } from "Spells/Elementalist/RayOfCold";
+import { LivingCurrent } from "Spells/Elementalist/LivingCurrent";
 
 
 export function InitializeSpells() {
@@ -90,6 +98,21 @@ export function InitializeSpells() {
     VampiresBoon.init(Spells.VampiresBoon);
     UnholyCurse.init(Spells.UnholyCurse);
     ArmyOfTheDead.init(Spells.ArmyOfTheDead);
+
+    // Elementalist
+    Fireball.init(Spells.Fireball);
+    IceBlast.init(Spells.IceBlast);
+    Conductivity.init(Spells.Conductivity);
+    FlameBarrage.init(Spells.FlameBarrage);
+    RayOfCold.init(Spells.RayOfCold);
+    LivingCurrent.init(Spells.LivingCurrent);
+    ElementalFocus.init(Spells.ElementalFocusRed, OrbType.Red);
+    ElementalFocus.init(Spells.ElementalFocusBlue, OrbType.Blue);
+    ElementalFocus.init(Spells.ElementalFocusPurple, OrbType.Purple);
+
+    // Grove Tender
+    SummonSeedling.init(Spells.SummonSeedling);
+
 }
 
 export function PreloadSpells() {

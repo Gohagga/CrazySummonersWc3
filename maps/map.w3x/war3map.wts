@@ -1069,13 +1069,13 @@ STRING 337
 }
 
 STRING 339
-// Abilities: AE01 (Fireball), Hotkey (Hotkey - Normal)
+// Abilities: A019 (Info), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 340
-// Abilities: AE01 (Fireball), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S2 (Purge), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1123,7 +1123,7 @@ STRING 348
 }
 
 STRING 349
-// Abilities: AE03 (Conductivity), Hotkey (Hotkey - Normal)
+// Abilities: A0S5 (Justice Hand), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1159,7 +1159,7 @@ Summons more powerful magic troops
 }
 
 STRING 375
-// Abilities: AE03 (Conductivity), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S6 (Taint), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1181,7 +1181,7 @@ Guardian Angel
 }
 
 STRING 380
-// Abilities: AE04 (Flame Barrage), Hotkey (Hotkey - Normal)
+// Abilities: A0S7 (Crazy Imp), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1217,7 +1217,7 @@ Invigorate
 }
 
 STRING 391
-// Abilities: A019 (Info), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S8 (Contagious Insanity), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1385,7 +1385,7 @@ Determination Mastery
 }
 
 STRING 443
-// Abilities: A0S2 (Purge), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S9 (Collateral Damage), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1451,7 +1451,7 @@ Repentance Mastery
 }
 
 STRING 455
-// Abilities: A0S5 (Justice Hand), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SA (Call Succubus), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1505,7 +1505,7 @@ Restoration Mastery
 }
 
 STRING 467
-// Abilities: A0S6 (Taint), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SB (Steal Essence), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -1881,19 +1881,19 @@ Learn White Power %d  (|cffffcc00Q|r)
 }
 
 STRING 704
-// Abilities: A0S7 (Crazy Imp), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S1 (Bless), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 707
-// Items: IB0P (Spawn Purple Gem), Hotkey (Hotkey)
+// Units: H01J (Grove Tender), Hotkey (Hotkey)
 {
 S
 }
 
 STRING 708
-// Abilities: AP05 (Endure), Hotkey (Hotkey - Normal)
+// Items: IB0P (Spawn Purple Gem), Hotkey (Hotkey)
 {
 S
 }
@@ -2628,13 +2628,13 @@ Taint
 }
 
 STRING 1044
-// Abilities: A0S8 (Contagious Insanity), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SC (Clear recipe), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 1045
-// Abilities: A0S9 (Collateral Damage), Researchhotkey (Hotkey - Learn)
+// Abilities: AE0M (Element Mastery), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -2820,13 +2820,13 @@ STRING 1093
 }
 
 STRING 1103
-// Abilities: A0SA (Call Succubus), Researchhotkey (Hotkey - Learn)
+// Abilities: A01K (Destroy Essence), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 1104
-// Abilities: A0SB (Steal Essence), Researchhotkey (Hotkey - Learn)
+// Abilities: A01L (Crystalize), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -2850,13 +2850,13 @@ STRING 1120
 }
 
 STRING 1121
-// Abilities: A0S1 (Bless), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SL (Channel Energy), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 1122
-// Abilities: A0SC (Clear recipe), Hotkey (Hotkey - Normal)
+// Abilities: A01T (In the Name of Light), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -2874,13 +2874,13 @@ Collateral Damage
 }
 
 STRING 1132
-// Abilities: AE06 (Living Current), Hotkey (Hotkey - Normal)
+// Abilities: A01T (In the Name of Light), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 1133
-// Abilities: AE06 (Living Current), Researchhotkey (Hotkey - Learn)
+// Abilities: A02D (Magic Barrier), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -2934,13 +2934,13 @@ Summons more powerful melee troops
 }
 
 STRING 1155
-// Abilities: AE0M (Element Mastery), Researchhotkey (Hotkey - Learn)
+// Abilities: A02J (Consecrate), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 1156
-// Abilities: AE05 (Dry Ice), Hotkey (Hotkey - Normal)
+// Abilities: A02K (Greater Dispel), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -2964,13 +2964,13 @@ STRING 1163
 }
 
 STRING 1164
-// Abilities: AE05 (Dry Ice), Researchhotkey (Hotkey - Learn)
+// Abilities: A02K (Greater Dispel), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 1165
-// Abilities: AE07 (Inferno), Hotkey (Hotkey - Normal)
+// Abilities: A02T (DummyChill Blast), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -3000,13 +3000,13 @@ STRING 1174
 }
 
 STRING 1175
-// Abilities: AE08 (Absolute Null Zone), Hotkey (Hotkey - Normal)
+// Abilities: A02T (DummyChill Blast), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 1176
-// Abilities: AE08 (Absolute Null Zone), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SN (Bless), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -3036,13 +3036,13 @@ Summons more powerful melee troops
 }
 
 STRING 1202
-// Abilities: A01K (Destroy Essence), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SO (Purge), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 1203
-// Abilities: A01L (Crystalize), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SQ (Greater Dispel), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -3054,7 +3054,7 @@ Paranoia
 }
 
 STRING 1211
-// Abilities: A0SL (Channel Energy), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SQ (Greater Dispel), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -3802,7 +3802,7 @@ Holding the Mana Stone increases mana regeneration by 20%. Consuming it restores
 }
 
 STRING 1447
-// Abilities: A00F (Mastery), Hotkey (Hotkey - Normal)
+// Abilities: AP05 (Endure), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -3850,7 +3850,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 1459
-// Abilities: A00F (Mastery), Researchhotkey (Hotkey - Learn)
+// Abilities: A00F (Mastery), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -4546,13 +4546,13 @@ Randomly spawns 2 white gem in your team's field.
 }
 
 STRING 1711
-// Abilities: AE01 (Fireball), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: AE01 (ELE_R Fireball), Researchubertip (Tooltip - Learn - Extended)
 {
 The caster hurls a fireball towards the target location, dealing damage in a small aoe on impact. |n|n|cffffcc00Level 1|r - 70 damage on impact|n|cffffcc00Level 2|r - 140 damage on impact |n|cffffcc00Level 3|r - 210 damage on impact|n
 }
 
 STRING 1712
-// Abilities: AE01 (Fireball), Researchtip (Tooltip - Learn)
+// Abilities: AE01 (ELE_R Fireball), Researchtip (Tooltip - Learn)
 {
 Learn |cffffcc00F|rireball - [|cffffcc00Level %d|r]
 }
@@ -4570,7 +4570,7 @@ Q
 }
 
 STRING 1722
-// Abilities: AE01 (Fireball), Name (Name)
+// Abilities: A0SD (Fireball), Name (Name)
 {
 Fireball
 }
@@ -4600,7 +4600,7 @@ W
 }
 
 STRING 1729
-// Abilities: A0S0 (Rejuvenate), Hotkey (Hotkey - Normal)
+// Abilities: AE01 (ELE_R Fireball), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -4648,43 +4648,43 @@ Gives allied demons and horrors |cffff8080250 |rbonus max hp and |cffff808046|r 
 }
 
 STRING 1748
-// Abilities: AE01 (Fireball), Tip (Tooltip - Normal)
+// Abilities: AE01 (ELE_R Fireball), Tip (Tooltip - Normal)
 {
 |cffffcc00Fireball |r- 1
 }
 
 STRING 1749
-// Abilities: AE01 (Fireball), Tip (Tooltip - Normal)
+// Abilities: AE01 (ELE_R Fireball), Tip (Tooltip - Normal)
 {
 |cffffcc00Fireball |r- 2
 }
 
 STRING 1750
-// Abilities: AE01 (Fireball), Tip (Tooltip - Normal)
+// Abilities: AE01 (ELE_R Fireball), Tip (Tooltip - Normal)
 {
 |cffffcc00Fireball |r- 3
 }
 
 STRING 1751
-// Abilities: AE01 (Fireball), Tip (Tooltip - Normal)
+// Abilities: AE01 (ELE_R Fireball), Tip (Tooltip - Normal)
 {
 |cffffcc00Fireball |r- 4
 }
 
 STRING 1755
-// Abilities: AE01 (Fireball), Tip (Tooltip - Normal)
+// Abilities: AE01 (ELE_R Fireball), Tip (Tooltip - Normal)
 {
 |cffffcc00Fireball |r- 5
 }
 
 STRING 1756
-// Abilities: AE01 (Fireball), Tip (Tooltip - Normal)
+// Abilities: AE01 (ELE_R Fireball), Tip (Tooltip - Normal)
 {
 |cffffcc00Fireball |r- 6
 }
 
 STRING 1757
-// Abilities: AE01 (Fireball), Tip (Tooltip - Normal)
+// Abilities: AE01 (ELE_R Fireball), Tip (Tooltip - Normal)
 {
 |cffffcc00Fireball |r- 7
 }
@@ -4762,61 +4762,61 @@ This unit is frozen; it cannot move, attack or cast spells.
 }
 
 STRING 1781
-// Abilities: AE03 (Conductivity), Name (Name)
+// Abilities: A0SF (Conductivity), Name (Name)
 {
 Conductivity
 }
 
 STRING 1785
-// Abilities: AE03 (Conductivity), Tip (Tooltip - Normal)
+// Abilities: AE03 (ELE_R Conductivity), Tip (Tooltip - Normal)
 {
 |cffff5effConductivity |r- 1
 }
 
 STRING 1786
-// Abilities: AE03 (Conductivity), Tip (Tooltip - Normal)
+// Abilities: AE03 (ELE_R Conductivity), Tip (Tooltip - Normal)
 {
 |cffff5effConductivity |r- 2
 }
 
 STRING 1787
-// Abilities: AE03 (Conductivity), Tip (Tooltip - Normal)
+// Abilities: AE03 (ELE_R Conductivity), Tip (Tooltip - Normal)
 {
 |cffff5effConductivity |r- 3
 }
 
 STRING 1788
-// Abilities: A01T (In the Name of Light), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SR (Justice Hand), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 1789
-// Abilities: A01T (In the Name of Light), Hotkey (Hotkey - Normal)
+// Abilities: A0SS (Blood Feast), Researchhotkey (Hotkey - Learn)
 {
 R
 }
 
 STRING 1790
-// Abilities: AE03 (Conductivity), Tip (Tooltip - Normal)
+// Abilities: AE03 (ELE_R Conductivity), Tip (Tooltip - Normal)
 {
 |cffff5effConductivity |r- 4
 }
 
 STRING 1792
-// Abilities: AE03 (Conductivity), Tip (Tooltip - Normal)
+// Abilities: AE03 (ELE_R Conductivity), Tip (Tooltip - Normal)
 {
 |cffff5effConductivity |r- 5
 }
 
 STRING 1793
-// Abilities: AE03 (Conductivity), Tip (Tooltip - Normal)
+// Abilities: AE03 (ELE_R Conductivity), Tip (Tooltip - Normal)
 {
 |cffff5effConductivity |r- 6
 }
 
 STRING 1794
-// Abilities: AE03 (Conductivity), Tip (Tooltip - Normal)
+// Abilities: AE03 (ELE_R Conductivity), Tip (Tooltip - Normal)
 {
 |cffff5effConductivity |r- 7
 }
@@ -4852,19 +4852,19 @@ D
 }
 
 STRING 1841
-// Abilities: A016 (Sacrifice Mastery), Researchhotkey (Hotkey - Learn)
+// Abilities: A00F (Mastery), Researchhotkey (Hotkey - Learn)
 {
 S
 }
 
 STRING 1842
-// Abilities: A0S6 (Taint), Hotkey (Hotkey - Normal)
+// Abilities: AE01 (ELE_R Fireball), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
 
 STRING 1843
-// Abilities: A02D (Magic Barrier), Hotkey (Hotkey - Normal)
+// Abilities: A0ST (Dark Portal), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -4936,55 +4936,55 @@ DummyConductivity
 }
 
 STRING 1868
-// Abilities: AE03 (Conductivity), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE03 (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
 {
 Releases a highly volatile electricity that chains from target to target, interrupting their actions. |n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max jumps |cff8a8aff8|r.|n|n|cffffd9b3Cast time: <AE03,Cast1,.>s|r
 }
 
 STRING 1869
-// Abilities: AE03 (Conductivity), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE03 (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
 {
 Releases a highly volatile electricity that chains from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max jumps |cff8a8aff8|r.|n|n|cffffd9b3Cast time: <AE03,Cast2,.>s|r
 }
 
 STRING 1870
-// Abilities: AE03 (Conductivity), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE03 (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
 {
 Releases a highly volatile electricity that chains from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max jumps |cff8a8aff8|r.|n|n|cffffd9b3Cast time: <AE03,Cast3,.>s|r
 }
 
 STRING 1871
-// Abilities: AE03 (Conductivity), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE03 (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
 {
 Releases two highly volatile electricity chains that jump from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max bounces |cff8a8aff20|r.|n|n|cffffd9b3Cast time: <AE03,Cast5,.>s|r
 }
 
 STRING 1872
-// Abilities: AE03 (Conductivity), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE03 (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
 {
 Releases two highly volatile electricity chains that jump from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max bounces |cff8a8aff24|r.|n|n|cffffd9b3Cast time: <AE03,Cast5,.>s|r
 }
 
 STRING 1873
-// Abilities: AE03 (Conductivity), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE03 (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
 {
 Releases two highly volatile electricity chains that jump from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max bounces |cff8a8aff28|r.|n|n|cffffd9b3Cast time: <AE03,Cast5,.>s|r
 }
 
 STRING 1874
-// Abilities: AE03 (Conductivity), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE03 (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
 {
 Releases three highly volatile electricity chains that jump from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max bounces |cff8a8affinfinite|r.|n|n|cffffd9b3Cast time: <AE03,Cast5,.>s|r
 }
 
 STRING 1875
-// Abilities: AE04 (Flame Barrage), Name (Name)
+// Abilities: A0SG (Flame Barrage), Name (Name)
 {
 Flame Barrage
 }
 
 STRING 1882
-// Abilities: A02J (Consecrate), Hotkey (Hotkey - Normal)
+// Abilities: A0SU (Paranoia), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -5044,7 +5044,7 @@ A
 }
 
 STRING 1921
-// Abilities: A02K (Greater Dispel), Hotkey (Hotkey - Normal)
+// Abilities: AA01 (Barrier), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5080,7 +5080,7 @@ E
 }
 
 STRING 1932
-// Abilities: A02K (Greater Dispel), Researchhotkey (Hotkey - Learn)
+// Abilities: AA01 (Barrier), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -5224,7 +5224,7 @@ W
 }
 
 STRING 1961
-// Abilities: A02T (DummyChill Blast), Researchhotkey (Hotkey - Learn)
+// Abilities: A03C (DummyPurge), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5356,13 +5356,13 @@ Summons more powerful melee troops
 }
 
 STRING 1986
-// Abilities: A016 (Sacrifice Mastery), Hotkey (Hotkey - Normal)
+// Abilities: A016 (Sacrifice Mastery), Researchhotkey (Hotkey - Learn)
 {
 S
 }
 
 STRING 1987
-// Abilities: A02T (DummyChill Blast), Hotkey (Hotkey - Normal)
+// Abilities: A03C (DummyPurge), Researchhotkey (Hotkey - Learn)
 {
 R
 }
@@ -5398,7 +5398,7 @@ STRING 1994
 }
 
 STRING 1995
-// Abilities: A0S4 (Endure), Hotkey (Hotkey - Normal)
+// Abilities: A016 (Sacrifice Mastery), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -5458,7 +5458,7 @@ STRING 2016
 }
 
 STRING 2017
-// Abilities: AE02 (Chill Blast), Hotkey (Hotkey - Normal)
+// Abilities: A03H (Paladin Spells), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5512,13 +5512,13 @@ STRING 2028
 }
 
 STRING 2029
-// Abilities: A0S2 (Purge), Hotkey (Hotkey - Normal)
+// Abilities: AE03 (ELE_R Conductivity), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 2030
-// Abilities: AE02 (Chill Blast), Researchhotkey (Hotkey - Learn)
+// Abilities: A03I (Warlock Spells), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5590,7 +5590,7 @@ D
 }
 
 STRING 2053
-// Abilities: AE09 (Ionic Channel), Hotkey (Hotkey - Normal)
+// Abilities: A03K (Death Knight Spells), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5626,7 +5626,7 @@ STRING 2062
 }
 
 STRING 2064
-// Abilities: AE09 (Ionic Channel), Researchhotkey (Hotkey - Learn)
+// Abilities: A03P (Elementalist Spells), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -5769,22 +5769,10 @@ STRING 2094
 Summons more powerful melee troops
 }
 
-STRING 2095
-// Abilities: A0SN (Bless), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
 STRING 2096
 // Abilities: A019 (Info), Name (Name)
 {
 Info
-}
-
-STRING 2097
-// Abilities: A0SO (Purge), Researchhotkey (Hotkey - Learn)
-{
-R
 }
 
 STRING 2098
@@ -5881,12 +5869,6 @@ STRING 2127
 // Abilities: A0SV (Redemption), Tip (Tooltip - Normal)
 {
 |cffffff80Endure|r - Expert
-}
-
-STRING 2128
-// Abilities: A0SQ (Greater Dispel), Hotkey (Hotkey - Normal)
-{
-R
 }
 
 STRING 2129
@@ -6100,21 +6082,9 @@ STRING 2288
 }
 
 STRING 2293
-// Abilities: AE06 (Living Current), Name (Name)
+// Abilities: A0SI (Living Current), Name (Name)
 {
 Living Current
-}
-
-STRING 2300
-// Abilities: A0SQ (Greater Dispel), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 2301
-// Abilities: A0SR (Justice Hand), Researchhotkey (Hotkey - Learn)
-{
-R
 }
 
 STRING 2310
@@ -6388,7 +6358,7 @@ Increases level of spells of paladin's chosen school gained through Spellstring.
 }
 
 STRING 2385
-// Abilities: AE05 (Dry Ice), Researchtip (Tooltip - Learn)
+// Abilities: AE05 (ELE_R Dry Ice), Researchtip (Tooltip - Learn)
 {
 Elementalist Mastery - %d |cff808080(A)|r
 }
@@ -6681,68 +6651,44 @@ STRING 2436
 Lightning Mastery
 }
 
-STRING 2437
-// Abilities: A0SS (Blood Feast), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 2438
-// Abilities: A0ST (Dark Portal), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 2439
-// Abilities: A0SU (Paranoia), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 2440
-// Abilities: AA01 (Barrier), Hotkey (Hotkey - Normal)
-{
-R
-}
-
 STRING 2441
-// Abilities: AE01 (Fireball), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE01 (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
 {
 Hurls a fireball towards the target location, dealing |cffff8080100|r damage in aoe on impact. Radius |cff80ffff160.|n|n|r|cffffd9b3Cast time: 1.5s|r
 }
 
 STRING 2442
-// Abilities: AE01 (Fireball), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE01 (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
 {
 Hurls a fireball towards the target location, dealing |cffff8080160|r damage in aoe on impact. Radius |cff80ffff220.|n|n|r|cffffd9b3Cast time: 1.5s|r
 }
 
 STRING 2443
-// Abilities: AE01 (Fireball), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE01 (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
 {
 Hurls a fireball towards the target location, dealing |cffff8080220|r damage in aoe on impact. Radius |cff80ffff280.|n|n|r|cffffd9b3Cast time: 1.5s|r
 }
 
 STRING 2444
-// Abilities: AE01 (Fireball), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE01 (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
 {
 Hurls a fireball towards the target location, dealing |cffff8080280|r damage in aoe on impact. Radius |cff80ffff340.|n|n|r|cffffd9b3Cast time: 1.5s|r
 }
 
 STRING 2445
-// Abilities: AE01 (Fireball), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE01 (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
 {
 Hurls a fireball towards the target location, dealing |cffff8080340|r damage in aoe on impact. Radius |cff80ffff400.|n|n|r|cffffd9b3Cast time: 1.5s|r
 }
 
 STRING 2446
-// Abilities: AE01 (Fireball), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE01 (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
 {
 Hurls a fireball towards the target location, dealing |cffff8080400|r damage in aoe on impact. Radius |cff80ffff460.|n|n|r|cffffd9b3Cast time: 1.5s|r
 }
 
 STRING 2447
-// Abilities: AE01 (Fireball), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE01 (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
 {
 Hurls a fireball towards the target location, dealing |cffff8080460|r damage in aoe on impact. Radius |cff80ffff520.|n|n|r|cffffd9b3Cast time: 1.5s|r
 }
@@ -6754,49 +6700,49 @@ Elementalist
 }
 
 STRING 2457
-// Abilities: AE04 (Flame Barrage), Tip (Tooltip - Normal)
+// Abilities: AE04 (ELE_R Flame Barrage), Tip (Tooltip - Normal)
 {
 |cffffcc00Flame Barrage|r - 1
 }
 
 STRING 2458
-// Abilities: AE04 (Flame Barrage), Tip (Tooltip - Normal)
+// Abilities: AE04 (ELE_R Flame Barrage), Tip (Tooltip - Normal)
 {
 |cffffcc00Flame Barrage|r - 2
 }
 
 STRING 2459
-// Abilities: AE04 (Flame Barrage), Tip (Tooltip - Normal)
+// Abilities: AE04 (ELE_R Flame Barrage), Tip (Tooltip - Normal)
 {
 |cffffcc00Flame Barrage|r - 3
 }
 
 STRING 2460
-// Abilities: AE04 (Flame Barrage), Tip (Tooltip - Normal)
+// Abilities: AE04 (ELE_R Flame Barrage), Tip (Tooltip - Normal)
 {
 |cffffcc00Flame Barrage|r - 4
 }
 
 STRING 2461
-// Abilities: AE04 (Flame Barrage), Tip (Tooltip - Normal)
+// Abilities: AE04 (ELE_R Flame Barrage), Tip (Tooltip - Normal)
 {
 |cffffcc00Flame Barrage|r - 5
 }
 
 STRING 2462
-// Abilities: AE04 (Flame Barrage), Tip (Tooltip - Normal)
+// Abilities: AE04 (ELE_R Flame Barrage), Tip (Tooltip - Normal)
 {
 |cffffcc00Flame Barrage|r - 6
 }
 
 STRING 2463
-// Abilities: AE04 (Flame Barrage), Tip (Tooltip - Normal)
+// Abilities: AE04 (ELE_R Flame Barrage), Tip (Tooltip - Normal)
 {
 |cffffcc00Flame Barrage|r - 7
 }
 
 STRING 2471
-// Abilities: AE05 (Dry Ice), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: AE05 (ELE_R Dry Ice), Researchubertip (Tooltip - Learn - Extended)
 {
 The most important thing for an elementalist is to strengthen his spells. Each time he uses this skill, the next two gems he picks up will permanently increase level of all spells gained for a specific school, depending on the color of gem picked.|n|n|cffff8080Red |rgem - level of |cffffcc00Fire |rspells increased.|nWhite gem - level of |cffff00ffLightning |rspells increased.|n|cff8a99ffBlue |rgem - level of |cff8a99ffFrost |rspells increased.|n|nCooldown reduced with level.
 }
@@ -6814,7 +6760,7 @@ DummyDryIce
 }
 
 STRING 2476
-// Abilities: AE05 (Dry Ice), Name (Name)
+// Abilities: A0SH (Dry Ice), Name (Name)
 {
 Dry Ice
 }
@@ -6831,18 +6777,6 @@ STRING 2478
 (dryice)
 }
 
-STRING 2485
-// Abilities: AA01 (Barrier), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
-STRING 2486
-// Abilities: A03C (DummyPurge), Hotkey (Hotkey - Normal)
-{
-R
-}
-
 STRING 2495
 // Abilities: A01K (Destroy Essence), Researchtip (Tooltip - Learn)
 {
@@ -6856,55 +6790,49 @@ The most important thing for an elementalist is to strengthen his spells. Each t
 }
 
 STRING 2497
-// Abilities: A0SH (Dry Ice), Name (Name)
+// Buffs/Effects: B00G ((dryice)), Bufftip (Tooltip)
 {
 Dry Ice
 }
 
 STRING 2498
-// Abilities: A0S3 (Invigorate), Hotkey (Hotkey - Normal)
+// Abilities: AE04 (ELE_R Flame Barrage), Hotkey (Hotkey - Normal)
 {
 A
 }
 
-STRING 2499
-// Abilities: AE05 (Dry Ice), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 1
-}
-
 STRING 2500
-// Abilities: AE05 (Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 2
 }
 
 STRING 2501
-// Abilities: AE05 (Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 3
 }
 
 STRING 2502
-// Abilities: AE05 (Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 4
 }
 
 STRING 2503
-// Abilities: AE05 (Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 5
 }
 
 STRING 2504
-// Abilities: AE05 (Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 6
 }
 
 STRING 2505
-// Abilities: AE05 (Dry Ice), Tip (Tooltip - Normal)
+// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
 {
 |cff8a99ffDry Ice|r - 7
 }
@@ -6952,139 +6880,133 @@ DummyInfernoIndicator
 }
 
 STRING 2514
-// Abilities: AE06 (Living Current), Tip (Tooltip - Normal)
+// Abilities: AE06 (ELE_R Living Current), Tip (Tooltip - Normal)
 {
 |cffff5effLiving Current |r- 1
 }
 
 STRING 2515
-// Abilities: AE06 (Living Current), Tip (Tooltip - Normal)
+// Abilities: AE06 (ELE_R Living Current), Tip (Tooltip - Normal)
 {
 |cffff5effLiving Current |r- 2
 }
 
 STRING 2516
-// Abilities: AE06 (Living Current), Tip (Tooltip - Normal)
+// Abilities: AE06 (ELE_R Living Current), Tip (Tooltip - Normal)
 {
 |cffff5effLiving Current |r- 3
 }
 
 STRING 2517
-// Abilities: AE06 (Living Current), Tip (Tooltip - Normal)
+// Abilities: AE06 (ELE_R Living Current), Tip (Tooltip - Normal)
 {
 |cffff5effLiving Current |r- 4
 }
 
 STRING 2518
-// Abilities: AE06 (Living Current), Tip (Tooltip - Normal)
+// Abilities: AE06 (ELE_R Living Current), Tip (Tooltip - Normal)
 {
 |cffff5effLiving Current |r- 5
 }
 
 STRING 2519
-// Abilities: AE06 (Living Current), Tip (Tooltip - Normal)
+// Abilities: AE06 (ELE_R Living Current), Tip (Tooltip - Normal)
 {
 |cffff5effLiving Current |r- 6
 }
 
 STRING 2520
-// Abilities: AE06 (Living Current), Tip (Tooltip - Normal)
+// Abilities: AE06 (ELE_R Living Current), Tip (Tooltip - Normal)
 {
 |cffff5effLiving Current |r- 7
 }
 
 STRING 2521
-// Abilities: AE07 (Inferno), Name (Name)
+// Abilities: A0SJ (Inferno), Name (Name)
 {
 Inferno
 }
 
 STRING 2525
-// Abilities: AE07 (Inferno), Tip (Tooltip - Normal)
+// Abilities: AE07 (ELE_R Inferno), Tip (Tooltip - Normal)
 {
 |cffffcc00Inferno|r - 1
 }
 
 STRING 2526
-// Abilities: AE07 (Inferno), Tip (Tooltip - Normal)
+// Abilities: AE07 (ELE_R Inferno), Tip (Tooltip - Normal)
 {
 |cffffcc00Inferno|r - 2
 }
 
 STRING 2527
-// Abilities: AE07 (Inferno), Tip (Tooltip - Normal)
+// Abilities: AE07 (ELE_R Inferno), Tip (Tooltip - Normal)
 {
 |cffffcc00Inferno|r - 3
 }
 
-STRING 2528
-// Abilities: A03C (DummyPurge), Researchhotkey (Hotkey - Learn)
-{
-R
-}
-
 STRING 2529
-// Abilities: AE07 (Inferno), Tip (Tooltip - Normal)
+// Abilities: AE07 (ELE_R Inferno), Tip (Tooltip - Normal)
 {
 |cffffcc00Inferno|r - 4
 }
 
 STRING 2531
-// Abilities: AE07 (Inferno), Tip (Tooltip - Normal)
+// Abilities: AE07 (ELE_R Inferno), Tip (Tooltip - Normal)
 {
 |cffffcc00Inferno|r - 5
 }
 
 STRING 2532
-// Abilities: AE07 (Inferno), Tip (Tooltip - Normal)
+// Abilities: AE07 (ELE_R Inferno), Tip (Tooltip - Normal)
 {
 |cffffcc00Inferno|r - 6
 }
 
 STRING 2533
-// Abilities: AE07 (Inferno), Tip (Tooltip - Normal)
+// Abilities: AE07 (ELE_R Inferno), Tip (Tooltip - Normal)
 {
 |cffffcc00Inferno|r - 7
 }
 
 STRING 2534
-// Abilities: AE04 (Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE04 (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
 {
 Starts throwing spheres of flame towards the target point. These do 1 damage to enemy heroes and |cffff808035 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff1|r second. Number of fireballs is |cff80ffff3|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast1,.>s|r
 }
 
 STRING 2535
-// Abilities: AE04 (Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE04 (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
 {
 Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808040 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.9|r second. Number of fireballs is |cff80ffff3|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast2,.>s|r
 }
 
 STRING 2536
-// Abilities: AE04 (Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE04 (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
 {
 Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808045 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.9|r second. Number of fireballs is |cff80ffff4|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast3,.>s|r
 }
 
 STRING 2537
-// Abilities: AE04 (Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE04 (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
 {
 Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808050 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.7|r second. Number of fireballs is |cff80ffff4|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast1,.>s|r
 }
 
 STRING 2538
-// Abilities: AE04 (Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE04 (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
 {
 Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808055 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.7|r second. Number of fireballs is |cff80ffff5|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast5,.>s|r
 }
 
 STRING 2539
-// Abilities: AE04 (Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE04 (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
 {
 Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808060 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.6|r second. Number of fireballs is |cff80ffff5|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast6,.>s|r
 }
 
 STRING 2540
-// Abilities: AE04 (Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE04 (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
 {
 Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808065 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.6|r second. Number of fireballs is |cff80ffff6|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast7,.>s|r
 }
@@ -7102,43 +7024,43 @@ DummyFrostAuraIndicator
 }
 
 STRING 2550
-// Abilities: AE07 (Inferno), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE07 (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
 {
 Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur1,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur1,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast1,.>s|r
 }
 
 STRING 2551
-// Abilities: AE07 (Inferno), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE07 (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
 {
 Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur2,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur2,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast2,.>s|r
 }
 
 STRING 2552
-// Abilities: AE07 (Inferno), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE07 (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
 {
 Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur3,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur3,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast3,.>s|r
 }
 
 STRING 2553
-// Abilities: AE07 (Inferno), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE07 (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
 {
 Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur4,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur4,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast4,.>s|r
 }
 
 STRING 2554
-// Abilities: AE07 (Inferno), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE07 (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
 {
 Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur5,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur5,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast5,.>s|r
 }
 
 STRING 2555
-// Abilities: AE07 (Inferno), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE07 (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
 {
 Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur6,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur6,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast6,.>s|r
 }
 
 STRING 2556
-// Abilities: AE07 (Inferno), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE07 (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
 {
 Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur7,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur7,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast7,.>s|r
 }
@@ -7150,61 +7072,49 @@ DummyAbsolute Null Zone
 }
 
 STRING 2558
-// Abilities: AE08 (Absolute Null Zone), Name (Name)
+// Abilities: A0SK (Absolute Null Zone), Name (Name)
 {
 Absolute Null Zone
 }
 
 STRING 2562
-// Abilities: AE08 (Absolute Null Zone), Tip (Tooltip - Normal)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
 {
 |cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 1
 }
 
 STRING 2563
-// Abilities: AE08 (Absolute Null Zone), Tip (Tooltip - Normal)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
 {
 |cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 2
 }
 
 STRING 2564
-// Abilities: AE08 (Absolute Null Zone), Tip (Tooltip - Normal)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
 {
 |cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 3
 }
 
-STRING 2565
-// Abilities: A03H (Paladin Spells), Hotkey (Hotkey - Normal)
-{
-R
-}
-
-STRING 2566
-// Abilities: A03I (Warlock Spells), Hotkey (Hotkey - Normal)
-{
-R
-}
-
 STRING 2567
-// Abilities: AE08 (Absolute Null Zone), Tip (Tooltip - Normal)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
 {
 |cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 4
 }
 
 STRING 2569
-// Abilities: AE08 (Absolute Null Zone), Tip (Tooltip - Normal)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
 {
 |cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 5
 }
 
 STRING 2570
-// Abilities: AE08 (Absolute Null Zone), Tip (Tooltip - Normal)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
 {
 |cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 6
 }
 
 STRING 2571
-// Abilities: AE08 (Absolute Null Zone), Tip (Tooltip - Normal)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
 {
 |cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 7
 }
@@ -7222,43 +7132,43 @@ Attack speed increased, unleashes occasional bursts of lightning.
 }
 
 STRING 2578
-// Abilities: AE08 (Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur1>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur1,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast1,.>s|r
 }
 
 STRING 2579
-// Abilities: AE08 (Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur2>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur2,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast2,.>s|r
 }
 
 STRING 2580
-// Abilities: AE08 (Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur3>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur3,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast3,.>s|r
 }
 
 STRING 2581
-// Abilities: AE08 (Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur4>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur4,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast4,.>s|r
 }
 
 STRING 2582
-// Abilities: AE08 (Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur5>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur5,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast5,.>s|r
 }
 
 STRING 2583
-// Abilities: AE08 (Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur6>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur6,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast6,.>s|r
 }
 
 STRING 2584
-// Abilities: AE08 (Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur7>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur7,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast7,.>s|r
 }
@@ -7384,7 +7294,7 @@ STRING 2614
 }
 
 STRING 2627
-// Abilities: A0S9 (Collateral Damage), Hotkey (Hotkey - Normal)
+// Abilities: AE04 (ELE_R Flame Barrage), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -7462,7 +7372,7 @@ Essence of Lightning
 }
 
 STRING 2658
-// Abilities: A01H (Awaken Essence), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S3 (Invigorate), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -7737,52 +7647,10 @@ STRING 2707
 Release Essence |cff808080(B)|r
 }
 
-STRING 2708
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 2
-}
-
-STRING 2709
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 3
-}
-
 STRING 2710
 // Abilities: A01K (Destroy Essence), Hotkey (Hotkey - Normal)
 {
 B
-}
-
-STRING 2711
-// Abilities: A03K (Death Knight Spells), Hotkey (Hotkey - Normal)
-{
-R
-}
-
-STRING 2712
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 4
-}
-
-STRING 2714
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 5
-}
-
-STRING 2715
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 6
-}
-
-STRING 2716
-// Abilities: A01K (Destroy Essence), Tip (Tooltip - Normal)
-{
-|cff8a99ffDry Ice|r - 7
 }
 
 STRING 2720
@@ -7978,15 +7846,9 @@ W
 }
 
 STRING 2756
-// Abilities: A0SA (Call Succubus), Hotkey (Hotkey - Normal)
+// Abilities: A0S4 (Endure), Hotkey (Hotkey - Normal)
 {
 S
-}
-
-STRING 2759
-// Abilities: A0SD (Fireball), Name (Name)
-{
-Fireball
 }
 
 STRING 2761
@@ -8043,12 +7905,6 @@ STRING 2770
 (Spellbook Recipe)
 }
 
-STRING 2771
-// Abilities: AE02 (Chill Blast), Name (Name)
-{
-Chill Blast
-}
-
 STRING 2773
 // Abilities: A0SF (Conductivity), Ubertip (Tooltip - Normal - Extended)
 {
@@ -8097,12 +7953,6 @@ STRING 2782
 (Spellbook Recipe)
 }
 
-STRING 2783
-// Abilities: A0SF (Conductivity), Name (Name)
-{
-Conductivity
-}
-
 STRING 2785
 // Abilities: A0SG (Flame Barrage), Ubertip (Tooltip - Normal - Extended)
 {
@@ -8149,12 +7999,6 @@ STRING 2794
 // Abilities: A0SF (Conductivity), EditorSuffix (Editor Suffix)
 {
 (Spellbook Recipe)
-}
-
-STRING 2795
-// Abilities: A0SG (Flame Barrage), Name (Name)
-{
-Flame Barrage
 }
 
 STRING 2797
@@ -8241,12 +8085,6 @@ STRING 2817
 (Spellbook Recipe)
 }
 
-STRING 2818
-// Abilities: A0SI (Living Current), Name (Name)
-{
-Living Current
-}
-
 STRING 2820
 // Abilities: A0SJ (Inferno), Ubertip (Tooltip - Normal - Extended)
 {
@@ -8289,12 +8127,6 @@ STRING 2829
 (Spellbook Recipe)
 }
 
-STRING 2830
-// Abilities: A0SJ (Inferno), Name (Name)
-{
-Inferno
-}
-
 STRING 2832
 // Abilities: A0SK (Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
 {
@@ -8335,12 +8167,6 @@ STRING 2841
 // Abilities: A0SJ (Inferno), EditorSuffix (Editor Suffix)
 {
 (Spellbook Recipe)
-}
-
-STRING 2842
-// Abilities: A0SK (Absolute Null Zone), Name (Name)
-{
-Absolute Null Zone
 }
 
 STRING 2844
@@ -8433,12 +8259,6 @@ STRING 2865
 (Spellbook Recipe)
 }
 
-STRING 2866
-// Buffs/Effects: B00G ((dryice)), Bufftip (Tooltip)
-{
-Dry Ice
-}
-
 STRING 2867
 // Abilities: A0SD (Fireball), Ubertip (Tooltip - Normal - Extended)
 {
@@ -8446,13 +8266,13 @@ Hurls a fireball towards the target location, dealing damage in aoe on impact.|n
 }
 
 STRING 2869
-// Abilities: A0SD (Fireball), Hotkey (Hotkey - Normal)
+// Abilities: A0S0 (Rejuvenate), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 2870
-// Abilities: A0SD (Fireball), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S6 (Taint), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -8482,13 +8302,13 @@ Starts throwing spheres of flame towards the target point. These do 1 damage to 
 }
 
 STRING 2877
-// Abilities: A01I (Energize), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S9 (Collateral Damage), Hotkey (Hotkey - Normal)
 {
 A
 }
 
 STRING 2878
-// Abilities: A01I (Energize), Hotkey (Hotkey - Normal)
+// Abilities: A01H (Awaken Essence), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -8500,7 +8320,7 @@ Draws heat from all units in the playground, slowing their movement speed by 80%
 }
 
 STRING 2881
-// Abilities: AW08 (Dark Portal), Hotkey (Hotkey - Normal)
+// Abilities: A0SA (Call Succubus), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -8512,7 +8332,7 @@ Z
 }
 
 STRING 2886
-// Abilities: A0SJ (Inferno), Hotkey (Hotkey - Normal)
+// Abilities: AE07 (ELE_R Inferno), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -8770,13 +8590,13 @@ Purple Power
 }
 
 STRING 2987
-// Abilities: A0S8 (Contagious Insanity), Hotkey (Hotkey - Normal)
+// Abilities: AE03 (ELE_R Conductivity), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 2988
-// Abilities: A0SF (Conductivity), Hotkey (Hotkey - Normal)
+// Abilities: A0S2 (Purge), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -8866,13 +8686,13 @@ The most important thing for an elementalist is to strengthen his spells. After 
 }
 
 STRING 3023
-// Abilities: A0SF (Conductivity), Researchhotkey (Hotkey - Learn)
+// Abilities: A0S8 (Contagious Insanity), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 3024
-// Abilities: A01O (Purple Power), Hotkey (Hotkey - Normal)
+// Abilities: A0SF (Conductivity), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -9028,7 +8848,7 @@ STRING 3136
 }
 
 STRING 3137
-// Abilities: A00S (Red Power), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0SD (Fireball), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -9190,43 +9010,43 @@ STRING 3181
 }
 
 STRING 3183
-// Abilities: AE05 (Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast1>|r
 }
 
 STRING 3184
-// Abilities: AE05 (Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast2>|r
 }
 
 STRING 3185
-// Abilities: AE05 (Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast3>|r
 }
 
 STRING 3186
-// Abilities: AE05 (Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast4>|r
 }
 
 STRING 3187
-// Abilities: AE05 (Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast5>|r
 }
 
 STRING 3188
-// Abilities: AE05 (Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast6>|r
 }
 
 STRING 3189
-// Abilities: AE05 (Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast7>|r
 }
@@ -9256,7 +9076,7 @@ Extreme chill
 }
 
 STRING 3194
-// Abilities: A0SG (Flame Barrage), Hotkey (Hotkey - Normal)
+// Abilities: A01I (Energize), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9322,7 +9142,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3205
-// Abilities: A0SG (Flame Barrage), Researchhotkey (Hotkey - Learn)
+// Abilities: A01I (Energize), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9334,7 +9154,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3207
-// Abilities: A01W (Awaken Passive Fireball), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SG (Flame Barrage), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9400,7 +9220,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3218
-// Abilities: A01W (Awaken Passive Fireball), Hotkey (Hotkey - Normal)
+// Abilities: A0SG (Flame Barrage), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9412,7 +9232,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3220
-// Abilities: A01X (Awaken Passive Chill Blast), Researchhotkey (Hotkey - Learn)
+// Abilities: A01W (Awaken Passive Fireball), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9478,7 +9298,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3231
-// Abilities: A01X (Awaken Passive Chill Blast), Hotkey (Hotkey - Normal)
+// Abilities: A01W (Awaken Passive Fireball), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9490,7 +9310,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3233
-// Abilities: A01Y (Awaken Passive Conductivity), Researchhotkey (Hotkey - Learn)
+// Abilities: A01X (Awaken Passive Chill Blast), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9556,7 +9376,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3244
-// Abilities: A01Y (Awaken Passive Conductivity), Hotkey (Hotkey - Normal)
+// Abilities: A01X (Awaken Passive Chill Blast), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9568,7 +9388,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3246
-// Abilities: A01Z (Awaken Passive Flame Barrage), Researchhotkey (Hotkey - Learn)
+// Abilities: A01Y (Awaken Passive Conductivity), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9634,7 +9454,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3257
-// Abilities: A01Z (Awaken Passive Flame Barrage), Hotkey (Hotkey - Normal)
+// Abilities: A01Y (Awaken Passive Conductivity), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9646,7 +9466,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3259
-// Abilities: A020 (Awaken Passive Dry Ice), Researchhotkey (Hotkey - Learn)
+// Abilities: A01Z (Awaken Passive Flame Barrage), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9712,7 +9532,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3270
-// Abilities: A020 (Awaken Passive Dry Ice), Hotkey (Hotkey - Normal)
+// Abilities: A01Z (Awaken Passive Flame Barrage), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9724,7 +9544,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3272
-// Abilities: A021 (Awaken Passive Living Current), Researchhotkey (Hotkey - Learn)
+// Abilities: A020 (Awaken Passive Dry Ice), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9790,7 +9610,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3283
-// Abilities: A021 (Awaken Passive Living Current), Hotkey (Hotkey - Normal)
+// Abilities: A020 (Awaken Passive Dry Ice), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -9802,7 +9622,7 @@ Available spells - when your Spellstring reaches one of these combos, you will r
 }
 
 STRING 3285
-// Abilities: A022 (Awaken Passive Inferno), Researchhotkey (Hotkey - Learn)
+// Abilities: A021 (Awaken Passive Living Current), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -9868,7 +9688,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 3296
-// Abilities: A022 (Awaken Passive Inferno), Hotkey (Hotkey - Normal)
+// Abilities: A021 (Awaken Passive Living Current), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -10510,7 +10330,7 @@ DummyIonic Channel
 }
 
 STRING 3437
-// Abilities: A00S (Red Power), Hotkey (Hotkey - Normal)
+// Abilities: A0SD (Fireball), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -10522,13 +10342,13 @@ High Inquisitor
 }
 
 STRING 3440
-// Abilities: A023 (Awaken Passive Absolute Null Zone), Researchhotkey (Hotkey - Learn)
+// Abilities: A022 (Awaken Passive Inferno), Researchhotkey (Hotkey - Learn)
 {
 A
 }
 
 STRING 3453
-// Abilities: A023 (Awaken Passive Absolute Null Zone), Hotkey (Hotkey - Normal)
+// Abilities: A022 (Awaken Passive Inferno), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -10708,19 +10528,19 @@ Task Force Torturers
 }
 
 STRING 3518
-// Abilities: A00S (Red Power), Researchhotkey (Hotkey - Learn)
+// Abilities: A00S (Red Power), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
 
 STRING 3519
-// Abilities: A028 (Red Power), Hotkey (Hotkey - Normal)
+// Abilities: A00S (Red Power), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 3520
-// Abilities: A028 (Red Power), Researchhotkey (Hotkey - Learn)
+// Abilities: A00S (Red Power), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -10750,13 +10570,13 @@ Red Power
 }
 
 STRING 3534
-// Abilities: A029 (Task Force Torturers), Researchhotkey (Hotkey - Learn)
+// Abilities: A028 (Red Power), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 3535
-// Abilities: A02E (Task Force Investigators), Researchhotkey (Hotkey - Learn)
+// Abilities: A028 (Red Power), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -10828,7 +10648,7 @@ STRING 3580
 }
 
 STRING 3581
-// Abilities: A0SH (Dry Ice), Hotkey (Hotkey - Normal)
+// Abilities: AW08 (Dark Portal), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -10846,7 +10666,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 3584
-// Abilities: A0SH (Dry Ice), Researchhotkey (Hotkey - Learn)
+// Abilities: AE05 (ELE_R Dry Ice), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -11032,19 +10852,19 @@ rhpx
 }
 
 STRING 3616
-// Abilities: A01O (Purple Power), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SF (Conductivity), Researchhotkey (Hotkey - Learn)
 {
 E
 }
 
 STRING 3617
-// Abilities: A029 (Task Force Torturers), Hotkey (Hotkey - Normal)
+// Abilities: A01O (Purple Power), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 3618
-// Abilities: A029 (Task Force Torturers), Unhotkey (Hotkey - Turn Off)
+// Abilities: A01O (Purple Power), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -11056,19 +10876,19 @@ Force type: Torturers |cff808080(E)|r
 }
 
 STRING 3621
-// Abilities: A02E (Task Force Investigators), Hotkey (Hotkey - Normal)
+// Abilities: A029 (Task Force Torturers), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 3622
-// Abilities: A02E (Task Force Investigators), Unhotkey (Hotkey - Turn Off)
+// Abilities: A029 (Task Force Torturers), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
 
 STRING 3623
-// Abilities: A02A (Task Force Inquisitors), Hotkey (Hotkey - Normal)
+// Abilities: A02E (Task Force Investigators), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -11620,7 +11440,7 @@ STRING 3739
 }
 
 STRING 3740
-// Abilities: A0SJ (Inferno), Researchhotkey (Hotkey - Learn)
+// Abilities: AE07 (ELE_R Inferno), Researchhotkey (Hotkey - Learn)
 {
 Z
 }
@@ -11674,7 +11494,7 @@ STRING 3749
 }
 
 STRING 3750
-// Abilities: A0SK (Absolute Null Zone), Hotkey (Hotkey - Normal)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -11836,7 +11656,7 @@ STRING 3794
 }
 
 STRING 3795
-// Abilities: A02A (Task Force Inquisitors), Researchhotkey (Hotkey - Learn)
+// Abilities: A029 (Task Force Torturers), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -11890,13 +11710,13 @@ STRING 3805
 }
 
 STRING 3806
-// Abilities: A02C (Task Force Training Learn), Researchhotkey (Hotkey - Learn)
+// Abilities: A023 (Awaken Passive Absolute Null Zone), Researchhotkey (Hotkey - Learn)
 {
 A
 }
 
 STRING 3807
-// Abilities: A02C (Task Force Training Learn), Hotkey (Hotkey - Normal)
+// Abilities: A023 (Awaken Passive Absolute Null Zone), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -12118,7 +11938,7 @@ W|cffff3333R|r - |cffffff80Purge |r|cff808080(E)|r
 }
 
 STRING 3857
-// Abilities: A02A (Task Force Inquisitors), Unhotkey (Hotkey - Turn Off)
+// Abilities: A02E (Task Force Investigators), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -12166,7 +11986,7 @@ STRING 3872
 }
 
 STRING 3873
-// Abilities: AE0M (Element Mastery), Hotkey (Hotkey - Normal)
+// Abilities: AE06 (ELE_R Living Current), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -12340,163 +12160,163 @@ Blasts enemy units with a wave of frost that deals |cffff8080<A02T,DataB7> |rdam
 }
 
 STRING 3915
-// Abilities: AE02 (Chill Blast), Tip (Tooltip - Normal)
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
 {
 |cff8a99ffChill Blast|r|cff00ffff |r- 1
 }
 
 STRING 3916
-// Abilities: AE02 (Chill Blast), Tip (Tooltip - Normal)
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
 {
 |cff8a99ffChill Blast|r|cff00ffff |r- 2
 }
 
 STRING 3917
-// Abilities: AE02 (Chill Blast), Tip (Tooltip - Normal)
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
 {
 |cff8a99ffChill Blast|r|cff00ffff |r- 3
 }
 
 STRING 3920
-// Abilities: AE02 (Chill Blast), Tip (Tooltip - Normal)
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
 {
 |cff8a99ffChill Blast|r|cff00ffff |r- 4
 }
 
 STRING 3922
-// Abilities: AE02 (Chill Blast), Tip (Tooltip - Normal)
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
 {
 |cff8a99ffChill Blast|r|cff00ffff |r- 5
 }
 
 STRING 3923
-// Abilities: AE02 (Chill Blast), Tip (Tooltip - Normal)
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
 {
 |cff8a99ffChill Blast|r|cff00ffff |r- 6
 }
 
 STRING 3924
-// Abilities: AE02 (Chill Blast), Tip (Tooltip - Normal)
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
 {
 |cff8a99ffChill Blast|r|cff00ffff |r- 7
 }
 
 STRING 3928
-// Abilities: AE09 (Ionic Channel), Name (Name)
+// Abilities: A0SY (Ionic Channel), Name (Name)
 {
 Ionic Channel
 }
 
 STRING 3932
-// Abilities: AE09 (Ionic Channel), Tip (Tooltip - Normal)
+// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
 {
 |cffff5effIonic Channel |r- 1
 }
 
 STRING 3933
-// Abilities: AE09 (Ionic Channel), Tip (Tooltip - Normal)
+// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
 {
 |cffff5effIonic Channel |r- 2
 }
 
 STRING 3934
-// Abilities: AE09 (Ionic Channel), Tip (Tooltip - Normal)
+// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
 {
 |cffff5effIonic Channel |r- 3
 }
 
 STRING 3937
-// Abilities: AE09 (Ionic Channel), Tip (Tooltip - Normal)
+// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
 {
 |cffff5effIonic Channel |r- 4
 }
 
 STRING 3939
-// Abilities: AE09 (Ionic Channel), Tip (Tooltip - Normal)
+// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
 {
 |cffff5effIonic Channel |r- 5
 }
 
 STRING 3940
-// Abilities: AE09 (Ionic Channel), Tip (Tooltip - Normal)
+// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
 {
 |cffff5effIonic Channel |r- 6
 }
 
 STRING 3941
-// Abilities: AE09 (Ionic Channel), Tip (Tooltip - Normal)
+// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
 {
 |cffff5effIonic Channel |r- 7
 }
 
 STRING 3945
-// Abilities: AE09 (Ionic Channel), Researchtip (Tooltip - Learn)
+// Abilities: AE09 (ELE_R Ionic Channel), Researchtip (Tooltip - Learn)
 {
 Awaken Essence - %d |cff808080(A)|r
 }
 
 STRING 3946
-// Abilities: AE09 (Ionic Channel), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: AE09 (ELE_R Ionic Channel), Researchubertip (Tooltip - Learn - Extended)
 {
 Transforms a spell into its truest elemental form which does not need a guiding hand of a spellcaster to unleash its power.|n|nSacrifice your Active Spell to create a unit. If cast on a Magic Crystal, it summons an Elemental troop. If cast on the ground, the Active Spell is stored within the essence and can be cast independently.|n|cffff8080You cannot transform a spell of a higher level than this ability.|r|n|nMax Essences Alive: |cff80ffff1 per level up to 5.|r|nMax sacrificed spell level:|cffff8080 1 per level up to 7.|n|rSummoned unit stats increased on levels: |cff8a8aff2|r, |cff8a8aff4|r, |cff8a8aff6|r, |cff8a8aff8|r|n|cffffd9b3Cooldown: <AE0M,Cool1>s|r
 }
 
 STRING 3947
-// Abilities: AE09 (Ionic Channel), Tip (Tooltip - Normal)
+// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
 {
 |cffff5effIonic Channel |r- 8
 }
 
 STRING 3948
-// Abilities: AE09 (Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
 {
 Sacrifice your Active Spell to Summon an elemental in target lane (by targeting a magic crystal). Elementals stats are increased for every 2 levels of Awaken Essence.|n|nInstead, you can create an Essence at the target point and store the spell within. Essence can cast that spell afterwards in your stead.|n|nMax Essences: |cff80ffff5|n|rMax Spell level: |cffff80807|r|n|cffffd9b3Cooldown: <AE0M,Cool8>s|r
 }
 
 STRING 3949
-// Abilities: AE09 (Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 1 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool1>s|r
 }
 
 STRING 3950
-// Abilities: AE09 (Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 2 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool2>s|r
 }
 
 STRING 3951
-// Abilities: AE09 (Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 3 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool3>s|r
 }
 
 STRING 3952
-// Abilities: AE09 (Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 4 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool4>s|r
 }
 
 STRING 3953
-// Abilities: AE09 (Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 5 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool5>s|r
 }
 
 STRING 3954
-// Abilities: AE09 (Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 6 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool6>s|r
 }
 
 STRING 3955
-// Abilities: AE09 (Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 7 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool7>s|r
 }
 
 STRING 3956
-// Abilities: A0SY (Ionic Channel), Name (Name)
+// Buffs/Effects: B00X ((ionicchannel)), Bufftip (Tooltip)
 {
 Ionic Channel
 }
@@ -12514,7 +12334,7 @@ STRING 3960
 }
 
 STRING 3963
-// Abilities: A02R (Death Knight Spellbook), Hotkey (Hotkey - Normal)
+// Abilities: AE09 (ELE_R Ionic Channel), Researchhotkey (Hotkey - Learn)
 {
 C
 }
@@ -12544,7 +12364,7 @@ Call Succubus
 }
 
 STRING 3988
-// Abilities: AW07 (Blood Feast), Hotkey (Hotkey - Normal)
+// Abilities: A0SJ (Inferno), Hotkey (Hotkey - Normal)
 {
 Z
 }
@@ -12658,7 +12478,7 @@ Summons more powerful melee troops
 }
 
 STRING 4013
-// Abilities: A0SK (Absolute Null Zone), Researchhotkey (Hotkey - Learn)
+// Abilities: AE08 (ELE_R Absolute Null Zone), Researchhotkey (Hotkey - Learn)
 {
 X
 }
@@ -12883,12 +12703,6 @@ STRING 4082
 // Buffs/Effects: B00X ((ionicchannel)), EditorName (Name (Editor Only))
 {
 (ionicchannel)
-}
-
-STRING 4083
-// Buffs/Effects: B00X ((ionicchannel)), Bufftip (Tooltip)
-{
-Ionic Channel
 }
 
 STRING 4084
@@ -13162,7 +12976,7 @@ STRING 4142
 }
 
 STRING 4143
-// Abilities: A0SP (Magic Barrier), Hotkey (Hotkey - Normal)
+// Abilities: A02C (Task Force Training Learn), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -13228,7 +13042,7 @@ Death Knight
 }
 
 STRING 4156
-// Abilities: A0SI (Living Current), Hotkey (Hotkey - Normal)
+// Abilities: AE06 (ELE_R Living Current), Researchhotkey (Hotkey - Learn)
 {
 D
 }
@@ -13240,7 +13054,7 @@ Summon Ghoul
 }
 
 STRING 4180
-// Abilities: A0SN (Bless), Hotkey (Hotkey - Normal)
+// Abilities: AE02 (ELE_R Chill Blast), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -13252,7 +13066,7 @@ STRING 4181
 }
 
 STRING 4182
-// Abilities: A02O (Summon Ghoul), Hotkey (Hotkey - Normal)
+// Abilities: AE02 (ELE_R Chill Blast), Researchhotkey (Hotkey - Learn)
 {
 W
 }
@@ -13264,7 +13078,7 @@ Summon Abomination
 }
 
 STRING 4206
-// Abilities: A0SO (Purge), Hotkey (Hotkey - Normal)
+// Abilities: A02A (Task Force Inquisitors), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -13276,7 +13090,7 @@ STRING 4207
 }
 
 STRING 4208
-// Abilities: A02P (Summon Abomination), Hotkey (Hotkey - Normal)
+// Abilities: A02A (Task Force Inquisitors), Unhotkey (Hotkey - Turn Off)
 {
 E
 }
@@ -13522,7 +13336,7 @@ Creates a barrier that stops spells from affecting a target unit. |nLasts|cff8a8
 }
 
 STRING 4250
-// Abilities: A0SI (Living Current), Researchhotkey (Hotkey - Learn)
+// Abilities: AE0M (Element Mastery), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -13594,13 +13408,13 @@ Death Knight Spellbook
 }
 
 STRING 4274
-// Abilities: A02V (Unlock Dark Arts), Hotkey (Hotkey - Normal)
+// Abilities: A02R (Death Knight Spellbook), Hotkey (Hotkey - Normal)
 {
 C
 }
 
 STRING 4276
-// Abilities: A0SY (Ionic Channel), Researchhotkey (Hotkey - Learn)
+// Abilities: A02V (Unlock Dark Arts), Hotkey (Hotkey - Normal)
 {
 C
 }
@@ -13624,13 +13438,13 @@ Choose |cff8a8affBlue|r |cff808080(W)|r
 }
 
 STRING 4280
-// Abilities: A02O (Summon Ghoul), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SN (Bless), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 4281
-// Abilities: A00T (White Power), Hotkey (Hotkey - Normal)
+// Abilities: A02E (Task Force Investigators), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -13684,7 +13498,7 @@ Strengthen your mastery over magical energy. Cooldown and manacost reduce with l
 }
 
 STRING 4290
-// Abilities: A02X (Unholy Magic), Hotkey (Hotkey - Normal)
+// Abilities: A02O (Summon Ghoul), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -13696,13 +13510,13 @@ Unholy Magic
 }
 
 STRING 4293
-// Abilities: A031 (Lane Drain Immunity), Hotkey (Hotkey - Normal)
+// Abilities: A02O (Summon Ghoul), Researchhotkey (Hotkey - Learn)
 {
 W
 }
 
 STRING 4294
-// Abilities: A00T (White Power), Researchhotkey (Hotkey - Learn)
+// Abilities: A02A (Task Force Inquisitors), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -13756,7 +13570,7 @@ Necromancy
 }
 
 STRING 4307
-// Abilities: A0SM (Consecrate), Hotkey (Hotkey - Normal)
+// Abilities: A00T (White Power), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -13852,7 +13666,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 4329
-// Abilities: A02B ((Task Force Training Learn)), Hotkey (Hotkey - Normal)
+// Abilities: AE05 (ELE_R Dry Ice), Researchhotkey (Hotkey - Learn)
 {
 S
 }
@@ -13870,7 +13684,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 4332
-// Abilities: A02B ((Task Force Training Learn)), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SH (Dry Ice), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -13918,7 +13732,7 @@ Advanced Mastery - [|cffffcc00Level 1|r]
 }
 
 STRING 4342
-// Abilities: A02Z (Might), Hotkey (Hotkey - Normal)
+// Abilities: A0SH (Dry Ice), Researchhotkey (Hotkey - Learn)
 {
 S
 }
@@ -13936,7 +13750,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 4345
-// Abilities: A02Z (Might), Researchhotkey (Hotkey - Learn)
+// Abilities: A02B ((Task Force Training Learn)), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -14068,7 +13882,7 @@ Lane Drain Immunity
 }
 
 STRING 4386
-// Abilities: A0SM (Consecrate), Researchhotkey (Hotkey - Learn)
+// Abilities: A00T (White Power), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -14266,7 +14080,7 @@ Mastery - [|cffffcc00Level 3|r]
 }
 
 STRING 4448
-// Abilities: A02G (LeechBites), Hotkey (Hotkey - Normal)
+// Abilities: A02B ((Task Force Training Learn)), Researchhotkey (Hotkey - Learn)
 {
 S
 }
@@ -14278,7 +14092,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 4451
-// Abilities: A02G (LeechBites), Researchhotkey (Hotkey - Learn)
+// Abilities: A02Z (Might), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -14326,7 +14140,7 @@ Corrupted Blood
 }
 
 STRING 4486
-// Abilities: A0SP (Magic Barrier), Researchhotkey (Hotkey - Learn)
+// Abilities: A02C (Task Force Training Learn), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -14404,7 +14218,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 4499
-// Abilities: AW04 (Ritual of Death), Hotkey (Hotkey - Normal)
+// Abilities: A0SP (Magic Barrier), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -14534,7 +14348,7 @@ Unlock |cff8080ffNecromancy|r (E)
 }
 
 STRING 4593
-// Abilities: A02P (Summon Abomination), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SO (Purge), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -14552,7 +14366,7 @@ STRING 4595
 }
 
 STRING 4596
-// Abilities: A02W (Blood Magic), Hotkey (Hotkey - Normal)
+// Abilities: A0SM (Consecrate), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -14654,7 +14468,7 @@ STRING 4692
 }
 
 STRING 4693
-// Abilities: A02W (Blood Magic), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SM (Consecrate), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -14708,7 +14522,7 @@ STRING 4702
 }
 
 STRING 4703
-// Abilities: ADK2 (Corrupted Blood), Hotkey (Hotkey - Normal)
+// Abilities: A0SP (Magic Barrier), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -14762,7 +14576,7 @@ STRING 4713
 }
 
 STRING 4714
-// Abilities: A0SS (Blood Feast), Hotkey (Hotkey - Normal)
+// Abilities: A0SJ (Inferno), Researchhotkey (Hotkey - Learn)
 {
 Z
 }
@@ -14816,7 +14630,7 @@ STRING 4724
 }
 
 STRING 4725
-// Abilities: A02Y (Necromancy), Hotkey (Hotkey - Normal)
+// Abilities: A02P (Summon Abomination), Hotkey (Hotkey - Normal)
 {
 E
 }
@@ -14876,7 +14690,7 @@ STRING 4735
 }
 
 STRING 4736
-// Abilities: A0SL (Channel Energy), Hotkey (Hotkey - Normal)
+// Abilities: A0SI (Living Current), Hotkey (Hotkey - Normal)
 {
 D
 }
@@ -14960,43 +14774,43 @@ Grants a friendly hero +1|cffff8080 |rmaximum hp, up to |cffff808040|r max hp.|n
 }
 
 STRING 4757
-// Abilities: AE06 (Living Current), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE06 (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
 {
 Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA1> |rdamage.|nLasts|cff8a8aff <A01B,Dur1>|r seconds.|n|n|cffffd9b3Cast time: <AE03,Cast1,.>s|r
 }
 
 STRING 4758
-// Abilities: AE06 (Living Current), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE06 (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
 {
 Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA2> |rdamage.|nLasts|cff8a8aff <A01B,Dur2>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast2,.>s|r
 }
 
 STRING 4759
-// Abilities: AE06 (Living Current), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE06 (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
 {
 Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA3> |rdamage.|nLasts|cff8a8aff <A01B,Dur3>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast3,.>s|r
 }
 
 STRING 4760
-// Abilities: AE06 (Living Current), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE06 (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
 {
 Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA4> |rdamage.|nLasts|cff8a8aff <A01B,Dur4>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast4,.>s|r
 }
 
 STRING 4761
-// Abilities: AE06 (Living Current), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE06 (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
 {
 Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA5> |rdamage.|nLasts|cff8a8aff <A01B,Dur5>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast5,.>s|r
 }
 
 STRING 4762
-// Abilities: AE06 (Living Current), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE06 (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
 {
 Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA6> |rdamage.|nLasts|cff8a8aff <A01B,Dur6>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast6,.>s|r
 }
 
 STRING 4763
-// Abilities: AE06 (Living Current), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE06 (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
 {
 Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA7> |rdamage.|nLasts|cff8a8aff <A01B,Dur7>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast7,.>s|r
 }
@@ -15098,7 +14912,7 @@ Test Hero
 }
 
 STRING 4843
-// Abilities: A02X (Unholy Magic), Researchhotkey (Hotkey - Learn)
+// Abilities: A02W (Blood Magic), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -15278,7 +15092,7 @@ Wait for the curse to trigger...
 }
 
 STRING 4902
-// Abilities: A0ST (Dark Portal), Hotkey (Hotkey - Normal)
+// Abilities: A0SK (Absolute Null Zone), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -15404,19 +15218,19 @@ While inside this unit is immune to magic and cannot cast spells.
 }
 
 STRING 4929
-// Abilities: ADK5 (Antimagic Zone), Hotkey (Hotkey - Normal)
+// Abilities: A02Z (Might), Researchhotkey (Hotkey - Learn)
 {
 S
 }
 
 STRING 4930
-// Abilities: A031 (Lane Drain Immunity), Unhotkey (Hotkey - Turn Off)
+// Abilities: A02X (Unholy Magic), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 4931
-// Abilities: A02U (DummyLeech Corrupted Blood), Researchhotkey (Hotkey - Learn)
+// Abilities: AW04 (Ritual of Death), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -15488,7 +15302,7 @@ Available spells|n|nCircle 1:|n|cffffff80Rejuvenate |r- WW|cff6affff|n|r|cffa0a0
 }
 
 STRING 4944
-// Abilities: A02U (DummyLeech Corrupted Blood), Hotkey (Hotkey - Normal)
+// Abilities: ADK2 (Corrupted Blood), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -15656,43 +15470,43 @@ Summons more powerful melee Abominations.|n|nAbomination is a strong and tanky m
 }
 
 STRING 4992
-// Abilities: AE02 (Chill Blast), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE02 (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 1s|r
 }
 
 STRING 4993
-// Abilities: AE02 (Chill Blast), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE02 (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 2s|r
 }
 
 STRING 4994
-// Abilities: AE02 (Chill Blast), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE02 (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 3s|r
 }
 
 STRING 4995
-// Abilities: AE02 (Chill Blast), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE02 (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 4s|r
 }
 
 STRING 4996
-// Abilities: AE02 (Chill Blast), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE02 (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 5s|r
 }
 
 STRING 4997
-// Abilities: AE02 (Chill Blast), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE02 (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 6s|r
 }
 
 STRING 4998
-// Abilities: AE02 (Chill Blast), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE02 (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
 {
 Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 7s|r
 }
@@ -15740,7 +15554,7 @@ Creates an area where units that enter gain spell immunity and are silenced.|nDu
 }
 
 STRING 5023
-// Abilities: A0T0 (Corrupted Blood), Hotkey (Hotkey - Normal)
+// Abilities: A02U (DummyLeech Corrupted Blood), Researchhotkey (Hotkey - Learn)
 {
 A
 }
@@ -15806,7 +15620,7 @@ This unit is an animated corpse. It will fall apart after a while.
 }
 
 STRING 5034
-// Abilities: A03A (Dk information), Researchhotkey (Hotkey - Learn)
+// Abilities: A02U (DummyLeech Corrupted Blood), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -15986,13 +15800,13 @@ Dark Power - 1 |cff808080(Q)|r
 }
 
 STRING 5128
-// Abilities: A02Y (Necromancy), Researchhotkey (Hotkey - Learn)
+// Abilities: A02W (Blood Magic), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
 
 STRING 5129
-// Abilities: ADK1 (Volatile Leeches), Hotkey (Hotkey - Normal)
+// Abilities: A02X (Unholy Magic), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -16334,7 +16148,7 @@ Spells
 }
 
 STRING 5202
-// Abilities: A031 (Lane Drain Immunity), Researchhotkey (Hotkey - Learn)
+// Abilities: A02Y (Necromancy), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -16532,43 +16346,43 @@ STRING 5258
 }
 
 STRING 5259
-// Abilities: A0SR (Justice Hand), Hotkey (Hotkey - Normal)
+// Abilities: A0SI (Living Current), Researchhotkey (Hotkey - Learn)
 {
 D
 }
 
 STRING 5260
-// Abilities: A0SV (Redemption), Hotkey (Hotkey - Normal)
+// Abilities: AW07 (Blood Feast), Hotkey (Hotkey - Normal)
 {
 Z
 }
 
 STRING 5261
-// Abilities: A02Q (Anti-magic Shell), Hotkey (Hotkey - Normal)
+// Abilities: A0SL (Channel Energy), Hotkey (Hotkey - Normal)
 {
 D
 }
 
 STRING 5262
-// Abilities: A0SW (Guardian Angel), Hotkey (Hotkey - Normal)
+// Abilities: A0SK (Absolute Null Zone), Researchhotkey (Hotkey - Learn)
 {
 X
 }
 
 STRING 5263
-// Abilities: A0T6 (Antimagic Zone), Hotkey (Hotkey - Normal)
+// Abilities: A02G (LeechBites), Hotkey (Hotkey - Normal)
 {
 S
 }
 
 STRING 5264
-// Abilities: ADK4 (Death Volley), Hotkey (Hotkey - Normal)
+// Abilities: A031 (Lane Drain Immunity), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 5265
-// Abilities: A03A (Dk information), Hotkey (Hotkey - Normal)
+// Abilities: A0T0 (Corrupted Blood), Hotkey (Hotkey - Normal)
 {
 A
 }
@@ -16592,7 +16406,7 @@ STRING 5268
 }
 
 STRING 5269
-// Abilities: ADK7 (Death's Embrace), Hotkey (Hotkey - Normal)
+// Abilities: A02P (Summon Abomination), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -17012,43 +16826,43 @@ STRING 5348
 }
 
 STRING 5349
-// Abilities: ADK3 (Vampire's Boon), Hotkey (Hotkey - Normal)
+// Abilities: A0SS (Blood Feast), Hotkey (Hotkey - Normal)
 {
 Z
 }
 
 STRING 5350
-// Abilities: A030 (Will), Hotkey (Hotkey - Normal)
+// Abilities: A0SR (Justice Hand), Hotkey (Hotkey - Normal)
 {
 D
 }
 
 STRING 5351
-// Abilities: ADK6 (Unholy Curse), Hotkey (Hotkey - Normal)
+// Abilities: A0ST (Dark Portal), Hotkey (Hotkey - Normal)
 {
 X
 }
 
 STRING 5353
-// Abilities: A0T7 (Death Volley), Hotkey (Hotkey - Normal)
+// Abilities: A031 (Lane Drain Immunity), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
 
 STRING 5354
-// Abilities: A03B (DummyArmy of the Dead Passive), Researchhotkey (Hotkey - Learn)
+// Abilities: A03A (Dk information), Researchhotkey (Hotkey - Learn)
 {
 A
 }
 
 STRING 5355
-// Abilities: A0T2 (Death's Embrace), Hotkey (Hotkey - Normal)
+// Abilities: A02Y (Necromancy), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 5356
-// Abilities: A0SZ (Volatile Leeches), Hotkey (Hotkey - Normal)
+// Abilities: ADK1 (Volatile Leeches), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -17366,7 +17180,7 @@ Grants a new Summoning orb to your orb pool.
 }
 
 STRING 5470
-// Abilities: A03G (Dark Power), Hotkey (Hotkey - Normal)
+// Abilities: A031 (Lane Drain Immunity), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
@@ -17700,43 +17514,43 @@ Spells
 }
 
 STRING 5595
-// Abilities: A0T1 (Vampire's Boon), Hotkey (Hotkey - Normal)
+// Abilities: A0SV (Redemption), Hotkey (Hotkey - Normal)
 {
 Z
 }
 
 STRING 5596
-// Abilities: A030 (Will), Researchhotkey (Hotkey - Learn)
+// Abilities: A02Q (Anti-magic Shell), Hotkey (Hotkey - Normal)
 {
 D
 }
 
 STRING 5597
-// Abilities: A0T5 (Unholy Curse), Hotkey (Hotkey - Normal)
+// Abilities: A0SW (Guardian Angel), Hotkey (Hotkey - Normal)
 {
 X
 }
 
 STRING 5599
-// Abilities: A03L (Lane Persistance), Hotkey (Hotkey - Normal)
+// Abilities: ADK4 (Death Volley), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 5600
-// Abilities: A03B (DummyArmy of the Dead Passive), Hotkey (Hotkey - Normal)
+// Abilities: A03A (Dk information), Hotkey (Hotkey - Normal)
 {
 A
 }
 
 STRING 5601
-// Abilities: AP03 (Purge), Hotkey (Hotkey - Normal)
+// Abilities: ADK7 (Death's Embrace), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 5602
-// Abilities: A03G (Dark Power), Researchhotkey (Hotkey - Learn)
+// Abilities: A0SZ (Volatile Leeches), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -18210,13 +18024,13 @@ Choose |cff8a8affBlue|r |cff808080(W)|r
 }
 
 STRING 5689
-// Abilities: A03L (Lane Persistance), Unhotkey (Hotkey - Turn Off)
+// Abilities: A0T7 (Death Volley), Hotkey (Hotkey - Normal)
 {
 W
 }
 
 STRING 5690
-// Abilities: A03L (Lane Persistance), Researchhotkey (Hotkey - Learn)
+// Abilities: A03G (Dark Power), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -18270,7 +18084,7 @@ Strengthen your mastery over magical energy. Cooldown and manacost reduce with l
 }
 
 STRING 5699
-// Abilities: AP02 (Bless), Hotkey (Hotkey - Normal)
+// Abilities: A03L (Lane Persistance), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -18308,13 +18122,13 @@ Corrupt target unit's blood, making it unhealable through spells. If living, it 
 }
 
 STRING 5704
-// Abilities: ADK8 (Death and Decay), Hotkey (Hotkey - Normal)
+// Abilities: A030 (Will), Hotkey (Hotkey - Normal)
 {
 D
 }
 
 STRING 5705
-// Abilities: A0T3 (Death and Decay), Hotkey (Hotkey - Normal)
+// Abilities: A030 (Will), Researchhotkey (Hotkey - Learn)
 {
 D
 }
@@ -21729,5 +21543,557 @@ STRING 6342
 // Abilities: A037 (DummyDeathVolley), Name (Name)
 {
 DummyDeathVolley
+}
+
+STRING 6344
+// Units: H01J (Grove Tender), Name (Name)
+{
+Grove Tender
+}
+
+STRING 6348
+// Units: H01J (Grove Tender), Propernames (Proper Names)
+{
+Larodar,Anubris,Nandieb,Califax,Bandalar,Malorne,Gholbine,Dagda,Nuada,Oghma,Centrius,Ceredwyn
+}
+
+STRING 6349
+// Abilities: A02G (LeechBites), Researchhotkey (Hotkey - Learn)
+{
+S
+}
+
+STRING 6350
+// Abilities: AE01 (ELE_R Fireball), Name (Name)
+{
+ELE_R Fireball
+}
+
+STRING 6351
+// Abilities: AE03 (ELE_R Conductivity), Name (Name)
+{
+ELE_R Conductivity
+}
+
+STRING 6352
+// Abilities: AE04 (ELE_R Flame Barrage), Name (Name)
+{
+ELE_R Flame Barrage
+}
+
+STRING 6353
+// Abilities: AE06 (ELE_R Living Current), Name (Name)
+{
+ELE_R Living Current
+}
+
+STRING 6354
+// Abilities: AE05 (ELE_R Dry Ice), Name (Name)
+{
+ELE_R Dry Ice
+}
+
+STRING 6355
+// Abilities: AE07 (ELE_R Inferno), Name (Name)
+{
+ELE_R Inferno
+}
+
+STRING 6356
+// Abilities: AE08 (ELE_R Absolute Null Zone), Name (Name)
+{
+ELE_R Absolute Null Zone
+}
+
+STRING 6357
+// Abilities: AE02 (ELE_R Chill Blast), Name (Name)
+{
+ELE_R Chill Blast
+}
+
+STRING 6358
+// Abilities: AE09 (ELE_R Ionic Channel), Name (Name)
+{
+ELE_R Ionic Channel
+}
+
+STRING 6359
+// Abilities: A03N (GRT_Q Photosynthesis), Name (Name)
+{
+GRT_Q Photosynthesis
+}
+
+STRING 6368
+// Abilities: A03N (GRT_Q Photosynthesis), Ubertip (Tooltip - Normal - Extended)
+{
+Channel ability. Each tick, 1 second is reduced split between all Green Orbs.
+}
+
+STRING 6369
+// Abilities: A03N (GRT_Q Photosynthesis), Ubertip (Tooltip - Normal - Extended)
+{
+Channel ability. Each tick, 2 second is reduced split between all Green Orbs.
+}
+
+STRING 6370
+// Abilities: A03N (GRT_Q Photosynthesis), Ubertip (Tooltip - Normal - Extended)
+{
+Channel ability. Each tick, 3 second is reduced split between all Green Orbs.
+}
+
+STRING 6371
+// Abilities: A03N (GRT_Q Photosynthesis), Tip (Tooltip - Normal)
+{
+Photosynthesis - 1 |cff808080(Q)|r
+}
+
+STRING 6372
+// Abilities: A03N (GRT_Q Photosynthesis), Tip (Tooltip - Normal)
+{
+Photosynthesis - 2 |cff808080(Q)|r
+}
+
+STRING 6373
+// Abilities: A03N (GRT_Q Photosynthesis), Tip (Tooltip - Normal)
+{
+Photosynthesis - 3 |cff808080(Q)|r
+}
+
+STRING 6374
+// Abilities: A03N (GRT_Q Photosynthesis), Tip (Tooltip - Normal)
+{
+Photosynthesis - 4 |cff808080(Q)|r
+}
+
+STRING 6375
+// Abilities: A03N (GRT_Q Photosynthesis), Ubertip (Tooltip - Normal - Extended)
+{
+Channel ability. Each tick, 4 second is reduced split between all Green Orbs.
+}
+
+STRING 6376
+// Abilities: A03O (Summon Seedling), Name (Name)
+{
+Summon Seedling
+}
+
+STRING 6377
+// Abilities: A03O (Summon Seedling), Tip (Tooltip - Normal)
+{
+Summon Seedling 1 (|cffffcc00W|r)
+}
+
+STRING 6378
+// Abilities: A03O (Summon Seedling), Tip (Tooltip - Normal)
+{
+Summon Seedling 2 (|cffffcc00W|r)
+}
+
+STRING 6379
+// Abilities: A03O (Summon Seedling), Tip (Tooltip - Normal)
+{
+Summon Seedling 3 (|cffffcc00W|r)
+}
+
+STRING 6380
+// Abilities: A03O (Summon Seedling), Tip (Tooltip - Normal)
+{
+Summon Seedling 4 (|cffffcc00W|r)
+}
+
+STRING 6381
+// Abilities: A03O (Summon Seedling), Tip (Tooltip - Normal)
+{
+Summon Seedling 5 (|cffffcc00W|r)
+}
+
+STRING 6382
+// Abilities: A03O (Summon Seedling), Tip (Tooltip - Normal)
+{
+Summon Seedling 6 (|cffffcc00W|r)
+}
+
+STRING 6383
+// Abilities: A03O (Summon Seedling), Tip (Tooltip - Normal)
+{
+Summon Seedling 7 (|cffffcc00W|r)
+}
+
+STRING 6384
+// Abilities: A03O (Summon Seedling), Tip (Tooltip - Normal)
+{
+Summon Seedling 8 (|cffffcc00W|r)
+}
+
+STRING 6385
+// Abilities: A03O (Summon Seedling), Tip (Tooltip - Normal)
+{
+Summon Seedling 9 (|cffffcc00W|r)
+}
+
+STRING 6386
+// Abilities: A03O (Summon Seedling), Tip (Tooltip - Normal)
+{
+Summon Seedling 10 (|cffffcc00W|r)
+}
+
+STRING 6387
+// Abilities: A03O (Summon Seedling), Ubertip (Tooltip - Normal - Extended)
+{
+Grove Tender's summoning skill. Cast on Crystals to summon a seedling in that lane.
+}
+
+STRING 6388
+// Abilities: A03O (Summon Seedling), Ubertip (Tooltip - Normal - Extended)
+{
+Grove Tender's summoning skill. Cast on Crystals to summon a seedling in that lane.
+}
+
+STRING 6389
+// Abilities: A03O (Summon Seedling), Ubertip (Tooltip - Normal - Extended)
+{
+Grove Tender's summoning skill. Cast on Crystals to summon a seedling in that lane.
+}
+
+STRING 6390
+// Abilities: A03O (Summon Seedling), Ubertip (Tooltip - Normal - Extended)
+{
+Grove Tender's summoning skill. Cast on Crystals to summon a seedling in that lane.
+}
+
+STRING 6391
+// Abilities: A03O (Summon Seedling), Ubertip (Tooltip - Normal - Extended)
+{
+Grove Tender's summoning skill. Cast on Crystals to summon a seedling in that lane.
+}
+
+STRING 6392
+// Abilities: A03O (Summon Seedling), Ubertip (Tooltip - Normal - Extended)
+{
+Grove Tender's summoning skill. Cast on Crystals to summon a seedling in that lane.
+}
+
+STRING 6393
+// Abilities: A03O (Summon Seedling), Ubertip (Tooltip - Normal - Extended)
+{
+Grove Tender's summoning skill. Cast on Crystals to summon a seedling in that lane.
+}
+
+STRING 6394
+// Abilities: A03O (Summon Seedling), Ubertip (Tooltip - Normal - Extended)
+{
+Grove Tender's summoning skill. Cast on Crystals to summon a seedling in that lane.
+}
+
+STRING 6395
+// Abilities: A03O (Summon Seedling), Ubertip (Tooltip - Normal - Extended)
+{
+Grove Tender's summoning skill. Cast on Crystals to summon a seedling in that lane.
+}
+
+STRING 6396
+// Abilities: A03O (Summon Seedling), Ubertip (Tooltip - Normal - Extended)
+{
+Grove Tender's summoning skill. Cast on Crystals to summon a seedling in that lane.
+}
+
+STRING 6397
+// Abilities: A03O (Summon Seedling), Researchtip (Tooltip - Learn)
+{
+Learn Summon Seedling - %d (|cffffcc00W|r)
+}
+
+STRING 6398
+// Abilities: A03O (Summon Seedling), Researchubertip (Tooltip - Learn - Extended)
+{
+Summoned seedlings' level and stats are increased.
+}
+
+STRING 6399
+// Abilities: A03L (Lane Persistance), Unhotkey (Hotkey - Turn Off)
+{
+W
+}
+
+STRING 6400
+// Abilities: A03O (Summon Seedling), EditorSuffix (Editor Suffix)
+{
+(novi)
+}
+
+STRING 6401
+// Abilities: AP02 (Bless), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 6402
+// Units: H01J (Grove Tender), Tip (Tooltip - Basic)
+{
+Grove Tender
+}
+
+STRING 6403
+// Upgrades: R01C (Long Rifles), Name (Name)
+{
+Grove Tender Seedling
+}
+
+STRING 6404
+// Upgrades: R01C (Long Rifles), effect1 (Effect 1)
+{
+ratx
+}
+
+STRING 6405
+// Upgrades: R01C (Long Rifles), effect2 (Effect 2)
+{
+rhpx
+}
+
+STRING 6406
+// Upgrades: R01C (Long Rifles), class (Class)
+{
+melee
+}
+
+STRING 6407
+// Upgrades: R01C (Long Rifles), effect3 (Effect 3)
+{
+ratd
+}
+
+STRING 6408
+// Units: e003 (Seedling), Name (Name)
+{
+Seedling
+}
+
+STRING 6409
+// Abilities: A03P (Elementalist Spells), Name (Name)
+{
+Elementalist Spells
+}
+
+STRING 6411
+// Abilities: A03P (Elementalist Spells), Tip (Tooltip - Normal)
+{
+Spells
+}
+
+STRING 6412
+// Abilities: A03G (Dark Power), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 6413
+// Abilities: A03L (Lane Persistance), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 6414
+// Units: h01K (TestDummy), Name (Name)
+{
+TestDummy
+}
+
+STRING 6415
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 1
+}
+
+STRING 6416
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 2
+}
+
+STRING 6417
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 3
+}
+
+STRING 6418
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 4
+}
+
+STRING 6419
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 5
+}
+
+STRING 6420
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 6
+}
+
+STRING 6421
+// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 7
+}
+
+STRING 6422
+// Abilities: A0SY (Ionic Channel), Researchhotkey (Hotkey - Learn)
+{
+C
+}
+
+STRING 6423
+// Abilities: ADK3 (Vampire's Boon), Hotkey (Hotkey - Normal)
+{
+Z
+}
+
+STRING 6424
+// Abilities: ADK8 (Death and Decay), Hotkey (Hotkey - Normal)
+{
+D
+}
+
+STRING 6425
+// Abilities: A0T1 (Vampire's Boon), Hotkey (Hotkey - Normal)
+{
+Z
+}
+
+STRING 6426
+// Abilities: A0T2 (Death's Embrace), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 6427
+// Abilities: A0T3 (Death and Decay), Hotkey (Hotkey - Normal)
+{
+D
+}
+
+STRING 6428
+// Abilities: ADK6 (Unholy Curse), Hotkey (Hotkey - Normal)
+{
+X
+}
+
+STRING 6429
+// Abilities: A0T5 (Unholy Curse), Hotkey (Hotkey - Normal)
+{
+X
+}
+
+STRING 6430
+// Abilities: ADK5 (Antimagic Zone), Hotkey (Hotkey - Normal)
+{
+S
+}
+
+STRING 6431
+// Abilities: A0T6 (Antimagic Zone), Hotkey (Hotkey - Normal)
+{
+S
+}
+
+STRING 6432
+// Abilities: A03B (DummyArmy of the Dead Passive), Researchhotkey (Hotkey - Learn)
+{
+A
+}
+
+STRING 6433
+// Abilities: A03B (DummyArmy of the Dead Passive), Hotkey (Hotkey - Normal)
+{
+A
+}
+
+STRING 6434
+// Abilities: AP03 (Purge), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 6435
+// Abilities: A03O (Summon Seedling), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 6436
+// Abilities: A03O (Summon Seedling), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 6437
+// Abilities: A03Q (DummyChilled), Name (Name)
+{
+DummyChilled
+}
+
+STRING 6438
+// Abilities: A03Q (DummyChilled), Tip (Tooltip - Normal)
+{
+Chilled
+}
+
+STRING 6439
+// Abilities: A03Q (DummyChilled), Tip (Tooltip - Normal)
+{
+Chilled
+}
+
+STRING 6440
+// Abilities: A03Q (DummyChilled), Tip (Tooltip - Normal)
+{
+Chilled
+}
+
+STRING 6441
+// Abilities: A03Q (DummyChilled), Tip (Tooltip - Normal)
+{
+Chilled
+}
+
+STRING 6442
+// Buffs/Effects: B017 ((frozen)), EditorName (Name (Editor Only))
+{
+(frozen)
+}
+
+STRING 6443
+// Buffs/Effects: B017 ((frozen)), Bufftip (Tooltip)
+{
+Frozen
+}
+
+STRING 6444
+// Buffs/Effects: B017 ((frozen)), Buffubertip (Tooltip - Extended)
+{
+This unit is frozen; it cannot move, attack or cast spells.
+}
+
+STRING 6445
+// Buffs/Effects: B018 ((chilled)), EditorName (Name (Editor Only))
+{
+(chilled)
+}
+
+STRING 6446
+// Buffs/Effects: B018 ((chilled)), Bufftip (Tooltip)
+{
+Chilled
+}
+
+STRING 6447
+// Buffs/Effects: B018 ((chilled)), Buffubertip (Tooltip - Extended)
+{
+Attack speed increased, unleashes occasional bursts of lightning.
 }
 

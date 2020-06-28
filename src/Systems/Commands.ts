@@ -1,4 +1,9 @@
 import { SpellGroup } from "Global/SpellHelper";
+import { GamePlayer } from "./GamePlayer";
+import { Units } from "Config";
+import { MapPlayer } from "w3ts/index";
+import { BlueCrystal } from "Modules/Globals";
+import { PaladinController } from "AI/Paladin/PaladinController";
 
 export class Commands {
 
@@ -29,6 +34,18 @@ export class Commands {
                 KillUnit(u);
                 u = FirstOfGroup(SpellGroup);
             }
+        });
+
+        t = CreateTrigger();
+        TriggerRegisterPlayerChatEvent(t, Player(0), "-ai", true);
+        TriggerAddAction(t, () => {
+
+            let p = MapPlayer.fromIndex(1);
+            // Create a paladin ai for them
+            IssueNeutralImmediateOrderById(p.handle, GamePlayer.HeroSelect[p.id], Units.Paladin);
+            let hero = GamePlayer.Hero[p.id];
+            let ai = new PaladinController(hero, BlueCrystal, GamePlayer.Shop[p.id]);
+            ai.Start();
         });
     }
 }
