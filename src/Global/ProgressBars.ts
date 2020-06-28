@@ -22,6 +22,7 @@ export class ProgressBar {
         BlzSetSpecialEffectTime(this.sfx, 1.0);
         BlzSetSpecialEffectTimeScale(this.sfx, 0.0);
         TimerStart(this.timer, ProgressBar.UpdatePeriod, true, () => this.UpdatePosition());
+        this.UpdatePosition();
     }
 
     private UpdatePosition() {
