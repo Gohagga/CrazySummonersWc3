@@ -137,7 +137,7 @@ export const Dummies = {
     Chilled:                    FourCC('A03Q'),
     Frozen:                     FourCC('A017'),
     LivingCurrent:              FourCC('A01B'),
-    LivingCurrentLash:          FourCC('A01A'),
+    LivingCurrentLightning:     FourCC('A01A'),
 }
 
 export const Buffs = {

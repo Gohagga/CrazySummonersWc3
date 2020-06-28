@@ -15,12 +15,10 @@ export class IceBlast {
     public static readonly Sfx: string = Models.IceBlast;
     public static readonly DamageSfx: string = "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl";
     public static CastSfx = Models.CastNecromancy;
-    public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
 
     static init(spellId: number) {
         this.SpellId = spellId;
-        this.AwakenOrder = String2OrderIdBJ(Orders.AwakenEssence);
         this.OrbCost = [
             OrbType.Blue,
             OrbType.Purple
@@ -73,15 +71,10 @@ export class IceBlast {
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
-                Log.info("interrupted", orderId, this.AwakenOrder);
-                if (orderId == this.AwakenOrder) {
-                    let x = GetOrderPointX();
-                    let y = GetOrderPointY();
-                    if ((x - caster.x)*(x - caster.x) + (y - caster.y)*(y - caster.y) < AwakenEssence.Range * AwakenEssence.Range) {
-                        data.awakened = true;
-                        return true;
-                    }
+                if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
+                    data.awakened = true;
                 }
+                
                 if (!data.done) {
                     data.castSfx.destroy()
                     castBar.Destroy();

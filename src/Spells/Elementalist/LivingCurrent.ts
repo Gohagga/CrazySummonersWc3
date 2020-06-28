@@ -11,14 +11,12 @@ import { SpellHelper } from "Global/SpellHelper";
 
 export class LivingCurrent {
     public static SpellId: number;
-    public static readonly DummySpellId = Dummies.LivingCurrentLash;
+    public static readonly DummySpellId = Dummies.LivingCurrentLightning;
     public static readonly DummyOrder = "forkedlightning";
     public static readonly DummyBuffSpellId = Dummies.LivingCurrent;
     public static readonly DummyBuffOrder = "unholyfrenzy";
-
     public static readonly BuffId = Buffs.LivingCurrent;
 
-    public static readonly Sfx: string = Models.IceBlast;
     public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
 
