@@ -136,6 +136,8 @@ export const Dummies = {
     Conductivity:               FourCC('A018'),
     Chilled:                    FourCC('A03Q'),
     Frozen:                     FourCC('A017'),
+    LivingCurrent:              FourCC('A01B'),
+    LivingCurrentLash:          FourCC('A01A'),
 }
 
 export const Buffs = {
@@ -157,6 +159,7 @@ export const Buffs = {
     Conductivity:               FourCC('BPSE'),
     Chilled:                    FourCC('B018'),
     Frozen:                     FourCC('B017'),
+    LivingCurrent:              FourCC('B00F'),
 }
 
 export const Upgrades = {

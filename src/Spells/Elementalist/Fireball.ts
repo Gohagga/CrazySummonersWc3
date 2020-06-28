@@ -9,6 +9,7 @@ import { Unit, Effect, Point, Timer } from "w3ts/index";
 import { AwakenEssence } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { GamePlayer } from "Systems/GamePlayer";
+import { Chill } from "./Chill";
 
 export class Fireball {
     public static SpellId: number;
@@ -72,11 +73,12 @@ export class Fireball {
                 let explode = () => {
                     let targets = SpellHelper.EnumUnitsInRange(dummy.point, data.aoe, (u, c) => 
                         u.isAlive() &&
-                        u.isHero() == false &&
-                        u.isAlly(owner) == false);
+                        u.isHero() == false);
 
                     for (let t of targets) {
-                        UnitDamageTarget(caster.handle, t.handle, data.damage, true, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
+                        Chill.Remove(t, 3);
+                        if (t.isAlly(owner) == false)
+                            UnitDamageTarget(caster.handle, t.handle, data.damage, true, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
                     }
 
                     data.timer.destroy();

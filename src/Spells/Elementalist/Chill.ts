@@ -113,8 +113,9 @@ export class Chill {
     public static Remove(target: Unit, stacks: number = this.MaxStacks) {
 
         let id = target.id;
-        let instance = this._instance[id] || new Chill(target);
+        if (id in this._instance == false) return;
 
+        let instance = this._instance[id];
         instance.Remove(stacks);
 
         this._instance[id] = instance;

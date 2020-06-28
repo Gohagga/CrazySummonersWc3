@@ -75,6 +75,20 @@ export class SpellHelper {
         return units;
     }
 
+    public static SortUnitsByValue(units: Unit[], valueFn: (u: Unit) => number): { unit: Unit, priority: number }[] {
+
+        let choices: { unit: Unit, priority: number }[] = [];
+        for (let u of units) {
+            choices.push({
+                unit: u,
+                priority: valueFn(u)
+            });
+        }
+
+        choices.sort((a, b) => a.priority - b.priority);
+        return choices;
+    }
+
     public static CopyGroup(g: group) {
         bj_groupAddGroupDest = CreateGroup();
         ForGroup(g, GroupAddGroupEnum);
