@@ -77,9 +77,9 @@ export const Spells = {
     Photosynthesis:             FourCC('A03N'),
     SummonSeedling:             FourCC('A03O'),
 
-    ElementalFocusBlue:               FourCC('A01N'),
-    ElementalFocusPurple:             FourCC('A01O'),
-    ElementalFocusRed:                FourCC('A00S'),
+    ElementalFocusBlue:         FourCC('A01N'),
+    ElementalFocusPurple:       FourCC('A01O'),
+    ElementalFocusRed:          FourCC('A00S'),
     AwakenEssence:              FourCC('A01H'),
     ElementalMastery:           FourCC('A0EM'),
     
@@ -87,35 +87,36 @@ export const Spells = {
     IceBlast:                   FourCC('AE02'),
     Conductivity:               FourCC('AE03'),
     FlameBarrage:               FourCC('AE04'),
-    RayOfCold:                FourCC('AE05'),
+    RayOfCold:                  FourCC('AE05'),
     LivingCurrent:              FourCC('AE06'),
     Inferno:                    FourCC('AE07'),
     FrostNova:                  FourCC('AE08'),
-    IonicChannel:               FourCC('AE09'),
+    IonicConversion:            FourCC('AE09'),
 }
 
 export const Auras = {
-    LaneDrainImmunity:         FourCC('A031'),
-    LanePersistance:           FourCC('A03L'),
-    WildGrowth:                FourCC('A012'),
-    HolyPower:                 FourCC('A00T'),
-    HotStreak:                 FourCC('A00Z'),
-    Ignite:                    FourCC('A011'),
-    Taint1:                    FourCC('A00V'),
-    Taint2:                    FourCC('A00W'),
-    Demonism:                  FourCC('A03D'),
-    Shadowcraft:               FourCC('A03E'),
-    DarkPortalLifeBonus:       FourCC('A03J'),
-    Perseverance:              FourCC('A013'),
-    GuardianAngel:             FourCC('A004'),
-    Reincarnation:             FourCC('A008'),
-    BloodFeastHpBonus:         FourCC('A00G'),
-    BloodFeastDamageBonus:     FourCC('A012'),
-    AmzSpellImmunity:          FourCC('A039'),
-    VolatileLeechesDamage:     FourCC('A02H'),
-    VolatileLeechesBites:      FourCC('A02G'),
-    VampiresBoon:              FourCC('A032'),
-    ArmyOfTheDead:             FourCC('A03B'),
+    LaneDrainImmunity:          FourCC('A031'),
+    LanePersistance:            FourCC('A03L'),
+    WildGrowth:                 FourCC('A012'),
+    HolyPower:                  FourCC('A00T'),
+    HotStreak:                  FourCC('A00Z'),
+    Ignite:                     FourCC('A011'),
+    Taint1:                     FourCC('A00V'),
+    Taint2:                     FourCC('A00W'),
+    Demonism:                   FourCC('A03D'),
+    Shadowcraft:                FourCC('A03E'),
+    DarkPortalLifeBonus:        FourCC('A03J'),
+    Perseverance:               FourCC('A013'),
+    GuardianAngel:              FourCC('A004'),
+    Reincarnation:              FourCC('A008'),
+    BloodFeastHpBonus:          FourCC('A00G'),
+    BloodFeastDamageBonus:      FourCC('A012'),
+    AmzSpellImmunity:           FourCC('A039'),
+    VolatileLeechesDamage:      FourCC('A02H'),
+    VolatileLeechesBites:       FourCC('A02G'),
+    VampiresBoon:               FourCC('A032'),
+    ArmyOfTheDead:              FourCC('A03B'),
+    IonicConversionSpeed:       FourCC('A02N'),
 }
 
 export const Dummies = {
@@ -161,6 +162,7 @@ export const Buffs = {
     Chilled:                    FourCC('B018'),
     Frozen:                     FourCC('B017'),
     LivingCurrent:              FourCC('B00F'),
+    IonicConversion:            FourCC('B00X'),
 }
 
 export const Upgrades = {
@@ -542,6 +544,7 @@ export const Models = {
     CastIceRay:                 "IceRay_08.mdl",
     IceBlast:                   "IceBurst_12.mdx",
     DominationAura:             "DominationAura.mdx",
+    FrostNova:                  "FrostyCrystalDropStand_12.mdx",
 }
 
 path = "ReplaceableTextures\\CommandButtons"

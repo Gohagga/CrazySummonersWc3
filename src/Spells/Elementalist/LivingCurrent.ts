@@ -77,6 +77,7 @@ export class LivingCurrent {
             LivingCurrent.DummySpellId, this.level, LivingCurrent.DummyOrder);
         return true;
     }
+    
     private Destroy() {
         this.timer.destroy();
         this.unit.removeAbility(LivingCurrent.BuffId);

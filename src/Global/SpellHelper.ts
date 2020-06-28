@@ -1,5 +1,5 @@
 import { Units } from "Config";
-import { Point, Unit } from "w3ts/index";
+import { Point, Unit, Rectangle } from "w3ts/index";
 
 export const SpellGroup = CreateGroup();
 export const TempGroup = CreateGroup();
@@ -63,6 +63,20 @@ export class SpellHelper {
 
     public static EnumUnitsInRange(origin: Point, radius: number, filter?: (target: Unit, caster?: Unit) => boolean, source?: Unit): Unit[] {
         GroupEnumUnitsInRange(SpellGroup, origin.x, origin.y, radius, null);
+        const units: Unit[] = [];
+        let u: unit;
+        while ((u = FirstOfGroup(SpellGroup)) != null) {
+            GroupRemoveUnit(SpellGroup, u);
+            let U = Unit.fromHandle(u);
+            if (!filter || filter(U, source)) {
+                units.push(U);
+            }
+        }
+        return units;
+    }
+
+    public static EnumUnitsInRegion(region: rect, filter?: (target: Unit, caster?: Unit) => boolean, source?: Unit): Unit[] {
+        GroupEnumUnitsInRect(SpellGroup, region, null);
         const units: Unit[] = [];
         let u: unit;
         while ((u = FirstOfGroup(SpellGroup)) != null) {

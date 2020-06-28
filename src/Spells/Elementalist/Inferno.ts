@@ -27,7 +27,7 @@ export class Inferno {
         private damage: number,
         private owner: MapPlayer,
         private radius: number,
-        private center: Point,
+        private point: Point,
         private duration: number,
         level: number,
     ) {
@@ -36,8 +36,8 @@ export class Inferno {
         this.dummyCaster.removeGuardPosition();
         this.dummyCaster.addAbility(Inferno.DummySpellId);
         this.dummyCaster.setAbilityLevel(Inferno.DummySpellId, level);
-        this.dummyCaster.issueOrderAt(Inferno.DummyOrder, center.x, center.y);
-        this.sfx = new Effect(Inferno.Sfx, center.x, center.y);
+        this.dummyCaster.issueOrderAt(Inferno.DummyOrder, point.x, point.y);
+        this.sfx = new Effect(Inferno.Sfx, point.x, point.y);
         this.sfx.scale = radius * 0.002;
         this.sfx.setHeight(5);
     }
@@ -45,10 +45,11 @@ export class Inferno {
     public Run() {
         this.timer.start(Inferno.Period, true, () => {
             // Log.info("loop");
-            let targets = SpellHelper.EnumUnitsInRange(this.center, this.radius, (t) =>
+            let targets = SpellHelper.EnumUnitsInRange(this.point, this.radius + 150, (t) =>
                 t.isUnitType(UNIT_TYPE_STRUCTURE) == false &&
                 t.isUnitType(UNIT_TYPE_MECHANICAL) == false &&
                 t.isHero() == false &&
+                t.inRangeOfPoint(this.point, this.radius) &&
                 t.life > 0.405);
 
             for (let t of targets) {

@@ -6358,7 +6358,7 @@ Increases level of spells of paladin's chosen school gained through Spellstring.
 }
 
 STRING 2385
-// Abilities: AE05 (ELE_R Dry Ice), Researchtip (Tooltip - Learn)
+// Abilities: AE05 (ELE_R Ray of Cold), Researchtip (Tooltip - Learn)
 {
 Elementalist Mastery - %d |cff808080(A)|r
 }
@@ -6742,7 +6742,7 @@ STRING 2463
 }
 
 STRING 2471
-// Abilities: AE05 (ELE_R Dry Ice), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: AE05 (ELE_R Ray of Cold), Researchubertip (Tooltip - Learn - Extended)
 {
 The most important thing for an elementalist is to strengthen his spells. Each time he uses this skill, the next two gems he picks up will permanently increase level of all spells gained for a specific school, depending on the color of gem picked.|n|n|cffff8080Red |rgem - level of |cffffcc00Fire |rspells increased.|nWhite gem - level of |cffff00ffLightning |rspells increased.|n|cff8a99ffBlue |rgem - level of |cff8a99ffFrost |rspells increased.|n|nCooldown reduced with level.
 }
@@ -7077,48 +7077,6 @@ STRING 2558
 Absolute Null Zone
 }
 
-STRING 2562
-// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
-{
-|cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 1
-}
-
-STRING 2563
-// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
-{
-|cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 2
-}
-
-STRING 2564
-// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
-{
-|cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 3
-}
-
-STRING 2567
-// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
-{
-|cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 4
-}
-
-STRING 2569
-// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
-{
-|cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 5
-}
-
-STRING 2570
-// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
-{
-|cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 6
-}
-
-STRING 2571
-// Abilities: AE08 (ELE_R Absolute Null Zone), Tip (Tooltip - Normal)
-{
-|cff8a99ffAbsolute Null Zone|r|cffff5eff |r- 7
-}
-
 STRING 2575
 // Buffs/Effects: B00H ((absolutenullzone)), EditorName (Name (Editor Only))
 {
@@ -7132,43 +7090,43 @@ Attack speed increased, unleashes occasional bursts of lightning.
 }
 
 STRING 2578
-// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur1>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur1,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast1,.>s|r
 }
 
 STRING 2579
-// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur2>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur2,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast2,.>s|r
 }
 
 STRING 2580
-// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur3>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur3,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast3,.>s|r
 }
 
 STRING 2581
-// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur4>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur4,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast4,.>s|r
 }
 
 STRING 2582
-// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur5>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur5,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast5,.>s|r
 }
 
 STRING 2583
-// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur6>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur6,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast6,.>s|r
 }
 
 STRING 2584
-// Abilities: AE08 (ELE_R Absolute Null Zone), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE08 (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur7>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur7,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast7,.>s|r
 }
@@ -9010,43 +8968,43 @@ STRING 3181
 }
 
 STRING 3183
-// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast1>|r
 }
 
 STRING 3184
-// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast2>|r
 }
 
 STRING 3185
-// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast3>|r
 }
 
 STRING 3186
-// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast4>|r
 }
 
 STRING 3187
-// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast5>|r
 }
 
 STRING 3188
-// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast6>|r
 }
 
 STRING 3189
-// Abilities: AE05 (ELE_R Dry Ice), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE05 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
 {
 Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast7>|r
 }
@@ -10666,7 +10624,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 3584
-// Abilities: AE05 (ELE_R Dry Ice), Hotkey (Hotkey - Normal)
+// Abilities: AE05 (ELE_R Ray of Cold), Hotkey (Hotkey - Normal)
 {
 S
 }
@@ -11494,7 +11452,7 @@ STRING 3749
 }
 
 STRING 3750
-// Abilities: AE08 (ELE_R Absolute Null Zone), Hotkey (Hotkey - Normal)
+// Abilities: AE08 (ELE_R Frost Nova), Hotkey (Hotkey - Normal)
 {
 X
 }
@@ -12159,48 +12117,6 @@ STRING 3911
 Blasts enemy units with a wave of frost that deals |cffff8080<A02T,DataB7> |rdamage to the target, and |cffff8080<A02T,DataA7>|r to nearby enemies. Cold damage slows units' movement and attack rate for |cff8a8aff<A02T,Dur7>|r seconds.|nCasting this on a slowed target also freezes it for half duration.|n|n|cffffd9b3Cast time: 0.5s|r
 }
 
-STRING 3915
-// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
-{
-|cff8a99ffChill Blast|r|cff00ffff |r- 1
-}
-
-STRING 3916
-// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
-{
-|cff8a99ffChill Blast|r|cff00ffff |r- 2
-}
-
-STRING 3917
-// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
-{
-|cff8a99ffChill Blast|r|cff00ffff |r- 3
-}
-
-STRING 3920
-// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
-{
-|cff8a99ffChill Blast|r|cff00ffff |r- 4
-}
-
-STRING 3922
-// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
-{
-|cff8a99ffChill Blast|r|cff00ffff |r- 5
-}
-
-STRING 3923
-// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
-{
-|cff8a99ffChill Blast|r|cff00ffff |r- 6
-}
-
-STRING 3924
-// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
-{
-|cff8a99ffChill Blast|r|cff00ffff |r- 7
-}
-
 STRING 3928
 // Abilities: A0SY (Ionic Channel), Name (Name)
 {
@@ -12478,7 +12394,7 @@ Summons more powerful melee troops
 }
 
 STRING 4013
-// Abilities: AE08 (ELE_R Absolute Null Zone), Researchhotkey (Hotkey - Learn)
+// Abilities: AE08 (ELE_R Frost Nova), Researchhotkey (Hotkey - Learn)
 {
 X
 }
@@ -13666,7 +13582,7 @@ Channels Divine energies which destroy Undead and Demons on the whole map.
 }
 
 STRING 4329
-// Abilities: AE05 (ELE_R Dry Ice), Researchhotkey (Hotkey - Learn)
+// Abilities: AE05 (ELE_R Ray of Cold), Researchhotkey (Hotkey - Learn)
 {
 S
 }
@@ -21587,22 +21503,10 @@ STRING 6353
 ELE_R Living Current
 }
 
-STRING 6354
-// Abilities: AE05 (ELE_R Dry Ice), Name (Name)
-{
-ELE_R Dry Ice
-}
-
 STRING 6355
 // Abilities: AE07 (ELE_R Inferno), Name (Name)
 {
 ELE_R Inferno
-}
-
-STRING 6356
-// Abilities: AE08 (ELE_R Absolute Null Zone), Name (Name)
-{
-ELE_R Absolute Null Zone
 }
 
 STRING 6357
@@ -21900,43 +21804,43 @@ TestDummy
 }
 
 STRING 6415
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: AE05 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
 {
 |cff8a99ffRay of Cold|r - 1
 }
 
 STRING 6416
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: AE05 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
 {
 |cff8a99ffRay of Cold|r - 2
 }
 
 STRING 6417
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: AE05 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
 {
 |cff8a99ffRay of Cold|r - 3
 }
 
 STRING 6418
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: AE05 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
 {
 |cff8a99ffRay of Cold|r - 4
 }
 
 STRING 6419
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: AE05 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
 {
 |cff8a99ffRay of Cold|r - 5
 }
 
 STRING 6420
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: AE05 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
 {
 |cff8a99ffRay of Cold|r - 6
 }
 
 STRING 6421
-// Abilities: AE05 (ELE_R Dry Ice), Tip (Tooltip - Normal)
+// Abilities: AE05 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
 {
 |cff8a99ffRay of Cold|r - 7
 }
@@ -22107,5 +22011,101 @@ STRING 6449
 // Buffs/Effects: X001 (Inferno (Effect)), EditorName (Name (Editor Only))
 {
 Inferno (Effect)
+}
+
+STRING 6450
+// Abilities: AE05 (ELE_R Ray of Cold), Name (Name)
+{
+ELE_R Ray of Cold
+}
+
+STRING 6451
+// Abilities: AE08 (ELE_R Frost Nova), Name (Name)
+{
+ELE_R Frost Nova
+}
+
+STRING 6452
+// Abilities: AE08 (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 1
+}
+
+STRING 6453
+// Abilities: AE08 (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 2
+}
+
+STRING 6454
+// Abilities: AE08 (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 3
+}
+
+STRING 6455
+// Abilities: AE08 (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 4
+}
+
+STRING 6456
+// Abilities: AE08 (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 5
+}
+
+STRING 6457
+// Abilities: AE08 (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 6
+}
+
+STRING 6458
+// Abilities: AE08 (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 7
+}
+
+STRING 6459
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 1
+}
+
+STRING 6460
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 2
+}
+
+STRING 6461
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 3
+}
+
+STRING 6462
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 4
+}
+
+STRING 6463
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 5
+}
+
+STRING 6464
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 6
+}
+
+STRING 6465
+// Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 7
 }
 

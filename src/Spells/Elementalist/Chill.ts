@@ -27,14 +27,13 @@ export class Chill {
 
     private Apply(stacks: number) {
 
-        print("Applying stack: ", this.stacks, stacks);
+        // print("Applying stack: ", this.stacks, stacks);
         if (this.stacks >= 5) {
             return;
         }
 
         // Reapply or apply the slow
         this.stacks += stacks;
-        print(this.stacks);
         
         // If stacks are 5, freeze the unit
         this.unit.removeAbility(Chill.ChilledBuffId);

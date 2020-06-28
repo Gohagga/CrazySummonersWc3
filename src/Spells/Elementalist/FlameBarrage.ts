@@ -8,6 +8,7 @@ import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
 import { AwakenEssence } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
+import { Chill } from "./Chill";
 
 export class FlameBarrage {
     public static SpellId: number;
@@ -116,6 +117,7 @@ export class FlameBarrage {
             if (t.isHero()) {
                 UnitDamageTarget(this.caster.handle, t.handle, 1, true, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
             } else {
+                Chill.Remove(t, 1);
                 UnitDamageTarget(this.caster.handle, t.handle, this.damage, true, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
             }
         }
