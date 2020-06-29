@@ -8,9 +8,11 @@ import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
 import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
+import { StatWeights } from "Systems/BalanceData";
 
 export class Conductivity {
     public static SpellId: number;
+    public static SpawnedUnitId: number = Units.Doo;
     public static readonly DummySpellId = Dummies.Conductivity;
     public static readonly DummyOrder = "thunderbolt";
     public static readonly BuffId = Buffs.Conductivity;
@@ -20,6 +22,22 @@ export class Conductivity {
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
+
+    private static SpawnedUnitWeights: StatWeights = {
+        offenseRatio: 0.6,
+        defenseRatio: 0.45,
+        defense: {
+            armorGrowth: 0,
+            armorRatio: 0
+        },
+        attack: {
+            speed: 1.125,
+            dpsVariation: 0.35,
+            targetsCount: 1,
+            targetsMultiplier: 1,
+            diceTweaks: [20, 20, 0.1]
+        }
+    };
 
     private timer: Timer;
     private light: lightning;
@@ -170,7 +188,7 @@ export class Conductivity {
                     Log.info("calling awaken");
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
-                        // Spawn a fireball unit here
+                        AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
                         AwakenEssence.SpawnEssence(EssenceType.Lightning, this.SpellId, level, caster, awaken.targetPoint);
                     }

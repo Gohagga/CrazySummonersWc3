@@ -80,6 +80,10 @@ export class AwakenEssence {
         u.maxLife = stats.hitPoints;
         u.life = stats.hitPoints;
         BlzSetUnitArmor(unit, stats.armor);
+        if (weights.attack && weights.attack.speed) u.setAttackCooldown(weights.attack.speed, 0);
+        u.setBaseDamage(stats.baseDamage, 0);
+        u.setDiceNumber(stats.diceCount, 0);
+        u.setDiceSides(stats.diceMaxRoll, 0);
         u.name = `${u.name} ${level}`;
     }
     
@@ -126,21 +130,22 @@ export class AwakenEssence {
         let resource = ResourceBar.Get(caster.owner.handle);
         let usedOrbs = resource.Check(this.OrbCost);
         if (!usedOrbs) return null;
-        print("usedOrbs", usedOrbs.length);
 
         let essence = new Unit(caster.owner, this.EssenceUnit[type].type, point.x, point.y, 0);
         essence.addAbility(spellId);
         essence.setAbilityLevel(spellId, level);
-        print(1)
         let instance = new AwakenEssence(essence, type, usedOrbs);
-        print(2)
         this._essence[essence.id] = instance;
         return essence;
     }
 
-    public static SpawnUnit(target: Unit, type: number, level: number, statWeights: StatWeights) {
+    public static SpawnUnit(target: Unit, type: number, level: number, statWeights: StatWeights, caster: Unit) {
         let sp = SpawnPoint.FromTarget(target.handle);
         if (!sp) return;
+        
+        let resource = ResourceBar.Get(caster.owner.handle);
+        // let usedOrbs = resource.Check(this.OrbCost);
+        if (resource.Consume(this.OrbCost) == false) return;
 
         let data: any = {
             loops: 10,
@@ -150,12 +155,14 @@ export class AwakenEssence {
             unit: CreateUnitAtLoc(sp.owner, type, sp.Point, sp.facing)
         };
         this.ApplyStats(data.unit, level, statWeights);
-        
-        UnitCharge.Register(data.unit, (uc: UnitCharge) => this.UnitAI(uc), sp);
-
         RemoveGuardPosition(data.unit);
         SetUnitVertexColor(data.unit, 255, 255, 255, 0);
         SetUnitInvulnerable(data.unit, true);
+        
+        // let instance = new AwakenEssence(Unit.fromHandle(data.unit), type, usedOrbs);
+        // this._essence[data.unit.id] = instance;
+        
+        UnitCharge.Register(data.unit, (uc: UnitCharge) => this.UnitAI(uc), sp);
 
         TimerStart(data.timer, 0.1, true, () => {
             if (data.loops > 0) {
@@ -170,6 +177,7 @@ export class AwakenEssence {
                 data = null;
             }
         });
+        return data.unit;
     }
 
     static init(spellId: number) {

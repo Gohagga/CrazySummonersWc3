@@ -80,8 +80,7 @@ export class Fireball {
                     Log.info("calling awaken");
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
-                        // Spawn a fireball unit here
-                        AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights);
+                        AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
                         AwakenEssence.SpawnEssence(EssenceType.Fire, this.SpellId, level, caster, awaken.targetPoint);
                     }

@@ -10,14 +10,32 @@ import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Chill } from "./Chill";
 import { SpawnPoint } from "Spells/Spawn";
+import { StatWeights } from "Systems/BalanceData";
 
 export class IonicConversion {
     public static SpellId: number;
+    public static SpawnedUnitId: number = Units.Boop;
     public static readonly AuraId = Auras.IonicConversionSpeed;
     public static readonly BuffId = Buffs.IonicConversion;
     public static readonly HitSfx: string = "Abilities\\Spells\\Orc\\Purge\\PurgeBuffTarget.mdl";
     public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
+
+    private static SpawnedUnitWeights: StatWeights = {
+        offenseRatio: 0.6,
+        defenseRatio: 0.45,
+        defense: {
+            armorGrowth: 0,
+            armorRatio: 0
+        },
+        attack: {
+            speed: 1.125,
+            dpsVariation: 0.35,
+            targetsCount: 1,
+            targetsMultiplier: 1,
+            diceTweaks: [20, 20, 0.1]
+        }
+    };
 
     private static readonly Period = 0.2;
 
@@ -174,7 +192,7 @@ export class IonicConversion {
                     Log.info("calling awaken");
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
-                        // Spawn a fireball unit here
+                        AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
                         AwakenEssence.SpawnEssence(EssenceType.Lightning, this.SpellId, level, caster, awaken.targetPoint);
                     }

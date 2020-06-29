@@ -8877,12 +8877,6 @@ STRING 3166
 Dabba
 }
 
-STRING 3167
-// Units: n00D (Dabba), EditorSuffix (Name - Editor Suffix)
-{
-(Dry Ice Spawn)
-}
-
 STRING 3168
 // Units: n000 (Shoop), Name (Name)
 {
@@ -8901,12 +8895,6 @@ STRING 3170
 Dinkie
 }
 
-STRING 3171
-// Units: n001 (Dinkie), EditorSuffix (Name - Editor Suffix)
-{
-(Chill Blast Spawn)
-}
-
 STRING 3172
 // Units: n002 (Wee), Name (Name)
 {
@@ -8923,12 +8911,6 @@ STRING 3174
 // Units: n009 (Da Woop), Name (Name)
 {
 Da Woop
-}
-
-STRING 3175
-// Units: n009 (Da Woop), EditorSuffix (Name - Editor Suffix)
-{
-(Null Zone Spawn)
 }
 
 STRING 3176
@@ -12123,110 +12105,68 @@ STRING 3928
 Ionic Channel
 }
 
-STRING 3932
-// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
-{
-|cffff5effIonic Channel |r- 1
-}
-
-STRING 3933
-// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
-{
-|cffff5effIonic Channel |r- 2
-}
-
-STRING 3934
-// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
-{
-|cffff5effIonic Channel |r- 3
-}
-
-STRING 3937
-// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
-{
-|cffff5effIonic Channel |r- 4
-}
-
-STRING 3939
-// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
-{
-|cffff5effIonic Channel |r- 5
-}
-
-STRING 3940
-// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
-{
-|cffff5effIonic Channel |r- 6
-}
-
-STRING 3941
-// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
-{
-|cffff5effIonic Channel |r- 7
-}
-
 STRING 3945
-// Abilities: AE09 (ELE_R Ionic Channel), Researchtip (Tooltip - Learn)
+// Abilities: AE09 (ELE_R Ionic Conversion), Researchtip (Tooltip - Learn)
 {
 Awaken Essence - %d |cff808080(A)|r
 }
 
 STRING 3946
-// Abilities: AE09 (ELE_R Ionic Channel), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: AE09 (ELE_R Ionic Conversion), Researchubertip (Tooltip - Learn - Extended)
 {
 Transforms a spell into its truest elemental form which does not need a guiding hand of a spellcaster to unleash its power.|n|nSacrifice your Active Spell to create a unit. If cast on a Magic Crystal, it summons an Elemental troop. If cast on the ground, the Active Spell is stored within the essence and can be cast independently.|n|cffff8080You cannot transform a spell of a higher level than this ability.|r|n|nMax Essences Alive: |cff80ffff1 per level up to 5.|r|nMax sacrificed spell level:|cffff8080 1 per level up to 7.|n|rSummoned unit stats increased on levels: |cff8a8aff2|r, |cff8a8aff4|r, |cff8a8aff6|r, |cff8a8aff8|r|n|cffffd9b3Cooldown: <AE0M,Cool1>s|r
 }
 
 STRING 3947
-// Abilities: AE09 (ELE_R Ionic Channel), Tip (Tooltip - Normal)
+// Abilities: AE09 (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
 {
 |cffff5effIonic Channel |r- 8
 }
 
 STRING 3948
-// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
 {
 Sacrifice your Active Spell to Summon an elemental in target lane (by targeting a magic crystal). Elementals stats are increased for every 2 levels of Awaken Essence.|n|nInstead, you can create an Essence at the target point and store the spell within. Essence can cast that spell afterwards in your stead.|n|nMax Essences: |cff80ffff5|n|rMax Spell level: |cffff80807|r|n|cffffd9b3Cooldown: <AE0M,Cool8>s|r
 }
 
 STRING 3949
-// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 1 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool1>s|r
 }
 
 STRING 3950
-// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 2 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool2>s|r
 }
 
 STRING 3951
-// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 3 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool3>s|r
 }
 
 STRING 3952
-// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 4 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool4>s|r
 }
 
 STRING 3953
-// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 5 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool5>s|r
 }
 
 STRING 3954
-// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 6 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool6>s|r
 }
 
 STRING 3955
-// Abilities: AE09 (ELE_R Ionic Channel), Ubertip (Tooltip - Normal - Extended)
+// Abilities: AE09 (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
 {
 Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 7 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool7>s|r
 }
@@ -12250,7 +12190,7 @@ STRING 3960
 }
 
 STRING 3963
-// Abilities: AE09 (ELE_R Ionic Channel), Researchhotkey (Hotkey - Learn)
+// Abilities: AE09 (ELE_R Ionic Conversion), Researchhotkey (Hotkey - Learn)
 {
 C
 }
@@ -18770,61 +18710,61 @@ STRING 5869
 }
 
 STRING 5870
-// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 1 Summoning
 }
 
 STRING 5871
-// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5872
-// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5873
-// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5874
-// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5875
-// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5876
-// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5877
-// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5878
-// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5879
-// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
@@ -18836,1753 +18776,1729 @@ STRING 5880
 }
 
 STRING 5881
-// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5882
-// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5883
-// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5884
-// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5885
-// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5886
-// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5887
-// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5888
-// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5889
-// Upgrades: R00D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
-STRING 5890
-// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
-{
-1 Summoning
-}
-
 STRING 5891
-// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5892
-// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5893
-// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5894
-// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5895
-// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5896
-// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5897
-// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5898
-// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5899
-// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
-STRING 5900
-// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
-{
-1 Summoning
-}
-
 STRING 5901
-// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5902
-// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5903
-// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5904
-// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5905
-// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5906
-// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5907
-// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5908
-// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5909
-// Upgrades: R00F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
-STRING 5910
-// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
-{
-1 Summoning
-}
-
 STRING 5911
-// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5912
-// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5913
-// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5914
-// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5915
-// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5916
-// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5917
-// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5918
-// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5919
-// Upgrades: R00G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
-STRING 5920
-// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
-{
-1 Summoning
-}
-
 STRING 5921
-// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5922
-// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5923
-// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5924
-// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5925
-// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5926
-// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5927
-// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5928
-// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5929
-// Upgrades: R00H (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5931
-// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5932
-// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5933
-// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5934
-// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5935
-// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5936
-// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5937
-// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5938
-// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5939
-// Upgrades: R00I (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5941
-// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5942
-// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5943
-// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5944
-// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5945
-// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5946
-// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5947
-// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5948
-// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5949
-// Upgrades: R00J (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5951
-// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5952
-// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5953
-// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5954
-// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5955
-// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5956
-// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5957
-// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5958
-// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5959
-// Upgrades: R00K (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5961
-// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5962
-// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5963
-// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5964
-// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5965
-// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5966
-// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5967
-// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5968
-// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5969
-// Upgrades: R00L (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5971
-// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5972
-// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5973
-// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5974
-// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5975
-// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5976
-// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5977
-// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5978
-// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5979
-// Upgrades: R00M (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5981
-// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5982
-// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5983
-// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5984
-// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5985
-// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5986
-// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5987
-// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5988
-// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5989
-// Upgrades: R00N (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5991
-// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5992
-// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5993
-// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5994
-// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5995
-// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5996
-// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5997
-// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5998
-// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 5999
-// Upgrades: R00O (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6001
-// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6002
-// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6003
-// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6004
-// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6005
-// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6006
-// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6007
-// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6008
-// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6009
-// Upgrades: R00P (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6011
-// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6012
-// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6013
-// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6014
-// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6015
-// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6016
-// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6017
-// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6018
-// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6019
-// Upgrades: R00Q (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6021
-// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6022
-// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6023
-// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6024
-// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6025
-// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6026
-// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6027
-// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6028
-// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6029
-// Upgrades: R00R (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6031
-// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6032
-// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6033
-// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6034
-// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6035
-// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6036
-// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6037
-// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6038
-// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6039
-// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6041
-// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6042
-// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6043
-// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6044
-// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6045
-// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6046
-// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6047
-// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6048
-// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6049
-// Upgrades: R00T (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6051
-// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6052
-// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6053
-// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6054
-// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6055
-// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6056
-// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6057
-// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6058
-// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6059
-// Upgrades: R00U (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6061
-// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6062
-// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6063
-// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6064
-// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6065
-// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6066
-// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6067
-// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6068
-// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6069
-// Upgrades: R00V (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6071
-// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6072
-// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6073
-// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6074
-// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6075
-// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6076
-// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6077
-// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6078
-// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6079
-// Upgrades: R00W (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6081
-// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6082
-// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6083
-// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6084
-// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6085
-// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6086
-// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6087
-// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6088
-// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6089
-// Upgrades: R00X (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6091
-// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6092
-// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6093
-// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6094
-// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6095
-// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6096
-// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6097
-// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6098
-// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6099
-// Upgrades: R00Y (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6101
-// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6102
-// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6103
-// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6104
-// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6105
-// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6106
-// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6107
-// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6108
-// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6109
-// Upgrades: R00Z (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6111
-// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6112
-// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6113
-// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6114
-// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6115
-// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6116
-// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6117
-// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6118
-// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6119
-// Upgrades: R010 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6121
-// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6122
-// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6123
-// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6124
-// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6125
-// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6126
-// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6127
-// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6128
-// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6129
-// Upgrades: R011 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6131
-// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6132
-// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6133
-// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6134
-// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6135
-// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6136
-// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6137
-// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6138
-// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6139
-// Upgrades: R012 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6141
-// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6142
-// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6143
-// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6144
-// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6145
-// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6146
-// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6147
-// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6148
-// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6149
-// Upgrades: R013 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6151
-// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6152
-// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6153
-// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6154
-// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6155
-// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6156
-// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6157
-// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6158
-// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6159
-// Upgrades: R014 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6161
-// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6162
-// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6163
-// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6164
-// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6165
-// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6166
-// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6167
-// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6168
-// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6169
-// Upgrades: R015 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6171
-// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6172
-// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6173
-// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6174
-// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6175
-// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6176
-// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6177
-// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6178
-// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6179
-// Upgrades: R016 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6181
-// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6182
-// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6183
-// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6184
-// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6185
-// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6186
-// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6187
-// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6188
-// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6189
-// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6191
-// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6192
-// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6193
-// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6194
-// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6195
-// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6196
-// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6197
-// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6198
-// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6199
-// Upgrades: R018 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
@@ -21264,55 +21180,55 @@ Already unlocked
 }
 
 STRING 6310
-// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6311
-// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6312
-// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6313
-// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6314
-// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6315
-// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6316
-// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6317
-// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6318
-// Upgrades: R019 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
@@ -21330,55 +21246,55 @@ Already unlocked
 }
 
 STRING 6321
-// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6322
-// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6323
-// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6324
-// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6325
-// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6326
-// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6327
-// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6328
-// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6329
-// Upgrades: R01A (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
@@ -21396,55 +21312,55 @@ Already unlocked
 }
 
 STRING 6332
-// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6333
-// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6334
-// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6335
-// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6336
-// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6337
-// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6338
-// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6339
-// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
 
 STRING 6340
-// Upgrades: R01B (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
 {
 Blue
 }
@@ -21513,12 +21429,6 @@ STRING 6357
 // Abilities: AE02 (ELE_R Chill Blast), Name (Name)
 {
 ELE_R Chill Blast
-}
-
-STRING 6358
-// Abilities: AE09 (ELE_R Ionic Channel), Name (Name)
-{
-ELE_R Ionic Channel
 }
 
 STRING 6359
@@ -22107,5 +22017,347 @@ STRING 6465
 // Abilities: AE02 (ELE_R Chill Blast), Tip (Tooltip - Normal)
 {
 |cff8a99ffIce Burst|r|cff00ffff |r- 7
+}
+
+STRING 6466
+// Units: n00G (Boop), Name (Name)
+{
+Boop
+}
+
+STRING 6467
+// Units: n00G (Boop), EditorSuffix (Name - Editor Suffix)
+{
+(Ionic Conversion Spawn)
+}
+
+STRING 6468
+// Units: n001 (Dinkie), EditorSuffix (Name - Editor Suffix)
+{
+(Ray of Cold Spawn)
+}
+
+STRING 6469
+// Units: n009 (Da Woop), EditorSuffix (Name - Editor Suffix)
+{
+(Frost Nova Spawn)
+}
+
+STRING 6470
+// Units: n00D (Dabba), EditorSuffix (Name - Editor Suffix)
+{
+(Ice Blast Spawn)
+}
+
+STRING 6471
+// Upgrades: R00E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Red
+}
+
+STRING 6472
+// Upgrades: R017 (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Blue, 1 Red
+}
+
+STRING 6473
+// Upgrades: R00C (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Purple
+}
+
+STRING 6474
+// Upgrades: R00S (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Red, 1 Blue
+}
+
+STRING 6475
+// Upgrades: R01D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+1 Blue, 1 Purple
+}
+
+STRING 6476
+// Upgrades: R01D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6477
+// Upgrades: R01D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6478
+// Upgrades: R01D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6479
+// Upgrades: R01D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6480
+// Upgrades: R01D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6481
+// Upgrades: R01D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6482
+// Upgrades: R01D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6483
+// Upgrades: R01D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6484
+// Upgrades: R01D (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6485
+// Upgrades: R01E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Purple
+}
+
+STRING 6486
+// Upgrades: R01E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6487
+// Upgrades: R01E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6488
+// Upgrades: R01E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6489
+// Upgrades: R01E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6490
+// Upgrades: R01E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6491
+// Upgrades: R01E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6492
+// Upgrades: R01E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6493
+// Upgrades: R01E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6494
+// Upgrades: R01E (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6495
+// Upgrades: R01F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Red, 1 Purple
+}
+
+STRING 6496
+// Upgrades: R01F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6497
+// Upgrades: R01F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6498
+// Upgrades: R01F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6499
+// Upgrades: R01F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6500
+// Upgrades: R01F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6501
+// Upgrades: R01F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6502
+// Upgrades: R01F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6503
+// Upgrades: R01F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6504
+// Upgrades: R01F (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6505
+// Upgrades: R01G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+2 Blue, 1 Red
+}
+
+STRING 6506
+// Upgrades: R01G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6507
+// Upgrades: R01G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6508
+// Upgrades: R01G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6509
+// Upgrades: R01G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6510
+// Upgrades: R01G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6511
+// Upgrades: R01G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6512
+// Upgrades: R01G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6513
+// Upgrades: R01G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6514
+// Upgrades: R01G (Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords), Name (Name)
+{
+Blue
+}
+
+STRING 6515
+// Abilities: AE09 (ELE_R Ionic Conversion), Name (Name)
+{
+ELE_R Ionic Conversion
+}
+
+STRING 6516
+// Abilities: AE09 (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 1
+}
+
+STRING 6517
+// Abilities: AE09 (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 2
+}
+
+STRING 6518
+// Abilities: AE09 (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 3
+}
+
+STRING 6519
+// Abilities: AE09 (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 4
+}
+
+STRING 6520
+// Abilities: AE09 (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 5
+}
+
+STRING 6521
+// Abilities: AE09 (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 6
+}
+
+STRING 6522
+// Abilities: AE09 (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 7
 }
 

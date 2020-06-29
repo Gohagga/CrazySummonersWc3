@@ -10,9 +10,11 @@ import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Order } from "Global/Order";
 import { Chill } from "./Chill";
+import { StatWeights } from "Systems/BalanceData";
 
 export class RayOfCold {
     public static SpellId: number;
+    public static SpawnedUnitId: number = Units.Dinkie;
     public static readonly Sfx: string = Models.IceBlast;
     public static readonly DamageSfx: string = "Abilities\\Weapons\\LichMissile\\LichMissile.mdl";
     public static readonly BeamEndSfx: string = "Abilities\\Spells\\Other\\BreathOfFrost\\BreathOfFrostTarget.mdl";
@@ -22,6 +24,22 @@ export class RayOfCold {
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
     static OrderId: number = Order.PHASESHIFTINSTANT;
+
+    private static SpawnedUnitWeights: StatWeights = {
+        offenseRatio: 0.35,
+        defenseRatio: 0.6,
+        defense: {
+            armorGrowth: 0,
+            armorRatio: 0
+        },
+        attack: {
+            speed: 1.5,
+            dpsVariation: 0.14,
+            targetsCount: 1,
+            targetsMultiplier: 1,
+            diceTweaks: [20, 20, 0.1]
+        }
+    };
 
     private static _instance: Record<number, RayOfCold> = {};
     
@@ -218,7 +236,7 @@ export class RayOfCold {
                 if (data.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
-                        // Spawn a fireball unit here
+                        AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
                         AwakenEssence.SpawnEssence(EssenceType.Frost, this.SpellId, level, caster, awaken.targetPoint);
                     }

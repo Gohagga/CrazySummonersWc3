@@ -8,9 +8,11 @@ import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
 import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
+import { StatWeights } from "Systems/BalanceData";
 
 export class LivingCurrent {
     public static SpellId: number;
+    public static SpawnedUnitId: number = Units.Wee;
     public static readonly DummySpellId = Dummies.LivingCurrentLightning;
     public static readonly DummyOrder = "forkedlightning";
     public static readonly DummyBuffSpellId = Dummies.LivingCurrent;
@@ -19,6 +21,22 @@ export class LivingCurrent {
 
     public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
+
+    private static SpawnedUnitWeights: StatWeights = {
+        offenseRatio: 0.6,
+        defenseRatio: 0.45,
+        defense: {
+            armorGrowth: 0,
+            armorRatio: 0
+        },
+        attack: {
+            speed: 1.125,
+            dpsVariation: 0.35,
+            targetsCount: 1,
+            targetsMultiplier: 1,
+            diceTweaks: [20, 20, 0.1]
+        }
+    };
 
     private static readonly Period = 0.2;
 
@@ -122,7 +140,7 @@ export class LivingCurrent {
                     Log.info("calling awaken");
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
-                        // Spawn a fireball unit here
+                        AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
                         AwakenEssence.SpawnEssence(EssenceType.Lightning, this.SpellId, level, caster, awaken.targetPoint);
                     }

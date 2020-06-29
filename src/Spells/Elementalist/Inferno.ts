@@ -8,15 +8,33 @@ import { OrbType } from "Systems/OrbResource/OrbType";
 import { MapPlayer, Point, Timer, Unit, Effect } from "w3ts/index";
 import { Chill } from "./Chill";
 import { AwakenEssence, EssenceType } from "./AwakenEssence";
+import { StatWeights } from "Systems/BalanceData";
 
 export class Inferno {
     public static SpellId: number;
+    public static SpawnedUnitId: number = Units.Shoop;
     public static readonly DummySpellId = Dummies.Inferno;
     public static readonly DummyOrder = "deathanddecay";
     public static readonly DamageSfx: string = "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl";
     public static readonly Sfx: string = "Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeTarget.mdl";
     public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
+
+    private static SpawnedUnitWeights: StatWeights = {
+        offenseRatio: 0.48,
+        defenseRatio: 0.42,
+        defense: {
+            armorGrowth: 0,
+            armorRatio: 0
+        },
+        attack: {
+            speed: 1.7,
+            dpsVariation: 0.14,
+            targetsCount: 1,
+            targetsMultiplier: 1,
+            diceTweaks: [15, 15, 1]
+        }
+    };
 
     private static readonly Period = 1;
 
@@ -109,7 +127,7 @@ export class Inferno {
                 if (data.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
-                        // Spawn a fireball unit here
+                        AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
                         let essence = AwakenEssence.SpawnEssence(EssenceType.Fire, this.SpellId, level, caster, awaken.targetPoint);
                     }

@@ -9,13 +9,31 @@ import { Unit, Effect, Point, Timer } from "w3ts/index";
 import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Chill } from "./Chill";
+import { StatWeights } from "Systems/BalanceData";
 
 export class FrostNova {
     public static SpellId: number;
+    public static SpawnedUnitId: number = Units.DaWoop;
     public static readonly Sfx: string = Models.FrostNova;
     public static readonly HitSfx: string = "Abilities\\Weapons\\LichMissile\\LichMissile.mdl";
     public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
+
+    private static SpawnedUnitWeights: StatWeights = {
+        offenseRatio: 0.35,
+        defenseRatio: 0.6,
+        defense: {
+            armorGrowth: 0,
+            armorRatio: 0
+        },
+        attack: {
+            speed: 1.5,
+            dpsVariation: 0.14,
+            targetsCount: 1,
+            targetsMultiplier: 1,
+            diceTweaks: [20, 20, 0.1]
+        }
+    };
 
     public static readonly Period = 2;
     public static readonly Delay = 1.55;
@@ -123,7 +141,7 @@ export class FrostNova {
                     Log.info("calling awaken");
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
-                        // Spawn a fireball unit here
+                        AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
                         AwakenEssence.SpawnEssence(EssenceType.Frost, this.SpellId, level, caster, awaken.targetPoint);
                     }

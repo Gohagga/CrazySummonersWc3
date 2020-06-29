@@ -218,10 +218,31 @@ export const RequirementUpgrades: Record<number, Req[]> = {
     [FourCC('R00F')]: [Req.Red, Req.Red, Req.Purple,                                Req.DarkArtUnholy],
     // Army
     [FourCC('R00G')]: [Req.Red, Req.Red, Req.Blue, Req.Purple,                      Req.DarkArtNecromancy],
-    // [FourCC('R00E')]: [Req.Red, Req.White, Req.Red, Req.Purple],
-    // [FourCC('R017')]: [Req.Red, Req.White, Req.Red, Req.Purple],
-    // [FourCC('R00C')]: [Req.Red, Req.White, Req.Red, Req.Purple],
-    // [FourCC('R00S')]: [Req.Red, Req.White, Req.Red, Req.Purple],
+    
+    // Fireball
+    [FourCC('R00E')]: [Req.Red, Req.Red],
+    // Ice Blast
+    [FourCC('R017')]: [Req.Blue, Req.Red],
+    // Conductivity
+    [FourCC('R00C')]: [Req.Purple],
+    // Flame Barrage
+    [FourCC('R00S')]: [Req.Red, Req.Blue],
+    // Ray of Cold
+    [FourCC('R01D')]: [Req.Blue, Req.Purple],
+    // Living Current
+    [FourCC('R01E')]: [Req.Purple, Req.Purple],
+    // Inferno
+    [FourCC('R01F')]: [Req.Red, Req.Red, Req.Purple],
+    // Frost Nova
+    [FourCC('R01G')]: [Req.Blue, Req.Blue, Req.Red],
+    // 
+    // [FourCC('R01H')]: [Req.Red, Req.Blue],
+    // // 
+    // [FourCC('R01I')]: [Req.Red, Req.Blue],
+    // // 
+    // [FourCC('R01J')]: [Req.Red, Req.Blue],
+
+
 
     [FourCC('R01A')]: [Req.DarkArtBlood],
     [FourCC('R01B')]: [Req.DarkArtUnholy],

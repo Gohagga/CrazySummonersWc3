@@ -125,12 +125,11 @@ export class Orb {
     }
 
     public get isAvailable() {
-        print("disabled", this._disabled);
         return this._isAvailable && this._disabled <= 0;
     }
 
     public set isAvailable(value: boolean) {
-        this._isAvailable = true;
+        this._isAvailable = value;
     }
 
     public get disabled() {

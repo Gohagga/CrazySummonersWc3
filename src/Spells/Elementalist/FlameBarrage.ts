@@ -9,14 +9,32 @@ import { Unit, Effect, Point, Timer } from "w3ts/index";
 import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Chill } from "./Chill";
+import { StatWeights } from "Systems/BalanceData";
 
 export class FlameBarrage {
     public static SpellId: number;
+    public static SpawnedUnitId: number = Units.Wabba;
     public static readonly IndicatorSfx: string = Models.DominationAura;
     public static readonly MissileSfx: string = Models.OrbOfFire;
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
+
+    private static SpawnedUnitWeights: StatWeights = {
+        offenseRatio: 0.48,
+        defenseRatio: 0.42,
+        defense: {
+            armorGrowth: 0,
+            armorRatio: 0
+        },
+        attack: {
+            speed: 1.7,
+            dpsVariation: 0.14,
+            targetsCount: 1,
+            targetsMultiplier: 1,
+            diceTweaks: [15, 15, 1]
+        }
+    };
 
     public static UpdatePeriod = 0.03;
     private static AccelerationRate = 1.04
@@ -168,7 +186,7 @@ export class FlameBarrage {
                 if (data.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
-                        // Spawn a fireball unit here
+                        AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
                         let essence = AwakenEssence.SpawnEssence(EssenceType.Fire, this.SpellId, level, caster, awaken.targetPoint);
                         essence.moveSpeed = 250;
@@ -181,8 +199,8 @@ export class FlameBarrage {
                     caster,
                     damage: data.damage,
                     radius: data.radius,
-                    tx: data.targetPoint.x + caster.x - data.casterStart.x,
-                    ty: data.targetPoint.y + caster.y - data.casterStart.y
+                    tx: 0,
+                    ty: 0,
                 };
 
                 this.ShootFlameOrb(missileData);
@@ -192,6 +210,9 @@ export class FlameBarrage {
                 data.timer.start(data.launchInterval, true, () => {
                     if (--data.count < 1) data.timer.destroy();
                     
+                    missileData.tx = data.targetPoint.x + caster.x - data.casterStart.x;
+                    missileData.ty = data.targetPoint.y + caster.y - data.casterStart.y;
+
                     // Shoot a missile
                     let instance = this.ShootFlameOrb(missileData);
                     if (data.count < 1) {
