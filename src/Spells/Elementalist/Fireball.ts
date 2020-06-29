@@ -5,19 +5,38 @@ import { SpellEvent } from "Global/SpellEvent";
 import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
-import { Unit, Effect, Point, Timer } from "w3ts/index";
+import { Unit, Effect, Point, Timer, Widget } from "w3ts/index";
 import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { GamePlayer } from "Systems/GamePlayer";
 import { Chill } from "./Chill";
+import { SpawnPoint } from "Spells/Spawn";
+import { StatWeights } from "Systems/BalanceData";
 
 export class Fireball {
     public static SpellId: number;
+    public static SpawnedUnitId: number = Units.Inkie;
     public static readonly Sfx: string = Models.Fireball;
     public static readonly AoeSfx: string = Models.FireExplosion;
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
+    
+    private static SpawnedUnitWeights: StatWeights = {
+        offenseRatio: 0.48,
+        defenseRatio: 0.42,
+        defense: {
+            armorGrowth: 0,
+            armorRatio: 0
+        },
+        attack: {
+            speed: 1.7,
+            dpsVariation: 0.14,
+            targetsCount: 1,
+            targetsMultiplier: 1,
+            diceTweaks: [15, 15, 1]
+        }
+    };
 
     static init(spellId: number) {
         this.SpellId = spellId;
@@ -62,6 +81,7 @@ export class Fireball {
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
                         // Spawn a fireball unit here
+                        AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights);
                     } else {
                         AwakenEssence.SpawnEssence(EssenceType.Fire, this.SpellId, level, caster, awaken.targetPoint);
                     }
@@ -120,7 +140,7 @@ export class Fireball {
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
-                if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
+                if (AwakenEssence.Check(orderId, caster)) {
                     data.awakened = true;
                     return true;
                 }

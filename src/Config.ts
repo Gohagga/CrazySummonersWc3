@@ -376,6 +376,16 @@ export const Units = {
     FireEssence:                FourCC('h00A'),
     FrostEssence:               FourCC('h008'),
     LightningEssence:           FourCC('h009'),
+
+    Inkie:                      FourCC('n00A'),
+    Dinkie:                     FourCC('n001'),
+    Doo:                        FourCC('n00C'),
+    Wabba:                      FourCC('n00B'),
+    Dabba:                      FourCC('n00D'),
+    Wee:                        FourCC('n002'),
+    Shoop:                      FourCC('n000'),
+    DaWoop:                     FourCC('n009'),
+    Boop:                       FourCC('n00G'),
 }
 
 export const SpawnedUnitTypes = {

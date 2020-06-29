@@ -117,12 +117,13 @@ export class SummonSeedling {
         let u = Unit.fromHandle(unit);
 
         Log.info("Calculating");
-        let stats = Balance.Calculate(level,
-            0.5, 0.7,
-            {
+        let stats = Balance.Calculate(level, {
+            offenseRatio: 0.5,
+            defenseRatio: 0.7,
+            defense: {
                 armorGrowth: 0.02,
                 armorRatio: 0.2
-            });
+            }});
             // {
             //     diceTweaks: [0, 0, 0],
             //     dpsVariation: 0,

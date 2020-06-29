@@ -6,6 +6,9 @@ import { SpawnPoint } from "Spells/Spawn";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Orb } from "Systems/OrbResource/Orb";
+import { UnitCharge } from "Systems/UnitCharge";
+import { Balance } from "Modules/Globals";
+import { AttackStats, DefenseStats, StatWeights } from "Systems/BalanceData";
 
 export const enum EssenceType {
     Fire,
@@ -19,7 +22,7 @@ export class AwakenEssence {
     private static _instance: Record<number, { targetUnit: Unit, targetPoint: Point }> = {};
     private static _essence: Record<number, AwakenEssence> = {};
     private static OrderId = Order.ELEMENTALFURY;
-    private static Range = 200;
+    private static Range = 260;
 
     constructor(
         public essence: Unit,
@@ -44,7 +47,41 @@ export class AwakenEssence {
         [EssenceType.Frost]: { type: Units.FrostEssence },
         [EssenceType.Lightning]: { type: Units.LightningEssence },
     }
+
+    static UnitAI(data: UnitCharge) {
+        if (GetUnitCurrentOrder(data.unit) == 0) {
+            let x = GetLocationX(data.destination);
+            let y = GetLocationY(data.destination);
+            IssuePointOrderLoc(data.unit, "attack", data.destination);
+        }
+    }
+    
     private static OrbCost: OrbType[] = [];
+
+    private static ApplyStats(
+        unit: unit,
+        level: number,
+        weights: StatWeights
+    ) {
+        Log.info("Applying stats");
+        let u = Unit.fromHandle(unit);
+
+        Log.info("Calculating");
+        let stats = Balance.Calculate(level, weights);
+            // {
+            //     diceTweaks: [0, 0, 0],
+            //     dpsVariation: 0,
+            //     speed: 1.5,
+            //     targetsCount: 1,
+            //     targetsMultiplier: 1
+            // }
+
+        // Log.info("stats:", stats.armor, stats.hitPoints, stats.baseDamage, stats.diceCount, stats.diceMaxRoll);
+        u.maxLife = stats.hitPoints;
+        u.life = stats.hitPoints;
+        BlzSetUnitArmor(unit, stats.armor);
+        u.name = `${u.name} ${level}`;
+    }
     
     public static GetEvent(caster: Unit): { targetUnit: Unit, targetPoint: Point } {
         return this._instance[caster.id];
@@ -54,7 +91,10 @@ export class AwakenEssence {
         delete this._instance[caster.id];
     }
 
-    public static Check(orderId: number, caster: Unit, x: number, y: number) {
+    public static Check(orderId: number, caster: Unit) {
+        let orderTarget = GetOrderTargetUnit();
+        let x = (orderTarget && GetUnitX(orderTarget)) || GetOrderPointX();
+        let y = (orderTarget && GetUnitY(orderTarget)) || GetOrderPointY();
         if (orderId == this.OrderId &&
             (x - caster.x)*(x - caster.x) + (y - caster.y)*(y - caster.y) < AwakenEssence.Range * AwakenEssence.Range
         ) {
@@ -98,6 +138,40 @@ export class AwakenEssence {
         return essence;
     }
 
+    public static SpawnUnit(target: Unit, type: number, level: number, statWeights: StatWeights) {
+        let sp = SpawnPoint.FromTarget(target.handle);
+        if (!sp) return;
+
+        let data: any = {
+            loops: 10,
+            spawnPoint: sp,
+            unitType: type,
+            timer: CreateTimer(),
+            unit: CreateUnitAtLoc(sp.owner, type, sp.Point, sp.facing)
+        };
+        this.ApplyStats(data.unit, level, statWeights);
+        
+        UnitCharge.Register(data.unit, (uc: UnitCharge) => this.UnitAI(uc), sp);
+
+        RemoveGuardPosition(data.unit);
+        SetUnitVertexColor(data.unit, 255, 255, 255, 0);
+        SetUnitInvulnerable(data.unit, true);
+
+        TimerStart(data.timer, 0.1, true, () => {
+            if (data.loops > 0) {
+                data.loops--;
+                SetUnitVertexColor(data.unit, 255, 255, 255, 255 - data.loops * 25);
+            } else {
+                SetUnitVertexColor(data.unit, 255, 255, 255, 255);
+                PauseTimer(data.timer);
+                DestroyTimer(data.timer);
+                PauseUnit(data.unit, false);
+                SetUnitInvulnerable(data.unit, false);
+                data = null;
+            }
+        });
+    }
+
     static init(spellId: number) {
         this.SpellId = spellId;
         this.OrbCost = [ OrbType.Summoning ];
@@ -112,6 +186,7 @@ export class AwakenEssence {
                 let targetUnit = Unit.fromHandle(target);
                 Log.info("Saving instance", targetUnit.name, targetUnit.x, targetUnit.y);
                 let instance = { targetUnit, targetPoint: targetUnit.point };
+                this._instance[caster.id] = instance;
             } else {
                 let point = Point.fromHandle(loc);
                 Log.info("Saving instance", '""', point.x, point.y);

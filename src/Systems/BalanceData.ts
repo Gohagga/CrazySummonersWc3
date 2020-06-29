@@ -24,8 +24,9 @@ export class BalanceData {
         this.dpsPerLevel = hpDiff / secondsToDie / maxLevel;
     }
 
-    public Calculate(level: number, offenseRatio: number, defenseRatio: number, defense: DefenseStats, attack?: AttackStats): StatsResult {
+    public Calculate(level: number, weights: StatWeights): StatsResult {
         
+        let { offenseRatio, defenseRatio, defense, attack } = weights;
         let diceCount: number = 0;
         let diceMaxRoll: number = 0;
         let baseDamage: number = 0;
@@ -97,4 +98,11 @@ export type AttackStats = {
 export type DefenseStats = {
     armorRatio: number,
     armorGrowth: number,
+}
+
+export type StatWeights = {
+    offenseRatio: number,
+    defenseRatio: number,
+    defense: DefenseStats,
+    attack?: AttackStats
 }

@@ -202,7 +202,7 @@ export class FlameBarrage {
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
-                if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
+                if (AwakenEssence.Check(orderId, caster)) {
                     data.awakened = true;
                     return true;
                 }

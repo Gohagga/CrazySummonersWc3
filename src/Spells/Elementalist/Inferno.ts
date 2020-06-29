@@ -122,7 +122,7 @@ export class Inferno {
             });
             Interruptable.Register(caster.handle, (orderId: number) => {
                 
-                if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
+                if (AwakenEssence.Check(orderId, caster)) {
                     data.awakened = true;
                     return true;
                 }
