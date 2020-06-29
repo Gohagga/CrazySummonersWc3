@@ -39,35 +39,30 @@ export class Fireball {
                 done: false,
 
                 awakened: false,
-                damage: 30,
+                damage: 100.0 + 60 * (level-1),
                 radius: 60,
                 speed: 40,
-                maxDistance: 1500,
-                aoe: 200 + 50 * level,
+                maxDistance: 1000 + 200 * level,
+                aoe: 180.0 + 40.0 * level,
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
                 castTime: 2,
                 trigger: CreateTrigger(),
                 timer: new Timer(),
             }
-            Log.info("Fireball cast");
             
             let castBar = new CastBar(caster.handle);
             castBar.CastSpell(this.SpellId, data.castTime, () => {
                 castBar.Finish();
                 data.castSfx.destroy();
 
-                // if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
+                if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
 
                 if (data.awakened) {
                     Log.info("calling awaken");
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
-                        
-                        Log.info("Getting instance", awaken.targetUnit.name);
                         // Spawn a fireball unit here
                     } else {
-
-                        Log.info("Getting instance", awaken.targetPoint.x, awaken.targetPoint.y);
                         AwakenEssence.SpawnEssence(EssenceType.Fire, this.SpellId, level, caster, awaken.targetPoint);
                     }
                     return;

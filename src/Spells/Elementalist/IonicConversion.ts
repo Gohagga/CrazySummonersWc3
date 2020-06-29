@@ -6,7 +6,7 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
-import { AwakenEssence } from "./AwakenEssence";
+import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Chill } from "./Chill";
 import { SpawnPoint } from "Spells/Spawn";
@@ -127,13 +127,14 @@ export class IonicConversion {
         }
         this.timer.destroy();
         this.effectTimer.destroy();
+        AwakenEssence.RemoveEssenceCaster(EssenceType.Frost, this.caster);
     }
 
     static init(spellId: number) {
         this.SpellId = spellId;
         this.OrbCost = [
+            OrbType.Purple,
             OrbType.Blue,
-            OrbType.Purple
         ];
         SpellEvent.RegisterSpellCast(this.SpellId, () => {
 
@@ -151,9 +152,9 @@ export class IonicConversion {
                 done: false,
 
                 awakened: false,
-                interval: 2.3 - 0.3 * level,
-                duration: 9,// 9 - ((level - 1)/ 2) * 2,
-                maxSpeedLevel: 3,//math.floor((level - 1) * 0.5) + 3,
+                interval: 2 - 0.3 * math.floor(level * 0.5),
+                duration: 8.5 - 1.2 * math.floor(level * 0.5),
+                maxSpeedLevel: [3, 3, 3, 3, 4, 4, 4, 4][level],
                 movePerPoint: 300, // 750.0 - level * 50.0
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
                 castTime: 2,
@@ -167,7 +168,18 @@ export class IonicConversion {
                 data.castSfx.destroy();
                 data.done = true;
 
-                // if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
+                if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
+
+                if (data.awakened) {
+                    Log.info("calling awaken");
+                    let awaken = AwakenEssence.GetEvent(caster);
+                    if (awaken.targetUnit) {
+                        // Spawn a fireball unit here
+                    } else {
+                        AwakenEssence.SpawnEssence(EssenceType.Lightning, this.SpellId, level, caster, awaken.targetPoint);
+                    }
+                    return;
+                } else AwakenEssence.CleanEvent(caster);
 
                 let instance = new IonicConversion(caster, data.interval, data.duration, sp.region, data.maxSpeedLevel, data.movePerPoint);
                 instance.Run();
@@ -183,12 +195,13 @@ export class IonicConversion {
                     return false;
                 });
 
-                Log.info("Has been awakened:", data.awakened);
+                AwakenEssence.ReleaseEssence(EssenceType.Lightning, caster);
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
                     data.awakened = true;
+                    return true;
                 }
 
                 if (data.done) return false;

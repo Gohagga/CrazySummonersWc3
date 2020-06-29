@@ -6,7 +6,7 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
-import { AwakenEssence } from "./AwakenEssence";
+import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 
 export class LivingCurrent {
@@ -81,11 +81,13 @@ export class LivingCurrent {
     private Destroy() {
         this.timer.destroy();
         this.unit.removeAbility(LivingCurrent.BuffId);
+        AwakenEssence.RemoveEssenceCaster(EssenceType.Lightning, this.caster);
     }
 
     static init(spellId: number) {
         this.SpellId = spellId;
         this.OrbCost = [
+            OrbType.Purple,
             OrbType.Purple
         ];
         SpellEvent.RegisterSpellCast(this.SpellId, () => {
@@ -116,6 +118,16 @@ export class LivingCurrent {
 
                 if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
 
+                if (data.awakened) {
+                    Log.info("calling awaken");
+                    let awaken = AwakenEssence.GetEvent(caster);
+                    if (awaken.targetUnit) {
+                        // Spawn a fireball unit here
+                    } else {
+                        AwakenEssence.SpawnEssence(EssenceType.Lightning, this.SpellId, level, caster, awaken.targetPoint);
+                    }
+                    return;
+                } else AwakenEssence.CleanEvent(caster);
                 Log.info("Effect")
 
                 SpellHelper.DummyCastTarget(owner.handle, target.x, target.y, target.handle, this.DummyBuffSpellId,
@@ -125,12 +137,13 @@ export class LivingCurrent {
                 let instance = new LivingCurrent(caster, target, data.duration,
                     data.interval, data.range, level);
                 
-                Log.info("Has been awakened:", data.awakened);
+                AwakenEssence.ReleaseEssence(EssenceType.Lightning, caster);
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
                     data.awakened = true;
+                    return true;
                 }
 
                 if (!data.done) {

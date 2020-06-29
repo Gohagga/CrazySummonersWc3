@@ -6,7 +6,7 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
-import { AwakenEssence } from "./AwakenEssence";
+import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 
 export class Conductivity {
@@ -94,7 +94,7 @@ export class Conductivity {
 
     private Jump(nextTarget: Unit) {
 
-        Log.info("Execute", this.maxTargets);
+        // Log.info("Execute", this.maxTargets);
         // 2. Chain to them
         // DestroyLightning(this.light);
         // Create a lightning effect from current unit to target unit
@@ -126,13 +126,13 @@ export class Conductivity {
     private Destroy() {
         this.timer.destroy();
         DestroyLightning(this.light);
+        AwakenEssence.RemoveEssenceCaster(EssenceType.Lightning, this.caster);
     }
 
     static init(spellId: number) {
         this.SpellId = spellId;
         this.AwakenOrder = String2OrderIdBJ(Orders.AwakenEssence);
         this.OrbCost = [
-            OrbType.Red,
             OrbType.Purple
         ];
         SpellEvent.RegisterSpellCast(this.SpellId, () => {
@@ -149,12 +149,12 @@ export class Conductivity {
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
                 castTime: 1,
                 timer: new Timer(),
-                count: math.floor(level * 0.4) + 3,
-                maxTargets: 20,
+                count: math.floor((level - 1) / 3) + 1,
+                maxTargets: 4 + 4 * level,
                 data: {
                     interval: 0.2,
-                    damage: 10 + 5 * level,
-                    radius: 700,
+                    damage: 5 + level,
+                    radius: 1200,
                 }
             }
             Log.info("Conductivity cast");
@@ -166,6 +166,16 @@ export class Conductivity {
 
                 if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
 
+                if (data.awakened) {
+                    Log.info("calling awaken");
+                    let awaken = AwakenEssence.GetEvent(caster);
+                    if (awaken.targetUnit) {
+                        // Spawn a fireball unit here
+                    } else {
+                        AwakenEssence.SpawnEssence(EssenceType.Lightning, this.SpellId, level, caster, awaken.targetPoint);
+                    }
+                    return;
+                } else AwakenEssence.CleanEvent(caster);
                 Log.info("Effect")
 
                 // Start the spell
@@ -175,7 +185,7 @@ export class Conductivity {
                     instance.Start(target);
                 }
                 
-                Log.info("Has been awakened:", data.awakened);
+                AwakenEssence.ReleaseEssence(EssenceType.Lightning, caster);
             });
             Interruptable.Register(caster.handle, (orderId) => {
 

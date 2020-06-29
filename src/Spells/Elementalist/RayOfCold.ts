@@ -6,7 +6,7 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
-import { AwakenEssence } from "./AwakenEssence";
+import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Order } from "Global/Order";
 import { Chill } from "./Chill";
@@ -175,7 +175,8 @@ export class RayOfCold {
         this.SpellId = spellId;
         this.AwakenOrder = String2OrderIdBJ(Orders.AwakenEssence);
         this.OrbCost = [
-            OrbType.Blue
+            OrbType.Blue,
+            OrbType.Purple,
         ];
         SpellEvent.RegisterSpellCast(this.SpellId, () => {
 
@@ -196,15 +197,14 @@ export class RayOfCold {
                 isCast: false,
 
                 awakened: false,
-                damage: 1 + 0 * level,
-                aoe: 200 + 50 * level,
+                damage: 10 + level * 1.5,
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
                 castTime: 2,
                 channelTime: 8,
 
                 distance: 1600,
-                angleSpeed: 20 * bj_DEGTORAD,
-                pierceCount: 2,
+                angleSpeed: (12 + 8 * level) * bj_DEGTORAD,
+                pierceCount: 1 + math.floor((level + 1) / 3),
             }
             
             let castBar = new CastBar(caster.handle);
@@ -215,6 +215,16 @@ export class RayOfCold {
                 let resource = ResourceBar.Get(owner.handle);
                 if (!resource.Check(this.OrbCost)) return;
                 
+                if (data.awakened) {
+                    let awaken = AwakenEssence.GetEvent(caster);
+                    if (awaken.targetUnit) {
+                        // Spawn a fireball unit here
+                    } else {
+                        AwakenEssence.SpawnEssence(EssenceType.Frost, this.SpellId, level, caster, awaken.targetPoint);
+                    }
+                    return;
+                } else AwakenEssence.CleanEvent(caster);
+
                 // Create a beam that updates itself
                 let origin = Point.fromHandle(PolarProjectionBJ(caster.point.handle, 100, caster.facing));
 
@@ -231,6 +241,7 @@ export class RayOfCold {
                     isFinished = true;
                     delete this._instance[caster.id];
                     resource.Consume(this.OrbCost);
+                    AwakenEssence.ReleaseEssence(EssenceType.Frost, caster).RemoveCaster();
                 });
                 Interruptable.Register(caster.handle, (orderId) => {
 
@@ -251,10 +262,11 @@ export class RayOfCold {
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
-                if (data.isCast) return false;
                 if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
                     data.awakened = true;
+                    return true;
                 }
+                if (data.isCast) return false;
 
                 data.castSfx.destroy();
                 castBar.Destroy();

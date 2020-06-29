@@ -6,7 +6,7 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
-import { AwakenEssence } from "./AwakenEssence";
+import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Chill } from "./Chill";
 
@@ -81,13 +81,15 @@ export class FrostNova {
         this.sfx.destroy();
         this.timer.pause();
         this.timer.destroy();
+        AwakenEssence.RemoveEssenceCaster(EssenceType.Frost, this.caster);
     }
 
     static init(spellId: number) {
         this.SpellId = spellId;
         this.OrbCost = [
             OrbType.Blue,
-            OrbType.Purple
+            OrbType.Blue,
+            OrbType.Red
         ];
         SpellEvent.RegisterSpellCast(this.SpellId, () => {
 
@@ -102,11 +104,11 @@ export class FrostNova {
                 done: false,
 
                 awakened: false,
-                damage: 60 + 40 * level,
+                damage: 80 + 45 * level,
                 aoe: 300,
-                duration: 5 + 1 * level,
+                duration: 5 + level,
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
-                castTime: 2,
+                castTime: 2.5,
             }
             Log.info("Frost Nova cast");
             
@@ -115,18 +117,30 @@ export class FrostNova {
                 castBar.Finish();
                 data.castSfx.destroy();
 
-                // if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
+                if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
 
+                if (data.awakened) {
+                    Log.info("calling awaken");
+                    let awaken = AwakenEssence.GetEvent(caster);
+                    if (awaken.targetUnit) {
+                        // Spawn a fireball unit here
+                    } else {
+                        AwakenEssence.SpawnEssence(EssenceType.Frost, this.SpellId, level, caster, awaken.targetPoint);
+                    }
+                    return;
+                } else AwakenEssence.CleanEvent(caster);
                 Log.info("Effect")
+
                 let instance = new FrostNova(caster, targetPoint, data.aoe, data.duration, data.damage);
                 instance.Run();
-
-                Log.info("Has been awakened:", data.awakened);
+                
+                AwakenEssence.ReleaseEssence(EssenceType.Frost, caster);
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
                     data.awakened = true;
+                    return true;
                 }
                 
                 if (!data.done) {

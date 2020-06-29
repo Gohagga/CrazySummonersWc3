@@ -78,8 +78,8 @@ export class Inferno {
         this.SpellId = spellId;
         this.OrbCost = [
             OrbType.Red,
+            OrbType.Red,
             OrbType.Purple,
-            OrbType.Blue,
         ];
         SpellEvent.RegisterSpellCast(this.SpellId, () => {
 
@@ -94,8 +94,7 @@ export class Inferno {
 
                 aoe: 240 + 60 * level,
                 damage: 10 + 5 * level,
-                healing: 0.02,
-                duration: 12 + 3 * level,
+                duration: 10 + 2 * level,
                 castSfx: AddSpecialEffectTarget(this.CastSfx, caster.handle, "origin"),
                 castTime: 3.5,
             };

@@ -131,8 +131,8 @@ export class FlameBarrage {
         this.SpellId = spellId;
         this.AwakenOrder = String2OrderIdBJ(Orders.AwakenEssence);
         this.OrbCost = [
-            OrbType.Blue,
-            OrbType.Purple
+            OrbType.Red,
+            OrbType.Blue
         ];
         SpellEvent.RegisterSpellCast(this.SpellId, () => {
 

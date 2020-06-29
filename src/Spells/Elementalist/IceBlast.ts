@@ -6,7 +6,7 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
-import { AwakenEssence } from "./AwakenEssence";
+import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Chill } from "./Chill";
 
@@ -21,7 +21,7 @@ export class IceBlast {
         this.SpellId = spellId;
         this.OrbCost = [
             OrbType.Blue,
-            OrbType.Purple
+            OrbType.Red
         ];
         SpellEvent.RegisterSpellCast(this.SpellId, () => {
 
@@ -40,7 +40,6 @@ export class IceBlast {
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
                 castTime: 2,
             }
-            Log.info("Ice Blast cast");
             
             let castBar = new CastBar(caster.handle);
             castBar.CastSpell(this.SpellId, data.castTime, () => {
@@ -49,6 +48,16 @@ export class IceBlast {
 
                 if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
 
+                if (data.awakened) {
+                    Log.info("calling awaken");
+                    let awaken = AwakenEssence.GetEvent(caster);
+                    if (awaken.targetUnit) {
+                        // Spawn a fireball unit here
+                    } else {
+                        AwakenEssence.SpawnEssence(EssenceType.Frost, this.SpellId, level, caster, awaken.targetPoint);
+                    }
+                    return;
+                } else AwakenEssence.CleanEvent(caster);
                 Log.info("Effect")
 
                 let sfx = AddSpecialEffect(this.Sfx, x, y);
@@ -66,13 +75,13 @@ export class IceBlast {
                     Chill.Apply(t, 4);
                     new Effect(this.DamageSfx, t, "origin").destroy();
                 }
-
-                Log.info("Has been awakened:", data.awakened);
+                AwakenEssence.ReleaseEssence(EssenceType.Frost, caster).RemoveCaster();
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
                     data.awakened = true;
+                    return true;
                 }
                 
                 if (!data.done) {

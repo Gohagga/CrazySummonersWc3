@@ -9,7 +9,7 @@ import { Orb } from "Systems/OrbResource/Orb";
 
 export const enum EssenceType {
     Fire,
-    Ice,
+    Frost,
     Lightning
 }
 
@@ -41,7 +41,7 @@ export class AwakenEssence {
 
     private static readonly EssenceUnit: Record<EssenceType, { type: number }> = {
         [EssenceType.Fire]: { type: Units.FireEssence },
-        [EssenceType.Ice]: { type: Units.FrostEssence },
+        [EssenceType.Frost]: { type: Units.FrostEssence },
         [EssenceType.Lightning]: { type: Units.LightningEssence },
     }
     private static OrbCost: OrbType[] = [];
