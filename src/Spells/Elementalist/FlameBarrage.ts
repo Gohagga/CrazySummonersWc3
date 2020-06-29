@@ -19,6 +19,7 @@ export class FlameBarrage {
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
+    static FreeSpellId: number;
 
     private static SpawnedUnitWeights: StatWeights = {
         offenseRatio: 0.48,
@@ -152,7 +153,7 @@ export class FlameBarrage {
             OrbType.Red,
             OrbType.Blue
         ];
-        SpellEvent.RegisterSpellCast(this.SpellId, () => {
+        let actions = (paid: boolean) => {
 
             const caster = Unit.fromEvent();
             const owner = caster.owner;
@@ -181,14 +182,14 @@ export class FlameBarrage {
                 castBar.Finish();
                 data.castSfx.destroy();
 
-                // if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
+                if (!(paid || ResourceBar.Get(owner.handle).Consume(this.OrbCost))) return;
 
                 if (data.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
                         AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
-                        let essence = AwakenEssence.SpawnEssence(EssenceType.Fire, this.SpellId, level, caster, awaken.targetPoint);
+                        let essence = AwakenEssence.SpawnEssence(EssenceType.Fire, this.FreeSpellId, level, caster, awaken.targetPoint);
                         essence.moveSpeed = 250;
                     }
                     return;
@@ -199,8 +200,8 @@ export class FlameBarrage {
                     caster,
                     damage: data.damage,
                     radius: data.radius,
-                    tx: 0,
-                    ty: 0,
+                    tx: data.targetPoint.x + caster.x - data.casterStart.x,
+                    ty: data.targetPoint.y + caster.y - data.casterStart.y,
                 };
 
                 this.ShootFlameOrb(missileData);
@@ -234,10 +235,15 @@ export class FlameBarrage {
                 }
                 return false;
             });
-        });
+        };
+        this.FreeSpellId = FourCC('A03V');
+        SpellEvent.RegisterSpellCast(this.SpellId, () => actions(false));
+        SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
+
         for (let i = 0; i < 7; i++) {
             let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
+            BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }
     }
 }

@@ -22361,3 +22361,1017 @@ STRING 6522
 |cffff5effIonic Conversion|r- 7
 }
 
+STRING 6523
+// Abilities: A03S (ELE_R Chill Blast), Name (Name)
+{
+ELE_R Chill Blast
+}
+
+STRING 6524
+// Abilities: A03S (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
+{
+Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 1s|r
+}
+
+STRING 6525
+// Abilities: A03S (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
+{
+Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 2s|r
+}
+
+STRING 6526
+// Abilities: A03S (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
+{
+Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 3s|r
+}
+
+STRING 6527
+// Abilities: A03S (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 1
+}
+
+STRING 6528
+// Abilities: A03S (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 2
+}
+
+STRING 6529
+// Abilities: A03S (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 3
+}
+
+STRING 6530
+// Abilities: A03S (ELE_R Chill Blast), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 6531
+// Abilities: A03S (ELE_R Chill Blast), Researchhotkey (Hotkey - Learn)
+{
+W
+}
+
+STRING 6532
+// Abilities: A03S (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 4
+}
+
+STRING 6533
+// Abilities: A03S (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
+{
+Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 4s|r
+}
+
+STRING 6534
+// Abilities: A03S (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 5
+}
+
+STRING 6535
+// Abilities: A03S (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 6
+}
+
+STRING 6536
+// Abilities: A03S (ELE_R Chill Blast), Tip (Tooltip - Normal)
+{
+|cff8a99ffIce Burst|r|cff00ffff |r- 7
+}
+
+STRING 6537
+// Abilities: A03S (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
+{
+Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 5s|r
+}
+
+STRING 6538
+// Abilities: A03S (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
+{
+Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 6s|r
+}
+
+STRING 6539
+// Abilities: A03S (ELE_R Chill Blast), Ubertip (Tooltip - Normal - Extended)
+{
+Blasts enemy units with a wave of frost that deals damage to the target, and a bit less to nearby enemies. Cold damage slows units' movement and attack rate.|nCasting this on a slowed target also freezes it for half duration.|n|n|cff00cac5Higher circle fire spells remove the frozen effect.|r|n|cffffd9b3Cast time: 7s|r
+}
+
+STRING 6540
+// Abilities: A03S (ELE_R Chill Blast), EditorSuffix (Editor Suffix)
+{
+(Free)
+}
+
+STRING 6541
+// Abilities: A03T (ELE_R Conductivity), Name (Name)
+{
+ELE_R Conductivity
+}
+
+STRING 6542
+// Abilities: A03T (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
+{
+Releases a highly volatile electricity that chains from target to target, interrupting their actions. |n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max jumps |cff8a8aff8|r.|n|n|cffffd9b3Cast time: <AE03,Cast1,.>s|r
+}
+
+STRING 6543
+// Abilities: A03T (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
+{
+Releases a highly volatile electricity that chains from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max jumps |cff8a8aff8|r.|n|n|cffffd9b3Cast time: <AE03,Cast2,.>s|r
+}
+
+STRING 6544
+// Abilities: A03T (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
+{
+Releases a highly volatile electricity that chains from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max jumps |cff8a8aff8|r.|n|n|cffffd9b3Cast time: <AE03,Cast3,.>s|r
+}
+
+STRING 6545
+// Abilities: A03T (ELE_R Conductivity), Tip (Tooltip - Normal)
+{
+|cffff5effConductivity |r- 1
+}
+
+STRING 6546
+// Abilities: A03T (ELE_R Conductivity), Tip (Tooltip - Normal)
+{
+|cffff5effConductivity |r- 2
+}
+
+STRING 6547
+// Abilities: A03T (ELE_R Conductivity), Tip (Tooltip - Normal)
+{
+|cffff5effConductivity |r- 3
+}
+
+STRING 6548
+// Abilities: A03T (ELE_R Conductivity), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 6549
+// Abilities: A03T (ELE_R Conductivity), Researchhotkey (Hotkey - Learn)
+{
+E
+}
+
+STRING 6550
+// Abilities: A03T (ELE_R Conductivity), Tip (Tooltip - Normal)
+{
+|cffff5effConductivity |r- 4
+}
+
+STRING 6551
+// Abilities: A03T (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
+{
+Releases two highly volatile electricity chains that jump from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max bounces |cff8a8aff20|r.|n|n|cffffd9b3Cast time: <AE03,Cast5,.>s|r
+}
+
+STRING 6552
+// Abilities: A03T (ELE_R Conductivity), Tip (Tooltip - Normal)
+{
+|cffff5effConductivity |r- 5
+}
+
+STRING 6553
+// Abilities: A03T (ELE_R Conductivity), Tip (Tooltip - Normal)
+{
+|cffff5effConductivity |r- 6
+}
+
+STRING 6554
+// Abilities: A03T (ELE_R Conductivity), Tip (Tooltip - Normal)
+{
+|cffff5effConductivity |r- 7
+}
+
+STRING 6555
+// Abilities: A03T (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
+{
+Releases two highly volatile electricity chains that jump from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max bounces |cff8a8aff24|r.|n|n|cffffd9b3Cast time: <AE03,Cast5,.>s|r
+}
+
+STRING 6556
+// Abilities: A03T (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
+{
+Releases two highly volatile electricity chains that jump from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max bounces |cff8a8aff28|r.|n|n|cffffd9b3Cast time: <AE03,Cast5,.>s|r
+}
+
+STRING 6557
+// Abilities: A03T (ELE_R Conductivity), Ubertip (Tooltip - Normal - Extended)
+{
+Releases three highly volatile electricity chains that jump from target to target, interrupting their actions.|n|nStream jumps every 0.2 seconds, stunning the target briefly and dealing minor damage. It cannot jump to its last target. If it has no nearby targets, it disappears after 1.5s. Max bounces |cff8a8affinfinite|r.|n|n|cffffd9b3Cast time: <AE03,Cast5,.>s|r
+}
+
+STRING 6558
+// Abilities: A03T (ELE_R Conductivity), EditorSuffix (Editor Suffix)
+{
+(Free)
+}
+
+STRING 6559
+// Abilities: A03U (ELE_R Fireball), Researchubertip (Tooltip - Learn - Extended)
+{
+The caster hurls a fireball towards the target location, dealing damage in a small aoe on impact. |n|n|cffffcc00Level 1|r - 70 damage on impact|n|cffffcc00Level 2|r - 140 damage on impact |n|cffffcc00Level 3|r - 210 damage on impact|n
+}
+
+STRING 6560
+// Abilities: A03U (ELE_R Fireball), Researchtip (Tooltip - Learn)
+{
+Learn |cffffcc00F|rireball - [|cffffcc00Level %d|r]
+}
+
+STRING 6561
+// Abilities: A03U (ELE_R Fireball), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 6562
+// Abilities: A03U (ELE_R Fireball), Researchhotkey (Hotkey - Learn)
+{
+Q
+}
+
+STRING 6563
+// Abilities: A03U (ELE_R Fireball), Tip (Tooltip - Normal)
+{
+|cffffcc00Fireball |r- 1
+}
+
+STRING 6564
+// Abilities: A03U (ELE_R Fireball), Tip (Tooltip - Normal)
+{
+|cffffcc00Fireball |r- 2
+}
+
+STRING 6565
+// Abilities: A03U (ELE_R Fireball), Tip (Tooltip - Normal)
+{
+|cffffcc00Fireball |r- 3
+}
+
+STRING 6566
+// Abilities: A03U (ELE_R Fireball), Tip (Tooltip - Normal)
+{
+|cffffcc00Fireball |r- 4
+}
+
+STRING 6567
+// Abilities: A03U (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
+{
+Hurls a fireball towards the target location, dealing |cffff8080100|r damage in aoe on impact. Radius |cff80ffff160.|n|n|r|cffffd9b3Cast time: 1.5s|r
+}
+
+STRING 6568
+// Abilities: A03U (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
+{
+Hurls a fireball towards the target location, dealing |cffff8080160|r damage in aoe on impact. Radius |cff80ffff220.|n|n|r|cffffd9b3Cast time: 1.5s|r
+}
+
+STRING 6569
+// Abilities: A03U (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
+{
+Hurls a fireball towards the target location, dealing |cffff8080220|r damage in aoe on impact. Radius |cff80ffff280.|n|n|r|cffffd9b3Cast time: 1.5s|r
+}
+
+STRING 6570
+// Abilities: A03U (ELE_R Fireball), Name (Name)
+{
+ELE_R Fireball
+}
+
+STRING 6571
+// Abilities: A03U (ELE_R Fireball), Tip (Tooltip - Normal)
+{
+|cffffcc00Fireball |r- 5
+}
+
+STRING 6572
+// Abilities: A03U (ELE_R Fireball), Tip (Tooltip - Normal)
+{
+|cffffcc00Fireball |r- 6
+}
+
+STRING 6573
+// Abilities: A03U (ELE_R Fireball), Tip (Tooltip - Normal)
+{
+|cffffcc00Fireball |r- 7
+}
+
+STRING 6574
+// Abilities: A03U (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
+{
+Hurls a fireball towards the target location, dealing |cffff8080280|r damage in aoe on impact. Radius |cff80ffff340.|n|n|r|cffffd9b3Cast time: 1.5s|r
+}
+
+STRING 6575
+// Abilities: A03U (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
+{
+Hurls a fireball towards the target location, dealing |cffff8080340|r damage in aoe on impact. Radius |cff80ffff400.|n|n|r|cffffd9b3Cast time: 1.5s|r
+}
+
+STRING 6576
+// Abilities: A03U (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
+{
+Hurls a fireball towards the target location, dealing |cffff8080400|r damage in aoe on impact. Radius |cff80ffff460.|n|n|r|cffffd9b3Cast time: 1.5s|r
+}
+
+STRING 6577
+// Abilities: A03U (ELE_R Fireball), Ubertip (Tooltip - Normal - Extended)
+{
+Hurls a fireball towards the target location, dealing |cffff8080460|r damage in aoe on impact. Radius |cff80ffff520.|n|n|r|cffffd9b3Cast time: 1.5s|r
+}
+
+STRING 6578
+// Abilities: A03U (ELE_R Fireball), EditorSuffix (Editor Suffix)
+{
+(Free)
+}
+
+STRING 6579
+// Abilities: A03V (ELE_R Flame Barrage), Name (Name)
+{
+ELE_R Flame Barrage
+}
+
+STRING 6580
+// Abilities: A03V (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+{
+Starts throwing spheres of flame towards the target point. These do 1 damage to enemy heroes and |cffff808035 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff1|r second. Number of fireballs is |cff80ffff3|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast1,.>s|r
+}
+
+STRING 6581
+// Abilities: A03V (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+{
+Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808040 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.9|r second. Number of fireballs is |cff80ffff3|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast2,.>s|r
+}
+
+STRING 6582
+// Abilities: A03V (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+{
+Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808045 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.9|r second. Number of fireballs is |cff80ffff4|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast3,.>s|r
+}
+
+STRING 6583
+// Abilities: A03V (ELE_R Flame Barrage), Tip (Tooltip - Normal)
+{
+|cffffcc00Flame Barrage|r - 1
+}
+
+STRING 6584
+// Abilities: A03V (ELE_R Flame Barrage), Tip (Tooltip - Normal)
+{
+|cffffcc00Flame Barrage|r - 2
+}
+
+STRING 6585
+// Abilities: A03V (ELE_R Flame Barrage), Tip (Tooltip - Normal)
+{
+|cffffcc00Flame Barrage|r - 3
+}
+
+STRING 6586
+// Abilities: A03V (ELE_R Flame Barrage), Hotkey (Hotkey - Normal)
+{
+A
+}
+
+STRING 6587
+// Abilities: A03V (ELE_R Flame Barrage), Tip (Tooltip - Normal)
+{
+|cffffcc00Flame Barrage|r - 4
+}
+
+STRING 6588
+// Abilities: A03V (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+{
+Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808050 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.7|r second. Number of fireballs is |cff80ffff4|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast1,.>s|r
+}
+
+STRING 6589
+// Abilities: A03V (ELE_R Flame Barrage), Tip (Tooltip - Normal)
+{
+|cffffcc00Flame Barrage|r - 5
+}
+
+STRING 6590
+// Abilities: A03V (ELE_R Flame Barrage), Tip (Tooltip - Normal)
+{
+|cffffcc00Flame Barrage|r - 6
+}
+
+STRING 6591
+// Abilities: A03V (ELE_R Flame Barrage), Tip (Tooltip - Normal)
+{
+|cffffcc00Flame Barrage|r - 7
+}
+
+STRING 6592
+// Abilities: A03V (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+{
+Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808055 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.7|r second. Number of fireballs is |cff80ffff5|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast5,.>s|r
+}
+
+STRING 6593
+// Abilities: A03V (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+{
+Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808060 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.6|r second. Number of fireballs is |cff80ffff5|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast6,.>s|r
+}
+
+STRING 6594
+// Abilities: A03V (ELE_R Flame Barrage), Ubertip (Tooltip - Normal - Extended)
+{
+Starts throwing spheres of flame towards the target area. These do 1 damage to enemy heroes and |cffff808065 |rto enemy units caught within. Throws a|cff8a8aff |rfireball every |cff8a8aff0.6|r second. Number of fireballs is |cff80ffff6|r.|nTarget point changes as the hero moves.|n|n|cff00cac5Removes effects of Chill Blast - freeze.|r|n|cffffd9b3Cast time: <AE04,Cast7,.>s|r
+}
+
+STRING 6595
+// Abilities: A03V (ELE_R Flame Barrage), Researchhotkey (Hotkey - Learn)
+{
+A
+}
+
+STRING 6596
+// Abilities: A03V (ELE_R Flame Barrage), EditorSuffix (Editor Suffix)
+{
+(Free)
+}
+
+STRING 6597
+// Abilities: A03W (ELE_R Frost Nova), Name (Name)
+{
+ELE_R Frost Nova
+}
+
+STRING 6598
+// Abilities: A03W (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur1>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur1,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast1,.>s|r
+}
+
+STRING 6599
+// Abilities: A03W (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur2>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur2,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast2,.>s|r
+}
+
+STRING 6600
+// Abilities: A03W (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur3>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur3,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast3,.>s|r
+}
+
+STRING 6601
+// Abilities: A03W (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 1
+}
+
+STRING 6602
+// Abilities: A03W (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 2
+}
+
+STRING 6603
+// Abilities: A03W (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 3
+}
+
+STRING 6604
+// Abilities: A03W (ELE_R Frost Nova), Hotkey (Hotkey - Normal)
+{
+X
+}
+
+STRING 6605
+// Abilities: A03W (ELE_R Frost Nova), Researchhotkey (Hotkey - Learn)
+{
+X
+}
+
+STRING 6606
+// Abilities: A03W (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 4
+}
+
+STRING 6607
+// Abilities: A03W (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur4>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur4,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast4,.>s|r
+}
+
+STRING 6608
+// Abilities: A03W (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 5
+}
+
+STRING 6609
+// Abilities: A03W (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 6
+}
+
+STRING 6610
+// Abilities: A03W (ELE_R Frost Nova), Tip (Tooltip - Normal)
+{
+|cff8a99ffFrost Nova|r|cffff5eff |r- 7
+}
+
+STRING 6611
+// Abilities: A03W (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur5>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur5,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast5,.>s|r
+}
+
+STRING 6612
+// Abilities: A03W (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur6>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur6,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast6,.>s|r
+}
+
+STRING 6613
+// Abilities: A03W (ELE_R Frost Nova), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a vortex of frost at target point that continually draws heat from units inside it, slowing their movement and attack speed by 50%. Lasts |cff8a8aff<AE08,Dur7>|r seconds.|nIf cast on a Magic Crystal or near it, it instead creates a Ward for that lane, which, apart from the said effects, also freezes enemy units that enter for |cff8a8aff<AE08,HeroDur7,.>|r seconds. The ward has double the normal duration.|cff8a8aff|n|r|n|cff00cac5Removes Inferno if cast on top of it.|n|r|cffffd9b3Cast time: <AE08,Cast7,.>s|r
+}
+
+STRING 6614
+// Abilities: A03W (ELE_R Frost Nova), EditorSuffix (Editor Suffix)
+{
+(Free)
+}
+
+STRING 6615
+// Abilities: A03X (ELE_R Inferno), Name (Name)
+{
+ELE_R Inferno
+}
+
+STRING 6616
+// Abilities: A03X (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
+{
+Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur1,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur1,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast1,.>s|r
+}
+
+STRING 6617
+// Abilities: A03X (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
+{
+Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur2,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur2,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast2,.>s|r
+}
+
+STRING 6618
+// Abilities: A03X (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
+{
+Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur3,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur3,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast3,.>s|r
+}
+
+STRING 6619
+// Abilities: A03X (ELE_R Inferno), Tip (Tooltip - Normal)
+{
+|cffffcc00Inferno|r - 1
+}
+
+STRING 6620
+// Abilities: A03X (ELE_R Inferno), Tip (Tooltip - Normal)
+{
+|cffffcc00Inferno|r - 2
+}
+
+STRING 6621
+// Abilities: A03X (ELE_R Inferno), Tip (Tooltip - Normal)
+{
+|cffffcc00Inferno|r - 3
+}
+
+STRING 6622
+// Abilities: A03X (ELE_R Inferno), Hotkey (Hotkey - Normal)
+{
+Z
+}
+
+STRING 6623
+// Abilities: A03X (ELE_R Inferno), Tip (Tooltip - Normal)
+{
+|cffffcc00Inferno|r - 4
+}
+
+STRING 6624
+// Abilities: A03X (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
+{
+Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur4,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur4,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast4,.>s|r
+}
+
+STRING 6625
+// Abilities: A03X (ELE_R Inferno), Tip (Tooltip - Normal)
+{
+|cffffcc00Inferno|r - 5
+}
+
+STRING 6626
+// Abilities: A03X (ELE_R Inferno), Tip (Tooltip - Normal)
+{
+|cffffcc00Inferno|r - 6
+}
+
+STRING 6627
+// Abilities: A03X (ELE_R Inferno), Tip (Tooltip - Normal)
+{
+|cffffcc00Inferno|r - 7
+}
+
+STRING 6628
+// Abilities: A03X (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
+{
+Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur5,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur5,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast5,.>s|r
+}
+
+STRING 6629
+// Abilities: A03X (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
+{
+Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur6,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur6,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast6,.>s|r
+}
+
+STRING 6630
+// Abilities: A03X (ELE_R Inferno), Ubertip (Tooltip - Normal - Extended)
+{
+Unleashes angry fire spirits in a targeted area that deal |cffff8080<AE07,HeroDur7,.> |rdamage per second to enemy units that stay inside. Lasts |cff8a8aff<AE07,Dur7,.>|r seconds.|n|n|cff00cac5Removes effects of Chill Blast - freeze and Dry Ice.|r|n|cffffd9b3Cast time: <AE07,Cast7,.>s|r
+}
+
+STRING 6631
+// Abilities: A03X (ELE_R Inferno), Researchhotkey (Hotkey - Learn)
+{
+Z
+}
+
+STRING 6632
+// Abilities: A03X (ELE_R Inferno), EditorSuffix (Editor Suffix)
+{
+(Free)
+}
+
+STRING 6633
+// Abilities: A03Y (ELE_R Ionic Conversion), Name (Name)
+{
+ELE_R Ionic Conversion
+}
+
+STRING 6634
+// Abilities: A03Y (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
+{
+Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 1 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool1>s|r
+}
+
+STRING 6635
+// Abilities: A03Y (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
+{
+Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 2 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool2>s|r
+}
+
+STRING 6636
+// Abilities: A03Y (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
+{
+Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 3 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool3>s|r
+}
+
+STRING 6637
+// Abilities: A03Y (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 1
+}
+
+STRING 6638
+// Abilities: A03Y (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 2
+}
+
+STRING 6639
+// Abilities: A03Y (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 3
+}
+
+STRING 6640
+// Abilities: A03Y (ELE_R Ionic Conversion), Researchhotkey (Hotkey - Learn)
+{
+C
+}
+
+STRING 6641
+// Abilities: A03Y (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 4
+}
+
+STRING 6642
+// Abilities: A03Y (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
+{
+Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 4 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool4>s|r
+}
+
+STRING 6643
+// Abilities: A03Y (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 5
+}
+
+STRING 6644
+// Abilities: A03Y (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 6
+}
+
+STRING 6645
+// Abilities: A03Y (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Conversion|r- 7
+}
+
+STRING 6646
+// Abilities: A03Y (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
+{
+Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 5 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool5>s|r
+}
+
+STRING 6647
+// Abilities: A03Y (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
+{
+Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 6 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool6>s|r
+}
+
+STRING 6648
+// Abilities: A03Y (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
+{
+Channeling on a lane (Magic Crystal) fills units with surging power each tick, giving them extra movement speed. The caster takes a price from enemies, converting their momentum into life.|n|nEnemy units lose 3% hp each tick and caster gains 7 life for every 300 range they move.|n|n|cffffd9b3Cooldown: <AE09,Cool7>s|r
+}
+
+STRING 6649
+// Abilities: A03Y (ELE_R Ionic Conversion), Researchtip (Tooltip - Learn)
+{
+Awaken Essence - %d |cff808080(A)|r
+}
+
+STRING 6650
+// Abilities: A03Y (ELE_R Ionic Conversion), Researchubertip (Tooltip - Learn - Extended)
+{
+Transforms a spell into its truest elemental form which does not need a guiding hand of a spellcaster to unleash its power.|n|nSacrifice your Active Spell to create a unit. If cast on a Magic Crystal, it summons an Elemental troop. If cast on the ground, the Active Spell is stored within the essence and can be cast independently.|n|cffff8080You cannot transform a spell of a higher level than this ability.|r|n|nMax Essences Alive: |cff80ffff1 per level up to 5.|r|nMax sacrificed spell level:|cffff8080 1 per level up to 7.|n|rSummoned unit stats increased on levels: |cff8a8aff2|r, |cff8a8aff4|r, |cff8a8aff6|r, |cff8a8aff8|r|n|cffffd9b3Cooldown: <AE0M,Cool1>s|r
+}
+
+STRING 6651
+// Abilities: A03Y (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
+{
+|cffff5effIonic Channel |r- 8
+}
+
+STRING 6652
+// Abilities: A03Y (ELE_R Ionic Conversion), Ubertip (Tooltip - Normal - Extended)
+{
+Sacrifice your Active Spell to Summon an elemental in target lane (by targeting a magic crystal). Elementals stats are increased for every 2 levels of Awaken Essence.|n|nInstead, you can create an Essence at the target point and store the spell within. Essence can cast that spell afterwards in your stead.|n|nMax Essences: |cff80ffff5|n|rMax Spell level: |cffff80807|r|n|cffffd9b3Cooldown: <AE0M,Cool8>s|r
+}
+
+STRING 6653
+// Abilities: A03Y (ELE_R Ionic Conversion), EditorSuffix (Editor Suffix)
+{
+(Free)
+}
+
+STRING 6654
+// Abilities: A03Z (ELE_R Living Current), Name (Name)
+{
+ELE_R Living Current
+}
+
+STRING 6655
+// Abilities: A03Z (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
+{
+Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA1> |rdamage.|nLasts|cff8a8aff <A01B,Dur1>|r seconds.|n|n|cffffd9b3Cast time: <AE03,Cast1,.>s|r
+}
+
+STRING 6656
+// Abilities: A03Z (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
+{
+Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA2> |rdamage.|nLasts|cff8a8aff <A01B,Dur2>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast2,.>s|r
+}
+
+STRING 6657
+// Abilities: A03Z (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
+{
+Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA3> |rdamage.|nLasts|cff8a8aff <A01B,Dur3>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast3,.>s|r
+}
+
+STRING 6658
+// Abilities: A03Z (ELE_R Living Current), Tip (Tooltip - Normal)
+{
+|cffff5effLiving Current |r- 1
+}
+
+STRING 6659
+// Abilities: A03Z (ELE_R Living Current), Tip (Tooltip - Normal)
+{
+|cffff5effLiving Current |r- 2
+}
+
+STRING 6660
+// Abilities: A03Z (ELE_R Living Current), Tip (Tooltip - Normal)
+{
+|cffff5effLiving Current |r- 3
+}
+
+STRING 6661
+// Abilities: A03Z (ELE_R Living Current), Hotkey (Hotkey - Normal)
+{
+D
+}
+
+STRING 6662
+// Abilities: A03Z (ELE_R Living Current), Researchhotkey (Hotkey - Learn)
+{
+D
+}
+
+STRING 6663
+// Abilities: A03Z (ELE_R Living Current), Tip (Tooltip - Normal)
+{
+|cffff5effLiving Current |r- 4
+}
+
+STRING 6664
+// Abilities: A03Z (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
+{
+Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA4> |rdamage.|nLasts|cff8a8aff <A01B,Dur4>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast4,.>s|r
+}
+
+STRING 6665
+// Abilities: A03Z (ELE_R Living Current), Tip (Tooltip - Normal)
+{
+|cffff5effLiving Current |r- 5
+}
+
+STRING 6666
+// Abilities: A03Z (ELE_R Living Current), Tip (Tooltip - Normal)
+{
+|cffff5effLiving Current |r- 6
+}
+
+STRING 6667
+// Abilities: A03Z (ELE_R Living Current), Tip (Tooltip - Normal)
+{
+|cffff5effLiving Current |r- 7
+}
+
+STRING 6668
+// Abilities: A03Z (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
+{
+Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA5> |rdamage.|nLasts|cff8a8aff <A01B,Dur5>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast5,.>s|r
+}
+
+STRING 6669
+// Abilities: A03Z (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
+{
+Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA6> |rdamage.|nLasts|cff8a8aff <A01B,Dur6>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast6,.>s|r
+}
+
+STRING 6670
+// Abilities: A03Z (ELE_R Living Current), Ubertip (Tooltip - Normal - Extended)
+{
+Awakens a minor elemental, latching it onto a target unit. This elemental boosts its host's attack speed and occasionally releases burst of lightning, lashing out at the caster's enemies dealing|cffff8080 <A01A,DataA7> |rdamage.|nLasts|cff8a8aff <A01B,Dur7>|r seconds.|n|n|cffffd9b3Cast time: <AE06,Cast7,.>s|r
+}
+
+STRING 6671
+// Abilities: A03Z (ELE_R Living Current), EditorSuffix (Editor Suffix)
+{
+(Free)
+}
+
+STRING 6672
+// Abilities: A040 (ELE_R Ray of Cold), Name (Name)
+{
+ELE_R Ray of Cold
+}
+
+STRING 6673
+// Abilities: A040 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast1>|r
+}
+
+STRING 6674
+// Abilities: A040 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast2>|r
+}
+
+STRING 6675
+// Abilities: A040 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast3>|r
+}
+
+STRING 6676
+// Abilities: A040 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 1
+}
+
+STRING 6677
+// Abilities: A040 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 2
+}
+
+STRING 6678
+// Abilities: A040 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 3
+}
+
+STRING 6679
+// Abilities: A040 (ELE_R Ray of Cold), Hotkey (Hotkey - Normal)
+{
+S
+}
+
+STRING 6680
+// Abilities: A040 (ELE_R Ray of Cold), Researchhotkey (Hotkey - Learn)
+{
+S
+}
+
+STRING 6681
+// Abilities: A040 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 4
+}
+
+STRING 6682
+// Abilities: A040 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast4>|r
+}
+
+STRING 6683
+// Abilities: A040 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 5
+}
+
+STRING 6684
+// Abilities: A040 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 6
+}
+
+STRING 6685
+// Abilities: A040 (ELE_R Ray of Cold), Tip (Tooltip - Normal)
+{
+|cff8a99ffRay of Cold|r - 7
+}
+
+STRING 6686
+// Abilities: A040 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast5>|r
+}
+
+STRING 6687
+// Abilities: A040 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast6>|r
+}
+
+STRING 6688
+// Abilities: A040 (ELE_R Ray of Cold), Ubertip (Tooltip - Normal - Extended)
+{
+Creates a thick cloud around all units on the map which slows their movement speed by 80% and attack speed by 60%. Lasts |cff8a8aff3 |rseconds, but less on higher level units.|n|n|cffffd9b3Cast time: <AE05,Cast7>|r
+}
+
+STRING 6689
+// Abilities: A040 (ELE_R Ray of Cold), Researchtip (Tooltip - Learn)
+{
+Elementalist Mastery - %d |cff808080(A)|r
+}
+
+STRING 6690
+// Abilities: A040 (ELE_R Ray of Cold), Researchubertip (Tooltip - Learn - Extended)
+{
+The most important thing for an elementalist is to strengthen his spells. Each time he uses this skill, the next two gems he picks up will permanently increase level of all spells gained for a specific school, depending on the color of gem picked.|n|n|cffff8080Red |rgem - level of |cffffcc00Fire |rspells increased.|nWhite gem - level of |cffff00ffLightning |rspells increased.|n|cff8a99ffBlue |rgem - level of |cff8a99ffFrost |rspells increased.|n|nCooldown reduced with level.
+}
+
+STRING 6691
+// Abilities: A040 (ELE_R Ray of Cold), EditorSuffix (Editor Suffix)
+{
+(Free)
+}
+

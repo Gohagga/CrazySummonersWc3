@@ -18,6 +18,7 @@ export class IceBlast {
     public static readonly DamageSfx: string = "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl";
     public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
+    static FreeSpellId: number;
 
     private static SpawnedUnitWeights: StatWeights = {
         offenseRatio: 0.35,
@@ -41,7 +42,7 @@ export class IceBlast {
             OrbType.Blue,
             OrbType.Red
         ];
-        SpellEvent.RegisterSpellCast(this.SpellId, () => {
+        let actions = (paid: boolean) => {
 
             const caster = Unit.fromEvent();
             const owner = caster.owner;
@@ -64,7 +65,7 @@ export class IceBlast {
                 castBar.Finish();
                 data.castSfx.destroy();
 
-                if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
+                if (!(paid || ResourceBar.Get(owner.handle).Consume(this.OrbCost))) return;
 
                 if (data.awakened) {
                     Log.info("calling awaken");
@@ -72,7 +73,7 @@ export class IceBlast {
                     if (awaken.targetUnit) {
                         AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
-                        AwakenEssence.SpawnEssence(EssenceType.Frost, this.SpellId, level, caster, awaken.targetPoint);
+                        AwakenEssence.SpawnEssence(EssenceType.Frost, this.FreeSpellId, level, caster, awaken.targetPoint);
                     }
                     return;
                 } else AwakenEssence.CleanEvent(caster);
@@ -109,10 +110,16 @@ export class IceBlast {
                 }
                 return false;
             });
-        });
+        };
+
+        this.FreeSpellId = FourCC('A03S');
+        SpellEvent.RegisterSpellCast(this.SpellId, () => actions(false));
+        SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
+
         for (let i = 0; i < 7; i++) {
             let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
+            BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }
     }
 }

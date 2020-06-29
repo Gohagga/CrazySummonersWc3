@@ -9,6 +9,7 @@ import { MapPlayer, Point, Timer, Unit, Effect } from "w3ts/index";
 import { Chill } from "./Chill";
 import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { StatWeights } from "Systems/BalanceData";
+import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 
 export class Inferno {
     public static SpellId: number;
@@ -19,6 +20,7 @@ export class Inferno {
     public static readonly Sfx: string = "Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeTarget.mdl";
     public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
+    static FreeSpellId: number;
 
     private static SpawnedUnitWeights: StatWeights = {
         offenseRatio: 0.48,
@@ -99,7 +101,7 @@ export class Inferno {
             OrbType.Red,
             OrbType.Purple,
         ];
-        SpellEvent.RegisterSpellCast(this.SpellId, () => {
+        let actions = (paid: boolean) => {
 
             const caster = Unit.fromEvent();
             const owner = caster.owner;
@@ -122,14 +124,14 @@ export class Inferno {
                 castBar.Finish();
                 DestroyEffect(data.castSfx);
 
-                // if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
+                if (!(paid || ResourceBar.Get(owner.handle).Consume(this.OrbCost))) return;
 
                 if (data.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
                         AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
-                        let essence = AwakenEssence.SpawnEssence(EssenceType.Fire, this.SpellId, level, caster, awaken.targetPoint);
+                        let essence = AwakenEssence.SpawnEssence(EssenceType.Fire, this.FreeSpellId, level, caster, awaken.targetPoint);
                     }
                     return;
                 } else AwakenEssence.CleanEvent(caster);
@@ -153,10 +155,16 @@ export class Inferno {
                 }
                 return false;
             });
-        });
-        for (let i = 0; i < 4; i++) {
+        };
+
+        this.FreeSpellId = FourCC('A03X');
+        SpellEvent.RegisterSpellCast(this.SpellId, () => actions(false));
+        SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
+
+        for (let i = 0; i < 7; i++) {
             let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
+            BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }
     }
 }

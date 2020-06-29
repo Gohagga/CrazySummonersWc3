@@ -21,6 +21,7 @@ export class Fireball {
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
+    static FreeSpellId: number;
     
     private static SpawnedUnitWeights: StatWeights = {
         offenseRatio: 0.48,
@@ -46,7 +47,7 @@ export class Fireball {
             OrbType.Red,
             OrbType.Red
         ];
-        SpellEvent.RegisterSpellCast(this.SpellId, () => {
+        let actions = (paid: boolean) => {
 
             const caster = Unit.fromEvent();
             const owner = caster.owner;
@@ -74,7 +75,7 @@ export class Fireball {
                 castBar.Finish();
                 data.castSfx.destroy();
 
-                if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
+                if (!(paid || ResourceBar.Get(owner.handle).Consume(this.OrbCost))) return;
 
                 if (data.awakened) {
                     Log.info("calling awaken");
@@ -82,7 +83,7 @@ export class Fireball {
                     if (awaken.targetUnit) {
                         AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
-                        AwakenEssence.SpawnEssence(EssenceType.Fire, this.SpellId, level, caster, awaken.targetPoint);
+                        AwakenEssence.SpawnEssence(EssenceType.Fire, this.FreeSpellId, level, caster, awaken.targetPoint);
                     }
                     return;
                 } else AwakenEssence.CleanEvent(caster);
@@ -99,9 +100,11 @@ export class Fireball {
                 BlzSetSpecialEffectOrientation(sfx, angle, 0, 0);
 
                 let explode = () => {
-                    let targets = SpellHelper.EnumUnitsInRange(dummy.point, data.aoe, (u, c) => 
-                        u.isAlive() &&
-                        u.isHero() == false);
+                    let targets = SpellHelper.EnumUnitsInRange(dummy.point, data.aoe + 150, (t, c) => 
+                        t.isUnitType(UNIT_TYPE_STRUCTURE) == false &&
+                        t.isHero() == false &&
+                        t.inRangeOfPoint(dummy.point, data.aoe) &&
+                        t.life > 0.405);
 
                     for (let t of targets) {
                         Chill.Remove(t, 3);
@@ -151,10 +154,15 @@ export class Fireball {
                 }
                 return false;
             });
-        });
+        };
+        this.FreeSpellId = FourCC('A03U');
+        SpellEvent.RegisterSpellCast(this.SpellId, () => actions(false));
+        SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
+
         for (let i = 0; i < 7; i++) {
             let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
+            BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }
     }
 }

@@ -24,6 +24,7 @@ export class RayOfCold {
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
     static OrderId: number = Order.PHASESHIFTINSTANT;
+    static FreeSpellId: number;
 
     private static SpawnedUnitWeights: StatWeights = {
         offenseRatio: 0.35,
@@ -196,7 +197,7 @@ export class RayOfCold {
             OrbType.Blue,
             OrbType.Purple,
         ];
-        SpellEvent.RegisterSpellCast(this.SpellId, () => {
+        let actions = (paid: boolean) => {
 
             const caster = Unit.fromEvent();
             const owner = caster.owner;
@@ -231,14 +232,14 @@ export class RayOfCold {
                 data.castSfx.destroy();
 
                 let resource = ResourceBar.Get(owner.handle);
-                if (!resource.Check(this.OrbCost)) return;
+                if (!(paid || resource.Consume(this.OrbCost))) return;
                 
                 if (data.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
                         AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
-                        AwakenEssence.SpawnEssence(EssenceType.Frost, this.SpellId, level, caster, awaken.targetPoint);
+                        AwakenEssence.SpawnEssence(EssenceType.Frost, this.FreeSpellId, level, caster, awaken.targetPoint);
                     }
                     return;
                 } else AwakenEssence.CleanEvent(caster);
@@ -290,54 +291,15 @@ export class RayOfCold {
                 castBar.Destroy();
                 return false;
             });
-            // let castBar = new CastBar(caster.handle);
-            // castBar.CastSpell(this.SpellId, data.castTime, () => {
-            //     castBar.Finish();
-            //     data.castSfx.destroy();
+        };
+        this.FreeSpellId = FourCC('A040');
+        SpellEvent.RegisterSpellCast(this.SpellId, () => actions(false));
+        SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
 
-            //     if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
-
-            //     Log.info("Effect")
-
-            //     let sfx = AddSpecialEffect(this.Sfx, x, y);
-            //     BlzSetSpecialEffectScale(sfx, data.aoe * 0.008);
-            //     BlzSetSpecialEffectOrientation(sfx, GetRandomReal(0, 3.14), 0, 0);
-            //     DestroyEffect(sfx);
-
-            //     let targets = SpellHelper.EnumUnitsInRange(new Point(x, y), data.aoe, (u) => 
-            //         u.isAlive() &&
-            //         u.isHero() == false &&
-            //         u.isAlly(owner) == false);
-
-            //     for (let t of targets) {
-            //         UnitDamageTarget(caster.handle, t.handle, data.damage, true, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
-            //         new Effect(this.DamageSfx, t, "origin").destroy();
-            //     }
-
-            //     Log.info("Has been awakened:", data.awakened);
-            // });
-            // Interruptable.Register(caster.handle, (orderId) => {
-
-            //     Log.info("interrupted", orderId, this.AwakenOrder);
-            //     if (orderId == this.AwakenOrder) {
-            //         let x = GetOrderPointX();
-            //         let y = GetOrderPointY();
-            //         if ((x - caster.x)*(x - caster.x) + (y - caster.y)*(y - caster.y) < AwakenEssence.Range * AwakenEssence.Range) {
-            //             data.awakened = true;
-            //             return true;
-            //         }
-            //     }
-            //     if (!data.done) {
-            //         data.castSfx.destroy()
-            //         castBar.Destroy();
-            //         data.done = true;
-            //     }
-            //     return false;
-            // });
-        });
         for (let i = 0; i < 7; i++) {
             let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
+            BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }
     }
 }
