@@ -1,10 +1,10 @@
 type SpellEventCallback = () => void;
 
 export class SpellEvent{
-    static instance: SpellEvent;
-    static spellCastCallbacks: SpellEventCallback[] = [];
-    static spellEffectCallbacks: SpellEventCallback[] = []
-    static spellEndCallbacks: SpellEventCallback[] = []
+    private static instance: SpellEvent;
+    private static spellCastCallbacks: SpellEventCallback[] = [];
+    private static spellEffectCallbacks: SpellEventCallback[] = []
+    private static spellEndCallbacks: SpellEventCallback[] = []
 
     static RegisterSpellCast(spellId: number, callback: SpellEventCallback) {
         SpellEvent.spellCastCallbacks[spellId] = callback

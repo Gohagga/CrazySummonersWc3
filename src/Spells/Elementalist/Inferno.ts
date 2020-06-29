@@ -7,6 +7,7 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { MapPlayer, Point, Timer, Unit, Effect } from "w3ts/index";
 import { Chill } from "./Chill";
+import { AwakenEssence, EssenceType } from "./AwakenEssence";
 
 export class Inferno {
     public static SpellId: number;
@@ -24,6 +25,7 @@ export class Inferno {
     private sfx: Effect;
 
     constructor(
+        private caster: Unit,
         private damage: number,
         private owner: MapPlayer,
         private radius: number,
@@ -69,6 +71,7 @@ export class Inferno {
         this.timer.destroy();
         this.sfx.destroy();
         RemoveUnit(this.dummyCaster.handle);
+        AwakenEssence.RemoveEssenceCaster(EssenceType.Fire, this.caster);
     }
 
     static init(spellId: number) {
@@ -87,6 +90,7 @@ export class Inferno {
 
             let data = {
                 done: false,
+                awakened: false,
 
                 aoe: 240 + 60 * level,
                 damage: 10 + 5 * level,
@@ -103,10 +107,26 @@ export class Inferno {
 
                 // if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
 
-                let instance = new Inferno(data.damage, owner, data.aoe, point, data.duration, level);
+                if (data.awakened) {
+                    let awaken = AwakenEssence.GetEvent(caster);
+                    if (awaken.targetUnit) {
+                        // Spawn a fireball unit here
+                    } else {
+                        let essence = AwakenEssence.SpawnEssence(EssenceType.Fire, this.SpellId, level, caster, awaken.targetPoint);
+                    }
+                    return;
+                } else AwakenEssence.CleanEvent(caster);
+
+                let instance = new Inferno(caster, data.damage, owner, data.aoe, point, data.duration, level);
                 instance.Run();
+                AwakenEssence.ReleaseEssence(EssenceType.Fire, caster);
             });
             Interruptable.Register(caster.handle, (orderId: number) => {
+                
+                if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
+                    data.awakened = true;
+                    return true;
+                }
 
                 if (data.done == false) {
                     DestroyEffect(data.castSfx);

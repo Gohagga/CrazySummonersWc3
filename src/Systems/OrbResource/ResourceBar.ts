@@ -117,7 +117,7 @@ export class ResourceBar {
     }
 
     public Check(cost: OrbType[] = []) {
-        if (this.bypass) return true;
+
         let usedTypes: { type: number, available: boolean }[] = [];
         for (let i = 0; i < this.orbs.length; i++) {
             usedTypes[i] = {
@@ -125,7 +125,7 @@ export class ResourceBar {
                 available: this.orbs[i].isAvailable
             };
         }
-        let usedIndices = [];
+        let usedOrbs: Orb[] = [];
         for (let i = 0; i < cost.length; i++) {
             // print("i", i);
             let hasMat = false;
@@ -138,7 +138,7 @@ export class ResourceBar {
                     // print("Found index", j);
                     usedTypes[j].available = false;
                     hasMat = true;
-                    usedIndices.push(j+1);
+                    usedOrbs.push(this.orbs[j]);
                     break;
                 }
             }
@@ -147,7 +147,7 @@ export class ResourceBar {
             }
         }
 
-        return true;
+        return usedOrbs;
     }
 
     public CountAvailable(orbType: OrbType) {

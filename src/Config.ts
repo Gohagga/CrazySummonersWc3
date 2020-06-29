@@ -372,6 +372,10 @@ export const Units = {
     Seedling:                   FourCC('e003'),
     // AncientProtector:           FourCC(''),
     // SylvanElder:                FourCC(''),
+
+    FireEssence:                FourCC('h00A'),
+    FrostEssence:               FourCC('h008'),
+    LightningEssence:           FourCC('h009'),
 }
 
 export const SpawnedUnitTypes = {

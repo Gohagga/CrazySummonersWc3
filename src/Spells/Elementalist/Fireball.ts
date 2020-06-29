@@ -6,7 +6,7 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
-import { AwakenEssence } from "./AwakenEssence";
+import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { GamePlayer } from "Systems/GamePlayer";
 import { Chill } from "./Chill";
@@ -56,10 +56,24 @@ export class Fireball {
                 castBar.Finish();
                 data.castSfx.destroy();
 
-                if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
+                // if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
 
+                if (data.awakened) {
+                    Log.info("calling awaken");
+                    let awaken = AwakenEssence.GetEvent(caster);
+                    if (awaken.targetUnit) {
+                        
+                        Log.info("Getting instance", awaken.targetUnit.name);
+                        // Spawn a fireball unit here
+                    } else {
+
+                        Log.info("Getting instance", awaken.targetPoint.x, awaken.targetPoint.y);
+                        AwakenEssence.SpawnEssence(EssenceType.Fire, this.SpellId, level, caster, awaken.targetPoint);
+                    }
+                    return;
+                } else AwakenEssence.CleanEvent(caster);
+                
                 Log.info("Effect")
-
                 let angle = Atan2(y - caster.y, x - caster.x);
                 let dx = Cos(angle) * data.speed;
                 let dy = Sin(angle) * data.speed;
@@ -86,6 +100,7 @@ export class Fireball {
                     DestroyEffect(sfx);
                     let blast = AddSpecialEffect(this.AoeSfx, dummy.point.x, dummy.point.y);
                     BlzSetSpecialEffectScale(blast, data.aoe * 0.008);
+                    AwakenEssence.RemoveEssenceCaster(EssenceType.Fire, caster);
                 };
 
                 let distance = data.maxDistance;
@@ -105,24 +120,19 @@ export class Fireball {
                     if (u.owner != GamePlayer.TeamArmy[GamePlayer.Team[owner.id]]) return;
 
                     explode();
-                })
-
-                Log.info("Has been awakened:", data.awakened);
+                });
+                AwakenEssence.ReleaseEssence(EssenceType.Fire, caster);
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
-                Log.info("interrupted", orderId, this.AwakenOrder);
-                if (orderId == this.AwakenOrder) {
-                    let x = GetOrderPointX();
-                    let y = GetOrderPointY();
-                    if ((x - caster.x)*(x - caster.x) + (y - caster.y)*(y - caster.y) < AwakenEssence.Range * AwakenEssence.Range) {
-                        data.awakened = true;
-                        return true;
-                    }
+                if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
+                    data.awakened = true;
+                    return true;
                 }
                 if (!data.done) {
                     data.castSfx.destroy()
                     castBar.Destroy();
+                    AwakenEssence.CleanEvent(caster);
                     data.done = true;
                 }
                 return false;

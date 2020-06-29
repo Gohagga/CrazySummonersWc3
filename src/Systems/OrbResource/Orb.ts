@@ -8,7 +8,6 @@ export { OrbType } from './OrbType';
 export class Orb {
     public type: OrbType;
     public cooldownRemaining = 0;
-    public isAvailable = true;
     public enabledTexture = "";
     public disabledTexture = "";
     public requirement: IRequirement;
@@ -66,6 +65,8 @@ export class Orb {
     };
     private timer = CreateTimer();
     private index: number;
+    private _isAvailable = true;
+    private _disabled = 0;
 
     constructor(type: OrbType, index: number) {
         this.type = type;
@@ -99,7 +100,7 @@ export class Orb {
                 orbView.cooldownCounter.SetVisible(false);
             } else {
                 orbView.mainImage.SetTexture(this.disabledTexture);
-                orbView.cooldownCounter.SetVisible(true);
+                if (this.cooldownRemaining != 0) orbView.cooldownCounter.SetVisible(true);
                 orbView.cooldownCounter.SetText(string.format("%.1f", this.cooldownRemaining));
             }
         }
@@ -110,14 +111,34 @@ export class Orb {
         this.cooldownRemaining = seconds;
         this.requirement.Decrease(player);
         TimerStart(this.timer, 0.1, true, () => {
-            this.cooldownRemaining -= 0.1;
-            if (this.cooldownRemaining <= 0 || this.isAvailable == true) {
-                this.isAvailable = true;
-                this.requirement.Increase(player);
-                PauseTimer(this.timer);
+
+            if (this._disabled <= 0) {
+                this.cooldownRemaining -= 0.1;
+                if (this.cooldownRemaining <= 0 || this.isAvailable == true) {
+                    this.isAvailable = true;
+                    this.requirement.Increase(player);
+                    PauseTimer(this.timer);
+                }
             }
             this.Update(player);
         });
+    }
+
+    public get isAvailable() {
+        print("disabled", this._disabled);
+        return this._isAvailable && this._disabled <= 0;
+    }
+
+    public set isAvailable(value: boolean) {
+        this._isAvailable = true;
+    }
+
+    public get disabled() {
+        return this._disabled;
+    }
+
+    public set disabled(value: number) {
+        this._disabled = value;
     }
 }
 

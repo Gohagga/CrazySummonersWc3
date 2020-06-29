@@ -6,7 +6,7 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
-import { AwakenEssence } from "./AwakenEssence";
+import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Chill } from "./Chill";
 
@@ -26,6 +26,7 @@ export class FlameBarrage {
     private timer = new Timer();
     private sfx: Effect;
     private indicatorSfx: Effect;
+    public releaseEssence = false;
 
     constructor(
         private caster: Unit,
@@ -84,7 +85,7 @@ export class FlameBarrage {
         });
     }
 
-    static ShootFlameOrb(data: { caster: Unit, tx: number, ty: number, radius: number, damage: number }) {
+    static ShootFlameOrb(data: { caster: Unit, tx: number, ty: number, radius: number, damage: number }): FlameBarrage {
 
         let { caster, tx, ty, radius, damage } = data;
         let x = caster.x;
@@ -100,6 +101,7 @@ export class FlameBarrage {
         instance.indicatorSfx.scale = radius * 0.02;
         instance.indicatorSfx.setAlpha(160);
         instance.UpdatePosition();
+        return instance;
     }
 
     private Explode() {
@@ -121,6 +123,8 @@ export class FlameBarrage {
                 UnitDamageTarget(this.caster.handle, t.handle, this.damage, true, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
             }
         }
+
+        if (this.releaseEssence) AwakenEssence.RemoveEssenceCaster(EssenceType.Fire, this.caster);
     }
 
     static init(spellId: number) {
@@ -161,6 +165,16 @@ export class FlameBarrage {
 
                 // if (!ResourceBar.Get(owner.handle).Consume(this.OrbCost)) return;
 
+                if (data.awakened) {
+                    let awaken = AwakenEssence.GetEvent(caster);
+                    if (awaken.targetUnit) {
+                        // Spawn a fireball unit here
+                    } else {
+                        let essence = AwakenEssence.SpawnEssence(EssenceType.Fire, this.SpellId, level, caster, awaken.targetPoint);
+                        essence.moveSpeed = 250;
+                    }
+                    return;
+                } else AwakenEssence.CleanEvent(caster);
                 Log.info("Effect")
 
                 let missileData = {
@@ -179,21 +193,18 @@ export class FlameBarrage {
                     if (--data.count < 1) data.timer.destroy();
                     
                     // Shoot a missile
-                    this.ShootFlameOrb(missileData);
+                    let instance = this.ShootFlameOrb(missileData);
+                    if (data.count < 1) {
+                        instance.releaseEssence = true;
+                        AwakenEssence.ReleaseEssence(EssenceType.Fire, caster);
+                    }
                 });
-
-                Log.info("Has been awakened:", data.awakened);
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
-                Log.info("interrupted", orderId, this.AwakenOrder);
-                if (orderId == this.AwakenOrder) {
-                    let x = GetOrderPointX();
-                    let y = GetOrderPointY();
-                    if ((x - caster.x)*(x - caster.x) + (y - caster.y)*(y - caster.y) < AwakenEssence.Range * AwakenEssence.Range) {
-                        data.awakened = true;
-                        return true;
-                    }
+                if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
+                    data.awakened = true;
+                    return true;
                 }
                 if (!data.done) {
                     data.castSfx.destroy()

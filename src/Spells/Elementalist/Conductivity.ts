@@ -179,14 +179,9 @@ export class Conductivity {
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
-                Log.info("interrupted", orderId, this.AwakenOrder);
-                if (orderId == this.AwakenOrder) {
-                    let x = GetOrderPointX();
-                    let y = GetOrderPointY();
-                    if ((x - caster.x)*(x - caster.x) + (y - caster.y)*(y - caster.y) < AwakenEssence.Range * AwakenEssence.Range) {
-                        data.awakened = true;
-                        return true;
-                    }
+                if (AwakenEssence.Check(orderId, caster, GetOrderPointX(), GetOrderPointY())) {
+                    data.awakened = true;
+                    return true;
                 }
                 if (!data.done) {
                     data.castSfx.destroy()
