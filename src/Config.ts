@@ -285,6 +285,10 @@ export const Items = {
     WarlockBook3:               FourCC('IW03'),
 
     DeathKnightDarkArts:        FourCC('I00I'),
+
+    FireMastery:                FourCC('I009'),
+    FrostMastery:               FourCC('I00A'),
+    LightningMastery:           FourCC('I00C'),
 }
 
 export const Units = {

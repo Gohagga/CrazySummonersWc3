@@ -6,11 +6,13 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
-import { AwakenEssence, EssenceType } from "./AwakenEssence";
+import { AwakenEssence } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Order } from "Global/Order";
 import { Chill } from "./Chill";
 import { StatWeights } from "Systems/BalanceData";
+import { EssenceType } from "Classes/EssenceType";
+import { ElementalistMastery } from "Classes/ElementalistMastery";
 
 export class RayOfCold {
     public static SpellId: number;
@@ -23,8 +25,9 @@ export class RayOfCold {
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
-    static OrderId: number = Order.PHASESHIFTINSTANT;
+    public static Type: EssenceType = EssenceType.Frost;
     static FreeSpellId: number;
+    static OrderId: number = Order.PHASESHIFTINSTANT;
 
     private static SpawnedUnitWeights: StatWeights = {
         offenseRatio: 0.35,
@@ -144,7 +147,9 @@ export class RayOfCold {
     private Effect() {
         
         for (let t of this.targets) {
-            this.caster.damageTarget(t.handle, this.damage, 0, false, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
+            if (Chill.IsFrozen(t) == false) {
+                this.caster.damageTarget(t.handle, this.damage, 0, false, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
+            }
             new Effect(RayOfCold.DamageSfx, t, "origin").destroy();
             Chill.ApplyToMax(t, 1, 8);
         }
@@ -216,7 +221,7 @@ export class RayOfCold {
                 isCast: false,
 
                 awakened: false,
-                damage: 10 + level * 1.5,
+                damage: 12 + 15 * (level-1),
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
                 castTime: 2,
                 channelTime: 8,
@@ -232,7 +237,7 @@ export class RayOfCold {
                 data.castSfx.destroy();
 
                 let resource = ResourceBar.Get(owner.handle);
-                if (!(paid || resource.Consume(this.OrbCost))) return;
+                if (!(paid || resource.Check(this.OrbCost))) return;
                 
                 if (data.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
@@ -260,6 +265,7 @@ export class RayOfCold {
                     isFinished = true;
                     delete this._instance[caster.id];
                     resource.Consume(this.OrbCost);
+                    ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
                     AwakenEssence.ReleaseEssence(EssenceType.Frost, caster).RemoveCaster();
                 });
                 Interruptable.Register(caster.handle, (orderId) => {
@@ -274,7 +280,10 @@ export class RayOfCold {
                         channelBar.Destroy();
                         ray.Destroy();
                         delete this._instance[caster.id];
-                        resource.Consume(this.OrbCost);
+                        if (!paid) {
+                            resource.Consume(this.OrbCost);
+                            ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
+                        }
                         return false;
                     }
                 });

@@ -6,10 +6,12 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
-import { AwakenEssence, EssenceType } from "./AwakenEssence";
+import { AwakenEssence } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { Chill } from "./Chill";
 import { StatWeights } from "Systems/BalanceData";
+import { EssenceType } from "Classes/EssenceType";
+import { ElementalistMastery } from "Classes/ElementalistMastery";
 
 export class IceBlast {
     public static SpellId: number;
@@ -18,6 +20,7 @@ export class IceBlast {
     public static readonly DamageSfx: string = "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl";
     public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
+    public static Type: EssenceType = EssenceType.Frost;
     static FreeSpellId: number;
 
     private static SpawnedUnitWeights: StatWeights = {
@@ -54,7 +57,7 @@ export class IceBlast {
                 done: false,
 
                 awakened: false,
-                damage: 60 + 40 * level,
+                damage: 17.5 + 47.5  * level,
                 aoe: 200 + 50 * level,
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
                 castTime: 2,
@@ -65,7 +68,9 @@ export class IceBlast {
                 castBar.Finish();
                 data.castSfx.destroy();
 
-                if (!(paid || ResourceBar.Get(owner.handle).Consume(this.OrbCost))) return;
+                if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
+                    ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
+                } else if (!paid) return;
 
                 if (data.awakened) {
                     Log.info("calling awaken");

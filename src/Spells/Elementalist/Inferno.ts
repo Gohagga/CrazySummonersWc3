@@ -7,9 +7,11 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { MapPlayer, Point, Timer, Unit, Effect } from "w3ts/index";
 import { Chill } from "./Chill";
-import { AwakenEssence, EssenceType } from "./AwakenEssence";
+import { AwakenEssence } from "./AwakenEssence";
 import { StatWeights } from "Systems/BalanceData";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
+import { EssenceType } from "Classes/EssenceType";
+import { ElementalistMastery } from "Classes/ElementalistMastery";
 
 export class Inferno {
     public static SpellId: number;
@@ -20,6 +22,7 @@ export class Inferno {
     public static readonly Sfx: string = "Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeTarget.mdl";
     public static CastSfx = Models.CastNecromancy;
     public static OrbCost: OrbType[] = [];
+    public static Type: EssenceType = EssenceType.Fire;
     static FreeSpellId: number;
 
     private static SpawnedUnitWeights: StatWeights = {
@@ -91,7 +94,7 @@ export class Inferno {
         this.timer.destroy();
         this.sfx.destroy();
         RemoveUnit(this.dummyCaster.handle);
-        AwakenEssence.RemoveEssenceCaster(EssenceType.Fire, this.caster);
+        AwakenEssence.RemoveEssenceCaster(Inferno.Type, this.caster);
     }
 
     static init(spellId: number) {
@@ -124,21 +127,23 @@ export class Inferno {
                 castBar.Finish();
                 DestroyEffect(data.castSfx);
 
-                if (!(paid || ResourceBar.Get(owner.handle).Consume(this.OrbCost))) return;
+                if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
+                    ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
+                } else if (!paid) return;
 
                 if (data.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
                         AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
-                        let essence = AwakenEssence.SpawnEssence(EssenceType.Fire, this.FreeSpellId, level, caster, awaken.targetPoint);
+                        let essence = AwakenEssence.SpawnEssence(this.Type, this.FreeSpellId, level, caster, awaken.targetPoint);
                     }
                     return;
                 } else AwakenEssence.CleanEvent(caster);
 
                 let instance = new Inferno(caster, data.damage, owner, data.aoe, point, data.duration, level);
                 instance.Run();
-                AwakenEssence.ReleaseEssence(EssenceType.Fire, caster);
+                AwakenEssence.ReleaseEssence(this.Type, caster);
             });
             Interruptable.Register(caster.handle, (orderId: number) => {
                 

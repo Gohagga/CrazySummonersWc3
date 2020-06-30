@@ -54,6 +54,7 @@ import { Inferno } from "Spells/Elementalist/Inferno";
 import { FrostNova } from "Spells/Elementalist/FrostNova";
 import { IonicConversion } from "Spells/Elementalist/IonicConversion";
 import { AwakenEssence } from "Spells/Elementalist/AwakenEssence";
+import { ElementMastery } from "Spells/Elementalist/ElementMastery";
 
 
 export function InitializeSpells() {
@@ -115,6 +116,7 @@ export function InitializeSpells() {
     IonicConversion.init(Spells.IonicConversion);
 
     AwakenEssence.init(Spells.AwakenEssence);
+    ElementMastery.init(Spells.ElementalMastery);
     ElementalFocus.init(Spells.ElementalFocusRed, OrbType.Red);
     ElementalFocus.init(Spells.ElementalFocusBlue, OrbType.Blue);
     ElementalFocus.init(Spells.ElementalFocusPurple, OrbType.Purple);

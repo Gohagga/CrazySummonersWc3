@@ -6,9 +6,11 @@ import { OrbCostToString } from "Systems/OrbResource/Orb";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { Unit, Effect, Point, Timer } from "w3ts/index";
-import { AwakenEssence, EssenceType } from "./AwakenEssence";
+import { AwakenEssence } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
 import { StatWeights } from "Systems/BalanceData";
+import { EssenceType } from "Classes/EssenceType";
+import { ElementalistMastery } from "Classes/ElementalistMastery";
 
 export class Conductivity {
     public static SpellId: number;
@@ -22,6 +24,7 @@ export class Conductivity {
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
+    public static Type: EssenceType = EssenceType.Lightning;
     static FreeSpellId: number;
 
     private static SpawnedUnitWeights: StatWeights = {
@@ -185,7 +188,9 @@ export class Conductivity {
                 castBar.Finish();
                 data.castSfx.destroy();
 
-                if (!(paid || ResourceBar.Get(owner.handle).Consume(this.OrbCost))) return;
+                if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
+                    ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
+                } else if (!paid) return;
 
                 if (data.awakened) {
                     Log.info("calling awaken");

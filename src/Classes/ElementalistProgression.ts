@@ -5,6 +5,8 @@ import { OrbType } from "Systems/OrbResource/Orb";
 import { MasteryReq } from "Modules/Globals";
 import { Spells, Items, Upgrades } from "Config";
 import { WhitePower } from "Spells/Paladin/WhitePower";
+import { ElementalistMastery } from "./ElementalistMastery";
+import { Unit } from "w3ts/index";
 
 export class ElementalistProgression extends HeroProgression {
     
@@ -22,38 +24,33 @@ export class ElementalistProgression extends HeroProgression {
         }).Then(0.2, () => {
             bar.AddOrb(OrbType.Summoning);
         }).Then(0.2, () => {
-            bar.AddOrb(OrbType.Summoning);
-        }).Then(0.2, () => {
-            bar.AddOrb(OrbType.Red);
-        }).Then(0.2, () => {
             bar.AddOrb(OrbType.Red);
         }).Then(0.2, () => {
             bar.AddOrb(OrbType.Blue);
-        }).Then(0.2, () => {
-            bar.AddOrb(OrbType.Blue);
-        }).Then(0.2, () => {
-            bar.AddOrb(OrbType.Purple);
         }).Then(0.2, () => {
             bar.AddOrb(OrbType.Purple);
         });
-        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
+        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 3);
 
         MasteryReq.Decrease(owner, MasteryReq.Get(owner));
         // UnitAddAbility(unit, Spells.SummonSeedling);
         // UnitAddAbility(unit, Spells.Photosynthesis);
         // let wps = UnitAddItemById(unit, Items.WhitePowerStacks);
         // WhitePower.StartChargeUp(wps);
+        // ElementalistMastery.AddInitialItems(Unit.fromHandle(unit));
+        let em = ElementalistMastery.Register(Unit.fromHandle(unit));
+        // em.fire = 1;
+        // em.frost = 2;
+        // em.lightning = 3;
 
         HeroProgression.WaitForUnitLevel(this.unit, 3);
         SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
 
         HeroProgression.WaitForUnitLevel(this.unit, 5);
-        bar.AddOrb(OrbType.Red);
+        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
         
         HeroProgression.WaitForUnitLevel(this.unit, 6)
         SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
-        UnitAddAbility(unit, Spells.PaladinLearnMastery);
-        SelectHeroSkill(unit, FourCC("A00F"));
         
         HeroProgression.WaitForUnitLevel(this.unit, 7);
         MasteryReq.Increase(owner);
@@ -63,7 +60,7 @@ export class ElementalistProgression extends HeroProgression {
         SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
         
         HeroProgression.WaitForUnitLevel(this.unit, 10);
-        bar.AddOrb(OrbType.Red);
+        SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1);
 
         HeroProgression.WaitForUnitLevel(this.unit, 11);
         MasteryReq.Increase(owner);

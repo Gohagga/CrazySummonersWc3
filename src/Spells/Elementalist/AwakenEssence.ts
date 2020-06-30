@@ -1,20 +1,15 @@
-import { Unit, Point, Trigger } from "w3ts/index";
-import { Orders, Units, Log } from "Config";
+import { Log, Units } from "Config";
 import { Order } from "Global/Order";
 import { SpellEvent } from "Global/SpellEvent";
-import { SpawnPoint } from "Spells/Spawn";
-import { ResourceBar } from "Systems/OrbResource/ResourceBar";
-import { OrbType } from "Systems/OrbResource/OrbType";
-import { Orb } from "Systems/OrbResource/Orb";
-import { UnitCharge } from "Systems/UnitCharge";
 import { Balance } from "Modules/Globals";
-import { AttackStats, DefenseStats, StatWeights } from "Systems/BalanceData";
-
-export const enum EssenceType {
-    Fire,
-    Frost,
-    Lightning
-}
+import { SpawnPoint } from "Spells/Spawn";
+import { StatWeights } from "Systems/BalanceData";
+import { Orb } from "Systems/OrbResource/Orb";
+import { OrbType } from "Systems/OrbResource/OrbType";
+import { ResourceBar } from "Systems/OrbResource/ResourceBar";
+import { UnitCharge } from "Systems/UnitCharge";
+import { Point, Unit } from "w3ts/index";
+import { EssenceType } from "Classes/EssenceType";
 
 export class AwakenEssence {
 
@@ -100,7 +95,8 @@ export class AwakenEssence {
         let x = (orderTarget && GetUnitX(orderTarget)) || GetOrderPointX();
         let y = (orderTarget && GetUnitY(orderTarget)) || GetOrderPointY();
         if (orderId == this.OrderId &&
-            (x - caster.x)*(x - caster.x) + (y - caster.y)*(y - caster.y) < AwakenEssence.Range * AwakenEssence.Range
+            (x - caster.x)*(x - caster.x) + (y - caster.y)*(y - caster.y) < AwakenEssence.Range * AwakenEssence.Range &&
+            ResourceBar.Get(caster.owner.handle).CountAvailable(OrbType.Summoning) > 0
         ) {
             return true;
         }
@@ -125,7 +121,7 @@ export class AwakenEssence {
         RemoveUnit(caster.handle);
     }
 
-    public static SpawnEssence(type: EssenceType, spellId: number, level: number, caster: Unit, point: Point): Unit {
+    public static SpawnEssence(type: EssenceType, spellId: number, level: number, caster: Unit, point: Point): Unit | null  {
 
         let resource = ResourceBar.Get(caster.owner.handle);
         let usedOrbs = resource.Check(this.OrbCost);
@@ -139,13 +135,13 @@ export class AwakenEssence {
         return essence;
     }
 
-    public static SpawnUnit(target: Unit, type: number, level: number, statWeights: StatWeights, caster: Unit) {
+    public static SpawnUnit(target: Unit, type: number, level: number, statWeights: StatWeights, caster: Unit): Unit | null {
         let sp = SpawnPoint.FromTarget(target.handle);
-        if (!sp) return;
+        if (!sp) return null;
         
         let resource = ResourceBar.Get(caster.owner.handle);
         // let usedOrbs = resource.Check(this.OrbCost);
-        if (resource.Consume(this.OrbCost) == false) return;
+        if (resource.Consume(this.OrbCost) == false) return null;
 
         let data: any = {
             loops: 10,

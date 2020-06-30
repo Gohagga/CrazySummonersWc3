@@ -1,17 +1,18 @@
-import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units } from "Config";
+import { Log, Models, Orders, Units } from "Config";
 import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
-import { OrbCostToString } from "Systems/OrbResource/Orb";
-import { ResourceBar } from "Systems/OrbResource/ResourceBar";
-import { OrbType } from "Systems/OrbResource/OrbType";
-import { Unit, Effect, Point, Timer, Widget } from "w3ts/index";
-import { AwakenEssence, EssenceType } from "./AwakenEssence";
 import { SpellHelper } from "Global/SpellHelper";
-import { GamePlayer } from "Systems/GamePlayer";
-import { Chill } from "./Chill";
-import { SpawnPoint } from "Spells/Spawn";
 import { StatWeights } from "Systems/BalanceData";
+import { GamePlayer } from "Systems/GamePlayer";
+import { OrbCostToString } from "Systems/OrbResource/Orb";
+import { OrbType } from "Systems/OrbResource/OrbType";
+import { ResourceBar } from "Systems/OrbResource/ResourceBar";
+import { Effect, Timer, Unit } from "w3ts/index";
+import { AwakenEssence } from "./AwakenEssence";
+import { Chill } from "./Chill";
+import { EssenceType } from "Classes/EssenceType";
+import { ElementalistMastery } from "Classes/ElementalistMastery";
 
 export class Fireball {
     public static SpellId: number;
@@ -21,6 +22,7 @@ export class Fireball {
     public static CastSfx = Models.CastNecromancy;
     public static AwakenOrder: number;
     public static OrbCost: OrbType[] = [];
+    public static Type: EssenceType = EssenceType.Fire;
     static FreeSpellId: number;
     
     private static SpawnedUnitWeights: StatWeights = {
@@ -59,11 +61,11 @@ export class Fireball {
                 done: false,
 
                 awakened: false,
-                damage: 100.0 + 60 * (level-1),
+                damage: 15 + 65 * level,
                 radius: 60,
                 speed: 40,
-                maxDistance: 1000 + 200 * level,
-                aoe: 180.0 + 40.0 * level,
+                maxDistance: 1000 + 120 * level,
+                aoe: 180.0 + 35.0 * level,
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
                 castTime: 2,
                 trigger: CreateTrigger(),
@@ -75,7 +77,9 @@ export class Fireball {
                 castBar.Finish();
                 data.castSfx.destroy();
 
-                if (!(paid || ResourceBar.Get(owner.handle).Consume(this.OrbCost))) return;
+                if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
+                    ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
+                } else if (!paid) return;
 
                 if (data.awakened) {
                     Log.info("calling awaken");
@@ -83,7 +87,7 @@ export class Fireball {
                     if (awaken.targetUnit) {
                         AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
-                        AwakenEssence.SpawnEssence(EssenceType.Fire, this.FreeSpellId, level, caster, awaken.targetPoint);
+                        AwakenEssence.SpawnEssence(this.Type, this.FreeSpellId, level, caster, awaken.targetPoint);
                     }
                     return;
                 } else AwakenEssence.CleanEvent(caster);
@@ -117,7 +121,7 @@ export class Fireball {
                     DestroyEffect(sfx);
                     let blast = AddSpecialEffect(this.AoeSfx, dummy.point.x, dummy.point.y);
                     BlzSetSpecialEffectScale(blast, data.aoe * 0.008);
-                    AwakenEssence.RemoveEssenceCaster(EssenceType.Fire, caster);
+                    AwakenEssence.RemoveEssenceCaster(this.Type, caster);
                 };
 
                 let distance = data.maxDistance;
@@ -138,7 +142,7 @@ export class Fireball {
 
                     explode();
                 });
-                AwakenEssence.ReleaseEssence(EssenceType.Fire, caster);
+                AwakenEssence.ReleaseEssence(this.Type, caster);
             });
             Interruptable.Register(caster.handle, (orderId) => {
 
