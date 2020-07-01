@@ -81,7 +81,7 @@ export const Spells = {
     ElementalFocusPurple:       FourCC('A01O'),
     ElementalFocusRed:          FourCC('A00S'),
     AwakenEssence:              FourCC('A01H'),
-    ElementalMastery:           FourCC('A0EM'),
+    ElementalMastery:           FourCC('AE0M'),
     
     Fireball:                   FourCC('AE01'),
     IceBlast:                   FourCC('AE02'),
@@ -92,6 +92,70 @@ export const Spells = {
     Inferno:                    FourCC('AE07'),
     FrostNova:                  FourCC('AE08'),
     IonicConversion:            FourCC('AE09'),
+}
+
+export const enum Tooltips {
+Fireball = 
+`Hurls a fireball towards the target location, dealing {c-r}{damage}|r damage in aoe on impact. Radius {c-lb}{aoe}|r.
+
+{c-chill}Reduces Chill by 3.|r
+{c-acc}Cast time: {castTime}s|r`,
+IceBlast =
+`Release a burst of chill and ice, dealing {c-r}{damage}|r damage to enemy units within {c-b}{aoe}|r range and applying {c-chill}Chill {chill}|r.
+
+{c-chill}Each stack of Chill reduces movement by 20% and attack speed by 10%. Units with 5+ stacks are Frozen.|r
+{c-acc}Cast time: {castTime}s|r`,
+Conductivity =
+`Release {c-lb}{count}|r chains of electricity that jump from target to target. Each jump deals {c-r}{damage}|r and stuns for 0.3 seconds.
+Lasts for {c-b}{maxTargets}|r jumps per chain.
+
+{c-acc}Cast time: {castTime}s|r`,
+FlameBarrage =
+`Launches {c-lb}{count}|r spheres of flame in intervals of {c-b}{launchInterval}|r sec.
+Each orb deals 1 damage to heroes and {c-r}{damage}|r to troops.
+Target point moves with caster.
+
+{c-chill}Reduces Chill by 1 per orb.|r
+{c-acc}Cast time: {castTime}s|r`,
+RayOfCold =
+`Release a beam that applies {c-chill}Chill 1|r per tick to enemies in its path.
+Beam pierces all frozen, and max {c-b}{pierceCount}|r non-frozen units.
+Deals {c-r}{damage}|r damage to non-frozen enemies.
+
+{c-chill}Each stack of Chill reduces movement by 20% and attack speed by 10%. Units with 5+ stacks are Frozen.|r
+{c-acc}Cast time: {castTime}s, Channel {channelTime}s max|r`,
+LivingCurrent =
+`Attach a lightning elemental to a target unit, increasing its attack speed by 15%, and shocking nearby enemies for {c-r}{damage}|r damage.
+Lasts {c-b}{duration}|r seconds.
+
+{c-acc}Cast time: {castTime}s|r`,
+Inferno =
+`Causes target ground in {c-lb}{aoe}|r radius to burn, dealing {c-r}{damage}|r damage per tick.
+Lasts {c-b}{duration}|r seconds.
+
+{c-chill}Reduces Chill by 1 per tick.|r
+{c-acc}Cast time: {castTime}s|r`,
+FrostNova =
+`Ice shards impact target area after 1.5 sec, dealing {c-r}{damage}|r damage to units within {aoe} range initially, and applying {c-chill}Chill 1|r every 2 sec.
+Lasts {c-b}{duration}|r seconds.
+
+{c-chill}Each stack of Chill reduces movement by 20% and attack speed by 10%. Units with 5+ stacks are Frozen.|r
+{c-acc}Cast time: {castTime}s|r`,
+IonicConversion =
+`Channels energy inside all units in a target lane, increasing their movement speed by 50% every {c-b}{interval}|r sec. Every {movePerPoint} distance travelled by affected units reduces 1s off all caster's orb cooldowns.
+Lasts while channeling.
+
+{c-acc}Cast time: {castTime}s, Channel {duration}s max|r`,
+AwakenEssence =
+`If used on ground while casting a spell, an Essence is created and spell is stored within. Essence can cast this spell afterwards without paying its cost. Doing so locks an available Summoning orb until discharged.
+
+If used on crystal instead, a unit is summoned with stats based on the spell level.
+Range: {c-b}{range}|r`,
+ElementalFocus =
+`Draws power from your other orbs to strengthen a single {type} orb. Reduces cooldown of a {type} orb with highest cooldown by {c-b}{maxSeconds}|r but increases cooldown of all other non-Summoning orbs by same amount split.`,
+ElementalMastery =
+`Concentrate on powering up an element. Next spell cast will grant {c-b}{amount}|r bonus points toward the next level of that school.
+`,
 }
 
 export const Auras = {

@@ -1,4 +1,4 @@
-import { Log, Models, Orders, Units } from "Config";
+import { Log, Models, Orders, Units, Tooltips } from "Config";
 import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
@@ -13,9 +13,11 @@ import { AwakenEssence } from "./AwakenEssence";
 import { Chill } from "./Chill";
 import { EssenceType } from "Classes/EssenceType";
 import { ElementalistMastery } from "Classes/ElementalistMastery";
+import { TextRenderer } from "Global/TextRenderer";
 
 export class Fireball {
     public static SpellId: number;
+    public static Tooltip: string = Tooltips.Fireball;
     public static SpawnedUnitId: number = Units.Inkie;
     public static readonly Sfx: string = Models.Fireball;
     public static readonly AoeSfx: string = Models.FireExplosion;
@@ -41,6 +43,19 @@ export class Fireball {
         }
     };
 
+    private static Data(context: Record<string, any>) {
+        let { level } = context as { level: number };
+        return {
+            
+            damage: 15 + 65 * level,
+            radius: 60,
+            speed: 40,
+            maxDistance: 1000 + 120 * level,
+            aoe: 180.0 + 35.0 * level,
+            castTime: 2,
+        }
+    }
+
     static init(spellId: number) {
         this.SpellId = spellId;
         this.AwakenOrder = String2OrderIdBJ(Orders.AwakenEssence);
@@ -56,32 +71,27 @@ export class Fireball {
             const x = GetSpellTargetX();
             const y = GetSpellTargetY();
             let level = caster.getAbilityLevel(this.SpellId);
+            if (level == 0) level = caster.getAbilityLevel(this.FreeSpellId);
 
-            let data = {
+            let data = this.Data({ caster, level });
+            let instance = {
                 done: false,
-
                 awakened: false,
-                damage: 15 + 65 * level,
-                radius: 60,
-                speed: 40,
-                maxDistance: 1000 + 120 * level,
-                aoe: 180.0 + 35.0 * level,
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
-                castTime: 2,
                 trigger: CreateTrigger(),
                 timer: new Timer(),
-            }
+            };
             
             let castBar = new CastBar(caster.handle);
             castBar.CastSpell(this.SpellId, data.castTime, () => {
                 castBar.Finish();
-                data.castSfx.destroy();
+                instance.castSfx.destroy();
 
                 if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
                     ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
                 } else if (!paid) return;
 
-                if (data.awakened) {
+                if (instance.awakened) {
                     Log.info("calling awaken");
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
@@ -116,7 +126,7 @@ export class Fireball {
                             UnitDamageTarget(caster.handle, t.handle, data.damage, true, false, ATTACK_TYPE_MAGIC, DAMAGE_TYPE_MAGIC, null);
                     }
 
-                    data.timer.destroy();
+                    instance.timer.destroy();
                     RemoveUnit(dummy.handle);
                     DestroyEffect(sfx);
                     let blast = AddSpecialEffect(this.AoeSfx, dummy.point.x, dummy.point.y);
@@ -125,7 +135,7 @@ export class Fireball {
                 };
 
                 let distance = data.maxDistance;
-                data.timer.start(0.03, true, () => {
+                instance.timer.start(0.03, true, () => {
                     dummy.x += dx;
                     dummy.y += dy;
                     BlzSetSpecialEffectPosition(sfx, dummy.x, dummy.y, 60);
@@ -135,8 +145,8 @@ export class Fireball {
                     }
                 });
                 // Launch a projectile and explode it on hit
-                TriggerRegisterUnitInRange(data.trigger, dummy.handle, data.radius, null);
-                TriggerAddAction(data.trigger, () => {
+                TriggerRegisterUnitInRange(instance.trigger, dummy.handle, data.radius, null);
+                TriggerAddAction(instance.trigger, () => {
                     let u = Unit.fromEvent();
                     if (u.owner != GamePlayer.TeamArmy[GamePlayer.Team[owner.id]]) return;
 
@@ -147,14 +157,14 @@ export class Fireball {
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (AwakenEssence.Check(orderId, caster)) {
-                    data.awakened = true;
+                    instance.awakened = true;
                     return true;
                 }
-                if (!data.done) {
-                    data.castSfx.destroy()
+                if (!instance.done) {
+                    instance.castSfx.destroy()
                     castBar.Destroy();
                     AwakenEssence.CleanEvent(caster);
-                    data.done = true;
+                    instance.done = true;
                 }
                 return false;
             });
@@ -164,7 +174,8 @@ export class Fireball {
         SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
 
         for (let i = 0; i < 7; i++) {
-            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
+            let data = this.Data({ level: i+1 }) as Record<string, any>;
+            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + TextRenderer.Render(this.Tooltip, data);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
             BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }

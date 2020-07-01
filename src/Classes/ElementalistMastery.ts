@@ -83,8 +83,8 @@ export class ElementalistMastery {
 
         let it = Item.fromHandle(this.unit.getItemInSlot(index-1));
 
+        Log.info("bonus exp", this.bonusExp);
         if (this.bonusExp > 0) {
-            Log.info("bonus exp", this.bonusExp);
             amount += this.bonusExp;
             this.bonusExp = 0;
         }
@@ -147,16 +147,11 @@ export class ElementalistMastery {
 
         let id = unit.id;
         let instance = new ElementalistMastery(unit);
-        print(0)
         if (id in this._instance) this._instance[id].Destroy();
         this._instance[id] = instance;
-        print(1)
         instance.AddExperience(EssenceType.Fire, 1);
-        print(2)
         instance.AddExperience(EssenceType.Frost, 1);
-        print(3)
         instance.AddExperience(EssenceType.Lightning, 1);
-        print(4)
         return instance;
     }
 }

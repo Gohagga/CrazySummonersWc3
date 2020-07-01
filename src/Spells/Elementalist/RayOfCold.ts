@@ -1,4 +1,4 @@
-import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units } from "Config";
+import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units, Tooltips } from "Config";
 import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
@@ -13,9 +13,11 @@ import { Chill } from "./Chill";
 import { StatWeights } from "Systems/BalanceData";
 import { EssenceType } from "Classes/EssenceType";
 import { ElementalistMastery } from "Classes/ElementalistMastery";
+import { TextRenderer } from "Global/TextRenderer";
 
 export class RayOfCold {
     public static SpellId: number;
+    public static Tooltip: string = Tooltips.RayOfCold;
     public static SpawnedUnitId: number = Units.Dinkie;
     public static readonly Sfx: string = Models.IceBlast;
     public static readonly DamageSfx: string = "Abilities\\Weapons\\LichMissile\\LichMissile.mdl";
@@ -44,6 +46,18 @@ export class RayOfCold {
             diceTweaks: [20, 20, 0.1]
         }
     };
+
+    private static Data(context: Record<string, any>) {
+        let { level } = context as { level: number };
+        return {
+            damage: 12 + 15 * (level-1),
+            castTime: 2,
+            channelTime: 8,
+            distance: 1600,
+            angleSpeed: (12 + 8 * level) * bj_DEGTORAD,
+            pierceCount: 1 + math.floor((level + 1) / 3),
+        }
+    }
 
     private static _instance: Record<number, RayOfCold> = {};
     
@@ -83,9 +97,7 @@ export class RayOfCold {
         this.sourceSfx.scale = 1.15;
         this.sourceSfx.setYaw(angle);
 
-        print("Adjust first");
         this.AdjustPierce();
-        print(this.distance);
         
         // Create lightning
         let x = this.origin.x + this.distance * Cos(angle);
@@ -209,37 +221,30 @@ export class RayOfCold {
             const x = GetSpellTargetX();
             const y = GetSpellTargetY();
             let level = caster.getAbilityLevel(this.SpellId);
+            if (level == 0) level = caster.getAbilityLevel(this.FreeSpellId);
 
             if (this._instance[caster.id]) {
-                print("Recast detected");
                 // Recast detected
                 this._instance[caster.id].Redirect(x, y);
                 return;
             }
 
-            let data = {
+            let data = this.Data({level});
+            let inst = {
                 isCast: false,
-
                 awakened: false,
-                damage: 12 + 15 * (level-1),
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
-                castTime: 2,
-                channelTime: 8,
-
-                distance: 1600,
-                angleSpeed: (12 + 8 * level) * bj_DEGTORAD,
-                pierceCount: 1 + math.floor((level + 1) / 3),
             }
             
             let castBar = new CastBar(caster.handle);
             castBar.CastSpell(this.SpellId, data.castTime, () => {
                 castBar.Finish();
-                data.castSfx.destroy();
+                inst.castSfx.destroy();
 
                 let resource = ResourceBar.Get(owner.handle);
                 if (!(paid || resource.Check(this.OrbCost))) return;
                 
-                if (data.awakened) {
+                if (inst.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
                         AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
@@ -255,7 +260,7 @@ export class RayOfCold {
                 const ray = new RayOfCold(caster, caster, origin, data.distance, data.angleSpeed, Atan2(y - origin.y, x - origin.x), data.damage, data.pierceCount);
                 this._instance[caster.id] = ray;
 
-                data.isCast = true;
+                inst.isCast = true;
                 // Begin channeling
                 let channelBar = new CastBar(caster.handle);
                 let isFinished = false;
@@ -291,12 +296,12 @@ export class RayOfCold {
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (AwakenEssence.Check(orderId, caster)) {
-                    data.awakened = true;
+                    inst.awakened = true;
                     return true;
                 }
-                if (data.isCast) return false;
+                if (inst.isCast) return false;
 
-                data.castSfx.destroy();
+                inst.castSfx.destroy();
                 castBar.Destroy();
                 return false;
             });
@@ -306,7 +311,8 @@ export class RayOfCold {
         SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
 
         for (let i = 0; i < 7; i++) {
-            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
+            let data = this.Data({ level: i+1 }) as Record<string, any>;
+            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + TextRenderer.Render(this.Tooltip, data);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
             BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }

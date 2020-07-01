@@ -55,6 +55,7 @@ import { FrostNova } from "Spells/Elementalist/FrostNova";
 import { IonicConversion } from "Spells/Elementalist/IonicConversion";
 import { AwakenEssence } from "Spells/Elementalist/AwakenEssence";
 import { ElementMastery } from "Spells/Elementalist/ElementMastery";
+import { TextRenderer } from "Global/TextRenderer";
 
 
 export function InitializeSpells() {

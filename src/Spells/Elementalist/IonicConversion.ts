@@ -1,4 +1,4 @@
-import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units } from "Config";
+import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units, Tooltips } from "Config";
 import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
@@ -13,9 +13,11 @@ import { SpawnPoint } from "Spells/Spawn";
 import { StatWeights } from "Systems/BalanceData";
 import { EssenceType } from "Classes/EssenceType";
 import { ElementalistMastery } from "Classes/ElementalistMastery";
+import { TextRenderer } from "Global/TextRenderer";
 
 export class IonicConversion {
     public static SpellId: number;
+    public static Tooltip: string = Tooltips.IonicConversion;
     public static SpawnedUnitId: number = Units.Boop;
     public static readonly AuraId = Auras.IonicConversionSpeed;
     public static readonly BuffId = Buffs.IonicConversion;
@@ -40,6 +42,17 @@ export class IonicConversion {
             diceTweaks: [20, 20, 0.1]
         }
     };
+
+    private static Data(context: Record<string, any>) {
+        let { level } = context as { level: number };
+        return {
+            interval: 2 - 0.3 * math.floor(level * 0.5),
+            duration: 8.5 - 1.2 * math.floor(level * 0.5),
+            maxSpeedLevel: [3, 3, 3, 3, 4, 4, 4, 4][level],
+            movePerPoint: 300, // 750.0 - level * 50.0
+            castTime: 2,
+        }
+    }
 
     private static readonly Period = 0.2;
 
@@ -164,22 +177,18 @@ export class IonicConversion {
             const target = Unit.fromHandle(GetSpellTargetUnit());
             const owner = caster.owner;
             let level = caster.getAbilityLevel(this.SpellId);
+            if (level == 0) level = caster.getAbilityLevel(this.FreeSpellId);
             const sp = SpawnPoint.FromTarget(target.handle);
 
             if (!sp) {
                 return;
             };
 
-            let data = {
+            let data = this.Data({level});
+            let inst = {
                 done: false,
-
                 awakened: false,
-                interval: 2 - 0.3 * math.floor(level * 0.5),
-                duration: 8.5 - 1.2 * math.floor(level * 0.5),
-                maxSpeedLevel: [3, 3, 3, 3, 4, 4, 4, 4][level],
-                movePerPoint: 300, // 750.0 - level * 50.0
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
-                castTime: 2,
                 timer: new Timer(),
             }
             Log.info("Ionic Conversion cast");
@@ -187,14 +196,14 @@ export class IonicConversion {
             let castBar = new CastBar(caster.handle);
             castBar.CastSpell(this.SpellId, data.castTime, () => {
                 castBar.Finish();
-                data.castSfx.destroy();
-                data.done = true;
+                inst.castSfx.destroy();
+                inst.done = true;
 
                 if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
                     ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
                 } else if (!paid) return;
 
-                if (data.awakened) {
+                if (inst.awakened) {
                     Log.info("calling awaken");
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
@@ -224,15 +233,15 @@ export class IonicConversion {
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (AwakenEssence.Check(orderId, caster)) {
-                    data.awakened = true;
+                    inst.awakened = true;
                     return true;
                 }
 
-                if (data.done) return false;
+                if (inst.done) return false;
                 
-                data.castSfx.destroy()
+                inst.castSfx.destroy()
                 castBar.Destroy();
-                data.done = true;
+                inst.done = true;
                 return false;
             });
         };
@@ -242,7 +251,8 @@ export class IonicConversion {
         SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
 
         for (let i = 0; i < 7; i++) {
-            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
+            let data = this.Data({ level: i+1 }) as Record<string, any>;
+            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + TextRenderer.Render(this.Tooltip, data);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
             BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }

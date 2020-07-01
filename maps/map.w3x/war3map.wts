@@ -8433,32 +8433,26 @@ STRING 2944
 Learn Element Mastery - %d |cff808080(R)|r
 }
 
-STRING 2946
-// Abilities: A01N (Blue Power), Name (Name)
-{
-Blue Power
-}
-
 STRING 2950
-// Abilities: A01N (Blue Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A01N (Elemental Focus: Blue), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cff8a8affB|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool1,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
 }
 
 STRING 2954
-// Abilities: A01N (Blue Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A01N (Elemental Focus: Blue), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cff8a8affB|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool2,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
 }
 
 STRING 2955
-// Abilities: A01N (Blue Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A01N (Elemental Focus: Blue), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cff8a8affB|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool3,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
 }
 
 STRING 2956
-// Abilities: A01N (Blue Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A01N (Elemental Focus: Blue), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cff8a8affB|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool4,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
 }
@@ -8470,81 +8464,69 @@ Red Power
 }
 
 STRING 2960
-// Abilities: A00S (Red Power), Tip (Tooltip - Normal)
+// Abilities: A028 (Red Power), Tip (Tooltip - Normal)
 {
 Red Power - 1 |cff808080(Q)|r
 }
 
 STRING 2963
-// Abilities: A00S (Red Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A00S (Elemental Focus: Red), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cffff8080R|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool1,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
 }
 
 STRING 2964
-// Abilities: A00S (Red Power), Tip (Tooltip - Normal)
+// Abilities: A028 (Red Power), Tip (Tooltip - Normal)
 {
 Red Power - 2 |cff808080(Q)|r
 }
 
 STRING 2965
-// Abilities: A00S (Red Power), Tip (Tooltip - Normal)
+// Abilities: A028 (Red Power), Tip (Tooltip - Normal)
 {
 Red Power - 3 |cff808080(Q)|r
 }
 
-STRING 2966
-// Abilities: A00S (Red Power), Tip (Tooltip - Normal)
-{
-Red Power - 4 |cff808080(Q)|r
-}
-
 STRING 2967
-// Abilities: A00S (Red Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A00S (Elemental Focus: Red), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cffff8080R|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool2,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
 }
 
 STRING 2968
-// Abilities: A00S (Red Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A00S (Elemental Focus: Red), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cffff8080R|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool3,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
 }
 
 STRING 2969
-// Abilities: A00S (Red Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A00S (Elemental Focus: Red), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cffff8080R|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool4,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
 }
 
 STRING 2976
-// Abilities: A01O (Purple Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A01O (Elemental Focus: Purple), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cffff77ffP|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool1,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
 }
 
 STRING 2980
-// Abilities: A01O (Purple Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A01O (Elemental Focus: Purple), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cffff77ffP|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool2,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
 }
 
 STRING 2981
-// Abilities: A01O (Purple Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A01O (Elemental Focus: Purple), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cffff77ffP|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool3,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
 }
 
 STRING 2982
-// Abilities: A01O (Purple Power), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A01O (Elemental Focus: Purple), Ubertip (Tooltip - Normal - Extended)
 {
 Adds a |cffff77ffP|r letter to your spellstring.|n|nCooldown |cff8a8aff<A00T,Cool4,.>|r seconds.|n|cff808080This spell has same effect as picking up a gem of same color.|r
-}
-
-STRING 2985
-// Abilities: A01O (Purple Power), Name (Name)
-{
-Purple Power
 }
 
 STRING 2987
@@ -8557,90 +8539,6 @@ STRING 2988
 // Abilities: A0S2 (Purge), Hotkey (Hotkey - Normal)
 {
 E
-}
-
-STRING 2989
-// Abilities: A01N (Blue Power), Tip (Tooltip - Normal)
-{
-Blue Power - 1 |cff808080(W)|r
-}
-
-STRING 2990
-// Abilities: A01N (Blue Power), Tip (Tooltip - Normal)
-{
-Blue Power - 2 |cff808080(W)|r
-}
-
-STRING 2991
-// Abilities: A01N (Blue Power), Tip (Tooltip - Normal)
-{
-Blue Power - 3 |cff808080(W)|r
-}
-
-STRING 2992
-// Abilities: A01N (Blue Power), Tip (Tooltip - Normal)
-{
-Blue Power - 4 |cff808080(W)|r
-}
-
-STRING 2993
-// Abilities: A01N (Blue Power), Researchtip (Tooltip - Learn)
-{
-Learn Blue Power - %d |cff808080(W)|r
-}
-
-STRING 2994
-// Abilities: A01O (Purple Power), Tip (Tooltip - Normal)
-{
-Purple Power - 1 |cff808080(E)|r
-}
-
-STRING 2995
-// Abilities: A01O (Purple Power), Tip (Tooltip - Normal)
-{
-Purple Power - 2 |cff808080(E)|r
-}
-
-STRING 2996
-// Abilities: A01O (Purple Power), Tip (Tooltip - Normal)
-{
-Purple Power - 3 |cff808080(E)|r
-}
-
-STRING 2997
-// Abilities: A01O (Purple Power), Tip (Tooltip - Normal)
-{
-Purple Power - 4 |cff808080(E)|r
-}
-
-STRING 2998
-// Abilities: A01O (Purple Power), Researchtip (Tooltip - Learn)
-{
-Learn Purple Power - %d |cff808080(E)|r
-}
-
-STRING 2999
-// Abilities: A01N (Blue Power), Researchubertip (Tooltip - Learn - Extended)
-{
-Adds a |cff8a8affB|r letter to your spellstring.|n|nMana cost:|cff0080ff 3/2/2/1|n|rCooldown reduces by |cff80ffff1.5s|r each level|n|cff808080This spell has same effect as picking up a gem of same color.|r
-}
-
-STRING 3000
-// Abilities: A00S (Red Power), Researchubertip (Tooltip - Learn - Extended)
-{
-Adds a |cffff8080R|r letter to your spellstring.|n|nMana cost:|cff0080ff 3/2/2/1|n|rCooldown reduces by |cff80ffff1.5s|r each level|n|cff808080This spell has same effect as picking up a gem of same color.|r
-}
-
-STRING 3001
-// Abilities: A01O (Purple Power), Researchubertip (Tooltip - Learn - Extended)
-{
-Adds a |cffff77ffP|r letter to your spellstring.|n|nMana cost:|cff0080ff 3/2/2/1|n|rCooldown reduces by |cff80ffff1.5s|r each level|n|cff808080This spell has same effect as picking up a gem of same color.|r
-}
-
-STRING 3020
-// Abilities: AE0M (Element Mastery), Researchubertip (Tooltip - Learn - Extended)
-{
-The most important thing for an elementalist is to strengthen his spells. After using this skill, the next two gems he picks up will permanently increase level of all spells gained for a specific school, depending on the color of gem picked.|n|n|cffff8080Red |rgem - level of |cffffcc00Fire |rspells increased.|n|cff8a99ffBlue |rgem - level of |cff8a99ffFrost |rspells increased.|n|cffff77ffPurple |rgem - level of |cffff00ffLightning |rspells increased.|n|nCooldown reduced with level.
 }
 
 STRING 3023
@@ -8788,19 +8686,19 @@ Learn |cffff8080Repentance |rMastery |cff808080(E)|r
 }
 
 STRING 3134
-// Abilities: A01N (Blue Power), EditorSuffix (Editor Suffix)
+// Abilities: A01N (Elemental Focus: Blue), EditorSuffix (Editor Suffix)
 {
 (instant)
 }
 
 STRING 3135
-// Abilities: A01O (Purple Power), EditorSuffix (Editor Suffix)
+// Abilities: A01O (Elemental Focus: Purple), EditorSuffix (Editor Suffix)
 {
 (instant)
 }
 
 STRING 3136
-// Abilities: A00S (Red Power), EditorSuffix (Editor Suffix)
+// Abilities: A00S (Elemental Focus: Red), EditorSuffix (Editor Suffix)
 {
 (instant)
 }
@@ -10252,7 +10150,7 @@ Sacrifice your Active Spell to Summon an elemental in target lane (by targeting 
 }
 
 STRING 3423
-// Abilities: A01H (Awaken Essence), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: AE09 (ELE_R Ionic Conversion), Researchubertip (Tooltip - Learn - Extended)
 {
 Transforms a spell into its truest elemental form which does not need a guiding hand of a spellcaster to unleash its power.|n|nSacrifice your Active Spell to create a unit. If cast on a Magic Crystal, it summons an Elemental troop. If cast on the ground, the Active Spell is stored within the essence and can be cast independently.|n|cffff8080You cannot transform a spell of a higher level than this ability.|r|n|nMax Essences Alive: |cff80ffff1 per level up to 5.|r|nMax sacrificed spell level:|cffff8080 1 per level up to 7.|n|rSummoned unit stats increased on levels: |cff8a8aff2|r, |cff8a8aff4|r, |cff8a8aff6|r, |cff8a8aff8|r|n|cffffd9b3Cooldown: <AE0M,Cool1>s|r
 }
@@ -10401,12 +10299,6 @@ STRING 3471
 - Faerie Fire
 }
 
-STRING 3472
-// Abilities: A00S (Red Power), Researchtip (Tooltip - Learn)
-{
-Learn Red Power - %d |cff808080(Q)|r
-}
-
 STRING 3474
 // Abilities: A01T (In the Name of Light), EditorSuffix (Editor Suffix)
 {
@@ -10468,43 +10360,25 @@ Task Force Torturers
 }
 
 STRING 3518
-// Abilities: A00S (Red Power), Unhotkey (Hotkey - Turn Off)
+// Abilities: A00S (Elemental Focus: Red), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
 
 STRING 3519
-// Abilities: A00S (Red Power), Hotkey (Hotkey - Normal)
+// Abilities: A00S (Elemental Focus: Red), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 3520
-// Abilities: A00S (Red Power), Researchhotkey (Hotkey - Learn)
+// Abilities: A00S (Elemental Focus: Red), Researchhotkey (Hotkey - Learn)
 {
 Q
 }
 
-STRING 3521
-// Abilities: A028 (Red Power), Tip (Tooltip - Normal)
-{
-Red Power - 1 |cff808080(Q)|r
-}
-
-STRING 3522
-// Abilities: A028 (Red Power), Tip (Tooltip - Normal)
-{
-Red Power - 2 |cff808080(Q)|r
-}
-
-STRING 3523
-// Abilities: A028 (Red Power), Tip (Tooltip - Normal)
-{
-Red Power - 3 |cff808080(Q)|r
-}
-
 STRING 3532
-// Abilities: A00S (Red Power), Name (Name)
+// Abilities: A028 (Red Power), Name (Name)
 {
 Red Power
 }
@@ -10798,13 +10672,13 @@ E
 }
 
 STRING 3617
-// Abilities: A01O (Purple Power), Hotkey (Hotkey - Normal)
+// Abilities: A01O (Elemental Focus: Purple), Hotkey (Hotkey - Normal)
 {
 E
 }
 
 STRING 3618
-// Abilities: A01O (Purple Power), Researchhotkey (Hotkey - Learn)
+// Abilities: A01O (Elemental Focus: Purple), Researchhotkey (Hotkey - Learn)
 {
 E
 }
@@ -12112,7 +11986,7 @@ Awaken Essence - %d |cff808080(A)|r
 }
 
 STRING 3946
-// Abilities: AE09 (ELE_R Ionic Conversion), Researchubertip (Tooltip - Learn - Extended)
+// Abilities: A03Y (ELE_R Ionic Conversion), Researchubertip (Tooltip - Learn - Extended)
 {
 Transforms a spell into its truest elemental form which does not need a guiding hand of a spellcaster to unleash its power.|n|nSacrifice your Active Spell to create a unit. If cast on a Magic Crystal, it summons an Elemental troop. If cast on the ground, the Active Spell is stored within the essence and can be cast independently.|n|cffff8080You cannot transform a spell of a higher level than this ability.|r|n|nMax Essences Alive: |cff80ffff1 per level up to 5.|r|nMax sacrificed spell level:|cffff8080 1 per level up to 7.|n|rSummoned unit stats increased on levels: |cff8a8aff2|r, |cff8a8aff4|r, |cff8a8aff6|r, |cff8a8aff8|r|n|cffffd9b3Cooldown: <AE0M,Cool1>s|r
 }
@@ -18397,12 +18271,6 @@ STRING 5806
 A dark gleaming gem.
 }
 
-STRING 5807
-// Abilities: A028 (Red Power), Name (Name)
-{
-Red Power
-}
-
 STRING 5809
 // Units: h00Z (1 Blue), Name (Name)
 {
@@ -23123,12 +22991,6 @@ STRING 6649
 Awaken Essence - %d |cff808080(A)|r
 }
 
-STRING 6650
-// Abilities: A03Y (ELE_R Ionic Conversion), Researchubertip (Tooltip - Learn - Extended)
-{
-Transforms a spell into its truest elemental form which does not need a guiding hand of a spellcaster to unleash its power.|n|nSacrifice your Active Spell to create a unit. If cast on a Magic Crystal, it summons an Elemental troop. If cast on the ground, the Active Spell is stored within the essence and can be cast independently.|n|cffff8080You cannot transform a spell of a higher level than this ability.|r|n|nMax Essences Alive: |cff80ffff1 per level up to 5.|r|nMax sacrificed spell level:|cffff8080 1 per level up to 7.|n|rSummoned unit stats increased on levels: |cff8a8aff2|r, |cff8a8aff4|r, |cff8a8aff6|r, |cff8a8aff8|r|n|cffffd9b3Cooldown: <AE0M,Cool1>s|r
-}
-
 STRING 6651
 // Abilities: A03Y (ELE_R Ionic Conversion), Tip (Tooltip - Normal)
 {
@@ -23373,5 +23235,149 @@ STRING 6691
 // Abilities: A040 (ELE_R Ray of Cold), EditorSuffix (Editor Suffix)
 {
 (Free)
+}
+
+STRING 6692
+// Abilities: A01N (Elemental Focus: Blue), Name (Name)
+{
+Elemental Focus: Blue
+}
+
+STRING 6693
+// Abilities: A01N (Elemental Focus: Blue), Tip (Tooltip - Normal)
+{
+Elemental Focus: Blue - 1 |cff808080(W)|r
+}
+
+STRING 6694
+// Abilities: A01N (Elemental Focus: Blue), Tip (Tooltip - Normal)
+{
+Elemental Focus: Blue - 2 |cff808080(W)|r
+}
+
+STRING 6695
+// Abilities: A01N (Elemental Focus: Blue), Tip (Tooltip - Normal)
+{
+Elemental Focus: Blue - 3 |cff808080(W)|r
+}
+
+STRING 6696
+// Abilities: A01N (Elemental Focus: Blue), Tip (Tooltip - Normal)
+{
+Elemental Focus: Blue - 4 |cff808080(W)|r
+}
+
+STRING 6697
+// Abilities: A01O (Elemental Focus: Purple), Name (Name)
+{
+Elemental Focus: Purple
+}
+
+STRING 6698
+// Abilities: A01O (Elemental Focus: Purple), Tip (Tooltip - Normal)
+{
+Elemental Focus: Purple - 1 |cff808080(E)|r
+}
+
+STRING 6699
+// Abilities: A01O (Elemental Focus: Purple), Tip (Tooltip - Normal)
+{
+Elemental Focus: Purple - 2 |cff808080(E)|r
+}
+
+STRING 6700
+// Abilities: A01O (Elemental Focus: Purple), Tip (Tooltip - Normal)
+{
+Elemental Focus: Purple - 3 |cff808080(E)|r
+}
+
+STRING 6701
+// Abilities: A01O (Elemental Focus: Purple), Tip (Tooltip - Normal)
+{
+Elemental Focus: Purple - 4 |cff808080(E)|r
+}
+
+STRING 6702
+// Abilities: A00S (Elemental Focus: Red), Name (Name)
+{
+Elemental Focus: Red
+}
+
+STRING 6703
+// Abilities: A00S (Elemental Focus: Red), Tip (Tooltip - Normal)
+{
+Elemental Focus: Red - 1 |cff808080(Q)|r
+}
+
+STRING 6704
+// Abilities: A00S (Elemental Focus: Red), Tip (Tooltip - Normal)
+{
+Elemental Focus: Red - 2 |cff808080(Q)|r
+}
+
+STRING 6705
+// Abilities: A00S (Elemental Focus: Red), Tip (Tooltip - Normal)
+{
+Elemental Focus: Red - 3 |cff808080(Q)|r
+}
+
+STRING 6706
+// Abilities: A00S (Elemental Focus: Red), Tip (Tooltip - Normal)
+{
+Elemental Focus: Red - 4 |cff808080(Q)|r
+}
+
+STRING 6707
+// Abilities: A01N (Elemental Focus: Blue), Researchtip (Tooltip - Learn)
+{
+Learn Elemental Focus: Blue - %d |cff808080(W)|r
+}
+
+STRING 6708
+// Abilities: A01N (Elemental Focus: Blue), Researchubertip (Tooltip - Learn - Extended)
+{
+Draws power from your other orbs to strengthen a single Blue orb. Reduces cooldown of a Blue orb with highest cooldown by but increases cooldown of all other non-Summoning orbs by same amount split.
+}
+
+STRING 6709
+// Abilities: A01O (Elemental Focus: Purple), Researchtip (Tooltip - Learn)
+{
+Learn Elemental Focus: Purple - %d |cff808080(E)|r
+}
+
+STRING 6710
+// Abilities: A01O (Elemental Focus: Purple), Researchubertip (Tooltip - Learn - Extended)
+{
+Draws power from your other orbs to strengthen a single Purple orb. Reduces cooldown of a Purple orb with highest cooldown by but increases cooldown of all other non-Summoning orbs by same amount split.
+}
+
+STRING 6711
+// Abilities: A00S (Elemental Focus: Red), Researchtip (Tooltip - Learn)
+{
+Learn Elemental Focus: Red - %d |cff808080(Q)|r
+}
+
+STRING 6712
+// Abilities: A00S (Elemental Focus: Red), Researchubertip (Tooltip - Learn - Extended)
+{
+Draws power from your other orbs to strengthen a single Red orb. Reduces cooldown of a Red orb with highest cooldown by but increases cooldown of all other non-Summoning orbs by same amount split.
+}
+
+STRING 6713
+// Abilities: A01H (Awaken Essence), Researchubertip (Tooltip - Learn - Extended)
+{
+If used on ground while casting a spell, an Essence is created and spell is stored within. Essence can cast this spell afterwards without paying its cost. Doing so locks an available Summoning orb until discharged.
+
+If used on crystal instead, a unit is summoned with stats based on the spell level.
+}
+
+STRING 6714
+// Abilities: AE0M (Element Mastery), Researchubertip (Tooltip - Learn - Extended)
+{
+Casting spells increases level of their respective school over time.
+
+Using this ability makes next spell cast grant bonus points toward the next level of that school.
+
+Amount of points scaling with level.
 }
 

@@ -1,4 +1,4 @@
-import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units } from "Config";
+import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units, Tooltips } from "Config";
 import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
@@ -12,9 +12,11 @@ import { Chill } from "./Chill";
 import { StatWeights } from "Systems/BalanceData";
 import { EssenceType } from "Classes/EssenceType";
 import { ElementalistMastery } from "Classes/ElementalistMastery";
+import { TextRenderer } from "Global/TextRenderer";
 
 export class FlameBarrage {
     public static SpellId: number;
+    public static Tooltip: string = Tooltips.FlameBarrage;
     public static SpawnedUnitId: number = Units.Wabba;
     public static readonly IndicatorSfx: string = Models.DominationAura;
     public static readonly MissileSfx: string = Models.OrbOfFire;
@@ -39,6 +41,17 @@ export class FlameBarrage {
             diceTweaks: [15, 15, 1]
         }
     };
+
+    private static Data(context: Record<string, any>) {
+        let { level } = context as { level: number };
+        return {
+            damage: 10 + 25 * level,
+            radius: 250,
+            count: 3 + math.floor((level - 1) * 0.5),
+            castTime: 1.5,
+            launchInterval: 1 - 0.15 * math.floor(level * 0.5),
+        }
+    }
 
     public static UpdatePeriod = 0.03;
     private static AccelerationRate = 1.04
@@ -163,17 +176,13 @@ export class FlameBarrage {
             const x = GetSpellTargetX();
             const y = GetSpellTargetY();
             let level = caster.getAbilityLevel(this.SpellId);
+            if (level == 0) level = caster.getAbilityLevel(this.FreeSpellId);
 
-            let data = {
+            let data = this.Data({level})
+            let inst = {
                 done: false,
-
                 awakened: false,
-                damage: 10 + 25 * level,
-                radius: 250,
-                count: 3 + math.floor((level - 1) * 0.5),
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
-                castTime: 1.5,
-                launchInterval: 1 - 0.15 * math.floor(level * 0.5),
                 timer: new Timer(),
                 casterStart: caster.point,
                 targetPoint: new Point(x, y),
@@ -183,45 +192,44 @@ export class FlameBarrage {
             let castBar = new CastBar(caster.handle);
             castBar.CastSpell(this.SpellId, data.castTime, () => {
                 castBar.Finish();
-                data.castSfx.destroy();
+                inst.castSfx.destroy();
 
                 if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
                     ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
                 } else if (!paid) return;
 
-                if (data.awakened) {
+                if (inst.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
                         AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
                     } else {
                         let essence = AwakenEssence.SpawnEssence(this.Type, this.FreeSpellId, level, caster, awaken.targetPoint);
-                        essence.moveSpeed = 250;
                     }
                     return;
                 } else AwakenEssence.CleanEvent(caster);
-                Log.info("Effect")
+                Log.info("Effect", data.count)
 
                 let missileData = {
                     caster,
                     damage: data.damage,
                     radius: data.radius,
-                    tx: data.targetPoint.x + caster.x - data.casterStart.x,
-                    ty: data.targetPoint.y + caster.y - data.casterStart.y,
+                    tx: inst.targetPoint.x + caster.x - inst.casterStart.x,
+                    ty: inst.targetPoint.y + caster.y - inst.casterStart.y,
                 };
 
                 this.ShootFlameOrb(missileData);
                 data.count--;
 
                 // Start timer to shoot fireballs
-                data.timer.start(data.launchInterval, true, () => {
-                    if (--data.count < 1) data.timer.destroy();
+                inst.timer.start(data.launchInterval, true, () => {
                     
-                    missileData.tx = data.targetPoint.x + caster.x - data.casterStart.x;
-                    missileData.ty = data.targetPoint.y + caster.y - data.casterStart.y;
-
+                    missileData.tx = inst.targetPoint.x + caster.x - inst.casterStart.x;
+                    missileData.ty = inst.targetPoint.y + caster.y - inst.casterStart.y;
+                    
                     // Shoot a missile
                     let instance = this.ShootFlameOrb(missileData);
-                    if (data.count < 1) {
+                    if (--data.count < 1) {
+                        inst.timer.destroy();
                         instance.releaseEssence = true;
                         AwakenEssence.ReleaseEssence(this.Type, caster);
                     }
@@ -230,13 +238,13 @@ export class FlameBarrage {
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (AwakenEssence.Check(orderId, caster)) {
-                    data.awakened = true;
+                    inst.awakened = true;
                     return true;
                 }
-                if (!data.done) {
-                    data.castSfx.destroy()
+                if (!inst.done) {
+                    inst.castSfx.destroy()
                     castBar.Destroy();
-                    data.done = true;
+                    inst.done = true;
                 }
                 return false;
             });
@@ -246,7 +254,8 @@ export class FlameBarrage {
         SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
 
         for (let i = 0; i < 7; i++) {
-            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
+            let data = this.Data({ level: i+1 }) as Record<string, any>;
+            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + TextRenderer.Render(this.Tooltip, data);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
             BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }

@@ -1,4 +1,4 @@
-import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units, Dummies } from "Config";
+import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units, Dummies, Tooltips } from "Config";
 import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
@@ -11,9 +11,11 @@ import { SpellHelper } from "Global/SpellHelper";
 import { StatWeights } from "Systems/BalanceData";
 import { EssenceType } from "Classes/EssenceType";
 import { ElementalistMastery } from "Classes/ElementalistMastery";
+import { TextRenderer } from "Global/TextRenderer";
 
 export class LivingCurrent {
     public static SpellId: number;
+    public static Tooltip: string = Tooltips.LivingCurrent;
     public static SpawnedUnitId: number = Units.Wee;
     public static readonly DummySpellId = Dummies.LivingCurrentLightning;
     public static readonly DummyOrder = "forkedlightning";
@@ -41,6 +43,18 @@ export class LivingCurrent {
             diceTweaks: [20, 20, 0.1]
         }
     };
+
+    private static Data(context: Record<string, any>) {
+        let { level } = context as { level: number };
+        return {
+            castTime: 1.5,
+            interval: 2.6 - 0.14 * level,
+            range: 250 + 50 * level,
+            duration: 7 + level,
+            damage: 45 + 5 * level,
+            // damage: is handled in the dummy ability
+        }
+    }
 
     private static readonly Period = 0.2;
 
@@ -118,31 +132,26 @@ export class LivingCurrent {
             const owner = caster.owner;
             const target = Unit.fromHandle(GetSpellTargetUnit());
             let level = caster.getAbilityLevel(this.SpellId);
+            if (level == 0) level = caster.getAbilityLevel(this.FreeSpellId);
 
-            let data = {
+            let data = this.Data({level});
+            let inst = {
                 done: false,
-
                 awakened: false,
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
-                castTime: 1.5,
-
-                interval: 2.6 - 0.14 * level,
-                range: 250 + 50 * level,
-                duration: 7 + level,
-                // damage: is handled in the dummy ability
             }
             Log.info("Living Current cast");
             
             let castBar = new CastBar(caster.handle);
             castBar.CastSpell(this.SpellId, data.castTime, () => {
                 castBar.Finish();
-                data.castSfx.destroy();
+                inst.castSfx.destroy();
 
                 if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
                     ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
                 } else if (!paid) return;
 
-                if (data.awakened) {
+                if (inst.awakened) {
                     Log.info("calling awaken");
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
@@ -166,14 +175,14 @@ export class LivingCurrent {
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (AwakenEssence.Check(orderId, caster)) {
-                    data.awakened = true;
+                    inst.awakened = true;
                     return true;
                 }
 
-                if (!data.done) {
-                    data.castSfx.destroy()
+                if (!inst.done) {
+                    inst.castSfx.destroy()
                     castBar.Destroy();
-                    data.done = true;
+                    inst.done = true;
                 }
                 return false;
             });
@@ -184,7 +193,8 @@ export class LivingCurrent {
         SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
 
         for (let i = 0; i < 7; i++) {
-            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
+            let data = this.Data({ level: i+1 }) as Record<string, any>;
+            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + TextRenderer.Render(this.Tooltip, data);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
             BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }

@@ -1,4 +1,4 @@
-import { Dummies, Models, Units, Spells, Log } from "Config";
+import { Dummies, Models, Units, Spells, Log, Tooltips } from "Config";
 import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
@@ -12,9 +12,11 @@ import { StatWeights } from "Systems/BalanceData";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { EssenceType } from "Classes/EssenceType";
 import { ElementalistMastery } from "Classes/ElementalistMastery";
+import { TextRenderer } from "Global/TextRenderer";
 
 export class Inferno {
     public static SpellId: number;
+    public static Tooltip: string = Tooltips.Inferno;
     public static SpawnedUnitId: number = Units.Shoop;
     public static readonly DummySpellId = Dummies.Inferno;
     public static readonly DummyOrder = "deathanddecay";
@@ -40,6 +42,16 @@ export class Inferno {
             diceTweaks: [15, 15, 1]
         }
     };
+
+    private static Data(context: Record<string, any>) {
+        let { level } = context as { level: number };
+        return {
+            aoe: 240 + 60 * level,
+            damage: 10 + 5 * level,
+            duration: 10 + 2 * level,
+            castTime: 3.5,
+        }
+    }
 
     private static readonly Period = 1;
 
@@ -109,29 +121,26 @@ export class Inferno {
             const caster = Unit.fromEvent();
             const owner = caster.owner;
             const point = Point.fromHandle(GetSpellTargetLoc());
-            let level = caster.getAbilityLevel(this.SpellId) + caster.getAbilityLevel(Spells.ElementalFocusRed) + caster.getAbilityLevel(Spells.ElementalFocusPurple);
+            let level = caster.getAbilityLevel(this.SpellId);
+            if (level == 0) level = caster.getAbilityLevel(this.FreeSpellId);
 
-            let data = {
+            let data = this.Data({level});
+            let inst = {
                 done: false,
                 awakened: false,
-
-                aoe: 240 + 60 * level,
-                damage: 10 + 5 * level,
-                duration: 10 + 2 * level,
                 castSfx: AddSpecialEffectTarget(this.CastSfx, caster.handle, "origin"),
-                castTime: 3.5,
             };
             
             let castBar = new CastBar(caster.handle);
             castBar.CastSpell(this.SpellId, data.castTime, () => {
                 castBar.Finish();
-                DestroyEffect(data.castSfx);
+                DestroyEffect(inst.castSfx);
 
                 if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
                     ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
                 } else if (!paid) return;
 
-                if (data.awakened) {
+                if (inst.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
                         AwakenEssence.SpawnUnit(awaken.targetUnit, this.SpawnedUnitId, level, this.SpawnedUnitWeights, caster);
@@ -148,14 +157,14 @@ export class Inferno {
             Interruptable.Register(caster.handle, (orderId: number) => {
                 
                 if (AwakenEssence.Check(orderId, caster)) {
-                    data.awakened = true;
+                    inst.awakened = true;
                     return true;
                 }
 
-                if (data.done == false) {
-                    DestroyEffect(data.castSfx);
+                if (inst.done == false) {
+                    DestroyEffect(inst.castSfx);
                     castBar.Destroy();
-                    data.done = true;
+                    inst.done = true;
                     // IssueImmediateOrder(caster, "stop");
                 }
                 return false;
@@ -167,7 +176,8 @@ export class Inferno {
         SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
 
         for (let i = 0; i < 7; i++) {
-            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
+            let data = this.Data({ level: i+1 }) as Record<string, any>;
+            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + TextRenderer.Render(this.Tooltip, data);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
             BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }

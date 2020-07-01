@@ -1,4 +1,4 @@
-import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units, Dummies } from "Config";
+import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units, Dummies, Tooltips } from "Config";
 import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
@@ -11,9 +11,11 @@ import { SpellHelper } from "Global/SpellHelper";
 import { StatWeights } from "Systems/BalanceData";
 import { EssenceType } from "Classes/EssenceType";
 import { ElementalistMastery } from "Classes/ElementalistMastery";
+import { TextRenderer } from "Global/TextRenderer";
 
 export class Conductivity {
     public static SpellId: number;
+    public static Tooltip: string = Tooltips.Conductivity;
     public static SpawnedUnitId: number = Units.Doo;
     public static readonly DummySpellId = Dummies.Conductivity;
     public static readonly DummyOrder = "thunderbolt";
@@ -42,6 +44,19 @@ export class Conductivity {
             diceTweaks: [20, 20, 0.1]
         }
     };
+
+    private static Data(context: Record<string, any>) {
+        let { level, caster } = context as { level: number, caster: Unit };
+        return {
+            castTime: 1,
+            count: math.floor((level - 1) / 3) + 1,
+            maxTargets: 4 + 4 * level,
+            interval: 0.2,
+            damage: 5 + level,
+            radius: 1200,
+        };
+    }
+    
 
     private timer: Timer;
     private light: lightning;
@@ -165,34 +180,28 @@ export class Conductivity {
             const owner = caster.owner;
             const target = Unit.fromHandle(GetSpellTargetUnit());
             let level = caster.getAbilityLevel(this.SpellId);
+            if (level == 0) level = caster.getAbilityLevel(this.FreeSpellId);
 
-            let data = {
+            let data = this.Data({caster, level});
+            let instance = {
                 done: false,
-
                 awakened: false,
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
-                castTime: 1,
                 timer: new Timer(),
-                count: math.floor((level - 1) / 3) + 1,
-                maxTargets: 4 + 4 * level,
-                data: {
-                    interval: 0.2,
-                    damage: 5 + level,
-                    radius: 1200,
-                }
-            }
+            };
+
             Log.info("Conductivity cast");
             
             let castBar = new CastBar(caster.handle);
             castBar.CastSpell(this.SpellId, data.castTime, () => {
                 castBar.Finish();
-                data.castSfx.destroy();
+                instance.castSfx.destroy();
 
                 if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
                     ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
                 } else if (!paid) return;
 
-                if (data.awakened) {
+                if (instance.awakened) {
                     Log.info("calling awaken");
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
@@ -207,7 +216,11 @@ export class Conductivity {
                 // Start the spell
                 for (let i = 0; i < data.count; i++) {
 
-                    let instance = new Conductivity(caster, data.maxTargets, data.data);
+                    let instance = new Conductivity(caster, data.maxTargets, {
+                        damage: data.damage,
+                        interval: data.interval,
+                        radius: data.radius
+                    });
                     instance.Start(target);
                 }
                 
@@ -216,13 +229,13 @@ export class Conductivity {
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (AwakenEssence.Check(orderId, caster)) {
-                    data.awakened = true;
+                    instance.awakened = true;
                     return true;
                 }
-                if (!data.done) {
-                    data.castSfx.destroy()
+                if (!instance.done) {
+                    instance.castSfx.destroy()
                     castBar.Destroy();
-                    data.done = true;
+                    instance.done = true;
                 }
                 return false;
             });
@@ -233,7 +246,8 @@ export class Conductivity {
         SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
 
         for (let i = 0; i < 7; i++) {
-            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
+            let data = this.Data({ level: i+1 }) as Record<string, any>;
+            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + TextRenderer.Render(this.Tooltip, data);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
             BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }

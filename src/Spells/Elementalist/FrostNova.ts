@@ -1,4 +1,4 @@
-import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units } from "Config";
+import { Auras, Buffs, Models, SpawnedUnitTypes, Spells, Orders, Log, Units, Tooltips } from "Config";
 import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
@@ -12,9 +12,11 @@ import { Chill } from "./Chill";
 import { StatWeights } from "Systems/BalanceData";
 import { EssenceType } from "Classes/EssenceType";
 import { ElementalistMastery } from "Classes/ElementalistMastery";
+import { TextRenderer } from "Global/TextRenderer";
 
 export class FrostNova {
     public static SpellId: number;
+    public static Tooltip: string = Tooltips.FrostNova;
     public static SpawnedUnitId: number = Units.DaWoop;
     public static readonly Sfx: string = Models.FrostNova;
     public static readonly HitSfx: string = "Abilities\\Weapons\\LichMissile\\LichMissile.mdl";
@@ -38,6 +40,16 @@ export class FrostNova {
             diceTweaks: [20, 20, 0.1]
         }
     };
+
+    private static Data(context: Record<string, any>) {
+        let { level, caster } = context as { level: number, caster: Unit };
+        return {
+            damage: 80 + 45 * level,
+            aoe: 300,
+            duration: 5 + level,
+            castTime: 2.5,
+        }
+    }
 
     public static readonly Period = 2;
     public static readonly Delay = 1.55;
@@ -121,29 +133,26 @@ export class FrostNova {
             const x = GetSpellTargetX();
             const y = GetSpellTargetY();
             let level = caster.getAbilityLevel(this.SpellId);
+            if (level == 0) level = caster.getAbilityLevel(this.FreeSpellId);
 
-            let data = {
+            let data = this.Data({level});
+            let inst = {
                 done: false,
-
                 awakened: false,
-                damage: 80 + 45 * level,
-                aoe: 300,
-                duration: 5 + level,
                 castSfx: new Effect(this.CastSfx, caster, "origin"),
-                castTime: 2.5,
             }
             Log.info("Frost Nova cast");
             
             let castBar = new CastBar(caster.handle);
             castBar.CastSpell(this.SpellId, data.castTime, () => {
                 castBar.Finish();
-                data.castSfx.destroy();
+                inst.castSfx.destroy();
 
                 if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
                     ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
                 } else if (!paid) return;
 
-                if (data.awakened) {
+                if (inst.awakened) {
                     Log.info("calling awaken");
                     let awaken = AwakenEssence.GetEvent(caster);
                     if (awaken.targetUnit) {
@@ -163,14 +172,14 @@ export class FrostNova {
             Interruptable.Register(caster.handle, (orderId) => {
 
                 if (AwakenEssence.Check(orderId, caster)) {
-                    data.awakened = true;
+                    inst.awakened = true;
                     return true;
                 }
                 
-                if (!data.done) {
-                    data.castSfx.destroy()
+                if (!inst.done) {
+                    inst.castSfx.destroy()
                     castBar.Destroy();
-                    data.done = true;
+                    inst.done = true;
                 }
                 return false;
             });
@@ -180,7 +189,8 @@ export class FrostNova {
         SpellEvent.RegisterSpellCast(this.FreeSpellId, () => actions(true));
 
         for (let i = 0; i < 7; i++) {
-            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + BlzGetAbilityExtendedTooltip(this.SpellId, i);
+            let data = this.Data({ level: i+1 }) as Record<string, any>;
+            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + TextRenderer.Render(this.Tooltip, data);
             BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
             BlzSetAbilityExtendedTooltip(this.FreeSpellId, tooltip, i);
         }

@@ -38,7 +38,6 @@ export abstract class HeroController {
     }
 
     public Execute() {
-        print(this.interval, "interval");
         this.timer.start(this.interval, false, () => {
             coroutine.resume(HeroController._instance[this.unit.id], this.unit);
             this.Execute();

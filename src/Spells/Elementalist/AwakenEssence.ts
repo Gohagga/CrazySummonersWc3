@@ -1,19 +1,21 @@
-import { Log, Units } from "Config";
+import { Log, Units, Tooltips, Spells } from "Config";
 import { Order } from "Global/Order";
 import { SpellEvent } from "Global/SpellEvent";
 import { Balance } from "Modules/Globals";
 import { SpawnPoint } from "Spells/Spawn";
 import { StatWeights } from "Systems/BalanceData";
-import { Orb } from "Systems/OrbResource/Orb";
+import { Orb, OrbCostToString } from "Systems/OrbResource/Orb";
 import { OrbType } from "Systems/OrbResource/OrbType";
 import { ResourceBar } from "Systems/OrbResource/ResourceBar";
 import { UnitCharge } from "Systems/UnitCharge";
 import { Point, Unit } from "w3ts/index";
 import { EssenceType } from "Classes/EssenceType";
+import { TextRenderer } from "Global/TextRenderer";
 
 export class AwakenEssence {
 
     static SpellId: number;
+    public static Tooltip: string = Tooltips.AwakenEssence;
     private static _instance: Record<number, { targetUnit: Unit, targetPoint: Point }> = {};
     private static _essence: Record<number, AwakenEssence> = {};
     private static OrderId = Order.ELEMENTALFURY;
@@ -143,7 +145,7 @@ export class AwakenEssence {
         // let usedOrbs = resource.Check(this.OrbCost);
         if (resource.Consume(this.OrbCost) == false) return null;
 
-        let data: any = {
+        let data = {
             loops: 10,
             spawnPoint: sp,
             unitType: type,
@@ -173,7 +175,7 @@ export class AwakenEssence {
                 data = null;
             }
         });
-        return data.unit;
+        return Unit.fromHandle(data.unit);
     }
 
     static init(spellId: number) {
@@ -198,5 +200,11 @@ export class AwakenEssence {
                 this._instance[caster.id] = instance;
             }
         });
+
+        for (let i = 0; i < 7; i++) {
+            let data: Record<string, string> = { range: this.Range.toString() }
+            let tooltip = OrbCostToString(this.OrbCost) + "|n|n" + TextRenderer.Render(this.Tooltip, data);
+            BlzSetAbilityExtendedTooltip(this.SpellId, tooltip, i);
+        }
     }
 }

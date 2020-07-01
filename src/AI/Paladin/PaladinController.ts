@@ -116,24 +116,19 @@ export class PaladinController extends HeroController {
 
         this.interval = 0.6;
         while ((summonCount = this.resourceBar.CountAvailable(OrbType.Summoning)) > 0) {
-            Log.info("count:", summonCount);
             if (summonCount / totalOrbs < 0.5 && this.unit.getAbilityLevel(Spells.SummonRanged) > 0) {
 
                 if (ranged == false) {
-                    print("interval changed");
                     ranged = true;
                     this.interval = 4;
                     coroutine.yield();
                 }
 
-                Log.info("issue summon acolyteharvest at", target.name, "summon:", summonCount);
                 this.unit.issueTargetOrder("acolyteharvest", target);
                 this.interval = 0.6;
             } else {
-                Log.info("issue summon acidbomb at", target.name, "summon:", summonCount);
                 this.unit.issueTargetOrder("acidbomb", target);
             }
-            Log.info("yield");
             coroutine.yield();
         };
     }
