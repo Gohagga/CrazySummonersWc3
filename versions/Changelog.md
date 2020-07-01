@@ -1,3 +1,18 @@
+## Version 0.54
+
+## Main Changes
+- Added Elementalist class with 9 spells, unique summoning and spell leveling mechanic
+- Added a balance system which dynamically calculates and applies unit stats based on preset weights that can be easily tweaked.
+    This speeds up development and data generation considerably.
+- Added a tooltip/text rendering system that will pull data from configured spell formulas and inject it into tooltips.
+    This speeds up development and manageability of tooltips considerably.
+
+## Fixes
+- Cast bar will not flicker or glitch out at start anymore.
+
+## Optimizations
+- Optimized some Death Knight spells
+
 ## Version 0.53e
 
 ### Main Changes
