@@ -150,12 +150,12 @@ AwakenEssence =
 `If used on ground while casting a spell, an Essence is created and spell is stored within. Essence can cast this spell afterwards without paying its cost. Doing so locks an available Summoning orb until discharged.
 
 If used on crystal instead, a unit is summoned with stats based on the spell level.
+Level of Awakened Essence is added as a bonus to level of unit spawned.
 Range: {c-b}{range}|r`,
 ElementalFocus =
 `Draws power from your other orbs to strengthen a single {type} orb. Reduces cooldown of a {type} orb with highest cooldown by {c-b}{maxSeconds}|r but increases cooldown of all other non-Summoning orbs by same amount split.`,
 ElementalMastery =
-`Concentrate on powering up an element. Next spell cast will grant {c-b}{amount}|r bonus points toward the next level of that school.
-`,
+`Your next spell cast will refund its orb cost, and grant {c-b}{amount}|r bonus points toward the next level of that school.`,
 }
 
 export const Auras = {
@@ -204,6 +204,7 @@ export const Dummies = {
     LivingCurrent:              FourCC('A01B'),
     LivingCurrentLightning:     FourCC('A01A'),
     Inferno:                    FourCC('A03R'),
+    ElementalMastery:           FourCC('A01F'),
 }
 
 export const Buffs = {
@@ -227,6 +228,7 @@ export const Buffs = {
     Frozen:                     FourCC('B017'),
     LivingCurrent:              FourCC('B00F'),
     IonicConversion:            FourCC('B00X'),
+    ElementalMastery:           FourCC('B00J'),
 }
 
 export const Upgrades = {

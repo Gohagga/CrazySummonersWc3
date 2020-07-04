@@ -1,7 +1,7 @@
 {
   "mapFolder": "map.w3x",
   "minifyScript": false,
-  "gameExecutable": "C:\\Users\\bartul.grbin\\games\\Warcraft III\\x86_64\\Warcraft III.exe",
+  "gameExecutable": "C:\\Users\\bartul.grbin\\games\\Warcraft III\\_retail_\\x86_64\\Warcraft III.exe",
   "outputFolder": "C:/Users/bartul.grbin/Documents/Warcraft III/Maps/Test",
   "injectPreviewImage": true,
   "launchArgs": [

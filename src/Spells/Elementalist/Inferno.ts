@@ -1,4 +1,4 @@
-import { Dummies, Models, Units, Spells, Log, Tooltips } from "Config";
+import { Dummies, Models, Units, Spells, Log, Tooltips, Buffs } from "Config";
 import { Interruptable } from "Global/Interruptable";
 import { CastBar } from "Global/ProgressBars";
 import { SpellEvent } from "Global/SpellEvent";
@@ -136,9 +136,11 @@ export class Inferno {
                 castBar.Finish();
                 DestroyEffect(inst.castSfx);
 
-                if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
+                if (paid) {
+                    // Continue
+                } else if (ElementalistMastery.Consume(caster) || ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
                     ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
-                } else if (!paid) return;
+                } else return;
 
                 if (inst.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);

@@ -1,6 +1,6 @@
 import { EssenceType } from "./EssenceType";
 import { Unit, Item } from "w3ts/index";
-import { Items, Spells, Log } from "Config";
+import { Items, Spells, Log, Buffs } from "Config";
 
 export class ElementalistMastery {
 
@@ -18,6 +18,7 @@ export class ElementalistMastery {
         4: 23,
         5: 26,
         6: 28,
+        7: 0
     }
 
     private _level: Record<EssenceType, number> = {
@@ -116,9 +117,17 @@ export class ElementalistMastery {
         } else {
             // print("max", max, amount);
             item.charges = 0;
-            this.SetLevel(type, newLevel, item);
+            // this.SetLevel(type, newLevel, item);
         }
         return;
+    }
+
+    static Consume(caster: Unit) {
+        if (caster.getAbilityLevel(Buffs.ElementalMastery) > 0) {
+            caster.removeAbility(Buffs.ElementalMastery)
+            return true;
+        }
+        return false;
     }
 
     public Destroy() {

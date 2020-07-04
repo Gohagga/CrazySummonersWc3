@@ -242,7 +242,11 @@ export class RayOfCold {
                 inst.castSfx.destroy();
 
                 let resource = ResourceBar.Get(owner.handle);
-                if (!(paid || resource.Check(this.OrbCost))) return;
+                if (paid) {
+                    // Continue
+                } else if (ElementalistMastery.Consume(caster) || resource.Check(this.OrbCost)) {
+                    ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
+                } else return;
                 
                 if (inst.awakened) {
                     let awaken = AwakenEssence.GetEvent(caster);
@@ -269,8 +273,10 @@ export class RayOfCold {
                     ray.Destroy();
                     isFinished = true;
                     delete this._instance[caster.id];
-                    resource.Consume(this.OrbCost);
-                    ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
+                    if (!paid) {
+                        resource.Consume(this.OrbCost);
+                        ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
+                    }
                     AwakenEssence.ReleaseEssence(EssenceType.Frost, caster).RemoveCaster();
                 });
                 Interruptable.Register(caster.handle, (orderId) => {

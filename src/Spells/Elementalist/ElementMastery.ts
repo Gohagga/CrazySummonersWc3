@@ -2,7 +2,8 @@ import { SpellEvent } from "Global/SpellEvent";
 import { Unit } from "w3ts/index";
 import { ElementalistMastery } from "Classes/ElementalistMastery";
 import { TextRenderer } from "Global/TextRenderer";
-import { Tooltips } from "Config";
+import { Tooltips, Dummies } from "Config";
+import { SpellHelper } from "Global/SpellHelper";
 
 export class ElementMastery {
     public static SpellId: number;
@@ -27,6 +28,7 @@ export class ElementMastery {
             let data = this.Data({level});
             let mastery = ElementalistMastery.Get(caster);
             mastery.AddBonusExperience(data.amount);
+            SpellHelper.DummyCastTarget(owner.handle, caster.x, caster.y, caster.handle, Dummies.ElementalMastery, 1, "innerfire");
         });
 
         for (let i = 0; i < 7; i++) {

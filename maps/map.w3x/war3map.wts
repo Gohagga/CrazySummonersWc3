@@ -7191,12 +7191,6 @@ STRING 2600
 Study Elements 2
 }
 
-STRING 2603
-// Buffs/Effects: B00J (Ele Mastery Gem 1), Bufftip (Tooltip)
-{
-Study Elements 1
-}
-
 STRING 2606
 // Buffs/Effects: B00I (Ele Mastery Gem 2), Buffubertip (Tooltip - Extended)
 {
@@ -7207,18 +7201,6 @@ STRING 2607
 // Buffs/Effects: B00I (Ele Mastery Gem 2), EditorName (Name (Editor Only))
 {
 Ele Mastery Gem 2
-}
-
-STRING 2608
-// Buffs/Effects: B00J (Ele Mastery Gem 1), Buffubertip (Tooltip - Extended)
-{
-Next gem you pick up will raise level of spells gained from that school.
-}
-
-STRING 2609
-// Buffs/Effects: B00J (Ele Mastery Gem 1), EditorName (Name (Editor Only))
-{
-Ele Mastery Gem 1
 }
 
 STRING 2610
@@ -23363,21 +23345,39 @@ STRING 6712
 Draws power from your other orbs to strengthen a single Red orb. Reduces cooldown of a Red orb with highest cooldown by but increases cooldown of all other non-Summoning orbs by same amount split.
 }
 
-STRING 6713
+STRING 6715
+// Buffs/Effects: B00J (Elemental Mastery), Bufftip (Tooltip)
+{
+Elemental Mastery
+}
+
+STRING 6716
+// Buffs/Effects: B00J (Elemental Mastery), Buffubertip (Tooltip - Extended)
+{
+Next spell you cast will not consume orbs.
+}
+
+STRING 6717
+// Buffs/Effects: B00J (Elemental Mastery), EditorName (Name (Editor Only))
+{
+Elemental Mastery
+}
+
+STRING 6718
+// Abilities: AE0M (Element Mastery), Researchubertip (Tooltip - Learn - Extended)
+{
+Your next spell cast will refund its orb cost, and grant bonus points toward next level of that school.
+
+Amount of points scaling with level.
+|cff808080Casting spells increases level of their respective school over time.|r
+}
+
+STRING 6720
 // Abilities: A01H (Awaken Essence), Researchubertip (Tooltip - Learn - Extended)
 {
 If used on ground while casting a spell, an Essence is created and spell is stored within. Essence can cast this spell afterwards without paying its cost. Doing so locks an available Summoning orb until discharged.
 
-If used on crystal instead, a unit is summoned with stats based on the spell level.
-}
-
-STRING 6714
-// Abilities: AE0M (Element Mastery), Researchubertip (Tooltip - Learn - Extended)
-{
-Casting spells increases level of their respective school over time.
-
-Using this ability makes next spell cast grant bonus points toward the next level of that school.
-
-Amount of points scaling with level.
+If used on crystal instead, a unit is summoned with stats based on spell level.
+Level of Awakened Essence is added as a bonus to level of unit spawned.
 }
 

@@ -199,9 +199,11 @@ export class IonicConversion {
                 inst.castSfx.destroy();
                 inst.done = true;
 
-                if (!paid && ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
+                if (paid) {
+                    // Continue
+                } else if (ElementalistMastery.Consume(caster) || ResourceBar.Get(owner.handle).Consume(this.OrbCost)) {
                     ElementalistMastery.Get(caster).AddExperience(this.Type, this.OrbCost.length);
-                } else if (!paid) return;
+                } else return;
 
                 if (inst.awakened) {
                     Log.info("calling awaken");

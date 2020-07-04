@@ -132,6 +132,8 @@ export class AwakenEssence {
         let essence = new Unit(caster.owner, this.EssenceUnit[type].type, point.x, point.y, 0);
         essence.addAbility(spellId);
         essence.setAbilityLevel(spellId, level);
+        essence.removeAbility(FourCC('Aatk'));
+        essence.removeAbility(FourCC('Amov'));
         let instance = new AwakenEssence(essence, type, usedOrbs);
         this._essence[essence.id] = instance;
         return essence;
@@ -152,6 +154,8 @@ export class AwakenEssence {
             timer: CreateTimer(),
             unit: CreateUnitAtLoc(sp.owner, type, sp.Point, sp.facing)
         };
+        level += caster.getAbilityLevel(this.SpellId);
+        if (level > 7) level = 7;
         this.ApplyStats(data.unit, level, statWeights);
         RemoveGuardPosition(data.unit);
         SetUnitVertexColor(data.unit, 255, 255, 255, 0);

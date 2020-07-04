@@ -33,7 +33,7 @@ export class ElementalistProgression extends HeroProgression {
         SetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 3);
 
         MasteryReq.Decrease(owner, MasteryReq.Get(owner));
-        // UnitAddAbility(unit, Spells.SummonSeedling);
+        UnitAddAbility(unit, Spells.AwakenEssence);
         // UnitAddAbility(unit, Spells.Photosynthesis);
         // let wps = UnitAddItemById(unit, Items.WhitePowerStacks);
         // WhitePower.StartChargeUp(wps);
