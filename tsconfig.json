@@ -38,11 +38,12 @@
       "war3-types/core/commonai",
       "war3-types/core/polyfill",
       "war3-types/special/w3ts",
-      "mdx-m3-viewer/src/types"
+      "mdx-m3-viewer/src/types",
+      "./src/war3map"
     ]
   },
   "include": [
-    "src"
+    "./src/main.ts"
   ],
   "exclude": [],
   "tstl": {

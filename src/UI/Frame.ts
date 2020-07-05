@@ -77,7 +77,7 @@ export class Frame {
     public OnClick(action: () => void) {
         const t = CreateTrigger();
         BlzTriggerRegisterFrameEvent(t, this._frame, FRAMEEVENT_CONTROL_CLICK);
-        TriggerAddAction(t, action);
+        TriggerAddAction(t, () => action());
         return this;
     }
 }
