@@ -1,0 +1,134 @@
+local ____exports = {}
+local ____HeroProgression = require("Systems.HeroProgression")
+local HeroProgression = ____HeroProgression.HeroProgression
+local ____ResourceBar = require("Systems.OrbResource.ResourceBar")
+local ResourceBar = ____ResourceBar.ResourceBar
+local ____Orb = require("Systems.OrbResource.Orb")
+local OrbType = ____Orb.OrbType
+local ____DelayFunction = require("Global.DelayFunction")
+local DelayFunction = ____DelayFunction.DelayFunction
+local ____WhitePower = require("Spells.Paladin.WhitePower")
+local WhitePower = ____WhitePower.WhitePower
+require("Config")
+____exports.PaladinProgression = {}
+local PaladinProgression = ____exports.PaladinProgression
+PaladinProgression.name = "PaladinProgression"
+PaladinProgression.__index = PaladinProgression
+PaladinProgression.prototype = {}
+PaladinProgression.prototype.__index = PaladinProgression.prototype
+PaladinProgression.prototype.constructor = PaladinProgression
+PaladinProgression.____super = HeroProgression
+setmetatable(PaladinProgression, PaladinProgression.____super)
+setmetatable(PaladinProgression.prototype, PaladinProgression.____super.prototype)
+function PaladinProgression.new(...)
+    local self = setmetatable({}, PaladinProgression.prototype)
+    self:____constructor(...)
+    return self
+end
+function PaladinProgression.prototype.____constructor(self, unit)
+    HeroProgression.prototype.____constructor(self, unit)
+end
+function PaladinProgression.prototype.ProgressFunction(self, unit)
+    local owner = GetOwningPlayer(unit)
+    local bar = ResourceBar:Get(owner)
+    DelayFunction:SmoothRun(
+        0.2,
+        function()
+            bar:AddOrb(OrbType.Summoning)
+        end
+    ):Then(
+        0.2,
+        function()
+            bar:AddOrb(OrbType.Summoning)
+        end
+    ):Then(
+        0.2,
+        function()
+            bar:AddOrb(OrbType.Summoning)
+        end
+    ):Then(
+        0.2,
+        function()
+            bar:AddOrb(OrbType.White)
+        end
+    ):Then(
+        0.2,
+        function()
+            bar:AddOrb(OrbType.White)
+        end
+    ):Then(
+        0.2,
+        function()
+            bar:AddOrb(OrbType.White)
+        end
+    )
+    SetPlayerState(
+        owner,
+        PLAYER_STATE_RESOURCE_LUMBER,
+        GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1
+    )
+    UnitAddAbility(unit, Spells.SummonMelee)
+    UnitAddAbility(unit, Spells.WhitePower)
+    local wps = UnitAddItemById(unit, Items.WhitePowerStacks)
+    WhitePower:StartChargeUp(wps)
+    HeroProgression:WaitForUnitLevel(self.unit, 3)
+    SetPlayerState(
+        owner,
+        PLAYER_STATE_RESOURCE_LUMBER,
+        GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1
+    )
+    HeroProgression:WaitForUnitLevel(self.unit, 5)
+    bar:AddOrb(OrbType.White)
+    HeroProgression:WaitForUnitLevel(self.unit, 6)
+    SetPlayerState(
+        owner,
+        PLAYER_STATE_RESOURCE_LUMBER,
+        GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1
+    )
+    UnitAddAbility(unit, Spells.PaladinLearnMastery)
+    SelectHeroSkill(
+        unit,
+        FourCC("A00F")
+    )
+    HeroProgression:WaitForUnitLevel(self.unit, 7)
+    SetPlayerTechResearched(
+        GetOwningPlayer(unit),
+        Upgrades.SpellCircle,
+        1
+    )
+    HeroProgression:WaitForUnitLevel(self.unit, 9)
+    SetPlayerState(
+        owner,
+        PLAYER_STATE_RESOURCE_LUMBER,
+        GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1
+    )
+    HeroProgression:WaitForUnitLevel(self.unit, 10)
+    bar:AddOrb(OrbType.White)
+    HeroProgression:WaitForUnitLevel(self.unit, 11)
+    SetPlayerTechResearched(
+        GetOwningPlayer(unit),
+        Upgrades.SpellCircle,
+        2
+    )
+    HeroProgression:WaitForUnitLevel(self.unit, 13)
+    SetPlayerState(
+        owner,
+        PLAYER_STATE_RESOURCE_LUMBER,
+        GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1
+    )
+    HeroProgression:WaitForUnitLevel(self.unit, 15)
+    bar:AddOrb(OrbType.White)
+    HeroProgression:WaitForUnitLevel(self.unit, 16)
+    SetPlayerState(
+        owner,
+        PLAYER_STATE_RESOURCE_LUMBER,
+        GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1
+    )
+    HeroProgression:WaitForUnitLevel(self.unit, 19)
+    SetPlayerState(
+        owner,
+        PLAYER_STATE_RESOURCE_LUMBER,
+        GetPlayerState(owner, PLAYER_STATE_RESOURCE_LUMBER) + 1
+    )
+end
+return ____exports
